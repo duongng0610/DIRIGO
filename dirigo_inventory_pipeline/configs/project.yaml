@@ -1,0 +1,12 @@
+project:
+  name: dirigo-inventory-pipeline
+  timezone: Asia/Ho_Chi_Minh
+
+execution:
+  strict_mode: true
+
+output:
+  # Dirigo-native CSV tables (useful for inspection/debugging)
+  directory: outputs/dirigo_csv
+  validation_report: reports/validation_report.csv
+  loss_report: reports/loss_report.csv
