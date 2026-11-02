@@ -1,0 +1,85 @@
+import csv
+import math
+from datetime import date, datetime
+from pathlib import Path
+from typing import Any, Dict, Iterable, List
+
+from src.ir import ObjectRecord
+
+
+BASE_COLUMNS = ["Object_id", "Timestamp", "Ocel_changed_field"]
+
+
+def _format_value(value: Any) -> Any:
+    """Return a value in the text form expected by the Dirigo CSV files."""
+    if value is None:
+        return ""
+    if isinstance(value, datetime):
+        return value.isoformat(sep=" ")
+    if isinstance(value, date):
+        return value.isoformat()
+    if isinstance(value, float) and math.isnan(value):
+        return ""
+    return value
+
+
+def _get_attribute_columns(objects: List[ObjectRecord]) -> List[str]:
+    columns: List[str] = []
+    for obj in objects:
+        for name in obj.attributes:
+            if name not in columns:
+                columns.append(name)
+        for change in obj.changes:
+            if change.ocel_change_field not in columns:
+                columns.append(change.ocel_change_field)
+    return columns
+
+
+def _initial_row(obj: ObjectRecord, fieldnames: List[str]) -> Dict[str, Any]:
+    row = {field: "" for field in fieldnames}
+    row["Object_id"] = obj.object_id
+    row["Timestamp"] = _format_value(obj.time_stamp)
+    for name, value in obj.attributes.items():
+        row[name] = _format_value(value)
+    return row
+
+
+def _change_rows(obj: ObjectRecord, fieldnames: List[str]) -> Iterable[Dict[str, Any]]:
+    for change in obj.changes:
+        row = {field: "" for field in fieldnames}
+        row["Object_id"] = obj.object_id
+        row["Timestamp"] = _format_value(change.time_stamp)
+        row["Ocel_changed_field"] = change.ocel_change_field
+        row[change.ocel_change_field] = _format_value(change.new_value)
+        yield row
+
+
+def convert_objects(objects: Iterable[ObjectRecord], output_dir: Path) -> List[Path]:
+    """Convert IR ObjectRecords to Dirigo object CSV files.
+
+    One file is written per object type, for example ``OCEL_Employee.csv``.
+    Each object contributes one initial row containing static attributes, and
+    each ObjectChangeRecord contributes one history row with only the changed
+    attribute populated.
+    """
+    objects_by_type: Dict[str, List[ObjectRecord]] = {}
+    for obj in objects:
+        objects_by_type.setdefault(obj.object_type, []).append(obj)
+
+    output_dir.mkdir(parents=True, exist_ok=True)
+    written_files: List[Path] = []
+
+    for object_type, typed_objects in objects_by_type.items():
+        fieldnames = BASE_COLUMNS + _get_attribute_columns(typed_objects)
+        output_path = output_dir / f"OCEL_{object_type}.csv"
+
+        with output_path.open("w", encoding="utf-8-sig", newline="") as file:
+            writer = csv.DictWriter(file, fieldnames=fieldnames)
+            writer.writeheader()
+            for obj in typed_objects:
+                writer.writerow(_initial_row(obj, fieldnames))
+                writer.writerows(_change_rows(obj, fieldnames))
+
+        written_files.append(output_path)
+
+    return written_files

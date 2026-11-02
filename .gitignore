@@ -1,2 +1,8 @@
 /reproduction/.venv
 /dirigo_inventory_pipeline/.venv
+
+.venv
+
+__pycache__/
+*/__pycache__/
+*.py[cod]
