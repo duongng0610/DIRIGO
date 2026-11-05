@@ -1,7 +1,9 @@
 import src.readers.sqlite_reader as sqlite_reader
 import src.readers.reader_yaml as yaml_reader
-import src.builders.object_builder as object_builder
+from src.builders import object_builder
+from src.builders import event_builder
 from src.extractor.to_csv import convert_objects
+from src.extractor.to_csv import convert_events
 
 from pathlib import Path
 
@@ -29,8 +31,16 @@ def main():
     output_dir = Path(
         r"E:\UET\SPECIALIZATION\Infomation System\BTL_CuoiKi\code\dirigo\dirigo_pipeline\outputs"
     )
-    output_files = convert_objects(objects, output_dir)
-    for output_file in output_files:
+
+    output_objects_files = convert_objects(objects, output_dir)
+    for output_file in output_objects_files:
+        print(f"Wrote {output_file}")
+
+    # Build events and e2o based on mapping
+    events = event_builder.build_events(reader, mapping)
+
+    output_events_files = convert_events(events, output_dir)
+    for output_file in output_events_files:
         print(f"Wrote {output_file}")
 
 

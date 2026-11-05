@@ -1,4 +1,5 @@
 from .models import (
+    EventToObjectRecord,
     EventRecord,
     ObjectChangeRecord,
     ObjectRecord,
@@ -10,4 +11,5 @@ _all_ = [
     "ObjectChangeRecord",
     "EventRecord",
     "RelationshipRecord",
+    "EventToObjectRecord"
 ]

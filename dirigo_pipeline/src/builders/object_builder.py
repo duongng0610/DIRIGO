@@ -2,15 +2,8 @@ from typing import Any, Dict, List, Optional
 
 from src.ir import ObjectChangeRecord, ObjectRecord
 from src.readers.sqlite_reader import SQLiteReader
-
-
-def create_option_id(prefix: str, columns: List[str], separator="-") -> str:
-    if not prefix or not columns or not separator:
-        raise ValueError(
-            "Prefix, columns, and separator must be provided to create an option ID."
-        )
-
-    return f"{prefix}{separator}{separator.join(columns)}"
+from src.builders.helper import _source_table_name
+from src.builders.helper import create_option_id
 
 
 def create_static_attributes(
@@ -56,10 +49,6 @@ def create_dynamic_attributes(
             changes.append(change)
 
     return changes
-
-
-def _source_table_name(source_table: str, table_mapping: Dict[str, dict]) -> str:
-    return table_mapping.get(source_table, {}).get("table", source_table)
 
 
 def build_objects(sqlite_reader: SQLiteReader, mapping: dict) -> List[ObjectRecord]:

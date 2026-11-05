@@ -4,6 +4,20 @@ from typing import Optional
 import pandas as pd
 
 
+CONDITIONS = {
+    "is_not_null": lambda s, v: s.notna(),
+    "is_null": lambda s, v: s.isna(),
+    "eq": lambda s, v: s == v,
+    "ne": lambda s, v: s != v,
+    "gt": lambda s, v: s > v,
+    "gte": lambda s, v: s >= v,
+    "lt": lambda s, v: s < v,
+    "lte": lambda s, v: s <= v,
+    "in": lambda s, v: s.isin(v),
+    "not_in": lambda s, v: ~s.isin(v),
+}
+
+
 class SQLiteReader:
     def __init__(self, db_path):
         self.db_path = db_path
@@ -19,6 +33,25 @@ class SQLiteReader:
             return None
         finally:
             conn.close()
+
+    def apply_where(self, df: pd.DataFrame, where: list[dict]) -> pd.DataFrame:
+        if not where:
+            return df
+
+        mask = pd.Series(True, index=df.index)
+        for rule in where:
+            col = rule["column"]
+            cond = rule["condition"]
+            value = rule.get("value")
+
+            if cond not in CONDITIONS:
+                raise ValueError(f"Unsupported condition: {cond}")
+            if col not in df.columns:
+                raise KeyError(f"Column '{col}' not in dataframe")
+
+            mask &= CONDITIONS[cond](df[col], value)
+
+        return df[mask]
 
     def get_all_tables(self):
         try:
@@ -66,7 +99,9 @@ class SQLiteReader:
                 {filter_clause}
             """
 
-            return pd.read_sql_query(query, conn, params=params)
+            df = pd.read_sql_query(query, conn, params=params)
+            # remove duplicated column (keep the first one)
+            return df.loc[:, ~df.columns.duplicated()]
 
         except Exception as e:
             print(f"Error joining tables {table1} and {table2}: {e}")

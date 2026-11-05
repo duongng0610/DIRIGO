@@ -20,11 +20,17 @@ class ObjectRecord:
 
 
 @dataclass
+class EventToObjectRecord:
+    object_id: str
+    qualifier: str
+
+
+@dataclass
 class EventRecord:
     event_id: str
     activity: str
     time_stamp: datetime
-    objects: dict[str, list[str]]
+    objects: list[EventToObjectRecord]
 
 
 @dataclass

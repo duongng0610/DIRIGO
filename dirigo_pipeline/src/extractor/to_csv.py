@@ -4,10 +4,12 @@ from datetime import date, datetime
 from pathlib import Path
 from typing import Any, Dict, Iterable, List
 
-from src.ir import ObjectRecord
+from src.ir import EventRecord, ObjectRecord
 
 
 BASE_COLUMNS = ["Object_id", "Timestamp", "Ocel_changed_field"]
+EVENT_COLUMNS = ["Event_id", "Timestamp", "Activity"]
+E2O_COLUMNS = ["Event_id", "Object_id", "E2O_qualifier"]
 
 
 def _format_value(value: Any) -> Any:
@@ -83,3 +85,46 @@ def convert_objects(objects: Iterable[ObjectRecord], output_dir: Path) -> List[P
         written_files.append(output_path)
 
     return written_files
+
+
+def convert_events(events: Iterable[EventRecord], output_dir: Path) -> List[Path]:
+    """Convert event IR records to the two Dirigo event CSV files.
+
+    The Dirigo format stores event attributes and event-to-object relations in
+    separate files:
+
+    * ``OCEL_Events.csv`` with ``Event_id,Timestamp,Activity``;
+    * ``OCEL_E2O.csv`` with ``Event_id,Object_id,E2O_qualifier``.
+
+    Each relation is written once, in the same order as its parent event's
+    ``objects`` collection. Events without related objects are still retained
+    in ``OCEL_Events.csv``.
+    """
+    event_records = list(events)
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    events_path = output_dir / "OCEL_Events.csv"
+    e2o_path = output_dir / "OCEL_E2O.csv"
+
+    with events_path.open("w", encoding="utf-8-sig", newline="") as file:
+        writer = csv.DictWriter(file, fieldnames=EVENT_COLUMNS)
+        writer.writeheader()
+        for event in event_records:
+            writer.writerow({
+                "Event_id": event.event_id,
+                "Timestamp": _format_value(event.time_stamp),
+                "Activity": event.activity,
+            })
+
+    with e2o_path.open("w", encoding="utf-8-sig", newline="") as file:
+        writer = csv.DictWriter(file, fieldnames=E2O_COLUMNS)
+        writer.writeheader()
+        for event in event_records:
+            for relation in event.objects or []:
+                writer.writerow({
+                    "Event_id": event.event_id,
+                    "Object_id": relation.object_id,
+                    "E2O_qualifier": relation.qualifier,
+                })
+
+    return [events_path, e2o_path]
