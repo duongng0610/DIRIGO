@@ -23,9 +23,9 @@ def create_static_attributes(
 
 def create_dynamic_attribute(
     source_df,
-    joined_table_by_key,
+    joined_table_by_key: dict[str, Any],
     dynamic_attribute_mapping: dict[str, Any],
-    objects_by_key: dict[str, Any]
+    objects_by_key: dict[str, Any],
 ):
 
     for _, row in source_df.iterrows():

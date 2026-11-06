@@ -20,44 +20,67 @@ def create_timestamp(event_mapping: dict[str, Any], row):
     return row[event_mapping["timestamp"]["source_column"]]
 
 
-def create_objects_out_table(
-        sqlite_reader: SQLiteReader,
-        source_table: str,
-        target_table: str,
-        where_mapping: dict[str, Any],
-        out_mapping: dict[str, Any],
+def create_out_table_object(
+        source_df,
+        joined_table_by_key: dict[str, Any],
+        events_by_key: dict[str, Any],
+        out_table_mapping: dict[str, Any],
         objects_id_config: dict[str, Any],
+):
+
+    for _, row in source_df.iterrows():
+
+        id_mapping = objects_id_config[out_table_mapping["object_type"]]
+        event_key = out_table_mapping["join_column"]["source"]
+
+        e2o_rows = joined_table_by_key.get(event_key)
+        event_record = events_by_key.get(event_key)
+
+        objects = []
+
+        if e2o_rows is None or event_record is None:
+            continue
+
+        for _, row in e2o_rows.iterators():
+            if (id_mapping["mode"] == "option"):
+                option_columns = [
+                    str(row[column]) for column in id_mapping["columns"]
+                ]
+
+                object_id = create_option_id(
+                    id_mapping["prefix"],
+                    option_columns,
+                    id_mapping.get("separator"),
+                )
+
+            else:
+                object_id = row[id_mapping["columns"][0]]
+
+            objects.append(EventToObjectRecord(
+                object_id=object_id,
+                qualifier=out_table_mapping["qualifier"]
+            ))
+
+        event_record.objects.extend(objects)
+
+
+def create_in_table_objects(
+        objects_id_config: dict[str, Any],
+        in_table_mapping: dict[str, Any],
         event_row,
 ) -> list[EventToObjectRecord]:
 
-    objects = []
+    in_table_objects = []
 
-    join_columns = [(out_mapping["join_column"]["source"],
-                     out_mapping["join_column"]["target"])]
+    if in_table_mapping is None or in_table_mapping == []:
+        return in_table_objects
 
-    source_id_column = out_mapping["join_column"]["source"]
+    for mapping in in_table_mapping:
 
-    e2o_rows = sqlite_reader.get_joined_data(
-        source_table,
-        target_table,
-        join_columns=join_columns,
-        filter_column=source_id_column,
-        filter_value=event_row[source_id_column],
-    )
-
-    if where_mapping is not None:
-        e2o_rows = sqlite_reader.apply_where(
-            e2o_rows, where_mapping)
-
-    if e2o_rows is None or e2o_rows.empty:
-        return
-
-    for _, row in e2o_rows.iterrows():
-        id_mapping = objects_id_config[out_mapping["object_type"]]
-
+        id_mapping = objects_id_config[mapping["object_type"]]
         if (id_mapping["mode"] == "option"):
             option_columns = [
-                str(row[column]) for column in id_mapping["columns"]
+                str(event_row[column]) for column in id_mapping["columns"]
             ]
 
             object_id = create_option_id(
@@ -67,89 +90,16 @@ def create_objects_out_table(
             )
 
         else:
-            object_id = row[source_id_column]
+            object_id = event_row[id_mapping["columns"][0]]
 
-        objects.append(
-            EventToObjectRecord(
-                object_id=object_id,
-                qualifier=out_mapping["qualifier"]
-            )
+        in_table_object = EventToObjectRecord(
+            object_id=object_id,
+            qualifier=mapping["qualifier"]
         )
 
-    return objects
+        in_table_objects.append(in_table_object)
 
-
-def create_objects_in_table(
-    objects_id_config: dict[str, Any],
-    in_mapping: dict[str, Any],
-    event_row,
-
-) -> EventToObjectRecord:
-    id_mapping = objects_id_config[in_mapping["object_type"]]
-    if (id_mapping["mode"] == "option"):
-        option_columns = [
-            str(event_row[column]) for column in id_mapping["columns"]
-        ]
-
-        object_id = create_option_id(
-            id_mapping["prefix"],
-            option_columns,
-            id_mapping.get("separator"),
-        )
-
-    else:
-        object_id = event_row[id_mapping["columns"][0]]
-
-    return EventToObjectRecord(
-        object_id=object_id,
-        qualifier=in_mapping["qualifier"]
-    )
-
-
-def create_objects(
-        sqlite_reader: SQLiteReader,
-        source_table: str,
-        objects_id_config: dict[str, Any],
-        table_mapping: dict[str, Any],
-        event_mapping: dict[str, Any],
-        event_row,
-) -> list[EventToObjectRecord]:
-
-    objects = []
-
-    if event_mapping.get("objects") is None:
-        return objects
-
-    for mapping in event_mapping["objects"]:
-        if (mapping["mode"] == "out_table"):
-            # get name table in original sqlite
-            target_table = _source_table_name(
-                mapping["target_table"], table_mapping)
-
-            where_mapping = event_mapping.get("where")
-
-            out_objects = create_objects_out_table(
-                sqlite_reader=sqlite_reader,
-                source_table=source_table,
-                target_table=target_table,
-                where_mapping=where_mapping,
-                out_mapping=mapping,
-                objects_id_config=objects_id_config,
-                event_row=event_row
-            )
-
-            objects.extend(out_objects)
-
-        else:
-            in_object = create_objects_in_table(
-                objects_id_config=objects_id_config,
-                in_mapping=mapping,
-                event_row=event_row
-            )
-
-            objects.append(in_object)
-
-    return objects
+    return in_table_objects
 
 
 def build_events(sqlite_reader: SQLiteReader, mapping: dict[str, Any]) -> list[EventRecord]:
@@ -164,6 +114,8 @@ def build_events(sqlite_reader: SQLiteReader, mapping: dict[str, Any]) -> list[E
 
         if source_df is None:
             continue
+
+        current_events: list[EventRecord] = []
 
         # where condition to fill fit row data
         source_df = sqlite_reader.apply_where(
@@ -187,18 +139,68 @@ def build_events(sqlite_reader: SQLiteReader, mapping: dict[str, Any]) -> list[E
             # create timestamp
             timestamp = create_timestamp(event_mapping, row)
 
-            # create objects
-            objects = create_objects(
-                sqlite_reader, source_table, objects_id_config, mapping["tables"], event_mapping, row
+            # create in table objects
+            objects = create_in_table_objects(
+                objects_id_config=objects_id_config,
+                in_table_mapping=event_mapping.get("in_table"),
+                event_row=row
             )
 
-            events.append(
-                EventRecord(
-                    event_id=event_id,
-                    activity=event_mapping["type"],
-                    time_stamp=timestamp,
-                    objects=objects
-                )
+            event_record = EventRecord(
+                event_id=event_id,
+                activity=event_mapping["type"],
+                time_stamp=timestamp,
+                objects=objects
             )
+
+            events.append(event_record)
+            current_events.append(event_record)
+
+        # create out table objects
+        out_tables_mapping = event_mapping.get("out_table")
+
+        if (out_tables_mapping is None or out_tables_mapping == []):
+            continue
+
+        # cache joinned table
+        join_cache = {}
+
+        for mapping in out_tables_mapping:
+            target_table = mapping["target_table"]
+            join_column_source = mapping["join_column"]["source"]
+            join_column_target = mapping["join_column"]["target"]
+
+            cache_key = (
+                source_table,
+                target_table,
+                join_column_source,
+                join_column_target
+            )
+
+            if cache_key not in join_cache:
+                join_columns = [(join_column_source, join_column_target)]
+                joined_table = sqlite_reader.get_joined_data(
+                    source_table, target_table, join_columns)
+
+                # where condition to fill fit row data
+                joined_table = sqlite_reader.apply_where(
+                    target_table, event_mapping.get("where"))
+
+                if joined_table is None:
+                    joined_table_by_key = {}
+                else:
+                    joined_table_by_key = {
+                        key: group
+                        for key, group in joined_table.groupby(join_column_source)
+                    }
+
+                join_cache[cache_key] = joined_table_by_key
+
+            events_by_key = dict(
+                zip(source_df[join_column_source], current_events)
+            )
+
+            create_out_table_object(
+                source_df, joined_table_by_key, events_by_key, mapping, objects_id_config)
 
     return events
