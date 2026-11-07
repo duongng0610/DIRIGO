@@ -1,1 +1,1513 @@
 ﻿Event_id,Object_id,E2O_qualifier
+EV-HIRE-1,EMP-1,employee_hired
+EV-HIRE-2,EMP-2,employee_hired
+EV-HIRE-3,EMP-3,employee_hired
+EV-HIRE-4,EMP-4,employee_hired
+EV-HIRE-5,EMP-5,employee_hired
+EV-HIRE-6,EMP-6,employee_hired
+EV-HIRE-7,EMP-7,employee_hired
+EV-HIRE-8,EMP-8,employee_hired
+EV-HIRE-9,EMP-9,employee_hired
+EV-HIRE-10,EMP-10,employee_hired
+EV-HIRE-11,EMP-11,employee_hired
+EV-HIRE-12,EMP-12,employee_hired
+EV-HIRE-13,EMP-13,employee_hired
+EV-HIRE-14,EMP-14,employee_hired
+EV-HIRE-15,EMP-15,employee_hired
+EV-HIRE-16,EMP-16,employee_hired
+EV-HIRE-17,EMP-17,employee_hired
+EV-HIRE-18,EMP-18,employee_hired
+EV-HIRE-19,EMP-19,employee_hired
+EV-HIRE-20,EMP-20,employee_hired
+EV-HIRE-21,EMP-21,employee_hired
+EV-HIRE-22,EMP-22,employee_hired
+EV-HIRE-23,EMP-23,employee_hired
+EV-HIRE-24,EMP-24,employee_hired
+EV-HIRE-25,EMP-25,employee_hired
+EV-HIRE-26,EMP-26,employee_hired
+EV-HIRE-27,EMP-27,employee_hired
+EV-HIRE-28,EMP-28,employee_hired
+EV-HIRE-29,EMP-29,employee_hired
+EV-HIRE-30,EMP-30,employee_hired
+EV-HIRE-31,EMP-31,employee_hired
+EV-HIRE-32,EMP-32,employee_hired
+EV-HIRE-33,EMP-33,employee_hired
+EV-HIRE-34,EMP-34,employee_hired
+EV-HIRE-35,EMP-35,employee_hired
+EV-HIRE-36,EMP-36,employee_hired
+EV-HIRE-37,EMP-37,employee_hired
+EV-HIRE-38,EMP-38,employee_hired
+EV-HIRE-39,EMP-39,employee_hired
+EV-HIRE-40,EMP-40,employee_hired
+EV-HIRE-41,EMP-41,employee_hired
+EV-HIRE-42,EMP-42,employee_hired
+EV-HIRE-43,EMP-43,employee_hired
+EV-HIRE-44,EMP-44,employee_hired
+EV-HIRE-45,EMP-45,employee_hired
+EV-HIRE-46,EMP-46,employee_hired
+EV-HIRE-47,EMP-47,employee_hired
+EV-HIRE-48,EMP-48,employee_hired
+EV-HIRE-49,EMP-49,employee_hired
+EV-HIRE-50,EMP-50,employee_hired
+EV-HIRE-51,EMP-51,employee_hired
+EV-HIRE-52,EMP-52,employee_hired
+EV-HIRE-53,EMP-53,employee_hired
+EV-HIRE-54,EMP-54,employee_hired
+EV-HIRE-55,EMP-55,employee_hired
+EV-HIRE-56,EMP-56,employee_hired
+EV-HIRE-57,EMP-57,employee_hired
+EV-HIRE-58,EMP-58,employee_hired
+EV-HIRE-59,EMP-59,employee_hired
+EV-HIRE-60,EMP-60,employee_hired
+EV-HIRE-61,EMP-61,employee_hired
+EV-HIRE-62,EMP-62,employee_hired
+EV-HIRE-63,EMP-63,employee_hired
+EV-HIRE-64,EMP-64,employee_hired
+EV-HIRE-65,EMP-65,employee_hired
+EV-HIRE-66,EMP-66,employee_hired
+EV-HIRE-67,EMP-67,employee_hired
+EV-HIRE-68,EMP-68,employee_hired
+EV-HIRE-69,EMP-69,employee_hired
+EV-HIRE-70,EMP-70,employee_hired
+EV-HIRE-71,EMP-71,employee_hired
+EV-HIRE-72,EMP-72,employee_hired
+EV-HIRE-73,EMP-73,employee_hired
+EV-HIRE-74,EMP-74,employee_hired
+EV-HIRE-75,EMP-75,employee_hired
+EV-HIRE-76,EMP-76,employee_hired
+EV-HIRE-77,EMP-77,employee_hired
+EV-HIRE-78,EMP-78,employee_hired
+EV-HIRE-79,EMP-79,employee_hired
+EV-HIRE-80,EMP-80,employee_hired
+EV-HIRE-81,EMP-81,employee_hired
+EV-HIRE-82,EMP-82,employee_hired
+EV-HIRE-83,EMP-83,employee_hired
+EV-HIRE-84,EMP-84,employee_hired
+EV-HIRE-85,EMP-85,employee_hired
+EV-HIRE-86,EMP-86,employee_hired
+EV-HIRE-87,EMP-87,employee_hired
+EV-HIRE-88,EMP-88,employee_hired
+EV-HIRE-89,EMP-89,employee_hired
+EV-HIRE-90,EMP-90,employee_hired
+EV-HIRE-91,EMP-91,employee_hired
+EV-HIRE-92,EMP-92,employee_hired
+EV-HIRE-93,EMP-93,employee_hired
+EV-HIRE-94,EMP-94,employee_hired
+EV-HIRE-95,EMP-95,employee_hired
+EV-HIRE-96,EMP-96,employee_hired
+EV-HIRE-97,EMP-97,employee_hired
+EV-HIRE-98,EMP-98,employee_hired
+EV-HIRE-99,EMP-99,employee_hired
+EV-HIRE-100,EMP-100,employee_hired
+EV-HIRE-101,EMP-101,employee_hired
+EV-HIRE-102,EMP-102,employee_hired
+EV-HIRE-103,EMP-103,employee_hired
+EV-HIRE-104,EMP-104,employee_hired
+EV-HIRE-105,EMP-105,employee_hired
+EV-HIRE-106,EMP-106,employee_hired
+EV-HIRE-107,EMP-107,employee_hired
+EV-HIRE-108,EMP-108,employee_hired
+EV-HIRE-109,EMP-109,employee_hired
+EV-HIRE-110,EMP-110,employee_hired
+EV-HIRE-111,EMP-111,employee_hired
+EV-HIRE-112,EMP-112,employee_hired
+EV-HIRE-113,EMP-113,employee_hired
+EV-HIRE-114,EMP-114,employee_hired
+EV-HIRE-115,EMP-115,employee_hired
+EV-HIRE-116,EMP-116,employee_hired
+EV-HIRE-117,EMP-117,employee_hired
+EV-HIRE-118,EMP-118,employee_hired
+EV-HIRE-119,EMP-119,employee_hired
+EV-HIRE-120,EMP-120,employee_hired
+EV-HIRE-121,EMP-121,employee_hired
+EV-HIRE-122,EMP-122,employee_hired
+EV-HIRE-123,EMP-123,employee_hired
+EV-HIRE-124,EMP-124,employee_hired
+EV-HIRE-125,EMP-125,employee_hired
+EV-HIRE-126,EMP-126,employee_hired
+EV-HIRE-127,EMP-127,employee_hired
+EV-HIRE-128,EMP-128,employee_hired
+EV-HIRE-129,EMP-129,employee_hired
+EV-HIRE-130,EMP-130,employee_hired
+EV-HIRE-131,EMP-131,employee_hired
+EV-HIRE-132,EMP-132,employee_hired
+EV-HIRE-133,EMP-133,employee_hired
+EV-HIRE-134,EMP-134,employee_hired
+EV-HIRE-135,EMP-135,employee_hired
+EV-HIRE-136,EMP-136,employee_hired
+EV-HIRE-137,EMP-137,employee_hired
+EV-HIRE-138,EMP-138,employee_hired
+EV-HIRE-139,EMP-139,employee_hired
+EV-HIRE-140,EMP-140,employee_hired
+EV-HIRE-141,EMP-141,employee_hired
+EV-HIRE-142,EMP-142,employee_hired
+EV-HIRE-143,EMP-143,employee_hired
+EV-HIRE-144,EMP-144,employee_hired
+EV-HIRE-145,EMP-145,employee_hired
+EV-HIRE-146,EMP-146,employee_hired
+EV-HIRE-147,EMP-147,employee_hired
+EV-HIRE-148,EMP-148,employee_hired
+EV-HIRE-149,EMP-149,employee_hired
+EV-HIRE-150,EMP-150,employee_hired
+EV-HIRE-151,EMP-151,employee_hired
+EV-HIRE-152,EMP-152,employee_hired
+EV-HIRE-153,EMP-153,employee_hired
+EV-HIRE-154,EMP-154,employee_hired
+EV-HIRE-155,EMP-155,employee_hired
+EV-HIRE-156,EMP-156,employee_hired
+EV-HIRE-157,EMP-157,employee_hired
+EV-HIRE-158,EMP-158,employee_hired
+EV-HIRE-159,EMP-159,employee_hired
+EV-HIRE-160,EMP-160,employee_hired
+EV-HIRE-161,EMP-161,employee_hired
+EV-HIRE-162,EMP-162,employee_hired
+EV-HIRE-163,EMP-163,employee_hired
+EV-HIRE-164,EMP-164,employee_hired
+EV-HIRE-165,EMP-165,employee_hired
+EV-HIRE-166,EMP-166,employee_hired
+EV-HIRE-167,EMP-167,employee_hired
+EV-HIRE-168,EMP-168,employee_hired
+EV-HIRE-169,EMP-169,employee_hired
+EV-HIRE-170,EMP-170,employee_hired
+EV-HIRE-171,EMP-171,employee_hired
+EV-HIRE-172,EMP-172,employee_hired
+EV-HIRE-173,EMP-173,employee_hired
+EV-HIRE-174,EMP-174,employee_hired
+EV-HIRE-175,EMP-175,employee_hired
+EV-HIRE-176,EMP-176,employee_hired
+EV-HIRE-177,EMP-177,employee_hired
+EV-HIRE-178,EMP-178,employee_hired
+EV-HIRE-179,EMP-179,employee_hired
+EV-HIRE-180,EMP-180,employee_hired
+EV-HIRE-181,EMP-181,employee_hired
+EV-HIRE-182,EMP-182,employee_hired
+EV-HIRE-183,EMP-183,employee_hired
+EV-HIRE-184,EMP-184,employee_hired
+EV-HIRE-185,EMP-185,employee_hired
+EV-HIRE-186,EMP-186,employee_hired
+EV-HIRE-187,EMP-187,employee_hired
+EV-HIRE-188,EMP-188,employee_hired
+EV-HIRE-189,EMP-189,employee_hired
+EV-HIRE-190,EMP-190,employee_hired
+EV-HIRE-191,EMP-191,employee_hired
+EV-HIRE-192,EMP-192,employee_hired
+EV-HIRE-193,EMP-193,employee_hired
+EV-HIRE-194,EMP-194,employee_hired
+EV-HIRE-195,EMP-195,employee_hired
+EV-HIRE-196,EMP-196,employee_hired
+EV-HIRE-197,EMP-197,employee_hired
+EV-HIRE-198,EMP-198,employee_hired
+EV-HIRE-199,EMP-199,employee_hired
+EV-HIRE-200,EMP-200,employee_hired
+EV-HIRE-201,EMP-201,employee_hired
+EV-HIRE-202,EMP-202,employee_hired
+EV-HIRE-203,EMP-203,employee_hired
+EV-HIRE-204,EMP-204,employee_hired
+EV-HIRE-205,EMP-205,employee_hired
+EV-HIRE-206,EMP-206,employee_hired
+EV-HIRE-207,EMP-207,employee_hired
+EV-HIRE-208,EMP-208,employee_hired
+EV-HIRE-209,EMP-209,employee_hired
+EV-HIRE-210,EMP-210,employee_hired
+EV-HIRE-211,EMP-211,employee_hired
+EV-HIRE-212,EMP-212,employee_hired
+EV-HIRE-213,EMP-213,employee_hired
+EV-HIRE-214,EMP-214,employee_hired
+EV-HIRE-215,EMP-215,employee_hired
+EV-HIRE-216,EMP-216,employee_hired
+EV-HIRE-217,EMP-217,employee_hired
+EV-HIRE-218,EMP-218,employee_hired
+EV-HIRE-219,EMP-219,employee_hired
+EV-HIRE-220,EMP-220,employee_hired
+EV-HIRE-221,EMP-221,employee_hired
+EV-HIRE-222,EMP-222,employee_hired
+EV-HIRE-223,EMP-223,employee_hired
+EV-HIRE-224,EMP-224,employee_hired
+EV-HIRE-225,EMP-225,employee_hired
+EV-HIRE-226,EMP-226,employee_hired
+EV-HIRE-227,EMP-227,employee_hired
+EV-HIRE-228,EMP-228,employee_hired
+EV-HIRE-229,EMP-229,employee_hired
+EV-HIRE-230,EMP-230,employee_hired
+EV-HIRE-231,EMP-231,employee_hired
+EV-HIRE-232,EMP-232,employee_hired
+EV-HIRE-233,EMP-233,employee_hired
+EV-HIRE-234,EMP-234,employee_hired
+EV-HIRE-235,EMP-235,employee_hired
+EV-HIRE-236,EMP-236,employee_hired
+EV-HIRE-237,EMP-237,employee_hired
+EV-HIRE-238,EMP-238,employee_hired
+EV-HIRE-239,EMP-239,employee_hired
+EV-HIRE-240,EMP-240,employee_hired
+EV-HIRE-241,EMP-241,employee_hired
+EV-HIRE-242,EMP-242,employee_hired
+EV-HIRE-243,EMP-243,employee_hired
+EV-HIRE-244,EMP-244,employee_hired
+EV-HIRE-245,EMP-245,employee_hired
+EV-HIRE-246,EMP-246,employee_hired
+EV-HIRE-247,EMP-247,employee_hired
+EV-HIRE-248,EMP-248,employee_hired
+EV-HIRE-249,EMP-249,employee_hired
+EV-HIRE-250,EMP-250,employee_hired
+EV-HIRE-251,EMP-251,employee_hired
+EV-HIRE-252,EMP-252,employee_hired
+EV-HIRE-253,EMP-253,employee_hired
+EV-HIRE-254,EMP-254,employee_hired
+EV-HIRE-255,EMP-255,employee_hired
+EV-HIRE-256,EMP-256,employee_hired
+EV-HIRE-257,EMP-257,employee_hired
+EV-HIRE-258,EMP-258,employee_hired
+EV-HIRE-259,EMP-259,employee_hired
+EV-HIRE-260,EMP-260,employee_hired
+EV-HIRE-261,EMP-261,employee_hired
+EV-HIRE-262,EMP-262,employee_hired
+EV-HIRE-263,EMP-263,employee_hired
+EV-HIRE-264,EMP-264,employee_hired
+EV-HIRE-265,EMP-265,employee_hired
+EV-HIRE-266,EMP-266,employee_hired
+EV-HIRE-267,EMP-267,employee_hired
+EV-HIRE-268,EMP-268,employee_hired
+EV-HIRE-269,EMP-269,employee_hired
+EV-HIRE-270,EMP-270,employee_hired
+EV-HIRE-271,EMP-271,employee_hired
+EV-HIRE-272,EMP-272,employee_hired
+EV-HIRE-273,EMP-273,employee_hired
+EV-HIRE-274,EMP-274,employee_hired
+EV-HIRE-275,EMP-275,employee_hired
+EV-HIRE-276,EMP-276,employee_hired
+EV-HIRE-277,EMP-277,employee_hired
+EV-HIRE-278,EMP-278,employee_hired
+EV-HIRE-279,EMP-279,employee_hired
+EV-HIRE-280,EMP-280,employee_hired
+EV-HIRE-281,EMP-281,employee_hired
+EV-HIRE-282,EMP-282,employee_hired
+EV-HIRE-283,EMP-283,employee_hired
+EV-HIRE-284,EMP-284,employee_hired
+EV-HIRE-285,EMP-285,employee_hired
+EV-HIRE-286,EMP-286,employee_hired
+EV-HIRE-287,EMP-287,employee_hired
+EV-HIRE-288,EMP-288,employee_hired
+EV-HIRE-289,EMP-289,employee_hired
+EV-HIRE-290,EMP-290,employee_hired
+EV-PAY-1-2009-01-14 00:00:00.000,EMP-1,employee_whose_pay_changed
+EV-PAY-2-2008-01-31 00:00:00.000,EMP-2,employee_whose_pay_changed
+EV-PAY-3-2007-11-11 00:00:00.000,EMP-3,employee_whose_pay_changed
+EV-PAY-4-2007-12-05 00:00:00.000,EMP-4,employee_whose_pay_changed
+EV-PAY-4-2010-05-31 00:00:00.000,EMP-4,employee_whose_pay_changed
+EV-PAY-4-2011-12-15 00:00:00.000,EMP-4,employee_whose_pay_changed
+EV-PAY-5-2008-01-06 00:00:00.000,EMP-5,employee_whose_pay_changed
+EV-PAY-6-2008-01-24 00:00:00.000,EMP-6,employee_whose_pay_changed
+EV-PAY-7-2009-02-08 00:00:00.000,EMP-7,employee_whose_pay_changed
+EV-PAY-8-2008-12-29 00:00:00.000,EMP-8,employee_whose_pay_changed
+EV-PAY-9-2009-01-16 00:00:00.000,EMP-9,employee_whose_pay_changed
+EV-PAY-10-2009-05-03 00:00:00.000,EMP-10,employee_whose_pay_changed
+EV-PAY-11-2010-12-05 00:00:00.000,EMP-11,employee_whose_pay_changed
+EV-PAY-12-2007-12-11 00:00:00.000,EMP-12,employee_whose_pay_changed
+EV-PAY-13-2010-12-23 00:00:00.000,EMP-13,employee_whose_pay_changed
+EV-PAY-14-2010-12-30 00:00:00.000,EMP-14,employee_whose_pay_changed
+EV-PAY-15-2011-01-18 00:00:00.000,EMP-15,employee_whose_pay_changed
+EV-PAY-16-2007-12-20 00:00:00.000,EMP-16,employee_whose_pay_changed
+EV-PAY-16-2009-07-15 00:00:00.000,EMP-16,employee_whose_pay_changed
+EV-PAY-16-2012-04-30 00:00:00.000,EMP-16,employee_whose_pay_changed
+EV-PAY-17-2007-01-26 00:00:00.000,EMP-17,employee_whose_pay_changed
+EV-PAY-18-2011-02-07 00:00:00.000,EMP-18,employee_whose_pay_changed
+EV-PAY-19-2011-02-14 00:00:00.000,EMP-19,employee_whose_pay_changed
+EV-PAY-20-2011-01-07 00:00:00.000,EMP-20,employee_whose_pay_changed
+EV-PAY-21-2009-03-02 00:00:00.000,EMP-21,employee_whose_pay_changed
+EV-PAY-22-2008-12-12 00:00:00.000,EMP-22,employee_whose_pay_changed
+EV-PAY-23-2009-01-12 00:00:00.000,EMP-23,employee_whose_pay_changed
+EV-PAY-24-2009-01-18 00:00:00.000,EMP-24,employee_whose_pay_changed
+EV-PAY-25-2009-02-03 00:00:00.000,EMP-25,employee_whose_pay_changed
+EV-PAY-26-2008-12-01 00:00:00.000,EMP-26,employee_whose_pay_changed
+EV-PAY-27-2008-02-27 00:00:00.000,EMP-27,employee_whose_pay_changed
+EV-PAY-28-2006-06-30 00:00:00.000,EMP-28,employee_whose_pay_changed
+EV-PAY-29-2009-01-23 00:00:00.000,EMP-29,employee_whose_pay_changed
+EV-PAY-30-2009-01-29 00:00:00.000,EMP-30,employee_whose_pay_changed
+EV-PAY-31-2009-01-04 00:00:00.000,EMP-31,employee_whose_pay_changed
+EV-PAY-32-2008-12-29 00:00:00.000,EMP-32,employee_whose_pay_changed
+EV-PAY-33-2008-12-17 00:00:00.000,EMP-33,employee_whose_pay_changed
+EV-PAY-34-2009-02-16 00:00:00.000,EMP-34,employee_whose_pay_changed
+EV-PAY-35-2009-02-08 00:00:00.000,EMP-35,employee_whose_pay_changed
+EV-PAY-36-2009-02-10 00:00:00.000,EMP-36,employee_whose_pay_changed
+EV-PAY-37-2009-03-07 00:00:00.000,EMP-37,employee_whose_pay_changed
+EV-PAY-38-2010-01-16 00:00:00.000,EMP-38,employee_whose_pay_changed
+EV-PAY-39-2010-02-05 00:00:00.000,EMP-39,employee_whose_pay_changed
+EV-PAY-40-2007-12-26 00:00:00.000,EMP-40,employee_whose_pay_changed
+EV-PAY-41-2009-01-21 00:00:00.000,EMP-41,employee_whose_pay_changed
+EV-PAY-42-2008-12-27 00:00:00.000,EMP-42,employee_whose_pay_changed
+EV-PAY-43-2009-01-02 00:00:00.000,EMP-43,employee_whose_pay_changed
+EV-PAY-44-2008-12-08 00:00:00.000,EMP-44,employee_whose_pay_changed
+EV-PAY-45-2009-02-26 00:00:00.000,EMP-45,employee_whose_pay_changed
+EV-PAY-46-2009-02-08 00:00:00.000,EMP-46,employee_whose_pay_changed
+EV-PAY-47-2009-02-22 00:00:00.000,EMP-47,employee_whose_pay_changed
+EV-PAY-48-2008-01-06 00:00:00.000,EMP-48,employee_whose_pay_changed
+EV-PAY-49-2008-01-07 00:00:00.000,EMP-49,employee_whose_pay_changed
+EV-PAY-50-2008-02-02 00:00:00.000,EMP-50,employee_whose_pay_changed
+EV-PAY-51-2008-02-20 00:00:00.000,EMP-51,employee_whose_pay_changed
+EV-PAY-52-2008-03-10 00:00:00.000,EMP-52,employee_whose_pay_changed
+EV-PAY-53-2008-03-28 00:00:00.000,EMP-53,employee_whose_pay_changed
+EV-PAY-54-2010-01-01 00:00:00.000,EMP-54,employee_whose_pay_changed
+EV-PAY-55-2008-02-08 00:00:00.000,EMP-55,employee_whose_pay_changed
+EV-PAY-56-2009-02-05 00:00:00.000,EMP-56,employee_whose_pay_changed
+EV-PAY-57-2009-02-23 00:00:00.000,EMP-57,employee_whose_pay_changed
+EV-PAY-58-2008-12-05 00:00:00.000,EMP-58,employee_whose_pay_changed
+EV-PAY-59-2008-12-24 00:00:00.000,EMP-59,employee_whose_pay_changed
+EV-PAY-60-2009-01-11 00:00:00.000,EMP-60,employee_whose_pay_changed
+EV-PAY-61-2009-01-18 00:00:00.000,EMP-61,employee_whose_pay_changed
+EV-PAY-62-2008-03-17 00:00:00.000,EMP-62,employee_whose_pay_changed
+EV-PAY-63-2010-01-29 00:00:00.000,EMP-63,employee_whose_pay_changed
+EV-PAY-64-2010-02-23 00:00:00.000,EMP-64,employee_whose_pay_changed
+EV-PAY-65-2010-02-23 00:00:00.000,EMP-65,employee_whose_pay_changed
+EV-PAY-66-2009-12-22 00:00:00.000,EMP-66,employee_whose_pay_changed
+EV-PAY-67-2009-03-05 00:00:00.000,EMP-67,employee_whose_pay_changed
+EV-PAY-68-2009-12-03 00:00:00.000,EMP-68,employee_whose_pay_changed
+EV-PAY-69-2009-02-15 00:00:00.000,EMP-69,employee_whose_pay_changed
+EV-PAY-70-2008-12-15 00:00:00.000,EMP-70,employee_whose_pay_changed
+EV-PAY-71-2009-02-15 00:00:00.000,EMP-71,employee_whose_pay_changed
+EV-PAY-72-2008-12-01 00:00:00.000,EMP-72,employee_whose_pay_changed
+EV-PAY-73-2008-12-19 00:00:00.000,EMP-73,employee_whose_pay_changed
+EV-PAY-74-2009-01-07 00:00:00.000,EMP-74,employee_whose_pay_changed
+EV-PAY-75-2009-01-26 00:00:00.000,EMP-75,employee_whose_pay_changed
+EV-PAY-76-2009-02-12 00:00:00.000,EMP-76,employee_whose_pay_changed
+EV-PAY-77-2009-03-03 00:00:00.000,EMP-77,employee_whose_pay_changed
+EV-PAY-78-2008-12-15 00:00:00.000,EMP-78,employee_whose_pay_changed
+EV-PAY-79-2010-01-24 00:00:00.000,EMP-79,employee_whose_pay_changed
+EV-PAY-80-2010-01-17 00:00:00.000,EMP-80,employee_whose_pay_changed
+EV-PAY-81-2009-12-29 00:00:00.000,EMP-81,employee_whose_pay_changed
+EV-PAY-82-2010-03-03 00:00:00.000,EMP-82,employee_whose_pay_changed
+EV-PAY-83-2010-02-12 00:00:00.000,EMP-83,employee_whose_pay_changed
+EV-PAY-84-2010-02-05 00:00:00.000,EMP-84,employee_whose_pay_changed
+EV-PAY-85-2009-12-11 00:00:00.000,EMP-85,employee_whose_pay_changed
+EV-PAY-86-2009-01-05 00:00:00.000,EMP-86,employee_whose_pay_changed
+EV-PAY-87-2008-12-22 00:00:00.000,EMP-87,employee_whose_pay_changed
+EV-PAY-88-2009-12-18 00:00:00.000,EMP-88,employee_whose_pay_changed
+EV-PAY-89-2010-02-01 00:00:00.000,EMP-89,employee_whose_pay_changed
+EV-PAY-90-2010-02-20 00:00:00.000,EMP-90,employee_whose_pay_changed
+EV-PAY-91-2010-01-12 00:00:00.000,EMP-91,employee_whose_pay_changed
+EV-PAY-92-2010-03-10 00:00:00.000,EMP-92,employee_whose_pay_changed
+EV-PAY-93-2008-12-27 00:00:00.000,EMP-93,employee_whose_pay_changed
+EV-PAY-94-2008-12-12 00:00:00.000,EMP-94,employee_whose_pay_changed
+EV-PAY-95-2008-12-19 00:00:00.000,EMP-95,employee_whose_pay_changed
+EV-PAY-96-2009-03-02 00:00:00.000,EMP-96,employee_whose_pay_changed
+EV-PAY-97-2009-02-10 00:00:00.000,EMP-97,employee_whose_pay_changed
+EV-PAY-98-2009-02-11 00:00:00.000,EMP-98,employee_whose_pay_changed
+EV-PAY-99-2009-01-06 00:00:00.000,EMP-99,employee_whose_pay_changed
+EV-PAY-100-2009-01-12 00:00:00.000,EMP-100,employee_whose_pay_changed
+EV-PAY-101-2009-01-25 00:00:00.000,EMP-101,employee_whose_pay_changed
+EV-PAY-102-2008-12-03 00:00:00.000,EMP-102,employee_whose_pay_changed
+EV-PAY-103-2009-12-06 00:00:00.000,EMP-103,employee_whose_pay_changed
+EV-PAY-104-2009-12-25 00:00:00.000,EMP-104,employee_whose_pay_changed
+EV-PAY-105-2009-12-25 00:00:00.000,EMP-105,employee_whose_pay_changed
+EV-PAY-106-2010-02-27 00:00:00.000,EMP-106,employee_whose_pay_changed
+EV-PAY-107-2010-02-08 00:00:00.000,EMP-107,employee_whose_pay_changed
+EV-PAY-108-2008-12-08 00:00:00.000,EMP-108,employee_whose_pay_changed
+EV-PAY-109-2008-12-07 00:00:00.000,EMP-109,employee_whose_pay_changed
+EV-PAY-110-2008-12-14 00:00:00.000,EMP-110,employee_whose_pay_changed
+EV-PAY-111-2008-12-17 00:00:00.000,EMP-111,employee_whose_pay_changed
+EV-PAY-112-2009-01-01 00:00:00.000,EMP-112,employee_whose_pay_changed
+EV-PAY-113-2008-12-25 00:00:00.000,EMP-113,employee_whose_pay_changed
+EV-PAY-114-2009-01-13 00:00:00.000,EMP-114,employee_whose_pay_changed
+EV-PAY-115-2009-01-20 00:00:00.000,EMP-115,employee_whose_pay_changed
+EV-PAY-116-2009-01-31 00:00:00.000,EMP-116,employee_whose_pay_changed
+EV-PAY-117-2009-02-18 00:00:00.000,EMP-117,employee_whose_pay_changed
+EV-PAY-118-2009-02-13 00:00:00.000,EMP-118,employee_whose_pay_changed
+EV-PAY-119-2009-02-25 00:00:00.000,EMP-119,employee_whose_pay_changed
+EV-PAY-120-2009-03-04 00:00:00.000,EMP-120,employee_whose_pay_changed
+EV-PAY-121-2009-01-02 00:00:00.000,EMP-121,employee_whose_pay_changed
+EV-PAY-122-2008-12-07 00:00:00.000,EMP-122,employee_whose_pay_changed
+EV-PAY-123-2008-12-07 00:00:00.000,EMP-123,employee_whose_pay_changed
+EV-PAY-124-2008-12-26 00:00:00.000,EMP-124,employee_whose_pay_changed
+EV-PAY-125-2009-01-20 00:00:00.000,EMP-125,employee_whose_pay_changed
+EV-PAY-126-2009-02-26 00:00:00.000,EMP-126,employee_whose_pay_changed
+EV-PAY-127-2009-01-03 00:00:00.000,EMP-127,employee_whose_pay_changed
+EV-PAY-128-2008-12-04 00:00:00.000,EMP-128,employee_whose_pay_changed
+EV-PAY-129-2008-12-22 00:00:00.000,EMP-129,employee_whose_pay_changed
+EV-PAY-130-2009-02-13 00:00:00.000,EMP-130,employee_whose_pay_changed
+EV-PAY-131-2009-02-15 00:00:00.000,EMP-131,employee_whose_pay_changed
+EV-PAY-132-2009-02-22 00:00:00.000,EMP-132,employee_whose_pay_changed
+EV-PAY-133-2009-01-10 00:00:00.000,EMP-133,employee_whose_pay_changed
+EV-PAY-134-2009-01-14 00:00:00.000,EMP-134,employee_whose_pay_changed
+EV-PAY-135-2008-12-04 00:00:00.000,EMP-135,employee_whose_pay_changed
+EV-PAY-136-2009-12-11 00:00:00.000,EMP-136,employee_whose_pay_changed
+EV-PAY-137-2009-02-23 00:00:00.000,EMP-137,employee_whose_pay_changed
+EV-PAY-138-2009-02-04 00:00:00.000,EMP-138,employee_whose_pay_changed
+EV-PAY-139-2010-01-06 00:00:00.000,EMP-139,employee_whose_pay_changed
+EV-PAY-140-2010-01-22 00:00:00.000,EMP-140,employee_whose_pay_changed
+EV-PAY-141-2010-01-24 00:00:00.000,EMP-141,employee_whose_pay_changed
+EV-PAY-142-2010-03-04 00:00:00.000,EMP-142,employee_whose_pay_changed
+EV-PAY-143-2010-02-13 00:00:00.000,EMP-143,employee_whose_pay_changed
+EV-PAY-144-2009-01-17 00:00:00.000,EMP-144,employee_whose_pay_changed
+EV-PAY-145-2009-01-27 00:00:00.000,EMP-145,employee_whose_pay_changed
+EV-PAY-146-2008-12-07 00:00:00.000,EMP-146,employee_whose_pay_changed
+EV-PAY-147-2008-12-26 00:00:00.000,EMP-147,employee_whose_pay_changed
+EV-PAY-148-2009-01-14 00:00:00.000,EMP-148,employee_whose_pay_changed
+EV-PAY-149-2009-01-31 00:00:00.000,EMP-149,employee_whose_pay_changed
+EV-PAY-150-2009-02-26 00:00:00.000,EMP-150,employee_whose_pay_changed
+EV-PAY-151-2009-02-19 00:00:00.000,EMP-151,employee_whose_pay_changed
+EV-PAY-152-2009-02-01 00:00:00.000,EMP-152,employee_whose_pay_changed
+EV-PAY-153-2008-12-16 00:00:00.000,EMP-153,employee_whose_pay_changed
+EV-PAY-154-2008-12-23 00:00:00.000,EMP-154,employee_whose_pay_changed
+EV-PAY-155-2009-01-04 00:00:00.000,EMP-155,employee_whose_pay_changed
+EV-PAY-156-2009-01-11 00:00:00.000,EMP-156,employee_whose_pay_changed
+EV-PAY-157-2009-02-03 00:00:00.000,EMP-157,employee_whose_pay_changed
+EV-PAY-158-2009-03-07 00:00:00.000,EMP-158,employee_whose_pay_changed
+EV-PAY-159-2009-02-16 00:00:00.000,EMP-159,employee_whose_pay_changed
+EV-PAY-160-2009-01-21 00:00:00.000,EMP-160,employee_whose_pay_changed
+EV-PAY-161-2008-12-15 00:00:00.000,EMP-161,employee_whose_pay_changed
+EV-PAY-162-2009-01-03 00:00:00.000,EMP-162,employee_whose_pay_changed
+EV-PAY-163-2009-02-08 00:00:00.000,EMP-163,employee_whose_pay_changed
+EV-PAY-164-2009-03-06 00:00:00.000,EMP-164,employee_whose_pay_changed
+EV-PAY-165-2009-01-22 00:00:00.000,EMP-165,employee_whose_pay_changed
+EV-PAY-166-2009-02-21 00:00:00.000,EMP-166,employee_whose_pay_changed
+EV-PAY-167-2008-12-02 00:00:00.000,EMP-167,employee_whose_pay_changed
+EV-PAY-167-2011-12-01 00:00:00.000,EMP-167,employee_whose_pay_changed
+EV-PAY-167-2013-07-14 00:00:00.000,EMP-167,employee_whose_pay_changed
+EV-PAY-168-2008-12-07 00:00:00.000,EMP-168,employee_whose_pay_changed
+EV-PAY-169-2008-12-14 00:00:00.000,EMP-169,employee_whose_pay_changed
+EV-PAY-170-2008-12-21 00:00:00.000,EMP-170,employee_whose_pay_changed
+EV-PAY-170-2011-12-01 00:00:00.000,EMP-170,employee_whose_pay_changed
+EV-PAY-170-2013-07-14 00:00:00.000,EMP-170,employee_whose_pay_changed
+EV-PAY-171-2009-01-02 00:00:00.000,EMP-171,employee_whose_pay_changed
+EV-PAY-172-2009-01-16 00:00:00.000,EMP-172,employee_whose_pay_changed
+EV-PAY-172-2011-12-01 00:00:00.000,EMP-172,employee_whose_pay_changed
+EV-PAY-172-2013-07-14 00:00:00.000,EMP-172,employee_whose_pay_changed
+EV-PAY-173-2009-01-21 00:00:00.000,EMP-173,employee_whose_pay_changed
+EV-PAY-174-2009-01-27 00:00:00.000,EMP-174,employee_whose_pay_changed
+EV-PAY-174-2011-12-01 00:00:00.000,EMP-174,employee_whose_pay_changed
+EV-PAY-174-2013-07-14 00:00:00.000,EMP-174,employee_whose_pay_changed
+EV-PAY-175-2009-02-02 00:00:00.000,EMP-175,employee_whose_pay_changed
+EV-PAY-175-2011-12-01 00:00:00.000,EMP-175,employee_whose_pay_changed
+EV-PAY-175-2013-07-14 00:00:00.000,EMP-175,employee_whose_pay_changed
+EV-PAY-176-2009-02-14 00:00:00.000,EMP-176,employee_whose_pay_changed
+EV-PAY-176-2011-12-01 00:00:00.000,EMP-176,employee_whose_pay_changed
+EV-PAY-176-2013-07-14 00:00:00.000,EMP-176,employee_whose_pay_changed
+EV-PAY-177-2009-02-21 00:00:00.000,EMP-177,employee_whose_pay_changed
+EV-PAY-177-2011-12-01 00:00:00.000,EMP-177,employee_whose_pay_changed
+EV-PAY-177-2013-07-14 00:00:00.000,EMP-177,employee_whose_pay_changed
+EV-PAY-178-2009-03-03 00:00:00.000,EMP-178,employee_whose_pay_changed
+EV-PAY-178-2011-12-01 00:00:00.000,EMP-178,employee_whose_pay_changed
+EV-PAY-178-2013-07-14 00:00:00.000,EMP-178,employee_whose_pay_changed
+EV-PAY-179-2009-03-05 00:00:00.000,EMP-179,employee_whose_pay_changed
+EV-PAY-180-2009-02-20 00:00:00.000,EMP-180,employee_whose_pay_changed
+EV-PAY-181-2008-12-09 00:00:00.000,EMP-181,employee_whose_pay_changed
+EV-PAY-182-2008-12-28 00:00:00.000,EMP-182,employee_whose_pay_changed
+EV-PAY-183-2009-01-22 00:00:00.000,EMP-183,employee_whose_pay_changed
+EV-PAY-184-2009-02-09 00:00:00.000,EMP-184,employee_whose_pay_changed
+EV-PAY-185-2009-02-28 00:00:00.000,EMP-185,employee_whose_pay_changed
+EV-PAY-186-2009-02-08 00:00:00.000,EMP-186,employee_whose_pay_changed
+EV-PAY-187-2008-12-09 00:00:00.000,EMP-187,employee_whose_pay_changed
+EV-PAY-188-2008-12-27 00:00:00.000,EMP-188,employee_whose_pay_changed
+EV-PAY-189-2009-01-15 00:00:00.000,EMP-189,employee_whose_pay_changed
+EV-PAY-190-2009-02-02 00:00:00.000,EMP-190,employee_whose_pay_changed
+EV-PAY-191-2009-02-26 00:00:00.000,EMP-191,employee_whose_pay_changed
+EV-PAY-192-2009-03-05 00:00:00.000,EMP-192,employee_whose_pay_changed
+EV-PAY-193-2008-12-06 00:00:00.000,EMP-193,employee_whose_pay_changed
+EV-PAY-194-2008-12-12 00:00:00.000,EMP-194,employee_whose_pay_changed
+EV-PAY-195-2008-12-17 00:00:00.000,EMP-195,employee_whose_pay_changed
+EV-PAY-196-2008-12-24 00:00:00.000,EMP-196,employee_whose_pay_changed
+EV-PAY-197-2008-12-31 00:00:00.000,EMP-197,employee_whose_pay_changed
+EV-PAY-198-2009-01-04 00:00:00.000,EMP-198,employee_whose_pay_changed
+EV-PAY-199-2009-01-12 00:00:00.000,EMP-199,employee_whose_pay_changed
+EV-PAY-200-2009-01-17 00:00:00.000,EMP-200,employee_whose_pay_changed
+EV-PAY-201-2009-01-29 00:00:00.000,EMP-201,employee_whose_pay_changed
+EV-PAY-202-2009-02-05 00:00:00.000,EMP-202,employee_whose_pay_changed
+EV-PAY-203-2009-02-24 00:00:00.000,EMP-203,employee_whose_pay_changed
+EV-PAY-204-2009-03-08 00:00:00.000,EMP-204,employee_whose_pay_changed
+EV-PAY-205-2009-02-26 00:00:00.000,EMP-205,employee_whose_pay_changed
+EV-PAY-206-2008-12-02 00:00:00.000,EMP-206,employee_whose_pay_changed
+EV-PAY-207-2008-12-02 00:00:00.000,EMP-207,employee_whose_pay_changed
+EV-PAY-208-2009-01-08 00:00:00.000,EMP-208,employee_whose_pay_changed
+EV-PAY-209-2009-01-27 00:00:00.000,EMP-209,employee_whose_pay_changed
+EV-PAY-210-2009-02-20 00:00:00.000,EMP-210,employee_whose_pay_changed
+EV-PAY-211-2009-02-28 00:00:00.000,EMP-211,employee_whose_pay_changed
+EV-PAY-212-2008-12-09 00:00:00.000,EMP-212,employee_whose_pay_changed
+EV-PAY-213-2010-02-23 00:00:00.000,EMP-213,employee_whose_pay_changed
+EV-PAY-214-2009-02-02 00:00:00.000,EMP-214,employee_whose_pay_changed
+EV-PAY-215-2009-01-15 00:00:00.000,EMP-215,employee_whose_pay_changed
+EV-PAY-216-2008-12-28 00:00:00.000,EMP-216,employee_whose_pay_changed
+EV-PAY-217-2009-01-04 00:00:00.000,EMP-217,employee_whose_pay_changed
+EV-PAY-218-2008-12-16 00:00:00.000,EMP-218,employee_whose_pay_changed
+EV-PAY-219-2009-01-22 00:00:00.000,EMP-219,employee_whose_pay_changed
+EV-PAY-220-2009-02-09 00:00:00.000,EMP-220,employee_whose_pay_changed
+EV-PAY-221-2009-03-06 00:00:00.000,EMP-221,employee_whose_pay_changed
+EV-PAY-222-2008-12-12 00:00:00.000,EMP-222,employee_whose_pay_changed
+EV-PAY-223-2009-01-26 00:00:00.000,EMP-223,employee_whose_pay_changed
+EV-PAY-224-2008-01-08 00:00:00.000,EMP-224,employee_whose_pay_changed
+EV-PAY-224-2011-08-31 00:00:00.000,EMP-224,employee_whose_pay_changed
+EV-PAY-224-2012-01-01 00:00:00.000,EMP-224,employee_whose_pay_changed
+EV-PAY-225-2009-02-13 00:00:00.000,EMP-225,employee_whose_pay_changed
+EV-PAY-226-2009-03-03 00:00:00.000,EMP-226,employee_whose_pay_changed
+EV-PAY-227-2009-12-02 00:00:00.000,EMP-227,employee_whose_pay_changed
+EV-PAY-228-2008-12-14 00:00:00.000,EMP-228,employee_whose_pay_changed
+EV-PAY-229-2010-02-16 00:00:00.000,EMP-229,employee_whose_pay_changed
+EV-PAY-230-2010-03-05 00:00:00.000,EMP-230,employee_whose_pay_changed
+EV-PAY-231-2010-03-07 00:00:00.000,EMP-231,employee_whose_pay_changed
+EV-PAY-232-2010-01-27 00:00:00.000,EMP-232,employee_whose_pay_changed
+EV-PAY-233-2009-12-21 00:00:00.000,EMP-233,employee_whose_pay_changed
+EV-PAY-234-2009-01-31 00:00:00.000,EMP-234,employee_whose_pay_changed
+EV-PAY-234-2011-11-14 00:00:00.000,EMP-234,employee_whose_pay_changed
+EV-PAY-234-2012-01-29 00:00:00.000,EMP-234,employee_whose_pay_changed
+EV-PAY-235-2008-12-06 00:00:00.000,EMP-235,employee_whose_pay_changed
+EV-PAY-236-2009-02-25 00:00:00.000,EMP-236,employee_whose_pay_changed
+EV-PAY-237-2009-02-06 00:00:00.000,EMP-237,employee_whose_pay_changed
+EV-PAY-238-2009-01-01 00:00:00.000,EMP-238,employee_whose_pay_changed
+EV-PAY-239-2008-12-25 00:00:00.000,EMP-239,employee_whose_pay_changed
+EV-PAY-240-2008-12-13 00:00:00.000,EMP-240,employee_whose_pay_changed
+EV-PAY-241-2009-01-30 00:00:00.000,EMP-241,employee_whose_pay_changed
+EV-PAY-242-2008-12-18 00:00:00.000,EMP-242,employee_whose_pay_changed
+EV-PAY-243-2009-01-06 00:00:00.000,EMP-243,employee_whose_pay_changed
+EV-PAY-244-2009-01-24 00:00:00.000,EMP-244,employee_whose_pay_changed
+EV-PAY-245-2009-02-18 00:00:00.000,EMP-245,employee_whose_pay_changed
+EV-PAY-246-2009-02-11 00:00:00.000,EMP-246,employee_whose_pay_changed
+EV-PAY-247-2009-03-01 00:00:00.000,EMP-247,employee_whose_pay_changed
+EV-PAY-248-2009-03-08 00:00:00.000,EMP-248,employee_whose_pay_changed
+EV-PAY-249-2008-12-25 00:00:00.000,EMP-249,employee_whose_pay_changed
+EV-PAY-250-2011-02-21 00:00:00.000,EMP-250,employee_whose_pay_changed
+EV-PAY-250-2011-07-30 00:00:00.000,EMP-250,employee_whose_pay_changed
+EV-PAY-250-2012-07-14 00:00:00.000,EMP-250,employee_whose_pay_changed
+EV-PAY-251-2009-02-10 00:00:00.000,EMP-251,employee_whose_pay_changed
+EV-PAY-252-2009-02-28 00:00:00.000,EMP-252,employee_whose_pay_changed
+EV-PAY-253-2009-12-17 00:00:00.000,EMP-253,employee_whose_pay_changed
+EV-PAY-254-2010-01-04 00:00:00.000,EMP-254,employee_whose_pay_changed
+EV-PAY-255-2010-01-11 00:00:00.000,EMP-255,employee_whose_pay_changed
+EV-PAY-256-2010-01-23 00:00:00.000,EMP-256,employee_whose_pay_changed
+EV-PAY-257-2010-01-27 00:00:00.000,EMP-257,employee_whose_pay_changed
+EV-PAY-258-2010-01-31 00:00:00.000,EMP-258,employee_whose_pay_changed
+EV-PAY-259-2010-03-09 00:00:00.000,EMP-259,employee_whose_pay_changed
+EV-PAY-260-2010-12-06 00:00:00.000,EMP-260,employee_whose_pay_changed
+EV-PAY-261-2010-12-25 00:00:00.000,EMP-261,employee_whose_pay_changed
+EV-PAY-262-2009-01-12 00:00:00.000,EMP-262,employee_whose_pay_changed
+EV-PAY-263-2008-12-11 00:00:00.000,EMP-263,employee_whose_pay_changed
+EV-PAY-264-2009-02-04 00:00:00.000,EMP-264,employee_whose_pay_changed
+EV-PAY-265-2008-12-04 00:00:00.000,EMP-265,employee_whose_pay_changed
+EV-PAY-266-2009-02-23 00:00:00.000,EMP-266,employee_whose_pay_changed
+EV-PAY-267-2009-02-16 00:00:00.000,EMP-267,employee_whose_pay_changed
+EV-PAY-268-2009-02-03 00:00:00.000,EMP-268,employee_whose_pay_changed
+EV-PAY-269-2009-01-11 00:00:00.000,EMP-269,employee_whose_pay_changed
+EV-PAY-270-2009-01-17 00:00:00.000,EMP-270,employee_whose_pay_changed
+EV-PAY-271-2009-01-22 00:00:00.000,EMP-271,employee_whose_pay_changed
+EV-PAY-272-2008-12-23 00:00:00.000,EMP-272,employee_whose_pay_changed
+EV-PAY-273-2011-02-15 00:00:00.000,EMP-273,employee_whose_pay_changed
+EV-PAY-274-2011-01-04 00:00:00.000,EMP-274,employee_whose_pay_changed
+EV-PAY-275-2011-05-31 00:00:00.000,EMP-275,employee_whose_pay_changed
+EV-PAY-276-2011-05-31 00:00:00.000,EMP-276,employee_whose_pay_changed
+EV-PAY-277-2011-05-31 00:00:00.000,EMP-277,employee_whose_pay_changed
+EV-PAY-278-2011-05-31 00:00:00.000,EMP-278,employee_whose_pay_changed
+EV-PAY-279-2011-05-31 00:00:00.000,EMP-279,employee_whose_pay_changed
+EV-PAY-280-2011-05-31 00:00:00.000,EMP-280,employee_whose_pay_changed
+EV-PAY-281-2011-05-31 00:00:00.000,EMP-281,employee_whose_pay_changed
+EV-PAY-282-2011-05-31 00:00:00.000,EMP-282,employee_whose_pay_changed
+EV-PAY-283-2011-05-31 00:00:00.000,EMP-283,employee_whose_pay_changed
+EV-PAY-284-2012-09-30 00:00:00.000,EMP-284,employee_whose_pay_changed
+EV-PAY-285-2013-03-14 00:00:00.000,EMP-285,employee_whose_pay_changed
+EV-PAY-286-2013-05-30 00:00:00.000,EMP-286,employee_whose_pay_changed
+EV-PAY-287-2012-04-16 00:00:00.000,EMP-287,employee_whose_pay_changed
+EV-PAY-288-2013-05-30 00:00:00.000,EMP-288,employee_whose_pay_changed
+EV-PAY-289-2012-05-30 00:00:00.000,EMP-289,employee_whose_pay_changed
+EV-PAY-290-2012-05-30 00:00:00.000,EMP-290,employee_whose_pay_changed
+EV-ASSIGN-START-1-16,EMP-1,assigned_employee
+EV-ASSIGN-START-1-16,DEPT-16,assigned_department
+EV-ASSIGN-START-1-16,SHIFT-1,assigned_shift
+EV-ASSIGN-START-2-1,EMP-2,assigned_employee
+EV-ASSIGN-START-2-1,DEPT-1,assigned_department
+EV-ASSIGN-START-2-1,SHIFT-1,assigned_shift
+EV-ASSIGN-START-3-1,EMP-3,assigned_employee
+EV-ASSIGN-START-3-1,DEPT-1,assigned_department
+EV-ASSIGN-START-3-1,SHIFT-1,assigned_shift
+EV-ASSIGN-START-4-1,EMP-4,assigned_employee
+EV-ASSIGN-START-4-1,DEPT-1,assigned_department
+EV-ASSIGN-START-4-1,SHIFT-1,assigned_shift
+EV-ASSIGN-START-4-2,EMP-4,assigned_employee
+EV-ASSIGN-START-4-2,DEPT-2,assigned_department
+EV-ASSIGN-START-4-2,SHIFT-1,assigned_shift
+EV-ASSIGN-START-5-1,EMP-5,assigned_employee
+EV-ASSIGN-START-5-1,DEPT-1,assigned_department
+EV-ASSIGN-START-5-1,SHIFT-1,assigned_shift
+EV-ASSIGN-START-6-1,EMP-6,assigned_employee
+EV-ASSIGN-START-6-1,DEPT-1,assigned_department
+EV-ASSIGN-START-6-1,SHIFT-1,assigned_shift
+EV-ASSIGN-START-7-6,EMP-7,assigned_employee
+EV-ASSIGN-START-7-6,DEPT-6,assigned_department
+EV-ASSIGN-START-7-6,SHIFT-1,assigned_shift
+EV-ASSIGN-START-8-6,EMP-8,assigned_employee
+EV-ASSIGN-START-8-6,DEPT-6,assigned_department
+EV-ASSIGN-START-8-6,SHIFT-1,assigned_shift
+EV-ASSIGN-START-9-6,EMP-9,assigned_employee
+EV-ASSIGN-START-9-6,DEPT-6,assigned_department
+EV-ASSIGN-START-9-6,SHIFT-1,assigned_shift
+EV-ASSIGN-START-10-6,EMP-10,assigned_employee
+EV-ASSIGN-START-10-6,DEPT-6,assigned_department
+EV-ASSIGN-START-10-6,SHIFT-1,assigned_shift
+EV-ASSIGN-START-11-2,EMP-11,assigned_employee
+EV-ASSIGN-START-11-2,DEPT-2,assigned_department
+EV-ASSIGN-START-11-2,SHIFT-1,assigned_shift
+EV-ASSIGN-START-12-2,EMP-12,assigned_employee
+EV-ASSIGN-START-12-2,DEPT-2,assigned_department
+EV-ASSIGN-START-12-2,SHIFT-1,assigned_shift
+EV-ASSIGN-START-13-2,EMP-13,assigned_employee
+EV-ASSIGN-START-13-2,DEPT-2,assigned_department
+EV-ASSIGN-START-13-2,SHIFT-1,assigned_shift
+EV-ASSIGN-START-14-1,EMP-14,assigned_employee
+EV-ASSIGN-START-14-1,DEPT-1,assigned_department
+EV-ASSIGN-START-14-1,SHIFT-1,assigned_shift
+EV-ASSIGN-START-15-1,EMP-15,assigned_employee
+EV-ASSIGN-START-15-1,DEPT-1,assigned_department
+EV-ASSIGN-START-15-1,SHIFT-1,assigned_shift
+EV-ASSIGN-START-16-4,EMP-16,assigned_employee
+EV-ASSIGN-START-16-4,DEPT-4,assigned_department
+EV-ASSIGN-START-16-4,SHIFT-1,assigned_shift
+EV-ASSIGN-START-16-5,EMP-16,assigned_employee
+EV-ASSIGN-START-16-5,DEPT-5,assigned_department
+EV-ASSIGN-START-16-5,SHIFT-1,assigned_shift
+EV-ASSIGN-START-17-4,EMP-17,assigned_employee
+EV-ASSIGN-START-17-4,DEPT-4,assigned_department
+EV-ASSIGN-START-17-4,SHIFT-1,assigned_shift
+EV-ASSIGN-START-18-4,EMP-18,assigned_employee
+EV-ASSIGN-START-18-4,DEPT-4,assigned_department
+EV-ASSIGN-START-18-4,SHIFT-1,assigned_shift
+EV-ASSIGN-START-19-4,EMP-19,assigned_employee
+EV-ASSIGN-START-19-4,DEPT-4,assigned_department
+EV-ASSIGN-START-19-4,SHIFT-1,assigned_shift
+EV-ASSIGN-START-20-4,EMP-20,assigned_employee
+EV-ASSIGN-START-20-4,DEPT-4,assigned_department
+EV-ASSIGN-START-20-4,SHIFT-1,assigned_shift
+EV-ASSIGN-START-21-4,EMP-21,assigned_employee
+EV-ASSIGN-START-21-4,DEPT-4,assigned_department
+EV-ASSIGN-START-21-4,SHIFT-1,assigned_shift
+EV-ASSIGN-START-22-4,EMP-22,assigned_employee
+EV-ASSIGN-START-22-4,DEPT-4,assigned_department
+EV-ASSIGN-START-22-4,SHIFT-1,assigned_shift
+EV-ASSIGN-START-23-4,EMP-23,assigned_employee
+EV-ASSIGN-START-23-4,DEPT-4,assigned_department
+EV-ASSIGN-START-23-4,SHIFT-1,assigned_shift
+EV-ASSIGN-START-24-4,EMP-24,assigned_employee
+EV-ASSIGN-START-24-4,DEPT-4,assigned_department
+EV-ASSIGN-START-24-4,SHIFT-1,assigned_shift
+EV-ASSIGN-START-25-7,EMP-25,assigned_employee
+EV-ASSIGN-START-25-7,DEPT-7,assigned_department
+EV-ASSIGN-START-25-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-26-8,EMP-26,assigned_employee
+EV-ASSIGN-START-26-8,DEPT-8,assigned_department
+EV-ASSIGN-START-26-8,SHIFT-1,assigned_shift
+EV-ASSIGN-START-27-7,EMP-27,assigned_employee
+EV-ASSIGN-START-27-7,DEPT-7,assigned_department
+EV-ASSIGN-START-27-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-28-7,EMP-28,assigned_employee
+EV-ASSIGN-START-28-7,DEPT-7,assigned_department
+EV-ASSIGN-START-28-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-29-7,EMP-29,assigned_employee
+EV-ASSIGN-START-29-7,DEPT-7,assigned_department
+EV-ASSIGN-START-29-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-30-7,EMP-30,assigned_employee
+EV-ASSIGN-START-30-7,DEPT-7,assigned_department
+EV-ASSIGN-START-30-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-31-7,EMP-31,assigned_employee
+EV-ASSIGN-START-31-7,DEPT-7,assigned_department
+EV-ASSIGN-START-31-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-32-7,EMP-32,assigned_employee
+EV-ASSIGN-START-32-7,DEPT-7,assigned_department
+EV-ASSIGN-START-32-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-33-7,EMP-33,assigned_employee
+EV-ASSIGN-START-33-7,DEPT-7,assigned_department
+EV-ASSIGN-START-33-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-34-7,EMP-34,assigned_employee
+EV-ASSIGN-START-34-7,DEPT-7,assigned_department
+EV-ASSIGN-START-34-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-35-7,EMP-35,assigned_employee
+EV-ASSIGN-START-35-7,DEPT-7,assigned_department
+EV-ASSIGN-START-35-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-36-7,EMP-36,assigned_employee
+EV-ASSIGN-START-36-7,DEPT-7,assigned_department
+EV-ASSIGN-START-36-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-37-7,EMP-37,assigned_employee
+EV-ASSIGN-START-37-7,DEPT-7,assigned_department
+EV-ASSIGN-START-37-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-38-7,EMP-38,assigned_employee
+EV-ASSIGN-START-38-7,DEPT-7,assigned_department
+EV-ASSIGN-START-38-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-39-7,EMP-39,assigned_employee
+EV-ASSIGN-START-39-7,DEPT-7,assigned_department
+EV-ASSIGN-START-39-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-40-7,EMP-40,assigned_employee
+EV-ASSIGN-START-40-7,DEPT-7,assigned_department
+EV-ASSIGN-START-40-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-41-7,EMP-41,assigned_employee
+EV-ASSIGN-START-41-7,DEPT-7,assigned_department
+EV-ASSIGN-START-41-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-42-7,EMP-42,assigned_employee
+EV-ASSIGN-START-42-7,DEPT-7,assigned_department
+EV-ASSIGN-START-42-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-43-7,EMP-43,assigned_employee
+EV-ASSIGN-START-43-7,DEPT-7,assigned_department
+EV-ASSIGN-START-43-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-44-7,EMP-44,assigned_employee
+EV-ASSIGN-START-44-7,DEPT-7,assigned_department
+EV-ASSIGN-START-44-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-45-7,EMP-45,assigned_employee
+EV-ASSIGN-START-45-7,DEPT-7,assigned_department
+EV-ASSIGN-START-45-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-46-7,EMP-46,assigned_employee
+EV-ASSIGN-START-46-7,DEPT-7,assigned_department
+EV-ASSIGN-START-46-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-47-7,EMP-47,assigned_employee
+EV-ASSIGN-START-47-7,DEPT-7,assigned_department
+EV-ASSIGN-START-47-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-48-7,EMP-48,assigned_employee
+EV-ASSIGN-START-48-7,DEPT-7,assigned_department
+EV-ASSIGN-START-48-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-49-7,EMP-49,assigned_employee
+EV-ASSIGN-START-49-7,DEPT-7,assigned_department
+EV-ASSIGN-START-49-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-50-7,EMP-50,assigned_employee
+EV-ASSIGN-START-50-7,DEPT-7,assigned_department
+EV-ASSIGN-START-50-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-51-7,EMP-51,assigned_employee
+EV-ASSIGN-START-51-7,DEPT-7,assigned_department
+EV-ASSIGN-START-51-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-52-7,EMP-52,assigned_employee
+EV-ASSIGN-START-52-7,DEPT-7,assigned_department
+EV-ASSIGN-START-52-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-53-7,EMP-53,assigned_employee
+EV-ASSIGN-START-53-7,DEPT-7,assigned_department
+EV-ASSIGN-START-53-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-54-7,EMP-54,assigned_employee
+EV-ASSIGN-START-54-7,DEPT-7,assigned_department
+EV-ASSIGN-START-54-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-55-7,EMP-55,assigned_employee
+EV-ASSIGN-START-55-7,DEPT-7,assigned_department
+EV-ASSIGN-START-55-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-56-7,EMP-56,assigned_employee
+EV-ASSIGN-START-56-7,DEPT-7,assigned_department
+EV-ASSIGN-START-56-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-57-7,EMP-57,assigned_employee
+EV-ASSIGN-START-57-7,DEPT-7,assigned_department
+EV-ASSIGN-START-57-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-58-7,EMP-58,assigned_employee
+EV-ASSIGN-START-58-7,DEPT-7,assigned_department
+EV-ASSIGN-START-58-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-59-7,EMP-59,assigned_employee
+EV-ASSIGN-START-59-7,DEPT-7,assigned_department
+EV-ASSIGN-START-59-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-60-7,EMP-60,assigned_employee
+EV-ASSIGN-START-60-7,DEPT-7,assigned_department
+EV-ASSIGN-START-60-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-61-7,EMP-61,assigned_employee
+EV-ASSIGN-START-61-7,DEPT-7,assigned_department
+EV-ASSIGN-START-61-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-62-7,EMP-62,assigned_employee
+EV-ASSIGN-START-62-7,DEPT-7,assigned_department
+EV-ASSIGN-START-62-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-63-7,EMP-63,assigned_employee
+EV-ASSIGN-START-63-7,DEPT-7,assigned_department
+EV-ASSIGN-START-63-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-64-7,EMP-64,assigned_employee
+EV-ASSIGN-START-64-7,DEPT-7,assigned_department
+EV-ASSIGN-START-64-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-65-7,EMP-65,assigned_employee
+EV-ASSIGN-START-65-7,DEPT-7,assigned_department
+EV-ASSIGN-START-65-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-66-7,EMP-66,assigned_employee
+EV-ASSIGN-START-66-7,DEPT-7,assigned_department
+EV-ASSIGN-START-66-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-67-7,EMP-67,assigned_employee
+EV-ASSIGN-START-67-7,DEPT-7,assigned_department
+EV-ASSIGN-START-67-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-68-7,EMP-68,assigned_employee
+EV-ASSIGN-START-68-7,DEPT-7,assigned_department
+EV-ASSIGN-START-68-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-69-7,EMP-69,assigned_employee
+EV-ASSIGN-START-69-7,DEPT-7,assigned_department
+EV-ASSIGN-START-69-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-70-7,EMP-70,assigned_employee
+EV-ASSIGN-START-70-7,DEPT-7,assigned_department
+EV-ASSIGN-START-70-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-71-7,EMP-71,assigned_employee
+EV-ASSIGN-START-71-7,DEPT-7,assigned_department
+EV-ASSIGN-START-71-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-72-7,EMP-72,assigned_employee
+EV-ASSIGN-START-72-7,DEPT-7,assigned_department
+EV-ASSIGN-START-72-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-73-7,EMP-73,assigned_employee
+EV-ASSIGN-START-73-7,DEPT-7,assigned_department
+EV-ASSIGN-START-73-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-74-7,EMP-74,assigned_employee
+EV-ASSIGN-START-74-7,DEPT-7,assigned_department
+EV-ASSIGN-START-74-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-75-7,EMP-75,assigned_employee
+EV-ASSIGN-START-75-7,DEPT-7,assigned_department
+EV-ASSIGN-START-75-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-76-7,EMP-76,assigned_employee
+EV-ASSIGN-START-76-7,DEPT-7,assigned_department
+EV-ASSIGN-START-76-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-77-7,EMP-77,assigned_employee
+EV-ASSIGN-START-77-7,DEPT-7,assigned_department
+EV-ASSIGN-START-77-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-78-7,EMP-78,assigned_employee
+EV-ASSIGN-START-78-7,DEPT-7,assigned_department
+EV-ASSIGN-START-78-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-79-7,EMP-79,assigned_employee
+EV-ASSIGN-START-79-7,DEPT-7,assigned_department
+EV-ASSIGN-START-79-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-80-7,EMP-80,assigned_employee
+EV-ASSIGN-START-80-7,DEPT-7,assigned_department
+EV-ASSIGN-START-80-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-81-7,EMP-81,assigned_employee
+EV-ASSIGN-START-81-7,DEPT-7,assigned_department
+EV-ASSIGN-START-81-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-82-7,EMP-82,assigned_employee
+EV-ASSIGN-START-82-7,DEPT-7,assigned_department
+EV-ASSIGN-START-82-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-83-7,EMP-83,assigned_employee
+EV-ASSIGN-START-83-7,DEPT-7,assigned_department
+EV-ASSIGN-START-83-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-84-7,EMP-84,assigned_employee
+EV-ASSIGN-START-84-7,DEPT-7,assigned_department
+EV-ASSIGN-START-84-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-85-7,EMP-85,assigned_employee
+EV-ASSIGN-START-85-7,DEPT-7,assigned_department
+EV-ASSIGN-START-85-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-86-7,EMP-86,assigned_employee
+EV-ASSIGN-START-86-7,DEPT-7,assigned_department
+EV-ASSIGN-START-86-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-87-7,EMP-87,assigned_employee
+EV-ASSIGN-START-87-7,DEPT-7,assigned_department
+EV-ASSIGN-START-87-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-88-7,EMP-88,assigned_employee
+EV-ASSIGN-START-88-7,DEPT-7,assigned_department
+EV-ASSIGN-START-88-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-89-7,EMP-89,assigned_employee
+EV-ASSIGN-START-89-7,DEPT-7,assigned_department
+EV-ASSIGN-START-89-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-90-7,EMP-90,assigned_employee
+EV-ASSIGN-START-90-7,DEPT-7,assigned_department
+EV-ASSIGN-START-90-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-91-7,EMP-91,assigned_employee
+EV-ASSIGN-START-91-7,DEPT-7,assigned_department
+EV-ASSIGN-START-91-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-92-7,EMP-92,assigned_employee
+EV-ASSIGN-START-92-7,DEPT-7,assigned_department
+EV-ASSIGN-START-92-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-93-7,EMP-93,assigned_employee
+EV-ASSIGN-START-93-7,DEPT-7,assigned_department
+EV-ASSIGN-START-93-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-94-7,EMP-94,assigned_employee
+EV-ASSIGN-START-94-7,DEPT-7,assigned_department
+EV-ASSIGN-START-94-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-95-7,EMP-95,assigned_employee
+EV-ASSIGN-START-95-7,DEPT-7,assigned_department
+EV-ASSIGN-START-95-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-96-7,EMP-96,assigned_employee
+EV-ASSIGN-START-96-7,DEPT-7,assigned_department
+EV-ASSIGN-START-96-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-97-7,EMP-97,assigned_employee
+EV-ASSIGN-START-97-7,DEPT-7,assigned_department
+EV-ASSIGN-START-97-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-98-7,EMP-98,assigned_employee
+EV-ASSIGN-START-98-7,DEPT-7,assigned_department
+EV-ASSIGN-START-98-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-99-7,EMP-99,assigned_employee
+EV-ASSIGN-START-99-7,DEPT-7,assigned_department
+EV-ASSIGN-START-99-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-100-7,EMP-100,assigned_employee
+EV-ASSIGN-START-100-7,DEPT-7,assigned_department
+EV-ASSIGN-START-100-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-101-7,EMP-101,assigned_employee
+EV-ASSIGN-START-101-7,DEPT-7,assigned_department
+EV-ASSIGN-START-101-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-102-7,EMP-102,assigned_employee
+EV-ASSIGN-START-102-7,DEPT-7,assigned_department
+EV-ASSIGN-START-102-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-103-7,EMP-103,assigned_employee
+EV-ASSIGN-START-103-7,DEPT-7,assigned_department
+EV-ASSIGN-START-103-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-104-7,EMP-104,assigned_employee
+EV-ASSIGN-START-104-7,DEPT-7,assigned_department
+EV-ASSIGN-START-104-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-105-7,EMP-105,assigned_employee
+EV-ASSIGN-START-105-7,DEPT-7,assigned_department
+EV-ASSIGN-START-105-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-106-7,EMP-106,assigned_employee
+EV-ASSIGN-START-106-7,DEPT-7,assigned_department
+EV-ASSIGN-START-106-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-107-7,EMP-107,assigned_employee
+EV-ASSIGN-START-107-7,DEPT-7,assigned_department
+EV-ASSIGN-START-107-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-108-7,EMP-108,assigned_employee
+EV-ASSIGN-START-108-7,DEPT-7,assigned_department
+EV-ASSIGN-START-108-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-109-7,EMP-109,assigned_employee
+EV-ASSIGN-START-109-7,DEPT-7,assigned_department
+EV-ASSIGN-START-109-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-110-7,EMP-110,assigned_employee
+EV-ASSIGN-START-110-7,DEPT-7,assigned_department
+EV-ASSIGN-START-110-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-111-7,EMP-111,assigned_employee
+EV-ASSIGN-START-111-7,DEPT-7,assigned_department
+EV-ASSIGN-START-111-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-112-7,EMP-112,assigned_employee
+EV-ASSIGN-START-112-7,DEPT-7,assigned_department
+EV-ASSIGN-START-112-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-113-7,EMP-113,assigned_employee
+EV-ASSIGN-START-113-7,DEPT-7,assigned_department
+EV-ASSIGN-START-113-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-114-7,EMP-114,assigned_employee
+EV-ASSIGN-START-114-7,DEPT-7,assigned_department
+EV-ASSIGN-START-114-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-115-7,EMP-115,assigned_employee
+EV-ASSIGN-START-115-7,DEPT-7,assigned_department
+EV-ASSIGN-START-115-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-116-7,EMP-116,assigned_employee
+EV-ASSIGN-START-116-7,DEPT-7,assigned_department
+EV-ASSIGN-START-116-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-117-7,EMP-117,assigned_employee
+EV-ASSIGN-START-117-7,DEPT-7,assigned_department
+EV-ASSIGN-START-117-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-118-7,EMP-118,assigned_employee
+EV-ASSIGN-START-118-7,DEPT-7,assigned_department
+EV-ASSIGN-START-118-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-119-7,EMP-119,assigned_employee
+EV-ASSIGN-START-119-7,DEPT-7,assigned_department
+EV-ASSIGN-START-119-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-120-7,EMP-120,assigned_employee
+EV-ASSIGN-START-120-7,DEPT-7,assigned_department
+EV-ASSIGN-START-120-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-121-15,EMP-121,assigned_employee
+EV-ASSIGN-START-121-15,DEPT-15,assigned_department
+EV-ASSIGN-START-121-15,SHIFT-1,assigned_shift
+EV-ASSIGN-START-122-15,EMP-122,assigned_employee
+EV-ASSIGN-START-122-15,DEPT-15,assigned_department
+EV-ASSIGN-START-122-15,SHIFT-2,assigned_shift
+EV-ASSIGN-START-123-15,EMP-123,assigned_employee
+EV-ASSIGN-START-123-15,DEPT-15,assigned_department
+EV-ASSIGN-START-123-15,SHIFT-2,assigned_shift
+EV-ASSIGN-START-124-15,EMP-124,assigned_employee
+EV-ASSIGN-START-124-15,DEPT-15,assigned_department
+EV-ASSIGN-START-124-15,SHIFT-3,assigned_shift
+EV-ASSIGN-START-125-15,EMP-125,assigned_employee
+EV-ASSIGN-START-125-15,DEPT-15,assigned_department
+EV-ASSIGN-START-125-15,SHIFT-1,assigned_shift
+EV-ASSIGN-START-126-15,EMP-126,assigned_employee
+EV-ASSIGN-START-126-15,DEPT-15,assigned_department
+EV-ASSIGN-START-126-15,SHIFT-1,assigned_shift
+EV-ASSIGN-START-127-7,EMP-127,assigned_employee
+EV-ASSIGN-START-127-7,DEPT-7,assigned_department
+EV-ASSIGN-START-127-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-128-7,EMP-128,assigned_employee
+EV-ASSIGN-START-128-7,DEPT-7,assigned_department
+EV-ASSIGN-START-128-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-129-7,EMP-129,assigned_employee
+EV-ASSIGN-START-129-7,DEPT-7,assigned_department
+EV-ASSIGN-START-129-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-130-7,EMP-130,assigned_employee
+EV-ASSIGN-START-130-7,DEPT-7,assigned_department
+EV-ASSIGN-START-130-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-131-7,EMP-131,assigned_employee
+EV-ASSIGN-START-131-7,DEPT-7,assigned_department
+EV-ASSIGN-START-131-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-132-7,EMP-132,assigned_employee
+EV-ASSIGN-START-132-7,DEPT-7,assigned_department
+EV-ASSIGN-START-132-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-133-7,EMP-133,assigned_employee
+EV-ASSIGN-START-133-7,DEPT-7,assigned_department
+EV-ASSIGN-START-133-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-134-7,EMP-134,assigned_employee
+EV-ASSIGN-START-134-7,DEPT-7,assigned_department
+EV-ASSIGN-START-134-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-135-7,EMP-135,assigned_employee
+EV-ASSIGN-START-135-7,DEPT-7,assigned_department
+EV-ASSIGN-START-135-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-136-7,EMP-136,assigned_employee
+EV-ASSIGN-START-136-7,DEPT-7,assigned_department
+EV-ASSIGN-START-136-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-137-7,EMP-137,assigned_employee
+EV-ASSIGN-START-137-7,DEPT-7,assigned_department
+EV-ASSIGN-START-137-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-138-7,EMP-138,assigned_employee
+EV-ASSIGN-START-138-7,DEPT-7,assigned_department
+EV-ASSIGN-START-138-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-139-7,EMP-139,assigned_employee
+EV-ASSIGN-START-139-7,DEPT-7,assigned_department
+EV-ASSIGN-START-139-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-140-7,EMP-140,assigned_employee
+EV-ASSIGN-START-140-7,DEPT-7,assigned_department
+EV-ASSIGN-START-140-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-141-7,EMP-141,assigned_employee
+EV-ASSIGN-START-141-7,DEPT-7,assigned_department
+EV-ASSIGN-START-141-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-142-7,EMP-142,assigned_employee
+EV-ASSIGN-START-142-7,DEPT-7,assigned_department
+EV-ASSIGN-START-142-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-143-7,EMP-143,assigned_employee
+EV-ASSIGN-START-143-7,DEPT-7,assigned_department
+EV-ASSIGN-START-143-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-144-7,EMP-144,assigned_employee
+EV-ASSIGN-START-144-7,DEPT-7,assigned_department
+EV-ASSIGN-START-144-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-145-7,EMP-145,assigned_employee
+EV-ASSIGN-START-145-7,DEPT-7,assigned_department
+EV-ASSIGN-START-145-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-146-7,EMP-146,assigned_employee
+EV-ASSIGN-START-146-7,DEPT-7,assigned_department
+EV-ASSIGN-START-146-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-147-7,EMP-147,assigned_employee
+EV-ASSIGN-START-147-7,DEPT-7,assigned_department
+EV-ASSIGN-START-147-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-148-7,EMP-148,assigned_employee
+EV-ASSIGN-START-148-7,DEPT-7,assigned_department
+EV-ASSIGN-START-148-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-149-7,EMP-149,assigned_employee
+EV-ASSIGN-START-149-7,DEPT-7,assigned_department
+EV-ASSIGN-START-149-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-150-7,EMP-150,assigned_employee
+EV-ASSIGN-START-150-7,DEPT-7,assigned_department
+EV-ASSIGN-START-150-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-151-7,EMP-151,assigned_employee
+EV-ASSIGN-START-151-7,DEPT-7,assigned_department
+EV-ASSIGN-START-151-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-152-7,EMP-152,assigned_employee
+EV-ASSIGN-START-152-7,DEPT-7,assigned_department
+EV-ASSIGN-START-152-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-153-7,EMP-153,assigned_employee
+EV-ASSIGN-START-153-7,DEPT-7,assigned_department
+EV-ASSIGN-START-153-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-154-7,EMP-154,assigned_employee
+EV-ASSIGN-START-154-7,DEPT-7,assigned_department
+EV-ASSIGN-START-154-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-155-7,EMP-155,assigned_employee
+EV-ASSIGN-START-155-7,DEPT-7,assigned_department
+EV-ASSIGN-START-155-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-156-7,EMP-156,assigned_employee
+EV-ASSIGN-START-156-7,DEPT-7,assigned_department
+EV-ASSIGN-START-156-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-157-7,EMP-157,assigned_employee
+EV-ASSIGN-START-157-7,DEPT-7,assigned_department
+EV-ASSIGN-START-157-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-158-7,EMP-158,assigned_employee
+EV-ASSIGN-START-158-7,DEPT-7,assigned_department
+EV-ASSIGN-START-158-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-159-7,EMP-159,assigned_employee
+EV-ASSIGN-START-159-7,DEPT-7,assigned_department
+EV-ASSIGN-START-159-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-160-7,EMP-160,assigned_employee
+EV-ASSIGN-START-160-7,DEPT-7,assigned_department
+EV-ASSIGN-START-160-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-161-7,EMP-161,assigned_employee
+EV-ASSIGN-START-161-7,DEPT-7,assigned_department
+EV-ASSIGN-START-161-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-162-7,EMP-162,assigned_employee
+EV-ASSIGN-START-162-7,DEPT-7,assigned_department
+EV-ASSIGN-START-162-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-163-7,EMP-163,assigned_employee
+EV-ASSIGN-START-163-7,DEPT-7,assigned_department
+EV-ASSIGN-START-163-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-164-7,EMP-164,assigned_employee
+EV-ASSIGN-START-164-7,DEPT-7,assigned_department
+EV-ASSIGN-START-164-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-165-7,EMP-165,assigned_employee
+EV-ASSIGN-START-165-7,DEPT-7,assigned_department
+EV-ASSIGN-START-165-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-166-7,EMP-166,assigned_employee
+EV-ASSIGN-START-166-7,DEPT-7,assigned_department
+EV-ASSIGN-START-166-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-167-7,EMP-167,assigned_employee
+EV-ASSIGN-START-167-7,DEPT-7,assigned_department
+EV-ASSIGN-START-167-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-168-7,EMP-168,assigned_employee
+EV-ASSIGN-START-168-7,DEPT-7,assigned_department
+EV-ASSIGN-START-168-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-169-7,EMP-169,assigned_employee
+EV-ASSIGN-START-169-7,DEPT-7,assigned_department
+EV-ASSIGN-START-169-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-170-7,EMP-170,assigned_employee
+EV-ASSIGN-START-170-7,DEPT-7,assigned_department
+EV-ASSIGN-START-170-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-171-7,EMP-171,assigned_employee
+EV-ASSIGN-START-171-7,DEPT-7,assigned_department
+EV-ASSIGN-START-171-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-172-7,EMP-172,assigned_employee
+EV-ASSIGN-START-172-7,DEPT-7,assigned_department
+EV-ASSIGN-START-172-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-173-7,EMP-173,assigned_employee
+EV-ASSIGN-START-173-7,DEPT-7,assigned_department
+EV-ASSIGN-START-173-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-174-7,EMP-174,assigned_employee
+EV-ASSIGN-START-174-7,DEPT-7,assigned_department
+EV-ASSIGN-START-174-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-175-7,EMP-175,assigned_employee
+EV-ASSIGN-START-175-7,DEPT-7,assigned_department
+EV-ASSIGN-START-175-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-176-7,EMP-176,assigned_employee
+EV-ASSIGN-START-176-7,DEPT-7,assigned_department
+EV-ASSIGN-START-176-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-177-7,EMP-177,assigned_employee
+EV-ASSIGN-START-177-7,DEPT-7,assigned_department
+EV-ASSIGN-START-177-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-178-7,EMP-178,assigned_employee
+EV-ASSIGN-START-178-7,DEPT-7,assigned_department
+EV-ASSIGN-START-178-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-179-7,EMP-179,assigned_employee
+EV-ASSIGN-START-179-7,DEPT-7,assigned_department
+EV-ASSIGN-START-179-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-180-7,EMP-180,assigned_employee
+EV-ASSIGN-START-180-7,DEPT-7,assigned_department
+EV-ASSIGN-START-180-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-181-7,EMP-181,assigned_employee
+EV-ASSIGN-START-181-7,DEPT-7,assigned_department
+EV-ASSIGN-START-181-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-182-7,EMP-182,assigned_employee
+EV-ASSIGN-START-182-7,DEPT-7,assigned_department
+EV-ASSIGN-START-182-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-183-7,EMP-183,assigned_employee
+EV-ASSIGN-START-183-7,DEPT-7,assigned_department
+EV-ASSIGN-START-183-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-184-7,EMP-184,assigned_employee
+EV-ASSIGN-START-184-7,DEPT-7,assigned_department
+EV-ASSIGN-START-184-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-185-7,EMP-185,assigned_employee
+EV-ASSIGN-START-185-7,DEPT-7,assigned_department
+EV-ASSIGN-START-185-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-186-7,EMP-186,assigned_employee
+EV-ASSIGN-START-186-7,DEPT-7,assigned_department
+EV-ASSIGN-START-186-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-187-7,EMP-187,assigned_employee
+EV-ASSIGN-START-187-7,DEPT-7,assigned_department
+EV-ASSIGN-START-187-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-188-7,EMP-188,assigned_employee
+EV-ASSIGN-START-188-7,DEPT-7,assigned_department
+EV-ASSIGN-START-188-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-189-7,EMP-189,assigned_employee
+EV-ASSIGN-START-189-7,DEPT-7,assigned_department
+EV-ASSIGN-START-189-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-190-7,EMP-190,assigned_employee
+EV-ASSIGN-START-190-7,DEPT-7,assigned_department
+EV-ASSIGN-START-190-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-191-7,EMP-191,assigned_employee
+EV-ASSIGN-START-191-7,DEPT-7,assigned_department
+EV-ASSIGN-START-191-7,SHIFT-2,assigned_shift
+EV-ASSIGN-START-192-7,EMP-192,assigned_employee
+EV-ASSIGN-START-192-7,DEPT-7,assigned_department
+EV-ASSIGN-START-192-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-193-7,EMP-193,assigned_employee
+EV-ASSIGN-START-193-7,DEPT-7,assigned_department
+EV-ASSIGN-START-193-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-194-7,EMP-194,assigned_employee
+EV-ASSIGN-START-194-7,DEPT-7,assigned_department
+EV-ASSIGN-START-194-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-195-7,EMP-195,assigned_employee
+EV-ASSIGN-START-195-7,DEPT-7,assigned_department
+EV-ASSIGN-START-195-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-196-7,EMP-196,assigned_employee
+EV-ASSIGN-START-196-7,DEPT-7,assigned_department
+EV-ASSIGN-START-196-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-197-7,EMP-197,assigned_employee
+EV-ASSIGN-START-197-7,DEPT-7,assigned_department
+EV-ASSIGN-START-197-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-198-7,EMP-198,assigned_employee
+EV-ASSIGN-START-198-7,DEPT-7,assigned_department
+EV-ASSIGN-START-198-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-199-7,EMP-199,assigned_employee
+EV-ASSIGN-START-199-7,DEPT-7,assigned_department
+EV-ASSIGN-START-199-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-200-7,EMP-200,assigned_employee
+EV-ASSIGN-START-200-7,DEPT-7,assigned_department
+EV-ASSIGN-START-200-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-201-7,EMP-201,assigned_employee
+EV-ASSIGN-START-201-7,DEPT-7,assigned_department
+EV-ASSIGN-START-201-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-202-7,EMP-202,assigned_employee
+EV-ASSIGN-START-202-7,DEPT-7,assigned_department
+EV-ASSIGN-START-202-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-203-7,EMP-203,assigned_employee
+EV-ASSIGN-START-203-7,DEPT-7,assigned_department
+EV-ASSIGN-START-203-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-204-7,EMP-204,assigned_employee
+EV-ASSIGN-START-204-7,DEPT-7,assigned_department
+EV-ASSIGN-START-204-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-205-7,EMP-205,assigned_employee
+EV-ASSIGN-START-205-7,DEPT-7,assigned_department
+EV-ASSIGN-START-205-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-206-7,EMP-206,assigned_employee
+EV-ASSIGN-START-206-7,DEPT-7,assigned_department
+EV-ASSIGN-START-206-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-207-7,EMP-207,assigned_employee
+EV-ASSIGN-START-207-7,DEPT-7,assigned_department
+EV-ASSIGN-START-207-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-208-7,EMP-208,assigned_employee
+EV-ASSIGN-START-208-7,DEPT-7,assigned_department
+EV-ASSIGN-START-208-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-209-7,EMP-209,assigned_employee
+EV-ASSIGN-START-209-7,DEPT-7,assigned_department
+EV-ASSIGN-START-209-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-210-7,EMP-210,assigned_employee
+EV-ASSIGN-START-210-7,DEPT-7,assigned_department
+EV-ASSIGN-START-210-7,SHIFT-3,assigned_shift
+EV-ASSIGN-START-211-13,EMP-211,assigned_employee
+EV-ASSIGN-START-211-13,DEPT-13,assigned_department
+EV-ASSIGN-START-211-13,SHIFT-1,assigned_shift
+EV-ASSIGN-START-212-13,EMP-212,assigned_employee
+EV-ASSIGN-START-212-13,DEPT-13,assigned_department
+EV-ASSIGN-START-212-13,SHIFT-1,assigned_shift
+EV-ASSIGN-START-213-13,EMP-213,assigned_employee
+EV-ASSIGN-START-213-13,DEPT-13,assigned_department
+EV-ASSIGN-START-213-13,SHIFT-3,assigned_shift
+EV-ASSIGN-START-214-13,EMP-214,assigned_employee
+EV-ASSIGN-START-214-13,DEPT-13,assigned_department
+EV-ASSIGN-START-214-13,SHIFT-2,assigned_shift
+EV-ASSIGN-START-215-13,EMP-215,assigned_employee
+EV-ASSIGN-START-215-13,DEPT-13,assigned_department
+EV-ASSIGN-START-215-13,SHIFT-1,assigned_shift
+EV-ASSIGN-START-216-13,EMP-216,assigned_employee
+EV-ASSIGN-START-216-13,DEPT-13,assigned_department
+EV-ASSIGN-START-216-13,SHIFT-1,assigned_shift
+EV-ASSIGN-START-217-12,EMP-217,assigned_employee
+EV-ASSIGN-START-217-12,DEPT-12,assigned_department
+EV-ASSIGN-START-217-12,SHIFT-1,assigned_shift
+EV-ASSIGN-START-218-12,EMP-218,assigned_employee
+EV-ASSIGN-START-218-12,DEPT-12,assigned_department
+EV-ASSIGN-START-218-12,SHIFT-3,assigned_shift
+EV-ASSIGN-START-219-12,EMP-219,assigned_employee
+EV-ASSIGN-START-219-12,DEPT-12,assigned_department
+EV-ASSIGN-START-219-12,SHIFT-1,assigned_shift
+EV-ASSIGN-START-220-12,EMP-220,assigned_employee
+EV-ASSIGN-START-220-12,DEPT-12,assigned_department
+EV-ASSIGN-START-220-12,SHIFT-1,assigned_shift
+EV-ASSIGN-START-221-12,EMP-221,assigned_employee
+EV-ASSIGN-START-221-12,DEPT-12,assigned_department
+EV-ASSIGN-START-221-12,SHIFT-2,assigned_shift
+EV-ASSIGN-START-222-8,EMP-222,assigned_employee
+EV-ASSIGN-START-222-8,DEPT-8,assigned_department
+EV-ASSIGN-START-222-8,SHIFT-1,assigned_shift
+EV-ASSIGN-START-223-8,EMP-223,assigned_employee
+EV-ASSIGN-START-223-8,DEPT-8,assigned_department
+EV-ASSIGN-START-223-8,SHIFT-1,assigned_shift
+EV-ASSIGN-START-224-7,EMP-224,assigned_employee
+EV-ASSIGN-START-224-7,DEPT-7,assigned_department
+EV-ASSIGN-START-224-7,SHIFT-1,assigned_shift
+EV-ASSIGN-START-224-8,EMP-224,assigned_employee
+EV-ASSIGN-START-224-8,DEPT-8,assigned_department
+EV-ASSIGN-START-224-8,SHIFT-1,assigned_shift
+EV-ASSIGN-START-225-8,EMP-225,assigned_employee
+EV-ASSIGN-START-225-8,DEPT-8,assigned_department
+EV-ASSIGN-START-225-8,SHIFT-2,assigned_shift
+EV-ASSIGN-START-226-8,EMP-226,assigned_employee
+EV-ASSIGN-START-226-8,DEPT-8,assigned_department
+EV-ASSIGN-START-226-8,SHIFT-3,assigned_shift
+EV-ASSIGN-START-227-14,EMP-227,assigned_employee
+EV-ASSIGN-START-227-14,DEPT-14,assigned_department
+EV-ASSIGN-START-227-14,SHIFT-1,assigned_shift
+EV-ASSIGN-START-228-14,EMP-228,assigned_employee
+EV-ASSIGN-START-228-14,DEPT-14,assigned_department
+EV-ASSIGN-START-228-14,SHIFT-1,assigned_shift
+EV-ASSIGN-START-229-14,EMP-229,assigned_employee
+EV-ASSIGN-START-229-14,DEPT-14,assigned_department
+EV-ASSIGN-START-229-14,SHIFT-3,assigned_shift
+EV-ASSIGN-START-230-14,EMP-230,assigned_employee
+EV-ASSIGN-START-230-14,DEPT-14,assigned_department
+EV-ASSIGN-START-230-14,SHIFT-2,assigned_shift
+EV-ASSIGN-START-231-14,EMP-231,assigned_employee
+EV-ASSIGN-START-231-14,DEPT-14,assigned_department
+EV-ASSIGN-START-231-14,SHIFT-3,assigned_shift
+EV-ASSIGN-START-232-14,EMP-232,assigned_employee
+EV-ASSIGN-START-232-14,DEPT-14,assigned_department
+EV-ASSIGN-START-232-14,SHIFT-2,assigned_shift
+EV-ASSIGN-START-233-14,EMP-233,assigned_employee
+EV-ASSIGN-START-233-14,DEPT-14,assigned_department
+EV-ASSIGN-START-233-14,SHIFT-1,assigned_shift
+EV-ASSIGN-START-234-10,EMP-234,assigned_employee
+EV-ASSIGN-START-234-10,DEPT-10,assigned_department
+EV-ASSIGN-START-234-10,SHIFT-1,assigned_shift
+EV-ASSIGN-START-234-16,EMP-234,assigned_employee
+EV-ASSIGN-START-234-16,DEPT-16,assigned_department
+EV-ASSIGN-START-234-16,SHIFT-1,assigned_shift
+EV-ASSIGN-START-235-9,EMP-235,assigned_employee
+EV-ASSIGN-START-235-9,DEPT-9,assigned_department
+EV-ASSIGN-START-235-9,SHIFT-1,assigned_shift
+EV-ASSIGN-START-236-9,EMP-236,assigned_employee
+EV-ASSIGN-START-236-9,DEPT-9,assigned_department
+EV-ASSIGN-START-236-9,SHIFT-1,assigned_shift
+EV-ASSIGN-START-237-9,EMP-237,assigned_employee
+EV-ASSIGN-START-237-9,DEPT-9,assigned_department
+EV-ASSIGN-START-237-9,SHIFT-1,assigned_shift
+EV-ASSIGN-START-238-9,EMP-238,assigned_employee
+EV-ASSIGN-START-238-9,DEPT-9,assigned_department
+EV-ASSIGN-START-238-9,SHIFT-1,assigned_shift
+EV-ASSIGN-START-239-9,EMP-239,assigned_employee
+EV-ASSIGN-START-239-9,DEPT-9,assigned_department
+EV-ASSIGN-START-239-9,SHIFT-1,assigned_shift
+EV-ASSIGN-START-240-9,EMP-240,assigned_employee
+EV-ASSIGN-START-240-9,DEPT-9,assigned_department
+EV-ASSIGN-START-240-9,SHIFT-1,assigned_shift
+EV-ASSIGN-START-241-10,EMP-241,assigned_employee
+EV-ASSIGN-START-241-10,DEPT-10,assigned_department
+EV-ASSIGN-START-241-10,SHIFT-1,assigned_shift
+EV-ASSIGN-START-242-10,EMP-242,assigned_employee
+EV-ASSIGN-START-242-10,DEPT-10,assigned_department
+EV-ASSIGN-START-242-10,SHIFT-1,assigned_shift
+EV-ASSIGN-START-243-10,EMP-243,assigned_employee
+EV-ASSIGN-START-243-10,DEPT-10,assigned_department
+EV-ASSIGN-START-243-10,SHIFT-1,assigned_shift
+EV-ASSIGN-START-244-10,EMP-244,assigned_employee
+EV-ASSIGN-START-244-10,DEPT-10,assigned_department
+EV-ASSIGN-START-244-10,SHIFT-1,assigned_shift
+EV-ASSIGN-START-245-10,EMP-245,assigned_employee
+EV-ASSIGN-START-245-10,DEPT-10,assigned_department
+EV-ASSIGN-START-245-10,SHIFT-1,assigned_shift
+EV-ASSIGN-START-246-10,EMP-246,assigned_employee
+EV-ASSIGN-START-246-10,DEPT-10,assigned_department
+EV-ASSIGN-START-246-10,SHIFT-1,assigned_shift
+EV-ASSIGN-START-247-10,EMP-247,assigned_employee
+EV-ASSIGN-START-247-10,DEPT-10,assigned_department
+EV-ASSIGN-START-247-10,SHIFT-1,assigned_shift
+EV-ASSIGN-START-248-10,EMP-248,assigned_employee
+EV-ASSIGN-START-248-10,DEPT-10,assigned_department
+EV-ASSIGN-START-248-10,SHIFT-1,assigned_shift
+EV-ASSIGN-START-249-10,EMP-249,assigned_employee
+EV-ASSIGN-START-249-10,DEPT-10,assigned_department
+EV-ASSIGN-START-249-10,SHIFT-1,assigned_shift
+EV-ASSIGN-START-250-4,EMP-250,assigned_employee
+EV-ASSIGN-START-250-4,DEPT-4,assigned_department
+EV-ASSIGN-START-250-4,SHIFT-1,assigned_shift
+EV-ASSIGN-START-250-5,EMP-250,assigned_employee
+EV-ASSIGN-START-250-5,DEPT-5,assigned_department
+EV-ASSIGN-START-250-5,SHIFT-1,assigned_shift
+EV-ASSIGN-START-250-13,EMP-250,assigned_employee
+EV-ASSIGN-START-250-13,DEPT-13,assigned_department
+EV-ASSIGN-START-250-13,SHIFT-1,assigned_shift
+EV-ASSIGN-START-251-5,EMP-251,assigned_employee
+EV-ASSIGN-START-251-5,DEPT-5,assigned_department
+EV-ASSIGN-START-251-5,SHIFT-1,assigned_shift
+EV-ASSIGN-START-252-5,EMP-252,assigned_employee
+EV-ASSIGN-START-252-5,DEPT-5,assigned_department
+EV-ASSIGN-START-252-5,SHIFT-1,assigned_shift
+EV-ASSIGN-START-253-5,EMP-253,assigned_employee
+EV-ASSIGN-START-253-5,DEPT-5,assigned_department
+EV-ASSIGN-START-253-5,SHIFT-1,assigned_shift
+EV-ASSIGN-START-254-5,EMP-254,assigned_employee
+EV-ASSIGN-START-254-5,DEPT-5,assigned_department
+EV-ASSIGN-START-254-5,SHIFT-1,assigned_shift
+EV-ASSIGN-START-255-5,EMP-255,assigned_employee
+EV-ASSIGN-START-255-5,DEPT-5,assigned_department
+EV-ASSIGN-START-255-5,SHIFT-1,assigned_shift
+EV-ASSIGN-START-256-5,EMP-256,assigned_employee
+EV-ASSIGN-START-256-5,DEPT-5,assigned_department
+EV-ASSIGN-START-256-5,SHIFT-1,assigned_shift
+EV-ASSIGN-START-257-5,EMP-257,assigned_employee
+EV-ASSIGN-START-257-5,DEPT-5,assigned_department
+EV-ASSIGN-START-257-5,SHIFT-1,assigned_shift
+EV-ASSIGN-START-258-5,EMP-258,assigned_employee
+EV-ASSIGN-START-258-5,DEPT-5,assigned_department
+EV-ASSIGN-START-258-5,SHIFT-1,assigned_shift
+EV-ASSIGN-START-259-5,EMP-259,assigned_employee
+EV-ASSIGN-START-259-5,DEPT-5,assigned_department
+EV-ASSIGN-START-259-5,SHIFT-1,assigned_shift
+EV-ASSIGN-START-260-5,EMP-260,assigned_employee
+EV-ASSIGN-START-260-5,DEPT-5,assigned_department
+EV-ASSIGN-START-260-5,SHIFT-1,assigned_shift
+EV-ASSIGN-START-261-5,EMP-261,assigned_employee
+EV-ASSIGN-START-261-5,DEPT-5,assigned_department
+EV-ASSIGN-START-261-5,SHIFT-1,assigned_shift
+EV-ASSIGN-START-262-10,EMP-262,assigned_employee
+EV-ASSIGN-START-262-10,DEPT-10,assigned_department
+EV-ASSIGN-START-262-10,SHIFT-1,assigned_shift
+EV-ASSIGN-START-263-11,EMP-263,assigned_employee
+EV-ASSIGN-START-263-11,DEPT-11,assigned_department
+EV-ASSIGN-START-263-11,SHIFT-1,assigned_shift
+EV-ASSIGN-START-264-11,EMP-264,assigned_employee
+EV-ASSIGN-START-264-11,DEPT-11,assigned_department
+EV-ASSIGN-START-264-11,SHIFT-1,assigned_shift
+EV-ASSIGN-START-265-11,EMP-265,assigned_employee
+EV-ASSIGN-START-265-11,DEPT-11,assigned_department
+EV-ASSIGN-START-265-11,SHIFT-2,assigned_shift
+EV-ASSIGN-START-266-11,EMP-266,assigned_employee
+EV-ASSIGN-START-266-11,DEPT-11,assigned_department
+EV-ASSIGN-START-266-11,SHIFT-1,assigned_shift
+EV-ASSIGN-START-267-11,EMP-267,assigned_employee
+EV-ASSIGN-START-267-11,DEPT-11,assigned_department
+EV-ASSIGN-START-267-11,SHIFT-1,assigned_shift
+EV-ASSIGN-START-268-11,EMP-268,assigned_employee
+EV-ASSIGN-START-268-11,DEPT-11,assigned_department
+EV-ASSIGN-START-268-11,SHIFT-1,assigned_shift
+EV-ASSIGN-START-269-11,EMP-269,assigned_employee
+EV-ASSIGN-START-269-11,DEPT-11,assigned_department
+EV-ASSIGN-START-269-11,SHIFT-1,assigned_shift
+EV-ASSIGN-START-270-11,EMP-270,assigned_employee
+EV-ASSIGN-START-270-11,DEPT-11,assigned_department
+EV-ASSIGN-START-270-11,SHIFT-1,assigned_shift
+EV-ASSIGN-START-271-11,EMP-271,assigned_employee
+EV-ASSIGN-START-271-11,DEPT-11,assigned_department
+EV-ASSIGN-START-271-11,SHIFT-1,assigned_shift
+EV-ASSIGN-START-272-11,EMP-272,assigned_employee
+EV-ASSIGN-START-272-11,DEPT-11,assigned_department
+EV-ASSIGN-START-272-11,SHIFT-1,assigned_shift
+EV-ASSIGN-START-273-3,EMP-273,assigned_employee
+EV-ASSIGN-START-273-3,DEPT-3,assigned_department
+EV-ASSIGN-START-273-3,SHIFT-1,assigned_shift
+EV-ASSIGN-START-274-3,EMP-274,assigned_employee
+EV-ASSIGN-START-274-3,DEPT-3,assigned_department
+EV-ASSIGN-START-274-3,SHIFT-1,assigned_shift
+EV-ASSIGN-START-275-3,EMP-275,assigned_employee
+EV-ASSIGN-START-275-3,DEPT-3,assigned_department
+EV-ASSIGN-START-275-3,SHIFT-1,assigned_shift
+EV-ASSIGN-START-276-3,EMP-276,assigned_employee
+EV-ASSIGN-START-276-3,DEPT-3,assigned_department
+EV-ASSIGN-START-276-3,SHIFT-1,assigned_shift
+EV-ASSIGN-START-277-3,EMP-277,assigned_employee
+EV-ASSIGN-START-277-3,DEPT-3,assigned_department
+EV-ASSIGN-START-277-3,SHIFT-1,assigned_shift
+EV-ASSIGN-START-278-3,EMP-278,assigned_employee
+EV-ASSIGN-START-278-3,DEPT-3,assigned_department
+EV-ASSIGN-START-278-3,SHIFT-1,assigned_shift
+EV-ASSIGN-START-279-3,EMP-279,assigned_employee
+EV-ASSIGN-START-279-3,DEPT-3,assigned_department
+EV-ASSIGN-START-279-3,SHIFT-1,assigned_shift
+EV-ASSIGN-START-280-3,EMP-280,assigned_employee
+EV-ASSIGN-START-280-3,DEPT-3,assigned_department
+EV-ASSIGN-START-280-3,SHIFT-1,assigned_shift
+EV-ASSIGN-START-281-3,EMP-281,assigned_employee
+EV-ASSIGN-START-281-3,DEPT-3,assigned_department
+EV-ASSIGN-START-281-3,SHIFT-1,assigned_shift
+EV-ASSIGN-START-282-3,EMP-282,assigned_employee
+EV-ASSIGN-START-282-3,DEPT-3,assigned_department
+EV-ASSIGN-START-282-3,SHIFT-1,assigned_shift
+EV-ASSIGN-START-283-3,EMP-283,assigned_employee
+EV-ASSIGN-START-283-3,DEPT-3,assigned_department
+EV-ASSIGN-START-283-3,SHIFT-1,assigned_shift
+EV-ASSIGN-START-284-3,EMP-284,assigned_employee
+EV-ASSIGN-START-284-3,DEPT-3,assigned_department
+EV-ASSIGN-START-284-3,SHIFT-1,assigned_shift
+EV-ASSIGN-START-285-3,EMP-285,assigned_employee
+EV-ASSIGN-START-285-3,DEPT-3,assigned_department
+EV-ASSIGN-START-285-3,SHIFT-1,assigned_shift
+EV-ASSIGN-START-286-3,EMP-286,assigned_employee
+EV-ASSIGN-START-286-3,DEPT-3,assigned_department
+EV-ASSIGN-START-286-3,SHIFT-1,assigned_shift
+EV-ASSIGN-START-287-3,EMP-287,assigned_employee
+EV-ASSIGN-START-287-3,DEPT-3,assigned_department
+EV-ASSIGN-START-287-3,SHIFT-1,assigned_shift
+EV-ASSIGN-START-288-3,EMP-288,assigned_employee
+EV-ASSIGN-START-288-3,DEPT-3,assigned_department
+EV-ASSIGN-START-288-3,SHIFT-1,assigned_shift
+EV-ASSIGN-START-289-3,EMP-289,assigned_employee
+EV-ASSIGN-START-289-3,DEPT-3,assigned_department
+EV-ASSIGN-START-289-3,SHIFT-1,assigned_shift
+EV-ASSIGN-START-290-3,EMP-290,assigned_employee
+EV-ASSIGN-START-290-3,DEPT-3,assigned_department
+EV-ASSIGN-START-290-3,SHIFT-1,assigned_shift
+EV-ASSIGN-END-4-1-1-2007-12-05,EMP-4,employee_leaving_assignment
+EV-ASSIGN-END-4-1-1-2007-12-05,DEPT-1,department_ended
+EV-ASSIGN-END-4-1-1-2007-12-05,SHIFT-1,shift_ended
+EV-ASSIGN-END-16-5-1-2007-12-20,EMP-16,employee_leaving_assignment
+EV-ASSIGN-END-16-5-1-2007-12-20,DEPT-5,department_ended
+EV-ASSIGN-END-16-5-1-2007-12-20,SHIFT-1,shift_ended
+EV-ASSIGN-END-224-7-1-2009-01-07,EMP-224,employee_leaving_assignment
+EV-ASSIGN-END-224-7-1-2009-01-07,DEPT-7,department_ended
+EV-ASSIGN-END-224-7-1-2009-01-07,SHIFT-1,shift_ended
+EV-ASSIGN-END-234-10-1-2009-01-31,EMP-234,employee_leaving_assignment
+EV-ASSIGN-END-234-10-1-2009-01-31,DEPT-10,department_ended
+EV-ASSIGN-END-234-10-1-2009-01-31,SHIFT-1,shift_ended
+EV-ASSIGN-END-250-4-1-2011-02-25,EMP-250,employee_leaving_assignment
+EV-ASSIGN-END-250-4-1-2011-02-25,DEPT-4,department_ended
+EV-ASSIGN-END-250-4-1-2011-02-25,SHIFT-1,shift_ended
+EV-ASSIGN-END-250-13-1-2011-07-31,EMP-250,employee_leaving_assignment
+EV-ASSIGN-END-250-13-1-2011-07-31,DEPT-13,department_ended
+EV-ASSIGN-END-250-13-1-2011-07-31,SHIFT-1,shift_ended
