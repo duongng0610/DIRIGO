@@ -1,7 +1,7 @@
 import src.readers.sqlite_reader as sqlite_reader
 import src.readers.reader_yaml as yaml_reader
 from src.builders import object_builder
-from src.builders import event_builder
+from src.builders import event_builder_v2
 from src.extractor.to_csv import convert_objects
 from src.extractor.to_csv import convert_events
 
@@ -10,12 +10,13 @@ from pathlib import Path
 
 def main():
     # Define the path to the SQLite database and the mapping YAML file
+    # Comparatively path 
     data_path = Path(
-        r"E:\UET\SPECIALIZATION\Infomation System\BTL_CuoiKi\code\dirigo\dirigo_pipeline\data\raw"
+        r".\data\raw"
     )
 
     mapping_path = Path(
-        r"E:\UET\SPECIALIZATION\Infomation System\BTL_CuoiKi\code\dirigo\dirigo_pipeline\configs\mappings"
+        r".\configs\mappings"
     )
     # Create an instance of SQLiteReader
     reader = sqlite_reader.SQLiteReader(data_path / "adventureworks_hr.sqlite")
@@ -29,7 +30,7 @@ def main():
 
     # Convert the IR ObjectRecords to Dirigo-compatible object CSV files
     output_dir = Path(
-        r"E:\UET\SPECIALIZATION\Infomation System\BTL_CuoiKi\code\dirigo\dirigo_pipeline\outputs"
+        r".\outputs"
     )
 
     output_objects_files = convert_objects(objects, output_dir)
@@ -37,7 +38,7 @@ def main():
         print(f"Wrote {output_file}")
 
     # Build events and e2o based on mapping
-    events = event_builder.build_events(reader, mapping)
+    events = event_builder_v2.build_events(reader, mapping)
 
     output_events_files = convert_events(events, output_dir)
     for output_file in output_events_files:
