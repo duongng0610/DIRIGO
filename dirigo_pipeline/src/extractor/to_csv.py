@@ -4,12 +4,15 @@ from datetime import date, datetime
 from pathlib import Path
 from typing import Any, Dict, Iterable, List
 
-from src.ir import EventRecord, ObjectRecord
+from src.ir import EventRecord, ObjectRecord, RelationshipRecord
 
 
 BASE_COLUMNS = ["Object_id", "Timestamp", "Ocel_changed_field"]
 EVENT_COLUMNS = ["Event_id", "Timestamp", "Activity"]
 E2O_COLUMNS = ["Event_id", "Object_id", "E2O_qualifier"]
+O2O_COLUMNS = ["Source_object_id","Target_object_id","O2O_qualifier","Timestamp"]
+
+
 
 
 def _format_value(value: Any) -> Any:
@@ -56,7 +59,7 @@ def _change_rows(obj: ObjectRecord, fieldnames: List[str]) -> Iterable[Dict[str,
         yield row
 
 
-def convert_objects(objects: Iterable[ObjectRecord], output_dir: Path) -> List[Path]:
+def convert_objects(objects: List[ObjectRecord], output_dir: Path) -> List[Path]:
     """Convert IR ObjectRecords to Dirigo object CSV files.
 
     One file is written per object type, for example ``OCEL_Employee.csv``.
@@ -128,3 +131,25 @@ def convert_events(events: Iterable[EventRecord], output_dir: Path) -> List[Path
                 })
 
     return [events_path, e2o_path]
+
+
+
+def convert_relationships(relationships: Iterable[RelationshipRecord], output_dir: Path) -> Path:
+    relationship_records = list(relationships)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    
+    relationship_path = output_dir / "OCEL_O2O.csv"
+    
+    with relationship_path.open("w", encoding="utf-8-sig", newline="") as file:
+            writer = csv.DictWriter(file, fieldnames=O2O_COLUMNS)
+            writer.writeheader()
+            for relationship in relationship_records:
+                writer.writerow({
+                    "Source_object_id": relationship.source_object_id,
+                    "Target_object_id": (relationship.time_stamp),
+                    "O2O_qualifier": (relationship.qualifier),
+                    "Timestamp": _format_value(relationship.target_object_id),
+                })
+
+            return relationship_path
+

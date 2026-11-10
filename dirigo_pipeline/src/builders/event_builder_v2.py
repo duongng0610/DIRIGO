@@ -3,7 +3,7 @@ from typing import Any
 from pathlib import Path
 from src.ir.models import EventRecord
 from src.ir.models import EventToObjectRecord
-from src.builders.helper import build_object_reference_id, build_id_from_row, _source_table_name, build_lookup_index
+from src.builders.helper import build_object_reference_id, build_id_from_row, _source_table_name, build_resolver_index,build_data_frame_by_table_name
 import pandas as pd
 from src.readers.sqlite_reader import SQLiteReader
 
@@ -16,14 +16,11 @@ def build_events(sqlite_reader: SQLiteReader, mapping: dict[str, Any]) -> list[E
     }
 
     for event_mapping in mapping["events"]:
-        source_table = _source_table_name(
+        
+        source_df = build_data_frame_by_table_name(
+            sqlite_reader,
             event_mapping["source_table"],
-            mapping["tables"],
-        )
-        source_df = sqlite_reader.read_table(source_table)
-
-        if source_df is None:
-            raise ValueError(f"Cannot read table: {source_table}")
+            mapping["tables"] )
 
         #Giữ những row là event trong bảng 
         source_df = sqlite_reader.apply_where(
@@ -33,29 +30,14 @@ def build_events(sqlite_reader: SQLiteReader, mapping: dict[str, Any]) -> list[E
 
         object_mappings = event_mapping.get("objects",[])
 
-        #build lookup_index trước khi duyệt từng row 
+        # Vì object liên quan đến event có thể nằm ở bảng khác bảng event hiện tại  
+        # build lookup_index (key(giá trị khóa ngoại liên kết giữa bảng event - object),
+        # val-row trong bảng lookup) trước khi duyệt từng row trong event ,  
         lookup_indexes = {}
 
         #Bọc [] trong enumerate để duyệt lấy được (index, value)
         for position, object_mapping in enumerate(object_mappings):
-            resolver_mapping = object_mapping.get("resolver")
-
-            if resolver_mapping is None:
-                continue
-
-            lookup_table = _source_table_name(
-                 resolver_mapping["table"],
-                 mapping["tables"]
-            )
-
-            lookup_df = sqlite_reader.read_table(lookup_table)
-
-            if lookup_df is None:
-                raise ValueError(
-                    f"Cannot read lookup table: {lookup_table}"
-                )
-
-            lookup_indexes[position] = build_lookup_index(lookup_df, resolver_mapping)
+            lookup_indexes[position] = build_resolver_index(sqlite_reader, object_mapping, mapping)
         
         for _,row in source_df.iterrows():
             event_id = build_id_from_row(
@@ -77,7 +59,7 @@ def build_events(sqlite_reader: SQLiteReader, mapping: dict[str, Any]) -> list[E
 
                 #/....
                 object_id = build_object_reference_id(
-                    event_row=row,
+                    row=row,
                     object_config=object_config,
                     object_mapping=object_mapping,
                     lookup_index= lookup_indexes.get(position)

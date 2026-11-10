@@ -35,7 +35,7 @@ class EventRecord:
 
 @dataclass
 class RelationshipRecord:
-    relationship_id: str
+    qualifier: str
     source_object_id: str
     target_object_id: str
     time_stamp: datetime

@@ -68,22 +68,32 @@ objects:
 
       dynamic:
         - name: pay_rate
-          target_column: Rate
-          type: decimal
-          target_table: EmployeePayHistory
-          join_column:
-            source: BusinessEntityID
-            target: BusinessEntityID
-          timestamp_column: RateChangeDate
+          source_table: employee_pay_history
+
+          value:
+            column: Rate
+            type: decimal
+
+          timestamp:
+            column: RateChangeDate
+
+          object_reference:
+            key_mapping:
+              BusinessEntityID: BusinessEntityID
 
         - name: pay_frequency
-          target_column: PayFrequency
-          type: integer
-          target_table: EmployeePayHistory
-          join_column:
-            source: BusinessEntityID
-            target: BusinessEntityID
-          timestamp_column: RateChangeDate
+          source_table: employee_pay_history
+
+          value:
+            column: PayFrequency
+            type: integer
+
+          timestamp:
+            column: RateChangeDate
+
+          object_reference:
+            key_mapping:
+              BusinessEntityID: BusinessEntityID
 
   - type: department
     source_table: departments
@@ -232,19 +242,70 @@ relationships:
       source_table: employee_department_history
 
       source:
-        type: employee
-        id:
-          columns:
-            - BusinessEntityID
+        object_type: employee
+        key_mapping:
+          BusinessEntityID: BusinessEntityID
 
       target:
-        type: department
-        id:
-          columns:
-            - DepartmentID
+        object_type: department
+        key_mapping:
+          DepartmentID: DepartmentID
 
       qualifier: assigned_to
 
       timestamp:
         column: StartDate
         semantics: event_time
+
+    - name: employee_unassigned_from_department
+      mode: dynamic
+      source_table: employee_department_history
+
+      where:
+        - column: EndDate
+          condition: is_not_null
+
+      source:
+        object_type: employee
+
+      target:
+        object_type: department
+
+      qualifier: unassigned_from
+
+      timestamp:
+        column: EndDate
+
+    - name: employee_assigned_to_shift
+      mode: dynamic
+      source_table: employee_department_history
+
+      source:
+        object_type: employee
+
+      target:
+        object_type: shift
+
+      qualifier: assigned_to_shift
+
+      timestamp:
+        column: StartDate
+
+    - name: employee_unassigned_from_shift
+      mode: dynamic
+      source_table: employee_department_history
+
+      where:
+        - column: EndDate
+          condition: is_not_null
+
+      source:
+        object_type: employee
+
+      target:
+        object_type: shift
+
+      qualifier: unassigned_from_shift
+
+      timestamp:
+        column: EndDate
