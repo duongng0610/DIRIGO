@@ -108,6 +108,7 @@ def create_in_table_objects(
 
 def build_events(sqlite_reader: SQLiteReader, mapping: dict[str, Any]) -> list[EventRecord]:
     events: list[EventRecord] = []
+    # lấy cấu hình ở yaml của phần objects (đảm bảo consistency)
     objects_id_config = get_objects_id_config(mapping["objects"])
 
     for event_mapping in mapping["events"]:
@@ -143,10 +144,14 @@ def build_events(sqlite_reader: SQLiteReader, mapping: dict[str, Any]) -> list[E
             # create timestamp
             timestamp = create_timestamp(event_mapping, row)
 
+            objects_mapping = event_mapping.get("objects", {})
+
+            in_table_mapping = objects_mapping.get("in_table", [])
+
             # create in table objects
             objects = create_in_table_objects(
                 objects_id_config=objects_id_config,
-                in_table_mapping=event_objects.get("in_table"),
+                in_table_mapping=in_table_mapping,
                 event_row=row
             )
 
@@ -160,51 +165,51 @@ def build_events(sqlite_reader: SQLiteReader, mapping: dict[str, Any]) -> list[E
             events.append(event_record)
             current_events.append(event_record)
 
-        # create out table objects
-        out_tables_mapping = event_objects.get("out_table")
+            # create out table objects
+            out_table_mapping = objects_mapping.get("out_table", [])
 
-        if (out_tables_mapping is None or out_tables_mapping == []):
-            continue
+            if (out_table_mapping is None or out_table_mapping == []):
+                continue
 
-        # cache joinned table
-        join_cache = {}
+            # cache joinned table
+            join_cache = {}
 
-        for out_mapping in out_tables_mapping:
-            target_table = _source_table_name(
-                out_mapping["target_table"], mapping["tables"])
-            join_column_source = out_mapping["join_column"]["source"]
-            join_column_target = out_mapping["join_column"]["target"]
+            for mapping in out_table_mapping:
+                target_table = mapping["target_table"]
+                join_column_source = mapping["join_column"]["source"]
+                join_column_target = mapping["join_column"]["target"]
 
-            cache_key = (
-                source_table,
-                target_table,
-                join_column_source,
-                join_column_target
-            )
+                cache_key = (
+                    source_table,
+                    target_table,
+                    join_column_source,
+                    join_column_target
+                )
 
-            if cache_key not in join_cache:
-                join_columns = [(join_column_source, join_column_target)]
-                joined_table = sqlite_reader.get_joined_data(
-                    source_table, target_table, join_columns)
+                if cache_key not in join_cache:
+                    join_columns = [(join_column_source, join_column_target)]
+                    joined_table = sqlite_reader.get_joined_data(
+                        source_table, target_table, join_columns)
 
-                # where condition to fill fit row data
-                joined_table = sqlite_reader.apply_where(
-                    joined_table, event_mapping.get("where"))
+                    # where condition to fill fit row data
+                    joined_table = sqlite_reader.apply_where(
+                        target_table, event_mapping.get("where"))
 
-                if joined_table is None:
-                    joined_table_by_key = {}
-                else:
-                    joined_table_by_key = {
-                        key: group
-                        for key, group in joined_table.groupby(join_column_source)
-                    }
+                    if joined_table is None:
+                        joined_table_by_key = {}
+                    else:
+                        joined_table_by_key = {
+                            key: group
+                            for key, group in joined_table.groupby(join_column_source)
+                        }
 
-                join_cache[cache_key] = joined_table_by_key
+                    join_cache[cache_key] = joined_table_by_key
 
-            events_by_row = dict(zip(source_df.index, current_events))
+                events_by_key = dict(
+                    zip(source_df[join_column_source], current_events)
+                )
 
-            create_out_table_object(
-                source_df, joined_table_by_key, events_by_row,
-                out_mapping, objects_id_config)
+                create_out_table_object(
+                    source_df, joined_table_by_key, events_by_key, mapping, objects_id_config)
 
     return events

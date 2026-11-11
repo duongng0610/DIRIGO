@@ -68,22 +68,32 @@ objects:
 
       dynamic:
         - name: pay_rate
-          target_column: Rate
-          type: decimal
-          target_table: EmployeePayHistory
-          join_column:
-            source: BusinessEntityID
-            target: BusinessEntityID
-          timestamp_column: RateChangeDate
+          source_table: employee_pay_history
+
+          value:
+            column: Rate
+            type: decimal
+
+          timestamp:
+            column: RateChangeDate
+
+          object_reference:
+            key_mapping:
+              BusinessEntityID: BusinessEntityID
 
         - name: pay_frequency
-          target_column: PayFrequency
-          type: integer
-          target_table: EmployeePayHistory
-          join_column:
-            source: BusinessEntityID
-            target: BusinessEntityID
-          timestamp_column: RateChangeDate
+          source_table: employee_pay_history
+
+          value:
+            column: PayFrequency
+            type: integer
+
+          timestamp:
+            column: RateChangeDate
+
+          object_reference:
+            key_mapping:
+              BusinessEntityID: BusinessEntityID
 
   - type: department
     source_table: departments
@@ -139,16 +149,14 @@ events:
         - BusinessEntityID
       prefix: "EV-HIRE"
 
-    objects:
-      in_table:
-        - object_type: employee
-          qualifier: employee_hired
-      out_table: []
-
     timestamp:
       source_column: HireDate
       name: event_time
 
+    objects:
+        - object_type: employee
+          qualifier: employee_hired
+  
   - type: pay_rate_set
     source_table: employee_pay_history
 
@@ -164,14 +172,9 @@ events:
       name: event_time
 
     objects:
-      in_table: []
-      out_table:
-        - object_type: employee
-          target_table: employees
-          join_column:
-            source: BusinessEntityID
-            target: BusinessEntityID
-          qualifier: employee_whose_pay_changed
+      - object_type: employee
+        qualifier: assigned_employee
+
 
   - type: department_assignment_started
     source_table: employee_department_history
@@ -181,6 +184,8 @@ events:
       columns:
         - BusinessEntityID
         - DepartmentID
+        - ShiftID
+        - StartDate
       prefix: "EV-ASSIGN-START"
 
     timestamp:
@@ -188,28 +193,17 @@ events:
       name: event_time
 
     objects:
-      in_table: []
-      out_table:
-        - object_type: employee
-          target_table: employees
-          join_column:
-            source: BusinessEntityID
-            target: BusinessEntityID
-          qualifier: assigned_employee
+      - object_type: employee
+       
+        qualifier: assigned_employee
 
-        - object_type: department
-          target_table: departments
-          join_column:
-            source: DepartmentID
-            target: DepartmentID
-          qualifier: assigned_department
+      - object_type: department
+     
+        qualifier: target_department
 
-        - object_type: shift
-          target_table: shifts
-          join_column:
-            source: ShiftID
-            target: ShiftID
-          qualifier: assigned_shift
+      - object_type: shift
+      
+        qualifier: assigned_shift
 
   - type: department_assignment_ended
     source_table: employee_department_history
@@ -232,28 +226,14 @@ events:
       name: event_time
 
     objects:
-      in_table: []
-      out_table:
-        - object_type: employee
-          target_table: employees
-          join_column:
-            source: BusinessEntityID
-            target: BusinessEntityID
-          qualifier: employee_leaving_assignment
+     - object_type: employee
+       qualifier: assigned_employee
 
-        - object_type: department
-          target_table: departments
-          join_column:
-            source: DepartmentID
-            target: DepartmentID
-          qualifier: department_ended
+     - object_type: department
+       qualifier: target_department
 
-        - object_type: shift
-          target_table: shifts
-          join_column:
-            source: ShiftID
-            target: ShiftID
-          qualifier: shift_ended
+     - object_type: shift
+       qualifier: assigned_shift
 
 relationships:
   o2o:
@@ -262,19 +242,70 @@ relationships:
       source_table: employee_department_history
 
       source:
-        type: employee
-        id:
-          columns:
-            - BusinessEntityID
+        object_type: employee
+        key_mapping:
+          BusinessEntityID: BusinessEntityID
 
       target:
-        type: department
-        id:
-          columns:
-            - DepartmentID
+        object_type: department
+        key_mapping:
+          DepartmentID: DepartmentID
 
       qualifier: assigned_to
 
       timestamp:
         column: StartDate
         semantics: event_time
+
+    - name: employee_unassigned_from_department
+      mode: dynamic
+      source_table: employee_department_history
+
+      where:
+        - column: EndDate
+          condition: is_not_null
+
+      source:
+        object_type: employee
+
+      target:
+        object_type: department
+
+      qualifier: unassigned_from
+
+      timestamp:
+        column: EndDate
+
+    - name: employee_assigned_to_shift
+      mode: dynamic
+      source_table: employee_department_history
+
+      source:
+        object_type: employee
+
+      target:
+        object_type: shift
+
+      qualifier: assigned_to_shift
+
+      timestamp:
+        column: StartDate
+
+    - name: employee_unassigned_from_shift
+      mode: dynamic
+      source_table: employee_department_history
+
+      where:
+        - column: EndDate
+          condition: is_not_null
+
+      source:
+        object_type: employee
+
+      target:
+        object_type: shift
+
+      qualifier: unassigned_from_shift
+
+      timestamp:
+        column: EndDate

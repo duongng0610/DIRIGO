@@ -1,0 +1,293 @@
+contract_version: 2
+name: inventory_management_objects
+
+sources:
+  type: sqlite
+  path: data/raw/inventory_management.db
+  read_only: true
+
+tables:
+  materials:
+    table: Materials
+
+  purchase_order_items:
+    table: PurchaseOrderItems
+
+  purchase_order_documents:
+    table: PurchaseOrderDocuments
+
+  sales_order_items:
+    table: SalesOrderItems
+
+  sales_order_documents:
+    table: SalesOrderDocuments
+
+  goods_movements:
+    table: GoodsReceiptsAndIssues
+
+  material_stocks:
+    table: MaterialStocks
+
+objects:
+  - type: material
+    source_table: materials
+
+    id:
+      mode: option
+      columns:
+        - material_number
+      prefix: MAT
+
+    attributes:
+      static:
+        - name: material_type
+          source_column: material_type
+          type: string
+
+        - name: industry_sector
+          source_column: industry_sector
+          type: string
+
+        - name: material_group
+          source_column: material_group
+          type: string
+
+        - name: valuation_class
+          source_column: valuation_class
+          type: string
+
+        - name: gross_weight
+          source_column: gross_weight
+          type: decimal
+
+        - name: net_weight
+          source_column: net_weight
+          type: decimal
+
+        - name: weight_unit
+          source_column: weight_unit
+          type: string
+
+        - name: volume
+          source_column: volume
+          type: decimal
+
+        - name: volume_unit
+          source_column: volume_unit
+          type: string
+
+        - name: transport_group
+          source_column: transport_group
+          type: string
+
+      dynamic: []
+
+  - type: purchase_order_document
+    source_table: purchase_order_documents
+
+    id:
+      mode: option
+      columns:
+        - purchase_document_number
+      prefix: POD
+
+    attributes:
+      static:
+        - timestamp:
+            name: timestamp
+            source_column: record_creation_date
+
+        - name: vendor_account
+          source_column: account_number_of_vendor
+          type: integer
+
+        - name: purchase_order_date
+          source_column: purchase_order_date
+          type: date
+
+        - name: document_category
+          source_column: purchasing_document_category
+          type: string
+
+        - name: document_type
+          source_column: purchasing_document_type
+          type: string
+
+        - name: blocking_indicator
+          source_column: blocking_indicator
+          type: boolean
+
+      dynamic: []
+
+  - type: purchase_order_item
+    source_table: purchase_order_items
+
+    id:
+      mode: option
+      columns:
+        - purchase_order_number
+        - purchase_order_item_number
+      prefix: POI
+      separator: "|"
+
+    attributes:
+      static:
+        - timestamp:
+            name: timestamp
+            source_column: change_date
+
+        - name: material_number
+          source_column: material_number
+          type: integer
+
+        - name: plant
+          source_column: plant
+          type: string
+
+      dynamic:
+        - name: ordered_quantity
+          source_table: purchase_order_items
+
+          value:
+            column: quantity
+            type: decimal
+
+          timestamp:
+            column: change_date
+
+          object_reference:
+            key_mapping:
+              purchase_order_number: purchase_order_number
+              purchase_order_item_number: purchase_order_item_number
+
+        - name: net_price
+          source_table: purchase_order_items
+
+          value:
+            column: net_price
+            type: decimal
+
+          timestamp:
+            column: change_date
+
+          object_reference:
+            key_mapping:
+              purchase_order_number: purchase_order_number
+              purchase_order_item_number: purchase_order_item_number
+
+  - type: sales_order_document
+    source_table: sales_order_documents
+
+    id:
+      mode: option
+      columns:
+        - sales_document_number
+      prefix: SOD
+
+    attributes:
+      static:
+        - timestamp:
+            name: timestamp
+            source_column: document_creation_date
+
+        - name: customer_number
+          source_column: customer_number
+          type: integer
+
+        - name: document_date
+          source_column: document_date_in_document
+          type: date
+
+        - name: sales_document_type
+          source_column: sales_document_type
+          type: string
+
+        - name: order_type
+          source_column: order_type
+          type: string
+
+        - name: order_reason
+          source_column: order_reason
+          type: string
+
+      dynamic: []
+
+  - type: sales_order_item
+    source_table: sales_order_items
+
+    id:
+      mode: option
+      columns:
+        - sales_document_number
+        - item_number
+      prefix: SOI
+      separator: "|"
+
+    attributes:
+      static:
+        - name: material_number
+          source_column: material_number
+          type: integer
+
+        - name: plant
+          source_column: plant
+          type: string
+
+        - name: ordered_quantity
+          source_column: order_quantity
+          type: decimal
+
+        - name: net_price
+          source_column: net_price
+          type: decimal
+
+      dynamic: []
+
+  - type: material_stock
+    source_table: material_stocks
+
+    id:
+      mode: option
+      columns:
+        - material_number
+        - plant
+        - storage_location
+      prefix: MS
+      separator: "|"
+
+    attributes:
+      static:
+        - name: client
+          source_column: client
+          type: string
+
+        - name: stock_in_quality_inspection
+          source_column: stock_in_quality_inspection
+          type: decimal
+
+        - name: stock_in_transfer
+          source_column: stock_in_transfer
+          type: decimal
+
+        - name: stock_in_posting
+          source_column: stock_in_posting
+          type: decimal
+
+        - name: stock_provided_to_vendor
+          source_column: stock_of_material_provided_to_vendor
+          type: decimal
+
+        - name: blocked_stock
+          source_column: blocked_stock
+          type: decimal
+
+        - name: returns_stock
+          source_column: returns_stock
+          type: decimal
+
+      dynamic: []
+
+events: []
+
+relationships:
+  o2o: []

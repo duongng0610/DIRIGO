@@ -3,7 +3,7 @@ from typing import Any, Dict, List
 from src.ir import ObjectChangeRecord, ObjectRecord
 from src.readers.sqlite_reader import SQLiteReader
 from src.builders.helper import _source_table_name
-from src.builders.helper import create_option_id
+from src.builders.helper import build_id_from_row
 
 
 def create_static_attributes(
@@ -69,15 +69,8 @@ def build_objects(sqlite_reader: SQLiteReader, mapping: dict) -> List[ObjectReco
         for _, row in source_df.iterrows():
             # create object_id
             id_mapping = object_mapping["id"]
-            if id_mapping["mode"] == "option":
-                object_id = create_option_id(
-                    id_mapping["prefix"],
-                    [str(row[column]) for column in id_mapping["columns"]],
-                    id_mapping.get("separator", "-"),
-                )
-            else:
-                object_id = str(row[id_mapping["columns"][0]])
 
+            object_id = build_id_from_row(row=row, id_mapping=id_mapping)
             # create static attributes
             attributes_mapping = object_mapping["attributes"]
             attributes = create_static_attributes(
