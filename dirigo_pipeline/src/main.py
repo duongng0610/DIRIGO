@@ -51,8 +51,8 @@ def main():
 
     print(f"Wrote {output_o2o_file}")
 
-    # print(validate_all_qc(objects=objects, events=events, relationships=o2o,
-    #                       validate_mapping=mapping, reader=reader))
+    print(validate_all_qc(objects=objects, events=events, relationships=o2o,
+                          validate_mapping=mapping, reader=reader))
 
 
 if __name__ == "__main__":
