@@ -37,5 +37,7 @@ class EventRecord:
 class RelationshipRecord:
     qualifier: str
     source_object_id: str
+    source_object_type: str
     target_object_id: str
+    target_object_type: str
     time_stamp: datetime
