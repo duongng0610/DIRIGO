@@ -287,7 +287,206 @@ objects:
 
       dynamic: []
 
-events: []
+events:
+  - type: purchase_order_created
+    source_table: purchase_order_documents
+
+    id:
+      mode: option
+      columns:
+        - purchase_document_number
+      prefix: EV-PO-CREATED
+
+    timestamp:
+      source_column: record_creation_date
+
+    objects:
+      - object_type: purchase_order_document
+        qualifier: created_order
+
+  - type: purchase_order_item_changed
+    source_table: purchase_order_items
+
+    id:
+      mode: option
+      columns:
+        - purchase_order_number
+        - purchase_order_item_number
+        - change_date
+      prefix: EV-PO-ITEM-CHANGED
+      separator: "|"
+
+    timestamp:
+      source_column: change_date
+
+    objects:
+      - object_type: purchase_order_item
+        qualifier: changed_item
+
+      - object_type: purchase_order_document
+        qualifier: parent_order
+        key_mapping:
+          purchase_document_number: purchase_order_number
+
+      - object_type: material
+        qualifier: ordered_material
+
+  - type: sales_order_created
+    source_table: sales_order_documents
+
+    id:
+      mode: option
+      columns:
+        - sales_document_number
+      prefix: EV-SO-CREATED
+
+    timestamp:
+      source_column: document_creation_date
+
+    objects:
+      - object_type: sales_order_document
+        qualifier: created_order
+
+  - type: goods_receipt_posted
+    source_table: goods_movements
+
+    where:
+      - column: movement_type
+        condition: eq
+        value: Goods Receipt
+
+    id:
+      mode: option
+      columns:
+        - client
+        - fiscal_year
+        - document_number
+        - accounting_document_line
+      prefix: EV-GR
+      separator: "|"
+
+    timestamp:
+      source_column: date_of_the_posting_in_the_document
+
+    objects:
+      - object_type: purchase_order_document
+        qualifier: movement_order
+
+      - object_type: material
+        qualifier: received_material
+
+  - type: goods_issue_posted
+    source_table: goods_movements
+
+    where:
+      - column: movement_type
+        condition: eq
+        value: Goods Issue
+
+    id:
+      mode: option
+      columns:
+        - client
+        - fiscal_year
+        - document_number
+        - accounting_document_line
+      prefix: EV-GI
+      separator: "|"
+
+    timestamp:
+      source_column: date_of_the_posting_in_the_document
+
+    objects:
+      - object_type: purchase_order_document
+        qualifier: movement_order
+
+      - object_type: material
+        qualifier: issued_material
 
 relationships:
-  o2o: []
+  o2o:
+    - name: purchase_order_contains_item
+      mode: static
+      source_table: purchase_order_items
+
+      source:
+        object_type: purchase_order_document
+        key_mapping:
+          purchase_document_number: purchase_order_number
+
+      target:
+        object_type: purchase_order_item
+
+      qualifier: contains_item
+
+      timestamp:
+        column: change_date
+
+    - name: purchase_item_references_material
+      mode: static
+      source_table: purchase_order_items
+
+      source:
+        object_type: purchase_order_item
+
+      target:
+        object_type: material
+
+      qualifier: references_material
+
+      timestamp:
+        column: change_date
+
+    - name: sales_order_contains_item
+      mode: static
+      source_table: sales_order_items
+
+      source:
+        object_type: sales_order_document
+
+      target:
+        object_type: sales_order_item
+
+      qualifier: contains_item
+
+      timestamp:
+        column: document_creation_date
+        resolver:
+          mode: lookup
+          table: sales_order_documents
+          "on":
+            - source_column: sales_document_number
+              lookup_column: sales_document_number
+
+    - name: sales_item_references_material
+      mode: static
+      source_table: sales_order_items
+
+      source:
+        object_type: sales_order_item
+
+      target:
+        object_type: material
+
+      qualifier: references_material
+
+      timestamp:
+        column: document_creation_date
+        resolver:
+          mode: lookup
+          table: sales_order_documents
+          "on":
+            - source_column: sales_document_number
+              lookup_column: sales_document_number
+
+    - name: material_stock_references_material
+      mode: static
+      source_table: material_stocks
+
+      source:
+        object_type: material_stock
+
+      target:
+        object_type: material
+
+      qualifier: stock_of

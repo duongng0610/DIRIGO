@@ -1,0 +1,201 @@
+﻿Object_id,Timestamp,Ocel_changed_field,customer_number,document_date,sales_document_type,order_type,order_reason
+SOD-1,2024-08-10,,10,2024-08-10,TypeA,Backorder,Special Order
+SOD-2,2023-10-27,,49,2023-10-27,TypeB,Backorder,Stock Replenishment
+SOD-3,2023-10-09,,9,2023-10-09,TypeB,Backorder,Promotion
+SOD-4,2024-04-18,,47,2024-04-18,TypeA,Backorder,Stock Replenishment
+SOD-5,2024-01-28,,12,2024-01-28,TypeA,Urgent,Stock Replenishment
+SOD-6,2024-06-25,,49,2024-06-25,TypeA,Urgent,Special Order
+SOD-7,2024-03-26,,33,2024-03-26,TypeB,Urgent,Special Order
+SOD-8,2024-06-19,,34,2024-06-19,TypeC,Backorder,Stock Replenishment
+SOD-9,2024-01-28,,47,2024-01-28,TypeB,Normal,Promotion
+SOD-10,2024-03-25,,27,2024-03-25,TypeC,Normal,Promotion
+SOD-11,2024-06-07,,33,2024-06-07,TypeA,Normal,Special Order
+SOD-12,2023-10-19,,31,2023-10-19,TypeB,Urgent,Special Order
+SOD-13,2024-09-09,,1,2024-09-09,TypeB,Normal,Stock Replenishment
+SOD-14,2024-08-24,,18,2024-08-24,TypeB,Urgent,Special Order
+SOD-15,2023-11-01,,6,2023-11-01,TypeC,Urgent,Special Order
+SOD-16,2023-10-05,,43,2023-10-05,TypeC,Normal,Stock Replenishment
+SOD-17,2024-07-13,,35,2024-07-13,TypeA,Urgent,Promotion
+SOD-18,2024-02-18,,14,2024-02-18,TypeC,Urgent,Special Order
+SOD-19,2024-05-18,,25,2024-05-18,TypeA,Backorder,Promotion
+SOD-20,2024-04-22,,1,2024-04-22,TypeC,Backorder,Stock Replenishment
+SOD-21,2024-05-17,,25,2024-05-17,TypeC,Backorder,Stock Replenishment
+SOD-22,2024-02-02,,3,2024-02-02,TypeC,Normal,Promotion
+SOD-23,2023-10-21,,41,2023-10-21,TypeB,Urgent,Stock Replenishment
+SOD-24,2024-01-04,,33,2024-01-04,TypeB,Normal,Special Order
+SOD-25,2024-02-14,,11,2024-02-14,TypeA,Urgent,Special Order
+SOD-26,2024-05-07,,6,2024-05-07,TypeA,Normal,Promotion
+SOD-27,2023-10-13,,7,2023-10-13,TypeC,Normal,Promotion
+SOD-28,2023-12-16,,44,2023-12-16,TypeB,Urgent,Special Order
+SOD-29,2024-04-21,,41,2024-04-21,TypeC,Backorder,Stock Replenishment
+SOD-30,2023-10-25,,39,2023-10-25,TypeC,Normal,Special Order
+SOD-31,2024-08-23,,15,2024-08-23,TypeC,Backorder,Special Order
+SOD-32,2024-05-08,,24,2024-05-08,TypeB,Urgent,Promotion
+SOD-33,2024-01-02,,38,2024-01-02,TypeC,Normal,Special Order
+SOD-34,2024-04-14,,34,2024-04-14,TypeA,Normal,Stock Replenishment
+SOD-35,2024-05-07,,41,2024-05-07,TypeC,Backorder,Stock Replenishment
+SOD-36,2024-02-17,,17,2024-02-17,TypeB,Backorder,Promotion
+SOD-37,2024-05-07,,39,2024-05-07,TypeA,Normal,Special Order
+SOD-38,2023-10-23,,34,2023-10-23,TypeB,Normal,Promotion
+SOD-39,2024-05-08,,28,2024-05-08,TypeA,Normal,Special Order
+SOD-40,2024-04-03,,6,2024-04-03,TypeA,Normal,Special Order
+SOD-41,2024-01-31,,38,2024-01-31,TypeC,Backorder,Special Order
+SOD-42,2024-01-16,,1,2024-01-16,TypeC,Backorder,Special Order
+SOD-43,2024-05-05,,28,2024-05-05,TypeA,Backorder,Special Order
+SOD-44,2024-03-03,,37,2024-03-03,TypeB,Normal,Promotion
+SOD-45,2024-04-24,,13,2024-04-24,TypeB,Backorder,Promotion
+SOD-46,2024-03-25,,6,2024-03-25,TypeC,Backorder,Promotion
+SOD-47,2024-04-22,,2,2024-04-22,TypeA,Normal,Stock Replenishment
+SOD-48,2024-01-09,,46,2024-01-09,TypeA,Backorder,Stock Replenishment
+SOD-49,2024-02-04,,16,2024-02-04,TypeC,Normal,Stock Replenishment
+SOD-50,2023-12-15,,48,2023-12-15,TypeB,Urgent,Stock Replenishment
+SOD-51,2024-05-21,,25,2024-05-21,TypeA,Backorder,Special Order
+SOD-52,2024-08-11,,5,2024-08-11,TypeA,Backorder,Promotion
+SOD-53,2024-01-19,,10,2024-01-19,TypeA,Urgent,Special Order
+SOD-54,2024-01-05,,12,2024-01-05,TypeC,Normal,Promotion
+SOD-55,2024-01-27,,25,2024-01-27,TypeA,Urgent,Special Order
+SOD-56,2023-12-19,,45,2023-12-19,TypeA,Normal,Promotion
+SOD-57,2024-08-05,,21,2024-08-05,TypeB,Backorder,Promotion
+SOD-58,2024-02-22,,37,2024-02-22,TypeB,Normal,Promotion
+SOD-59,2023-10-27,,16,2023-10-27,TypeB,Urgent,Special Order
+SOD-60,2024-02-25,,7,2024-02-25,TypeC,Urgent,Stock Replenishment
+SOD-61,2024-03-28,,43,2024-03-28,TypeA,Urgent,Promotion
+SOD-62,2024-09-04,,49,2024-09-04,TypeB,Urgent,Promotion
+SOD-63,2024-03-25,,49,2024-03-25,TypeC,Normal,Special Order
+SOD-64,2024-03-30,,4,2024-03-30,TypeA,Backorder,Special Order
+SOD-65,2024-08-04,,1,2024-08-04,TypeC,Backorder,Promotion
+SOD-66,2024-09-04,,44,2024-09-04,TypeC,Normal,Promotion
+SOD-67,2024-05-02,,22,2024-05-02,TypeB,Urgent,Stock Replenishment
+SOD-68,2024-01-12,,34,2024-01-12,TypeC,Urgent,Promotion
+SOD-69,2024-05-28,,11,2024-05-28,TypeC,Normal,Promotion
+SOD-70,2024-06-25,,4,2024-06-25,TypeC,Backorder,Promotion
+SOD-71,2024-02-28,,45,2024-02-28,TypeA,Normal,Stock Replenishment
+SOD-72,2023-10-15,,17,2023-10-15,TypeB,Backorder,Promotion
+SOD-73,2024-04-22,,3,2024-04-22,TypeB,Urgent,Promotion
+SOD-74,2024-05-13,,32,2024-05-13,TypeB,Backorder,Stock Replenishment
+SOD-75,2024-07-08,,14,2024-07-08,TypeA,Normal,Special Order
+SOD-76,2024-08-03,,42,2024-08-03,TypeB,Normal,Stock Replenishment
+SOD-77,2024-03-09,,35,2024-03-09,TypeB,Urgent,Special Order
+SOD-78,2024-04-10,,7,2024-04-10,TypeA,Backorder,Promotion
+SOD-79,2024-01-08,,49,2024-01-08,TypeC,Backorder,Special Order
+SOD-80,2024-02-18,,30,2024-02-18,TypeA,Normal,Special Order
+SOD-81,2023-12-04,,20,2023-12-04,TypeC,Backorder,Special Order
+SOD-82,2024-03-31,,9,2024-03-31,TypeA,Backorder,Promotion
+SOD-83,2024-09-03,,17,2024-09-03,TypeA,Normal,Special Order
+SOD-84,2024-03-13,,22,2024-03-13,TypeC,Urgent,Special Order
+SOD-85,2024-06-09,,34,2024-06-09,TypeB,Normal,Special Order
+SOD-86,2023-09-27,,24,2023-09-27,TypeC,Urgent,Promotion
+SOD-87,2024-09-25,,17,2024-09-25,TypeA,Backorder,Promotion
+SOD-88,2023-10-23,,49,2023-10-23,TypeC,Backorder,Stock Replenishment
+SOD-89,2024-04-19,,27,2024-04-19,TypeA,Backorder,Promotion
+SOD-90,2024-05-12,,32,2024-05-12,TypeB,Normal,Stock Replenishment
+SOD-91,2024-05-15,,30,2024-05-15,TypeA,Urgent,Promotion
+SOD-92,2024-03-21,,36,2024-03-21,TypeB,Backorder,Promotion
+SOD-93,2024-09-06,,12,2024-09-06,TypeA,Backorder,Promotion
+SOD-94,2024-06-25,,24,2024-06-25,TypeA,Normal,Stock Replenishment
+SOD-95,2024-01-26,,40,2024-01-26,TypeB,Backorder,Promotion
+SOD-96,2023-10-12,,10,2023-10-12,TypeC,Backorder,Stock Replenishment
+SOD-97,2024-05-09,,2,2024-05-09,TypeB,Urgent,Special Order
+SOD-98,2024-04-20,,49,2024-04-20,TypeB,Backorder,Promotion
+SOD-99,2024-06-29,,23,2024-06-29,TypeB,Backorder,Stock Replenishment
+SOD-100,2024-05-19,,7,2024-05-19,TypeA,Backorder,Stock Replenishment
+SOD-101,2023-12-31,,49,2023-12-31,TypeB,Backorder,Promotion
+SOD-102,2024-02-12,,33,2024-02-12,TypeB,Urgent,Stock Replenishment
+SOD-103,2024-09-17,,4,2024-09-17,TypeB,Urgent,Special Order
+SOD-104,2023-12-03,,11,2023-12-03,TypeC,Backorder,Special Order
+SOD-105,2023-11-08,,21,2023-11-08,TypeA,Normal,Stock Replenishment
+SOD-106,2023-10-12,,21,2023-10-12,TypeB,Normal,Stock Replenishment
+SOD-107,2023-10-01,,26,2023-10-01,TypeB,Backorder,Special Order
+SOD-108,2024-02-14,,25,2024-02-14,TypeC,Backorder,Special Order
+SOD-109,2024-02-02,,27,2024-02-02,TypeA,Urgent,Promotion
+SOD-110,2024-07-16,,48,2024-07-16,TypeC,Urgent,Stock Replenishment
+SOD-111,2023-11-14,,15,2023-11-14,TypeA,Backorder,Promotion
+SOD-112,2024-07-31,,3,2024-07-31,TypeC,Backorder,Special Order
+SOD-113,2024-04-25,,49,2024-04-25,TypeC,Backorder,Promotion
+SOD-114,2024-08-20,,39,2024-08-20,TypeB,Backorder,Special Order
+SOD-115,2024-05-22,,15,2024-05-22,TypeB,Normal,Special Order
+SOD-116,2023-11-28,,41,2023-11-28,TypeB,Normal,Stock Replenishment
+SOD-117,2023-09-27,,22,2023-09-27,TypeB,Normal,Stock Replenishment
+SOD-118,2023-11-06,,8,2023-11-06,TypeA,Urgent,Promotion
+SOD-119,2024-04-11,,49,2024-04-11,TypeB,Urgent,Promotion
+SOD-120,2023-10-09,,47,2023-10-09,TypeA,Normal,Stock Replenishment
+SOD-121,2024-03-04,,2,2024-03-04,TypeB,Urgent,Special Order
+SOD-122,2024-07-28,,9,2024-07-28,TypeB,Normal,Special Order
+SOD-123,2023-12-26,,31,2023-12-26,TypeA,Backorder,Special Order
+SOD-124,2024-05-08,,6,2024-05-08,TypeC,Normal,Promotion
+SOD-125,2024-01-07,,26,2024-01-07,TypeA,Backorder,Stock Replenishment
+SOD-126,2024-05-15,,46,2024-05-15,TypeB,Urgent,Special Order
+SOD-127,2023-12-16,,44,2023-12-16,TypeA,Urgent,Stock Replenishment
+SOD-128,2024-09-09,,47,2024-09-09,TypeC,Urgent,Promotion
+SOD-129,2023-10-26,,49,2023-10-26,TypeC,Backorder,Stock Replenishment
+SOD-130,2024-01-11,,23,2024-01-11,TypeC,Backorder,Stock Replenishment
+SOD-131,2024-07-12,,3,2024-07-12,TypeA,Normal,Special Order
+SOD-132,2024-04-10,,13,2024-04-10,TypeB,Normal,Special Order
+SOD-133,2024-03-05,,28,2024-03-05,TypeB,Backorder,Stock Replenishment
+SOD-134,2023-12-05,,14,2023-12-05,TypeC,Urgent,Stock Replenishment
+SOD-135,2023-12-01,,1,2023-12-01,TypeB,Backorder,Special Order
+SOD-136,2024-06-06,,28,2024-06-06,TypeC,Urgent,Stock Replenishment
+SOD-137,2024-01-25,,50,2024-01-25,TypeC,Urgent,Stock Replenishment
+SOD-138,2023-10-31,,14,2023-10-31,TypeA,Normal,Special Order
+SOD-139,2024-02-20,,1,2024-02-20,TypeC,Urgent,Stock Replenishment
+SOD-140,2024-04-05,,13,2024-04-05,TypeB,Backorder,Stock Replenishment
+SOD-141,2024-06-20,,23,2024-06-20,TypeB,Urgent,Special Order
+SOD-142,2024-03-12,,44,2024-03-12,TypeC,Normal,Special Order
+SOD-143,2023-12-02,,19,2023-12-02,TypeA,Urgent,Stock Replenishment
+SOD-144,2023-10-16,,24,2023-10-16,TypeB,Urgent,Stock Replenishment
+SOD-145,2024-01-08,,39,2024-01-08,TypeC,Backorder,Promotion
+SOD-146,2024-09-01,,29,2024-09-01,TypeA,Urgent,Special Order
+SOD-147,2024-02-24,,19,2024-02-24,TypeB,Urgent,Promotion
+SOD-148,2024-02-03,,18,2024-02-03,TypeC,Backorder,Promotion
+SOD-149,2024-02-03,,9,2024-02-03,TypeC,Normal,Stock Replenishment
+SOD-150,2023-11-10,,36,2023-11-10,TypeB,Normal,Promotion
+SOD-151,2024-05-17,,11,2024-05-17,TypeB,Backorder,Special Order
+SOD-152,2024-06-17,,27,2024-06-17,TypeB,Urgent,Stock Replenishment
+SOD-153,2023-10-19,,10,2023-10-19,TypeA,Normal,Promotion
+SOD-154,2024-07-22,,42,2024-07-22,TypeA,Urgent,Promotion
+SOD-155,2023-12-27,,42,2023-12-27,TypeB,Urgent,Stock Replenishment
+SOD-156,2024-04-21,,11,2024-04-21,TypeA,Urgent,Promotion
+SOD-157,2024-08-16,,44,2024-08-16,TypeA,Urgent,Promotion
+SOD-158,2023-10-26,,3,2023-10-26,TypeB,Normal,Stock Replenishment
+SOD-159,2024-01-22,,2,2024-01-22,TypeC,Backorder,Special Order
+SOD-160,2024-09-13,,44,2024-09-13,TypeC,Backorder,Promotion
+SOD-161,2024-04-23,,16,2024-04-23,TypeA,Urgent,Special Order
+SOD-162,2024-05-26,,37,2024-05-26,TypeC,Normal,Promotion
+SOD-163,2023-09-26,,28,2023-09-26,TypeC,Backorder,Promotion
+SOD-164,2023-12-06,,16,2023-12-06,TypeB,Backorder,Special Order
+SOD-165,2023-09-27,,6,2023-09-27,TypeA,Normal,Stock Replenishment
+SOD-166,2024-06-06,,23,2024-06-06,TypeC,Urgent,Promotion
+SOD-167,2024-06-04,,46,2024-06-04,TypeA,Backorder,Stock Replenishment
+SOD-168,2024-06-25,,8,2024-06-25,TypeA,Backorder,Promotion
+SOD-169,2024-03-20,,23,2024-03-20,TypeC,Urgent,Special Order
+SOD-170,2024-06-24,,20,2024-06-24,TypeC,Normal,Special Order
+SOD-171,2024-03-01,,31,2024-03-01,TypeA,Normal,Special Order
+SOD-172,2024-04-28,,10,2024-04-28,TypeC,Backorder,Promotion
+SOD-173,2024-01-07,,13,2024-01-07,TypeB,Urgent,Promotion
+SOD-174,2024-06-09,,26,2024-06-09,TypeA,Normal,Promotion
+SOD-175,2024-05-25,,3,2024-05-25,TypeC,Normal,Stock Replenishment
+SOD-176,2024-05-19,,42,2024-05-19,TypeA,Backorder,Stock Replenishment
+SOD-177,2024-01-30,,35,2024-01-30,TypeC,Normal,Promotion
+SOD-178,2024-07-24,,14,2024-07-24,TypeB,Urgent,Stock Replenishment
+SOD-179,2024-09-19,,19,2024-09-19,TypeA,Normal,Stock Replenishment
+SOD-180,2024-07-11,,28,2024-07-11,TypeC,Backorder,Stock Replenishment
+SOD-181,2024-06-14,,37,2024-06-14,TypeB,Backorder,Special Order
+SOD-182,2024-07-17,,44,2024-07-17,TypeB,Normal,Promotion
+SOD-183,2024-04-16,,50,2024-04-16,TypeC,Normal,Promotion
+SOD-184,2024-06-13,,42,2024-06-13,TypeB,Urgent,Stock Replenishment
+SOD-185,2024-07-05,,50,2024-07-05,TypeB,Urgent,Promotion
+SOD-186,2024-04-02,,48,2024-04-02,TypeB,Urgent,Promotion
+SOD-187,2024-09-12,,21,2024-09-12,TypeC,Backorder,Special Order
+SOD-188,2023-11-16,,14,2023-11-16,TypeC,Urgent,Promotion
+SOD-189,2024-07-26,,9,2024-07-26,TypeB,Backorder,Promotion
+SOD-190,2023-11-02,,12,2023-11-02,TypeA,Backorder,Special Order
+SOD-191,2024-05-17,,40,2024-05-17,TypeA,Backorder,Promotion
+SOD-192,2023-12-04,,30,2023-12-04,TypeB,Backorder,Stock Replenishment
+SOD-193,2024-05-07,,8,2024-05-07,TypeC,Backorder,Promotion
+SOD-194,2023-10-17,,5,2023-10-17,TypeB,Normal,Special Order
+SOD-195,2024-07-08,,42,2024-07-08,TypeB,Normal,Promotion
+SOD-196,2024-05-15,,26,2024-05-15,TypeA,Backorder,Promotion
+SOD-197,2024-01-05,,6,2024-01-05,TypeA,Backorder,Promotion
+SOD-198,2024-05-15,,48,2024-05-15,TypeB,Backorder,Special Order
+SOD-199,2023-11-27,,38,2023-11-27,TypeC,Urgent,Stock Replenishment
+SOD-200,2024-03-10,,15,2024-03-10,TypeA,Normal,Special Order
