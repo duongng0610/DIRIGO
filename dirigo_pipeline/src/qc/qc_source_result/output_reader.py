@@ -3,7 +3,7 @@ from typing import Any
 
 import pandas as pd
 
-from src.qc.models import (
+from src.qc.qc_source_result.models import (
     ActualProjection,
     ObjectAttributeProjection,
 )

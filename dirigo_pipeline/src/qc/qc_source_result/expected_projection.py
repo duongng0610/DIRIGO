@@ -7,7 +7,7 @@ from src.builders.helper import (
     build_resolver_index,
     resolve_lookup_row,
 )
-from src.qc.models import (
+from src.qc.qc_source_result.models import (
     ExpectedProjection,
     ObjectAttributeProjection,
 )

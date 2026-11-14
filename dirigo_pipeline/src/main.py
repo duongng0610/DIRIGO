@@ -7,6 +7,12 @@ from typing import Any
 from dataclasses import asdict
 from pprint import pprint
 
+from src.llm.source_profiler import (
+    ProfilerConfig,
+    profile_sqlite,
+    save_profile,
+)
+
 from src.qc.qc_source_result.expected_projection import (
     build_expected_projection,
 )
@@ -21,8 +27,11 @@ from src.extractor.to_csv import convert_objects, convert_events,convert_relatio
 
 from pathlib import Path
 
+
+
 def main():
     execute("adventureworks_hr.sqlite","adventureworks_hr_mapping.yaml", "adventureworks_hr")
+
 def qc_completeness_of_dirigo(
     reader: SQLiteReader,
     mapping: dict[str, Any],
@@ -104,7 +113,7 @@ def execute(sqlite_file:str, mapping_file:str, output_folder:str):
 
     print('\n')  
 
-    qc_completeness_of_dirigo(reader,mapping,output_dir)
+    
 
 
 if __name__ == "__main__":

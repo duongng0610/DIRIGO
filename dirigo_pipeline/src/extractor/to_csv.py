@@ -139,28 +139,14 @@ def convert_relationships(relationships: Iterable[RelationshipRecord], output_di
     relationship_path = output_dir / "OCEL_O2O.csv"
 
     with relationship_path.open("w", encoding="utf-8-sig", newline="") as file:
-<<<<<<< Updated upstream
         writer = csv.DictWriter(file, fieldnames=O2O_COLUMNS)
         writer.writeheader()
         for relationship in relationship_records:
             writer.writerow({
                 "Source_object_id": relationship.source_object_id,
-                "Timestamp": (relationship.time_stamp),
-                "O2O_qualifier": (relationship.qualifier),
-                "Target_object_id": _format_value(relationship.target_object_id),
+                "Target_object_id": relationship.target_object_id,
+                "O2O_qualifier": relationship.qualifier,
+                "Timestamp": _format_value(relationship.time_stamp),
             })
-=======
-            writer = csv.DictWriter(file, fieldnames=O2O_COLUMNS)
-            writer.writeheader()
-            for relationship in relationship_records:
-                writer.writerow({
-                    "Source_object_id": relationship.source_object_id,
-                    "Target_object_id": relationship.target_object_id,
-                    "O2O_qualifier": relationship.qualifier,
-                    "Timestamp": _format_value(relationship.time_stamp),
-                })
 
     return relationship_path
->>>>>>> Stashed changes
-
-        return relationship_path
