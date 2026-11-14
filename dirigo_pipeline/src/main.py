@@ -1,6 +1,7 @@
+from src.builders import event_builder, object_builder
 import src.readers.sqlite_reader as sqlite_reader
 import src.readers.reader_yaml as yaml_reader
-from src.builders import object_builder_v2, event_builder_v2, o2o_builder
+from src.builders import o2o_builder
 
 from src.readers.sqlite_reader import SQLiteReader
 from typing import Any
@@ -13,13 +14,13 @@ from src.llm.source_profiler import (
     save_profile,
 )
 
-from src.qc.qc_source_result.expected_projection import (
+from src.qc.projection.expected_projection_builder import (
     build_expected_projection,
 )
-from src.qc.qc_source_result.output_reader import (
+from src.qc.projection.actual_projection_builder import (
     read_actual_projection,
 )
-from src.qc.qc_source_result.reconciliation_validator import (
+from src.qc.projection.reconciliation_validator import (
     reconcile_all,
 )
 
@@ -30,7 +31,7 @@ from pathlib import Path
 
 
 def main():
-    execute("adventureworks_hr.sqlite","adventureworks_hr_mapping.yaml", "adventureworks_hr")
+    execute("adventureworks_hr.sqlite","adventureworks_hr.yaml", "adventureworks_hr")
 
 def qc_completeness_of_dirigo(
     reader: SQLiteReader,
@@ -86,7 +87,7 @@ def execute(sqlite_file:str, mapping_file:str, output_folder:str):
         )
 
     # Build objects based on the mapping
-    objects = object_builder_v2.build_objects(reader, mapping)
+    objects = object_builder.build_objects(reader, mapping)
 
     # Convert the IR ObjectRecords to Dirigo-compatible object CSV files
     output_dir = Path("outputs") / output_folder
@@ -98,7 +99,7 @@ def execute(sqlite_file:str, mapping_file:str, output_folder:str):
         print(f"Wrote {output_file}")
 
     # Build events and e2o based on mapping
-    events = event_builder_v2.build_events(reader, mapping)
+    events = event_builder.build_events(reader, mapping)
 
     output_events_files = convert_events(events, output_dir)
     for output_file in output_events_files:
@@ -113,8 +114,7 @@ def execute(sqlite_file:str, mapping_file:str, output_folder:str):
 
     print('\n')  
 
-    
-
+    qc_completeness_of_dirigo(reader,mapping, output_dir)
 
 if __name__ == "__main__":
     main()

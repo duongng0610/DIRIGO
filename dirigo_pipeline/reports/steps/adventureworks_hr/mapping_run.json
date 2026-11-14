@@ -1,0 +1,26 @@
+{
+  "created_at": "2026-11-14T16:26:15.313867+00:00",
+  "provider": "google",
+  "model": "gemini-3.6-flash",
+  "response_id": "Q4v4ap_sKMa01e8P-_K8iQI",
+  "source_profile_hash": "4ef371fa06b19fd44c90d65144abb75b262321593059edb7018f71f62a45964f",
+  "prompt_hash": "0f56062492d05c62142fb7a2ef8d9ea8ac60df27e185dce95a06d3c884a3d99a",
+  "usage": {
+    "cache_tokens_details": null,
+    "cached_content_token_count": null,
+    "candidates_token_count": 1775,
+    "candidates_tokens_details": null,
+    "prompt_token_count": 5993,
+    "prompt_tokens_details": [
+      {
+        "modality": "TEXT",
+        "token_count": 5993
+      }
+    ],
+    "thoughts_token_count": 5910,
+    "tool_use_prompt_token_count": null,
+    "tool_use_prompt_tokens_details": null,
+    "total_token_count": 13678,
+    "traffic_type": null
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "checks_run": 117,
+  "error_count": 0,
+  "warning_count": 2,
+  "issues": [
+    {
+      "code": "MAP-ID-NOT-CANDIDATE-KEY",
+      "severity": "WARNING",
+      "path": "mapping.events[1].id",
+      "message": "ID columns ['BusinessEntityID', 'DepartmentID', 'ShiftID', 'StartDate'] are not listed as a candidate key for 'EmployeeDepartmentHistory'",
+      "repair_strategy": "human",
+      "evidence": {
+        "candidate_keys": [
+          [
+            "BusinessEntityID",
+            "DepartmentID"
+          ],
+          [
+            "BusinessEntityID",
+            "ModifiedDate"
+          ],
+          [
+            "BusinessEntityID",
+            "StartDate"
+          ]
+        ]
+      }
+    },
+    {
+      "code": "MAP-ID-NOT-CANDIDATE-KEY",
+      "severity": "WARNING",
+      "path": "mapping.events[2].id",
+      "message": "ID columns ['BusinessEntityID', 'DepartmentID', 'ShiftID', 'StartDate'] are not listed as a candidate key for 'EmployeeDepartmentHistory'",
+      "repair_strategy": "human",
+      "evidence": {
+        "candidate_keys": [
+          [
+            "BusinessEntityID",
+            "DepartmentID"
+          ],
+          [
+            "BusinessEntityID",
+            "ModifiedDate"
+          ],
+          [
+            "BusinessEntityID",
+            "StartDate"
+          ]
+        ]
+      }
+    }
+  ]
+}

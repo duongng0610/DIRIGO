@@ -1,0 +1,221 @@
+contract_version: 2
+name: adventureworks_hr
+sources:
+  type: sqlite
+  path: data/raw/adventureworks_hr.sqlite
+  read_only: true
+tables:
+  Department:
+    table: Department
+  Employee:
+    table: Employee
+  EmployeeDepartmentHistory:
+    table: EmployeeDepartmentHistory
+  EmployeePayHistory:
+    table: EmployeePayHistory
+  Shift:
+    table: Shift
+objects:
+- type: employee
+  source_table: Employee
+  id:
+    mode: direct
+    columns:
+    - BusinessEntityID
+  attributes:
+    static:
+    - name: job_title
+      source_column: JobTitle
+      type: string
+    - name: birth_date
+      source_column: BirthDate
+      type: string
+    - name: gender
+      source_column: Gender
+      type: string
+    - name: marital_status
+      source_column: MaritalStatus
+      type: string
+    - name: hire_date
+      source_column: HireDate
+      type: string
+    - name: salaried_flag
+      source_column: SalariedFlag
+      type: boolean
+    dynamic:
+    - name: pay_rate
+      source_table: EmployeePayHistory
+      value:
+        column: Rate
+        type: decimal
+      timestamp:
+        column: RateChangeDate
+      object_reference:
+        object_type: employee
+        key_mapping:
+          BusinessEntityID: BusinessEntityID
+- type: department
+  source_table: Department
+  id:
+    mode: direct
+    columns:
+    - DepartmentID
+  attributes:
+    static:
+    - name: name
+      source_column: Name
+      type: string
+    - name: group_name
+      source_column: GroupName
+      type: string
+    dynamic: []
+- type: shift
+  source_table: Shift
+  id:
+    mode: direct
+    columns:
+    - ShiftID
+  attributes:
+    static:
+    - name: name
+      source_column: Name
+      type: string
+    - name: start_time
+      source_column: StartTime
+      type: string
+    - name: end_time
+      source_column: EndTime
+      type: string
+    dynamic: []
+events:
+- type: employee_hired
+  source_table: Employee
+  id:
+    mode: option
+    columns:
+    - BusinessEntityID
+    - HireDate
+    prefix: hire
+  timestamp:
+    source_column: HireDate
+  attributes: []
+  objects:
+  - object_type: employee
+    key_mapping:
+      BusinessEntityID: BusinessEntityID
+    qualifier: hired_employee
+- type: department_assignment_started
+  source_table: EmployeeDepartmentHistory
+  id:
+    mode: option
+    columns:
+    - BusinessEntityID
+    - DepartmentID
+    - StartDate
+    prefix: dept_assign_start
+  timestamp:
+    source_column: StartDate
+  attributes: []
+  objects:
+  - object_type: employee
+    key_mapping:
+      BusinessEntityID: BusinessEntityID
+    qualifier: assigned_employee
+  - object_type: department
+    key_mapping:
+      DepartmentID: DepartmentID
+    qualifier: assigned_department
+  - object_type: shift
+    key_mapping:
+      ShiftID: ShiftID
+    qualifier: assigned_shift
+- type: department_assignment_ended
+  source_table: EmployeeDepartmentHistory
+  id:
+    mode: option
+    columns:
+    - BusinessEntityID
+    - DepartmentID
+    - StartDate
+    prefix: dept_assign_end
+  timestamp:
+    source_column: EndDate
+  attributes: []
+  objects:
+  - object_type: employee
+    key_mapping:
+      BusinessEntityID: BusinessEntityID
+    qualifier: assigned_employee
+  - object_type: department
+    key_mapping:
+      DepartmentID: DepartmentID
+    qualifier: assigned_department
+  - object_type: shift
+    key_mapping:
+      ShiftID: ShiftID
+    qualifier: assigned_shift
+  where:
+  - column: EndDate
+    condition: is_not_null
+- type: pay_rate_changed
+  source_table: EmployeePayHistory
+  id:
+    mode: option
+    columns:
+    - BusinessEntityID
+    - RateChangeDate
+    prefix: pay_change
+  timestamp:
+    source_column: RateChangeDate
+  attributes: []
+  objects:
+  - object_type: employee
+    key_mapping:
+      BusinessEntityID: BusinessEntityID
+    qualifier: paid_employee
+relationships:
+  o2o:
+  - name: employee_assigned_to_department
+    mode: dynamic
+    source:
+      object_type: employee
+      key_mapping:
+        BusinessEntityID: BusinessEntityID
+    target:
+      object_type: department
+      key_mapping:
+        DepartmentID: DepartmentID
+    qualifiers:
+    - qualifier: assignment_started
+      source_table: EmployeeDepartmentHistory
+      timestamp:
+        column: StartDate
+    - qualifier: assignment_ended
+      source_table: EmployeeDepartmentHistory
+      timestamp:
+        column: EndDate
+      where:
+      - column: EndDate
+        condition: is_not_null
+  - name: employee_assigned_to_shift
+    mode: dynamic
+    source:
+      object_type: employee
+      key_mapping:
+        BusinessEntityID: BusinessEntityID
+    target:
+      object_type: shift
+      key_mapping:
+        ShiftID: ShiftID
+    qualifiers:
+    - qualifier: assignment_started
+      source_table: EmployeeDepartmentHistory
+      timestamp:
+        column: StartDate
+    - qualifier: assignment_ended
+      source_table: EmployeeDepartmentHistory
+      timestamp:
+        column: EndDate
+      where:
+      - column: EndDate
+        condition: is_not_null

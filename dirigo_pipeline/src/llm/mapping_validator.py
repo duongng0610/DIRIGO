@@ -542,6 +542,53 @@ class MappingValidator:
 
         for object_index, object_mapping in enumerate(objects):
             path = f"mapping.objects[{object_index}]"
+
+            if object_mapping.id.mode != "option":
+                self._add_issue(
+                    code="MAP-OBJECT-ID-NOT-GLOBAL",
+                    severity="ERROR",
+                    path=f"{path}.id.mode",
+                    message=(
+                        f"Object '{object_mapping.type}' must use "
+                        "id.mode='option' so its ID is globally unique"
+                    ),
+                    repair_strategy="llm",
+                    evidence={
+                        "actual_mode": object_mapping.id.mode,
+                        "required_mode": "option",
+                    },
+                )
+
+            expected_prefix = object_mapping.type
+
+            if object_mapping.id.prefix != expected_prefix:
+                self._add_issue(
+                    code="MAP-OBJECT-ID-PREFIX-INVALID",
+                    severity="ERROR",
+                    path=f"{path}.id.prefix",
+                    message=(
+                        f"Object '{object_mapping.type}' must use "
+                        f"prefix '{expected_prefix}'"
+                    ),
+                    repair_strategy="llm",
+                    evidence={
+                        "actual_prefix": object_mapping.id.prefix,
+                        "expected_prefix": expected_prefix,
+                    },
+                )
+
+            if object_mapping.id.separator != "-":
+                self._add_issue(
+                    code="MAP-OBJECT-ID-SEPARATOR-INVALID",
+                    severity="ERROR",
+                    path=f"{path}.id.separator",
+                    message="Object ID separator must be '-'",
+                    repair_strategy="llm",
+                    evidence={
+                        "actual_separator": object_mapping.id.separator,
+                    },
+                )
+
             self._validate_id(
                 object_mapping.source_table,
                 object_mapping.id,

@@ -13,6 +13,7 @@ from .llm_client import (
     MappingLLMClient,
 )
 from .mapping_models import MappingProposal
+
 from .mapping_prompt import (
     SYSTEM_PROMPT,
     build_mapping_user_prompt,

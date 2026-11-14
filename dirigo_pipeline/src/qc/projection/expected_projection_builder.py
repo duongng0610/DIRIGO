@@ -7,7 +7,7 @@ from src.builders.helper import (
     build_resolver_index,
     resolve_lookup_row,
 )
-from src.qc.qc_source_result.models import (
+from src.qc.projection.models import (
     ExpectedProjection,
     ObjectAttributeProjection,
 )
@@ -323,101 +323,59 @@ def project_expected_o2o(
     )
 
     for relationship_mapping in relationship_mappings:
-        source_df = build_data_frame_by_table_name(
-            sqlite_reader,
-            relationship_mapping["source_table"],
-            mapping["tables"],
-        )
-
-        source_df = sqlite_reader.apply_where(
-            source_df,
-            relationship_mapping.get("where", []),
-        )
-
-        source_reference = relationship_mapping[
-            "source"
-        ]
-        target_reference = relationship_mapping[
-            "target"
-        ]
-
-        source_type = source_reference["object_type"]
-        target_type = target_reference["object_type"]
-
-        source_lookup = build_resolver_index(
-            sqlite_reader,
-            source_reference,
-            mapping,
-        )
-
-        target_lookup = build_resolver_index(
-            sqlite_reader,
-            target_reference,
-            mapping,
-        )
-
-        timestamp_mapping = relationship_mapping.get(
-            "timestamp"
-        )
-
-        timestamp_lookup = (
-            build_resolver_index(
-                sqlite_reader,
-                timestamp_mapping,
-                mapping,
-            )
-            if timestamp_mapping
-            else None
-        )
-
-        for _, row in source_df.iterrows():
-            source_id = build_object_reference_id(
-                row=row,
-                object_config=object_configs[
-                    source_type
-                ],
-                object_mapping=source_reference,
-                lookup_index=source_lookup,
-            )
-
-            target_id = build_object_reference_id(
-                row=row,
-                object_config=object_configs[
-                    target_type
-                ],
-                object_mapping=target_reference,
-                lookup_index=target_lookup,
-            )
-
-            timestamp = None
-
-            if timestamp_mapping:
-                timestamp_row = row
-
-                resolver = timestamp_mapping.get(
-                    "resolver"
+            source_object_mapping = relationship_mapping["source"]
+            source_object_type = source_object_mapping["object_type"]
+    
+            target_object_mapping = relationship_mapping["target"]
+            target_object_type = target_object_mapping["object_type"]
+    
+            for qualifier_mapping in relationship_mapping["qualifiers"]:
+                o2o_source_df = build_data_frame_by_table_name(
+                    sqlite_reader,
+                    qualifier_mapping["source_table"],
+                    mapping["tables"])
+    
+                # Giữ những row là event trong bảng
+                o2o_source_df = sqlite_reader.apply_where(
+                    o2o_source_df,
+                    qualifier_mapping.get("where", []),
                 )
-
-                if resolver:
-                    timestamp_row = resolve_lookup_row(
+    
+                source_lookup_index = build_resolver_index(
+                    sqlite_reader, source_object_mapping, mapping)
+    
+                target_lookup_index = build_resolver_index(
+                    sqlite_reader, target_object_mapping, mapping)
+    
+                qualifier = qualifier_mapping["qualifier"]
+                time_stamp_column = qualifier_mapping["timestamp"]["column"]
+    
+                for _, row in o2o_source_df.iterrows():
+    
+                    source_object_id = build_object_reference_id(
                         row=row,
-                        resolver_mapping=resolver,
-                        lookup_index=timestamp_lookup,
+                        object_config=object_configs[source_object_type],
+                        object_mapping=source_object_mapping,
+                        lookup_index=source_lookup_index,
                     )
+    
+                    target_object_id = build_object_reference_id(
+                        row=row,
+                        object_config=object_configs[target_object_type],
+                        object_mapping=target_object_mapping,
+                        lookup_index=target_lookup_index
+                    )
+    
+                    time_stamp = row[time_stamp_column]
+    
 
-                timestamp = timestamp_row[
-                    timestamp_mapping["column"]
-                ]
-
-            projection.o2o.append({
-                "relationship_name":
-                    relationship_mapping.get("name"),
-                "source_object_id": source_id,
-                "source_object_type": source_type,
-                "target_object_id": target_id,
-                "target_object_type": target_type,
-                "qualifier": relationship_mapping[
-                    "qualifier"
-                ],
-                "timestamp": timestamp,
-            })
+                    projection.o2o.append({
+                        "relationship_name":
+                            relationship_mapping.get("name"),
+                        "source_object_id": source_object_id,
+                        "source_object_type": source_object_type,
+                        "target_object_id": target_object_id,
+                        "target_object_type": target_object_type,
+                        "qualifier": qualifier,
+                        "timestamp": time_stamp,
+                    })

@@ -160,6 +160,7 @@ def validate_dirigo_output(
             invalid_timestamps = int(
                 pd.to_datetime(
                     events_df["Timestamp"],
+                    format="mixed",
                     errors="coerce",
                 )
                 .isna()
@@ -204,16 +205,18 @@ def validate_dirigo_output(
 
         else:
             missing_events = int(
-                ~e2o_df["Event_id"]
-                .astype(str)
-                .isin(event_ids)
-            ).sum()
+                (
+                    ~e2o_df["Event_id"]
+                    .astype(str)
+                    .isin(event_ids)
+                ).sum()
+            )
 
-            missing_objects = int(
+            missing_objects = int((
                 ~e2o_df["Object_id"]
                 .astype(str)
                 .isin(object_ids)
-            ).sum()
+            ).sum())
 
             blank_qualifiers = int(
                 _blank_mask(e2o_df["E2O_qualifier"]).sum()
@@ -265,17 +268,17 @@ def validate_dirigo_output(
             )
 
         else:
-            unknown_sources = int(
+            unknown_sources = int((
                 ~o2o_df["Source_object_id"]
                 .astype(str)
                 .isin(object_ids)
-            ).sum()
+            ).sum())
 
-            unknown_targets = int(
+            unknown_targets = int((
                 ~o2o_df["Target_object_id"]
                 .astype(str)
                 .isin(object_ids)
-            ).sum()
+            ).sum())
 
             blank_qualifiers = int(
                 _blank_mask(o2o_df["O2O_qualifier"]).sum()

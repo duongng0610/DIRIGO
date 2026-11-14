@@ -1,0 +1,101 @@
+{
+  "all_passed": true,
+  "results": {
+    "QC2a": {
+      "qc_id": "QC2a",
+      "status": "PASS",
+      "expected_count": 2071,
+      "actual_count": 2071,
+      "matched_count": 2071,
+      "missing_count": 0,
+      "unexpected_count": 0,
+      "completeness_ratio": 1.0,
+      "missing_samples": [],
+      "unexpected_samples": []
+    },
+    "QC2b": {
+      "qc_id": "QC2b",
+      "status": "PASS",
+      "expected_count": 632,
+      "actual_count": 632,
+      "matched_count": 632,
+      "missing_count": 0,
+      "unexpected_count": 0,
+      "completeness_ratio": 1.0,
+      "missing_samples": [],
+      "unexpected_samples": []
+    },
+    "QC2c": {
+      "qc_id": "QC2c",
+      "status": "PASS",
+      "expected_count": 908,
+      "actual_count": 908,
+      "matched_count": 908,
+      "missing_count": 0,
+      "unexpected_count": 0,
+      "completeness_ratio": 1.0,
+      "missing_samples": [],
+      "unexpected_samples": []
+    },
+    "QC3a": {
+      "qc_id": "QC3a",
+      "status": "NOT_APPLICABLE",
+      "expected_count": 0,
+      "actual_count": 0,
+      "matched_count": 0,
+      "missing_count": 0,
+      "unexpected_count": 0,
+      "completeness_ratio": null,
+      "missing_samples": [],
+      "unexpected_samples": []
+    },
+    "QC3b": {
+      "qc_id": "QC3b",
+      "status": "PASS",
+      "expected_count": 604,
+      "actual_count": 604,
+      "matched_count": 604,
+      "missing_count": 0,
+      "unexpected_count": 0,
+      "completeness_ratio": 1.0,
+      "missing_samples": [],
+      "unexpected_samples": []
+    },
+    "QC3c": {
+      "qc_id": "QC3c",
+      "status": "PASS",
+      "expected_count": 1512,
+      "actual_count": 1512,
+      "matched_count": 1512,
+      "missing_count": 0,
+      "unexpected_count": 0,
+      "completeness_ratio": 1.0,
+      "missing_samples": [],
+      "unexpected_samples": []
+    },
+    "QC4a": {
+      "qc_id": "QC4a",
+      "status": "PASS",
+      "expected_count": 604,
+      "actual_count": 604,
+      "matched_count": 604,
+      "missing_count": 0,
+      "unexpected_count": 0,
+      "completeness_ratio": 1.0,
+      "missing_samples": [],
+      "unexpected_samples": []
+    },
+    "QC4b": {
+      "qc_id": "QC4b",
+      "status": "PASS",
+      "expected_count": 1512,
+      "actual_count": 1512,
+      "matched_count": 1512,
+      "missing_count": 0,
+      "unexpected_count": 0,
+      "completeness_ratio": 1.0,
+      "missing_samples": [],
+      "unexpected_samples": []
+    }
+  }
+}

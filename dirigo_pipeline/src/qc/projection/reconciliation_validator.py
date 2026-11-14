@@ -3,13 +3,13 @@ from collections import Counter
 from collections.abc import Callable
 from typing import Any
 
-from src.qc.qc_source_result.models import (
+from src.qc.projection.models import (
     ActualProjection,
     ExpectedProjection,
     ObjectAttributeProjection,
     ReconciliationResult,
 )
-from src.qc.qc_source_result.normalization import (
+from src.qc.projection.normalization import (
     normalize_id,
     normalize_timestamp,
     normalize_value,

@@ -1,0 +1,580 @@
+{
+  "mapping": {
+    "dataset_name": "adventureworks_hr",
+    "objects": [
+      {
+        "type": "department",
+        "source_table": "Department",
+        "id": {
+          "mode": "option",
+          "columns": [
+            "DepartmentID"
+          ],
+          "prefix": "department",
+          "separator": "-"
+        },
+        "attributes": {
+          "static": [
+            {
+              "name": "department_name",
+              "value": {
+                "column": "Name",
+                "value_type": "string"
+              }
+            },
+            {
+              "name": "group_name",
+              "value": {
+                "column": "GroupName",
+                "value_type": "string"
+              }
+            }
+          ],
+          "dynamic": []
+        }
+      },
+      {
+        "type": "employee",
+        "source_table": "Employee",
+        "id": {
+          "mode": "option",
+          "columns": [
+            "BusinessEntityID"
+          ],
+          "prefix": "employee",
+          "separator": "-"
+        },
+        "attributes": {
+          "static": [
+            {
+              "name": "job_title",
+              "value": {
+                "column": "JobTitle",
+                "value_type": "string"
+              }
+            },
+            {
+              "name": "marital_status",
+              "value": {
+                "column": "MaritalStatus",
+                "value_type": "string"
+              }
+            },
+            {
+              "name": "gender",
+              "value": {
+                "column": "Gender",
+                "value_type": "string"
+              }
+            },
+            {
+              "name": "salaried_flag",
+              "value": {
+                "column": "SalariedFlag",
+                "value_type": "integer"
+              }
+            },
+            {
+              "name": "vacation_hours",
+              "value": {
+                "column": "VacationHours",
+                "value_type": "integer"
+              }
+            },
+            {
+              "name": "sick_leave_hours",
+              "value": {
+                "column": "SickLeaveHours",
+                "value_type": "integer"
+              }
+            },
+            {
+              "name": "current_flag",
+              "value": {
+                "column": "CurrentFlag",
+                "value_type": "integer"
+              }
+            }
+          ],
+          "dynamic": [
+            {
+              "name": "pay_rate",
+              "source_table": "EmployeePayHistory",
+              "value": {
+                "column": "Rate",
+                "value_type": "decimal"
+              },
+              "timestamp": {
+                "column": "RateChangeDate"
+              },
+              "object_reference": {
+                "object_type": "employee",
+                "mode": "direct",
+                "key_mapping": [
+                  {
+                    "object_id_column": "BusinessEntityID",
+                    "row_column": "BusinessEntityID"
+                  }
+                ],
+                "resolver": null
+              },
+              "where": []
+            },
+            {
+              "name": "pay_frequency",
+              "source_table": "EmployeePayHistory",
+              "value": {
+                "column": "PayFrequency",
+                "value_type": "integer"
+              },
+              "timestamp": {
+                "column": "RateChangeDate"
+              },
+              "object_reference": {
+                "object_type": "employee",
+                "mode": "direct",
+                "key_mapping": [
+                  {
+                    "object_id_column": "BusinessEntityID",
+                    "row_column": "BusinessEntityID"
+                  }
+                ],
+                "resolver": null
+              },
+              "where": []
+            }
+          ]
+        }
+      },
+      {
+        "type": "shift",
+        "source_table": "Shift",
+        "id": {
+          "mode": "option",
+          "columns": [
+            "ShiftID"
+          ],
+          "prefix": "shift",
+          "separator": "-"
+        },
+        "attributes": {
+          "static": [
+            {
+              "name": "shift_name",
+              "value": {
+                "column": "Name",
+                "value_type": "string"
+              }
+            },
+            {
+              "name": "start_time",
+              "value": {
+                "column": "StartTime",
+                "value_type": "string"
+              }
+            },
+            {
+              "name": "end_time",
+              "value": {
+                "column": "EndTime",
+                "value_type": "string"
+              }
+            }
+          ],
+          "dynamic": []
+        }
+      }
+    ],
+    "events": [
+      {
+        "type": "employee_hired",
+        "source_table": "Employee",
+        "id": {
+          "mode": "option",
+          "columns": [
+            "BusinessEntityID"
+          ],
+          "prefix": "employee_hired",
+          "separator": "-"
+        },
+        "timestamp": {
+          "column": "HireDate"
+        },
+        "where": [],
+        "attributes": [],
+        "objects": [
+          {
+            "reference": {
+              "object_type": "employee",
+              "mode": "direct",
+              "key_mapping": [
+                {
+                  "object_id_column": "BusinessEntityID",
+                  "row_column": "BusinessEntityID"
+                }
+              ],
+              "resolver": null
+            },
+            "qualifier": "hired_employee"
+          }
+        ]
+      },
+      {
+        "type": "department_assignment_started",
+        "source_table": "EmployeeDepartmentHistory",
+        "id": {
+          "mode": "option",
+          "columns": [
+            "BusinessEntityID",
+            "DepartmentID",
+            "ShiftID",
+            "StartDate"
+          ],
+          "prefix": "department_assignment_started",
+          "separator": "-"
+        },
+        "timestamp": {
+          "column": "StartDate"
+        },
+        "where": [],
+        "attributes": [],
+        "objects": [
+          {
+            "reference": {
+              "object_type": "employee",
+              "mode": "direct",
+              "key_mapping": [
+                {
+                  "object_id_column": "BusinessEntityID",
+                  "row_column": "BusinessEntityID"
+                }
+              ],
+              "resolver": null
+            },
+            "qualifier": "assigned_employee"
+          },
+          {
+            "reference": {
+              "object_type": "department",
+              "mode": "direct",
+              "key_mapping": [
+                {
+                  "object_id_column": "DepartmentID",
+                  "row_column": "DepartmentID"
+                }
+              ],
+              "resolver": null
+            },
+            "qualifier": "assigned_department"
+          },
+          {
+            "reference": {
+              "object_type": "shift",
+              "mode": "direct",
+              "key_mapping": [
+                {
+                  "object_id_column": "ShiftID",
+                  "row_column": "ShiftID"
+                }
+              ],
+              "resolver": null
+            },
+            "qualifier": "assigned_shift"
+          }
+        ]
+      },
+      {
+        "type": "department_assignment_ended",
+        "source_table": "EmployeeDepartmentHistory",
+        "id": {
+          "mode": "option",
+          "columns": [
+            "BusinessEntityID",
+            "DepartmentID",
+            "ShiftID",
+            "StartDate"
+          ],
+          "prefix": "department_assignment_ended",
+          "separator": "-"
+        },
+        "timestamp": {
+          "column": "EndDate"
+        },
+        "where": [
+          {
+            "column": "EndDate",
+            "operator": "is_not_null",
+            "value": null,
+            "values": []
+          }
+        ],
+        "attributes": [],
+        "objects": [
+          {
+            "reference": {
+              "object_type": "employee",
+              "mode": "direct",
+              "key_mapping": [
+                {
+                  "object_id_column": "BusinessEntityID",
+                  "row_column": "BusinessEntityID"
+                }
+              ],
+              "resolver": null
+            },
+            "qualifier": "unassigned_employee"
+          },
+          {
+            "reference": {
+              "object_type": "department",
+              "mode": "direct",
+              "key_mapping": [
+                {
+                  "object_id_column": "DepartmentID",
+                  "row_column": "DepartmentID"
+                }
+              ],
+              "resolver": null
+            },
+            "qualifier": "unassigned_department"
+          },
+          {
+            "reference": {
+              "object_type": "shift",
+              "mode": "direct",
+              "key_mapping": [
+                {
+                  "object_id_column": "ShiftID",
+                  "row_column": "ShiftID"
+                }
+              ],
+              "resolver": null
+            },
+            "qualifier": "unassigned_shift"
+          }
+        ]
+      },
+      {
+        "type": "pay_rate_changed",
+        "source_table": "EmployeePayHistory",
+        "id": {
+          "mode": "option",
+          "columns": [
+            "BusinessEntityID",
+            "RateChangeDate"
+          ],
+          "prefix": "pay_rate_changed",
+          "separator": "-"
+        },
+        "timestamp": {
+          "column": "RateChangeDate"
+        },
+        "where": [],
+        "attributes": [],
+        "objects": [
+          {
+            "reference": {
+              "object_type": "employee",
+              "mode": "direct",
+              "key_mapping": [
+                {
+                  "object_id_column": "BusinessEntityID",
+                  "row_column": "BusinessEntityID"
+                }
+              ],
+              "resolver": null
+            },
+            "qualifier": "paid_employee"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "employee_department_assignment",
+        "source_table": "EmployeeDepartmentHistory",
+        "source": {
+          "object_type": "employee",
+          "mode": "direct",
+          "key_mapping": [
+            {
+              "object_id_column": "BusinessEntityID",
+              "row_column": "BusinessEntityID"
+            }
+          ],
+          "resolver": null
+        },
+        "target": {
+          "object_type": "department",
+          "mode": "direct",
+          "key_mapping": [
+            {
+              "object_id_column": "DepartmentID",
+              "row_column": "DepartmentID"
+            }
+          ],
+          "resolver": null
+        },
+        "qualifier": "assigned_to_department",
+        "relation_mode": "dynamic",
+        "timestamp": {
+          "column": "StartDate"
+        },
+        "where": []
+      },
+      {
+        "name": "employee_department_assignment",
+        "source_table": "EmployeeDepartmentHistory",
+        "source": {
+          "object_type": "employee",
+          "mode": "direct",
+          "key_mapping": [
+            {
+              "object_id_column": "BusinessEntityID",
+              "row_column": "BusinessEntityID"
+            }
+          ],
+          "resolver": null
+        },
+        "target": {
+          "object_type": "department",
+          "mode": "direct",
+          "key_mapping": [
+            {
+              "object_id_column": "DepartmentID",
+              "row_column": "DepartmentID"
+            }
+          ],
+          "resolver": null
+        },
+        "qualifier": "unassigned_from_department",
+        "relation_mode": "dynamic",
+        "timestamp": {
+          "column": "EndDate"
+        },
+        "where": [
+          {
+            "column": "EndDate",
+            "operator": "is_not_null",
+            "value": null,
+            "values": []
+          }
+        ]
+      },
+      {
+        "name": "employee_shift_assignment",
+        "source_table": "EmployeeDepartmentHistory",
+        "source": {
+          "object_type": "employee",
+          "mode": "direct",
+          "key_mapping": [
+            {
+              "object_id_column": "BusinessEntityID",
+              "row_column": "BusinessEntityID"
+            }
+          ],
+          "resolver": null
+        },
+        "target": {
+          "object_type": "shift",
+          "mode": "direct",
+          "key_mapping": [
+            {
+              "object_id_column": "ShiftID",
+              "row_column": "ShiftID"
+            }
+          ],
+          "resolver": null
+        },
+        "qualifier": "assigned_to_shift",
+        "relation_mode": "dynamic",
+        "timestamp": {
+          "column": "StartDate"
+        },
+        "where": []
+      },
+      {
+        "name": "employee_shift_assignment",
+        "source_table": "EmployeeDepartmentHistory",
+        "source": {
+          "object_type": "employee",
+          "mode": "direct",
+          "key_mapping": [
+            {
+              "object_id_column": "BusinessEntityID",
+              "row_column": "BusinessEntityID"
+            }
+          ],
+          "resolver": null
+        },
+        "target": {
+          "object_type": "shift",
+          "mode": "direct",
+          "key_mapping": [
+            {
+              "object_id_column": "ShiftID",
+              "row_column": "ShiftID"
+            }
+          ],
+          "resolver": null
+        },
+        "qualifier": "unassigned_from_shift",
+        "relation_mode": "dynamic",
+        "timestamp": {
+          "column": "EndDate"
+        },
+        "where": [
+          {
+            "column": "EndDate",
+            "operator": "is_not_null",
+            "value": null,
+            "values": []
+          }
+        ]
+      }
+    ]
+  },
+  "decisions": [
+    {
+      "mapping_path": "objects[department].id",
+      "confidence": 0.95,
+      "evidence": [
+        "DepartmentID is unique in Department snapshot"
+      ],
+      "assumptions": [
+        "DepartmentID is canonical business key"
+      ]
+    },
+    {
+      "mapping_path": "objects[employee].id",
+      "confidence": 0.95,
+      "evidence": [
+        "BusinessEntityID is unique in Employee snapshot"
+      ],
+      "assumptions": [
+        "BusinessEntityID is canonical employee identifier"
+      ]
+    },
+    {
+      "mapping_path": "objects[shift].id",
+      "confidence": 0.95,
+      "evidence": [
+        "ShiftID is unique in Shift snapshot"
+      ],
+      "assumptions": [
+        "ShiftID is canonical shift identifier"
+      ]
+    },
+    {
+      "mapping_path": "events[department_assignment_started].id",
+      "confidence": 0.9,
+      "evidence": [
+        "EmployeeDepartmentHistory composite key includes BusinessEntityID, DepartmentID, ShiftID, StartDate"
+      ],
+      "assumptions": [
+        "All primary key components are required for history record identification"
+      ]
+    }
+  ],
+  "unresolved_questions": []
+}

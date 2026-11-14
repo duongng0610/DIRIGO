@@ -1,0 +1,17 @@
+﻿Object_id,Timestamp,Ocel_changed_field,department_name,group_name
+department-1,,,Engineering,Research and Development
+department-2,,,Tool Design,Research and Development
+department-3,,,Sales,Sales and Marketing
+department-4,,,Marketing,Sales and Marketing
+department-5,,,Purchasing,Inventory Management
+department-6,,,Research and Development,Research and Development
+department-7,,,Production,Manufacturing
+department-8,,,Production Control,Manufacturing
+department-9,,,Human Resources,Executive General and Administration
+department-10,,,Finance,Executive General and Administration
+department-11,,,Information Services,Executive General and Administration
+department-12,,,Document Control,Quality Assurance
+department-13,,,Quality Assurance,Quality Assurance
+department-14,,,Facilities and Maintenance,Executive General and Administration
+department-15,,,Shipping and Receiving,Inventory Management
+department-16,,,Executive,Executive General and Administration
