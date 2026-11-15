@@ -16,9 +16,9 @@
     "QC2b": {
       "qc_id": "QC2b",
       "status": "PASS",
-      "expected_count": 632,
-      "actual_count": 632,
-      "matched_count": 632,
+      "expected_count": 316,
+      "actual_count": 316,
+      "matched_count": 316,
       "missing_count": 0,
       "unexpected_count": 0,
       "completeness_ratio": 1.0,

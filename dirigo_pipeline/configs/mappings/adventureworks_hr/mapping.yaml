@@ -25,7 +25,7 @@ objects:
     prefix: department
   attributes:
     static:
-    - name: department_name
+    - name: name
       source_column: Name
       type: string
     - name: group_name
@@ -50,6 +50,9 @@ objects:
     - name: gender
       source_column: Gender
       type: string
+    - name: hire_date
+      source_column: HireDate
+      type: datetime
     - name: salaried_flag
       source_column: SalariedFlag
       type: integer
@@ -59,26 +62,12 @@ objects:
     - name: sick_leave_hours
       source_column: SickLeaveHours
       type: integer
-    - name: current_flag
-      source_column: CurrentFlag
-      type: integer
     dynamic:
     - name: pay_rate
       source_table: EmployeePayHistory
       value:
         column: Rate
         type: decimal
-      timestamp:
-        column: RateChangeDate
-      object_reference:
-        object_type: employee
-        key_mapping:
-          BusinessEntityID: BusinessEntityID
-    - name: pay_frequency
-      source_table: EmployeePayHistory
-      value:
-        column: PayFrequency
-        type: integer
       timestamp:
         column: RateChangeDate
       object_reference:
@@ -94,7 +83,7 @@ objects:
     prefix: shift
   attributes:
     static:
-    - name: shift_name
+    - name: name
       source_column: Name
       type: string
     - name: start_time
@@ -120,7 +109,23 @@ events:
     key_mapping:
       BusinessEntityID: BusinessEntityID
     qualifier: hired_employee
-- type: department_assignment_started
+- type: employee_pay_rate_changed
+  source_table: EmployeePayHistory
+  id:
+    mode: option
+    columns:
+    - BusinessEntityID
+    - RateChangeDate
+    prefix: employee_pay_rate_changed
+  timestamp:
+    source_column: RateChangeDate
+  attributes: []
+  objects:
+  - object_type: employee
+    key_mapping:
+      BusinessEntityID: BusinessEntityID
+    qualifier: paid_employee
+- type: employee_department_assigned
   source_table: EmployeeDepartmentHistory
   id:
     mode: option
@@ -129,7 +134,7 @@ events:
     - DepartmentID
     - ShiftID
     - StartDate
-    prefix: department_assignment_started
+    prefix: employee_department_assigned
   timestamp:
     source_column: StartDate
   attributes: []
@@ -146,7 +151,7 @@ events:
     key_mapping:
       ShiftID: ShiftID
     qualifier: assigned_shift
-- type: department_assignment_ended
+- type: employee_department_unassigned
   source_table: EmployeeDepartmentHistory
   id:
     mode: option
@@ -155,7 +160,7 @@ events:
     - DepartmentID
     - ShiftID
     - StartDate
-    prefix: department_assignment_ended
+    prefix: employee_department_unassigned
   timestamp:
     source_column: EndDate
   attributes: []
@@ -175,22 +180,6 @@ events:
   where:
   - column: EndDate
     condition: is_not_null
-- type: pay_rate_changed
-  source_table: EmployeePayHistory
-  id:
-    mode: option
-    columns:
-    - BusinessEntityID
-    - RateChangeDate
-    prefix: pay_rate_changed
-  timestamp:
-    source_column: RateChangeDate
-  attributes: []
-  objects:
-  - object_type: employee
-    key_mapping:
-      BusinessEntityID: BusinessEntityID
-    qualifier: paid_employee
 relationships:
   o2o:
   - name: employee_department_assignment

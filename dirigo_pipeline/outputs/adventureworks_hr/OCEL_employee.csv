@@ -1,923 +1,607 @@
-﻿Object_id,Timestamp,Ocel_changed_field,job_title,marital_status,gender,salaried_flag,vacation_hours,sick_leave_hours,current_flag,pay_rate,pay_frequency
-employee-1,,,Chief Executive Officer,S,M,1,99,69,1,,
-employee-1,2009-01-14 00:00:00.000,pay_rate,,,,,,,,125.5,
-employee-1,2009-01-14 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-2,,,Vice President of Engineering,S,F,1,1,20,1,,
-employee-2,2008-01-31 00:00:00.000,pay_rate,,,,,,,,63.4615,
-employee-2,2008-01-31 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-3,,,Engineering Manager,M,M,1,2,21,1,,
-employee-3,2007-11-11 00:00:00.000,pay_rate,,,,,,,,43.2692,
-employee-3,2007-11-11 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-4,,,Senior Tool Designer,S,M,0,48,80,1,,
-employee-4,2007-12-05 00:00:00.000,pay_rate,,,,,,,,8.62,
-employee-4,2010-05-31 00:00:00.000,pay_rate,,,,,,,,23.72,
-employee-4,2011-12-15 00:00:00.000,pay_rate,,,,,,,,29.8462,
-employee-4,2007-12-05 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-4,2010-05-31 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-4,2011-12-15 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-5,,,Design Engineer,M,F,1,5,22,1,,
-employee-5,2008-01-06 00:00:00.000,pay_rate,,,,,,,,32.6923,
-employee-5,2008-01-06 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-6,,,Design Engineer,M,M,1,6,23,1,,
-employee-6,2008-01-24 00:00:00.000,pay_rate,,,,,,,,32.6923,
-employee-6,2008-01-24 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-7,,,Research and Development Manager,M,M,1,61,50,1,,
-employee-7,2009-02-08 00:00:00.000,pay_rate,,,,,,,,50.4808,
-employee-7,2009-02-08 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-8,,,Research and Development Engineer,S,F,1,62,51,1,,
-employee-8,2008-12-29 00:00:00.000,pay_rate,,,,,,,,40.8654,
-employee-8,2008-12-29 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-9,,,Research and Development Engineer,M,F,1,63,51,1,,
-employee-9,2009-01-16 00:00:00.000,pay_rate,,,,,,,,40.8654,
-employee-9,2009-01-16 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-10,,,Research and Development Manager,M,M,1,16,64,1,,
-employee-10,2009-05-03 00:00:00.000,pay_rate,,,,,,,,42.4808,
-employee-10,2009-05-03 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-11,,,Senior Tool Designer,S,M,0,7,23,1,,
-employee-11,2010-12-05 00:00:00.000,pay_rate,,,,,,,,28.8462,
-employee-11,2010-12-05 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-12,,,Tool Designer,M,M,0,9,24,1,,
-employee-12,2007-12-11 00:00:00.000,pay_rate,,,,,,,,25.0,
-employee-12,2007-12-11 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-13,,,Tool Designer,M,F,0,8,24,1,,
-employee-13,2010-12-23 00:00:00.000,pay_rate,,,,,,,,25.0,
-employee-13,2010-12-23 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-14,,,Senior Design Engineer,S,M,1,3,21,1,,
-employee-14,2010-12-30 00:00:00.000,pay_rate,,,,,,,,36.0577,
-employee-14,2010-12-30 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-15,,,Design Engineer,M,F,1,4,22,1,,
-employee-15,2011-01-18 00:00:00.000,pay_rate,,,,,,,,32.6923,
-employee-15,2011-01-18 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-16,,,Marketing Manager,S,M,1,40,40,1,,
-employee-16,2007-12-20 00:00:00.000,pay_rate,,,,,,,,24.0,
-employee-16,2009-07-15 00:00:00.000,pay_rate,,,,,,,,28.75,
-employee-16,2012-04-30 00:00:00.000,pay_rate,,,,,,,,37.5,
-employee-16,2007-12-20 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-16,2009-07-15 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-16,2012-04-30 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-17,,,Marketing Assistant,S,M,0,42,41,1,,
-employee-17,2007-01-26 00:00:00.000,pay_rate,,,,,,,,13.4615,
-employee-17,2007-01-26 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-18,,,Marketing Specialist,S,M,0,48,44,1,,
-employee-18,2011-02-07 00:00:00.000,pay_rate,,,,,,,,14.4231,
-employee-18,2011-02-07 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-19,,,Marketing Assistant,S,F,0,43,41,1,,
-employee-19,2011-02-14 00:00:00.000,pay_rate,,,,,,,,13.4615,
-employee-19,2011-02-14 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-20,,,Marketing Assistant,M,F,0,41,40,1,,
-employee-20,2011-01-07 00:00:00.000,pay_rate,,,,,,,,13.4615,
-employee-20,2011-01-07 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-21,,,Marketing Specialist,M,M,0,44,42,1,,
-employee-21,2009-03-02 00:00:00.000,pay_rate,,,,,,,,14.4231,
-employee-21,2009-03-02 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-22,,,Marketing Specialist,S,M,0,45,42,1,,
-employee-22,2008-12-12 00:00:00.000,pay_rate,,,,,,,,14.4231,
-employee-22,2008-12-12 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-23,,,Marketing Specialist,M,F,0,46,43,1,,
-employee-23,2009-01-12 00:00:00.000,pay_rate,,,,,,,,14.4231,
-employee-23,2009-01-12 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-24,,,Marketing Specialist,M,F,0,47,43,1,,
-employee-24,2009-01-18 00:00:00.000,pay_rate,,,,,,,,14.4231,
-employee-24,2009-01-18 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-25,,,Vice President of Production,S,M,1,64,52,1,,
-employee-25,2009-02-03 00:00:00.000,pay_rate,,,,,,,,84.1346,
-employee-25,2009-02-03 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-26,,,Production Control Manager,M,M,1,43,41,1,,
-employee-26,2008-12-01 00:00:00.000,pay_rate,,,,,,,,24.5192,
-employee-26,2008-12-01 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-27,,,Production Supervisor - WC60,S,F,0,80,60,1,,
-employee-27,2008-02-27 00:00:00.000,pay_rate,,,,,,,,25.0,
-employee-27,2008-02-27 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-28,,,Production Technician - WC60,M,M,0,21,30,1,,
-employee-28,2006-06-30 00:00:00.000,pay_rate,,,,,,,,12.45,
-employee-28,2006-06-30 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-29,,,Production Technician - WC60,S,M,0,19,29,1,,
-employee-29,2009-01-23 00:00:00.000,pay_rate,,,,,,,,12.45,
-employee-29,2009-01-23 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-30,,,Production Technician - WC60,M,F,0,14,27,1,,
-employee-30,2009-01-29 00:00:00.000,pay_rate,,,,,,,,12.45,
-employee-30,2009-01-29 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-31,,,Production Technician - WC60,M,F,0,18,29,1,,
-employee-31,2009-01-04 00:00:00.000,pay_rate,,,,,,,,12.45,
-employee-31,2009-01-04 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-32,,,Production Technician - WC60,M,F,0,23,31,1,,
-employee-32,2008-12-29 00:00:00.000,pay_rate,,,,,,,,12.45,
-employee-32,2008-12-29 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-33,,,Production Technician - WC60,M,M,0,17,28,1,,
-employee-33,2008-12-17 00:00:00.000,pay_rate,,,,,,,,12.45,
-employee-33,2008-12-17 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-34,,,Production Technician - WC60,M,F,0,15,27,1,,
-employee-34,2009-02-16 00:00:00.000,pay_rate,,,,,,,,12.45,
-employee-34,2009-02-16 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-35,,,Production Technician - WC60,M,M,0,22,31,1,,
-employee-35,2009-02-08 00:00:00.000,pay_rate,,,,,,,,12.45,
-employee-35,2009-02-08 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-36,,,Production Technician - WC60,M,M,0,20,30,1,,
-employee-36,2009-02-10 00:00:00.000,pay_rate,,,,,,,,12.45,
-employee-36,2009-02-10 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-37,,,Production Technician - WC60,S,M,0,16,28,1,,
-employee-37,2009-03-07 00:00:00.000,pay_rate,,,,,,,,12.45,
-employee-37,2009-03-07 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-38,,,Production Technician - WC60,M,F,0,24,32,1,,
-employee-38,2010-01-16 00:00:00.000,pay_rate,,,,,,,,12.45,
-employee-38,2010-01-16 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-39,,,Production Technician - WC60,S,M,0,25,32,1,,
-employee-39,2010-02-05 00:00:00.000,pay_rate,,,,,,,,12.45,
-employee-39,2010-02-05 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-40,,,Production Supervisor - WC60,S,F,0,82,61,1,,
-employee-40,2007-12-26 00:00:00.000,pay_rate,,,,,,,,25.0,
-employee-40,2007-12-26 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-41,,,Production Technician - WC60,S,M,0,35,37,1,,
-employee-41,2009-01-21 00:00:00.000,pay_rate,,,,,,,,12.45,
-employee-41,2009-01-21 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-42,,,Production Technician - WC60,M,M,0,39,39,1,,
-employee-42,2008-12-27 00:00:00.000,pay_rate,,,,,,,,12.45,
-employee-42,2008-12-27 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-43,,,Production Technician - WC60,M,F,0,34,37,1,,
-employee-43,2009-01-02 00:00:00.000,pay_rate,,,,,,,,12.45,
-employee-43,2009-01-02 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-44,,,Production Technician - WC60,S,M,0,38,39,1,,
-employee-44,2008-12-08 00:00:00.000,pay_rate,,,,,,,,12.45,
-employee-44,2008-12-08 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-45,,,Production Technician - WC60,M,M,0,37,38,1,,
-employee-45,2009-02-26 00:00:00.000,pay_rate,,,,,,,,12.45,
-employee-45,2009-02-26 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-46,,,Production Technician - WC60,S,M,0,36,38,1,,
-employee-46,2009-02-08 00:00:00.000,pay_rate,,,,,,,,12.45,
-employee-46,2009-02-08 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-47,,,Production Supervisor - WC10,S,M,0,65,52,1,,
-employee-47,2009-02-22 00:00:00.000,pay_rate,,,,,,,,25.0,
-employee-47,2009-02-22 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-48,,,Production Technician - WC10,M,F,0,83,61,1,,
-employee-48,2008-01-06 00:00:00.000,pay_rate,,,,,,,,13.45,
-employee-48,2008-01-06 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-49,,,Production Technician - WC10,S,M,0,88,64,1,,
-employee-49,2008-01-07 00:00:00.000,pay_rate,,,,,,,,13.45,
-employee-49,2008-01-07 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-50,,,Production Technician - WC10,M,M,0,84,62,1,,
-employee-50,2008-02-02 00:00:00.000,pay_rate,,,,,,,,13.45,
-employee-50,2008-02-02 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-51,,,Production Technician - WC10,S,M,0,85,62,1,,
-employee-51,2008-02-20 00:00:00.000,pay_rate,,,,,,,,13.45,
-employee-51,2008-02-20 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-52,,,Production Technician - WC10,M,F,0,86,63,1,,
-employee-52,2008-03-10 00:00:00.000,pay_rate,,,,,,,,13.45,
-employee-52,2008-03-10 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-53,,,Production Technician - WC10,M,F,0,87,63,1,,
-employee-53,2008-03-28 00:00:00.000,pay_rate,,,,,,,,13.45,
-employee-53,2008-03-28 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-54,,,Production Technician - WC10,M,F,0,89,64,1,,
-employee-54,2010-01-01 00:00:00.000,pay_rate,,,,,,,,13.45,
-employee-54,2010-01-01 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-55,,,Production Supervisor - WC50,M,M,0,79,59,1,,
-employee-55,2008-02-08 00:00:00.000,pay_rate,,,,,,,,25.0,
-employee-55,2008-02-08 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-56,,,Production Technician - WC50,M,F,0,9,24,1,,
-employee-56,2009-02-05 00:00:00.000,pay_rate,,,,,,,,11.0,
-employee-56,2009-02-05 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-57,,,Production Technician - WC50,S,M,0,10,25,1,,
-employee-57,2009-02-23 00:00:00.000,pay_rate,,,,,,,,11.0,
-employee-57,2009-02-23 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-58,,,Production Technician - WC50,M,M,0,11,25,1,,
-employee-58,2008-12-05 00:00:00.000,pay_rate,,,,,,,,11.0,
-employee-58,2008-12-05 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-59,,,Production Technician - WC50,S,M,0,12,26,1,,
-employee-59,2008-12-24 00:00:00.000,pay_rate,,,,,,,,11.0,
-employee-59,2008-12-24 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-60,,,Production Technician - WC50,S,M,0,13,26,1,,
-employee-60,2009-01-11 00:00:00.000,pay_rate,,,,,,,,11.0,
-employee-60,2009-01-11 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-61,,,Production Technician - WC50,S,F,0,8,24,1,,
-employee-61,2009-01-18 00:00:00.000,pay_rate,,,,,,,,11.0,
-employee-61,2009-01-18 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-62,,,Production Supervisor - WC60,M,M,0,81,60,1,,
-employee-62,2008-03-17 00:00:00.000,pay_rate,,,,,,,,25.0,
-employee-62,2008-03-17 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-63,,,Production Technician - WC60,S,M,0,30,35,1,,
-employee-63,2010-01-29 00:00:00.000,pay_rate,,,,,,,,12.45,
-employee-63,2010-01-29 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-64,,,Production Technician - WC60,S,M,0,26,33,1,,
-employee-64,2010-02-23 00:00:00.000,pay_rate,,,,,,,,12.45,
-employee-64,2010-02-23 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-65,,,Production Technician - WC60,M,M,0,29,34,1,,
-employee-65,2010-02-23 00:00:00.000,pay_rate,,,,,,,,12.45,
-employee-65,2010-02-23 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-66,,,Production Technician - WC60,S,M,0,28,34,1,,
-employee-66,2009-12-22 00:00:00.000,pay_rate,,,,,,,,12.45,
-employee-66,2009-12-22 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-67,,,Production Technician - WC60,S,M,0,32,36,1,,
-employee-67,2009-03-05 00:00:00.000,pay_rate,,,,,,,,12.45,
-employee-67,2009-03-05 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-68,,,Production Technician - WC60,S,M,0,27,33,1,,
-employee-68,2009-12-03 00:00:00.000,pay_rate,,,,,,,,12.45,
-employee-68,2009-12-03 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-69,,,Production Technician - WC60,S,M,0,31,35,1,,
-employee-69,2009-02-15 00:00:00.000,pay_rate,,,,,,,,12.45,
-employee-69,2009-02-15 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-70,,,Production Technician - WC60,M,M,0,33,36,1,,
-employee-70,2008-12-15 00:00:00.000,pay_rate,,,,,,,,12.45,
-employee-70,2008-12-15 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-71,,,Production Supervisor - WC30,S,M,0,70,55,1,,
-employee-71,2009-02-15 00:00:00.000,pay_rate,,,,,,,,25.0,
-employee-71,2009-02-15 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-72,,,Production Technician - WC30,M,M,0,41,40,1,,
-employee-72,2008-12-01 00:00:00.000,pay_rate,,,,,,,,9.5,
-employee-72,2008-12-01 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-73,,,Production Technician - WC30,M,F,0,42,41,1,,
-employee-73,2008-12-19 00:00:00.000,pay_rate,,,,,,,,9.5,
-employee-73,2008-12-19 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-74,,,Production Technician - WC30,S,M,0,43,41,1,,
-employee-74,2009-01-07 00:00:00.000,pay_rate,,,,,,,,9.5,
-employee-74,2009-01-07 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-75,,,Production Technician - WC30,S,M,0,44,42,1,,
-employee-75,2009-01-26 00:00:00.000,pay_rate,,,,,,,,9.5,
-employee-75,2009-01-26 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-76,,,Production Technician - WC30,M,F,0,45,42,1,,
-employee-76,2009-02-12 00:00:00.000,pay_rate,,,,,,,,9.5,
-employee-76,2009-02-12 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-77,,,Production Technician - WC30,M,F,0,46,43,1,,
-employee-77,2009-03-03 00:00:00.000,pay_rate,,,,,,,,9.5,
-employee-77,2009-03-03 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-78,,,Production Supervisor - WC40,M,M,0,72,56,1,,
-employee-78,2008-12-15 00:00:00.000,pay_rate,,,,,,,,25.0,
-employee-78,2008-12-15 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-79,,,Production Technician - WC40,M,M,0,60,50,1,,
-employee-79,2010-01-24 00:00:00.000,pay_rate,,,,,,,,15.0,
-employee-79,2010-01-24 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-80,,,Production Technician - WC40,S,M,0,65,52,1,,
-employee-80,2010-01-17 00:00:00.000,pay_rate,,,,,,,,15.0,
-employee-80,2010-01-17 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-81,,,Production Technician - WC40,S,M,0,64,52,1,,
-employee-81,2009-12-29 00:00:00.000,pay_rate,,,,,,,,15.0,
-employee-81,2009-12-29 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-82,,,Production Technician - WC40,S,M,0,62,51,1,,
-employee-82,2010-03-03 00:00:00.000,pay_rate,,,,,,,,15.0,
-employee-82,2010-03-03 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-83,,,Production Technician - WC40,M,M,0,61,50,1,,
-employee-83,2010-02-12 00:00:00.000,pay_rate,,,,,,,,15.0,
-employee-83,2010-02-12 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-84,,,Production Technician - WC40,M,M,0,66,53,1,,
-employee-84,2010-02-05 00:00:00.000,pay_rate,,,,,,,,15.0,
-employee-84,2010-02-05 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-85,,,Production Technician - WC40,S,M,0,63,51,1,,
-employee-85,2009-12-11 00:00:00.000,pay_rate,,,,,,,,15.0,
-employee-85,2009-12-11 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-86,,,Production Technician - WC40,M,M,0,59,49,1,,
-employee-86,2009-01-05 00:00:00.000,pay_rate,,,,,,,,15.0,
-employee-86,2009-01-05 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-87,,,Production Supervisor - WC10,M,M,0,67,53,1,,
-employee-87,2008-12-22 00:00:00.000,pay_rate,,,,,,,,25.0,
-employee-87,2008-12-22 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-88,,,Production Technician - WC10,S,F,0,99,69,1,,
-employee-88,2009-12-18 00:00:00.000,pay_rate,,,,,,,,13.45,
-employee-88,2009-12-18 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-89,,,Production Technician - WC10,S,M,0,96,68,1,,
-employee-89,2010-02-01 00:00:00.000,pay_rate,,,,,,,,13.45,
-employee-89,2010-02-01 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-90,,,Production Technician - WC10,S,F,0,97,68,1,,
-employee-90,2010-02-20 00:00:00.000,pay_rate,,,,,,,,13.45,
-employee-90,2010-02-20 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-91,,,Production Technician - WC10,S,F,0,95,67,1,,
-employee-91,2010-01-12 00:00:00.000,pay_rate,,,,,,,,13.45,
-employee-91,2010-01-12 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-92,,,Production Technician - WC10,M,M,0,98,69,1,,
-employee-92,2010-03-10 00:00:00.000,pay_rate,,,,,,,,13.45,
-employee-92,2010-03-10 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-93,,,Production Supervisor - WC50,S,M,0,78,59,1,,
-employee-93,2008-12-27 00:00:00.000,pay_rate,,,,,,,,25.0,
-employee-93,2008-12-27 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-94,,,Production Technician - WC50,M,M,0,6,23,1,,
-employee-94,2008-12-12 00:00:00.000,pay_rate,,,,,,,,11.0,
-employee-94,2008-12-12 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-95,,,Production Technician - WC50,M,M,0,1,20,1,,
-employee-95,2008-12-19 00:00:00.000,pay_rate,,,,,,,,11.0,
-employee-95,2008-12-19 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-96,,,Production Technician - WC50,M,F,0,5,22,1,,
-employee-96,2009-03-02 00:00:00.000,pay_rate,,,,,,,,11.0,
-employee-96,2009-03-02 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-97,,,Production Technician - WC50,S,M,0,0,20,1,,
-employee-97,2009-02-10 00:00:00.000,pay_rate,,,,,,,,11.0,
-employee-97,2009-02-10 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-98,,,Production Technician - WC50,M,M,0,4,22,1,,
-employee-98,2009-02-11 00:00:00.000,pay_rate,,,,,,,,11.0,
-employee-98,2009-02-11 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-99,,,Production Technician - WC50,S,M,0,2,21,1,,
-employee-99,2009-01-06 00:00:00.000,pay_rate,,,,,,,,11.0,
-employee-99,2009-01-06 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-100,,,Production Technician - WC50,M,M,0,7,23,1,,
-employee-100,2009-01-12 00:00:00.000,pay_rate,,,,,,,,11.0,
-employee-100,2009-01-12 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-101,,,Production Technician - WC50,M,M,0,3,21,1,,
-employee-101,2009-01-25 00:00:00.000,pay_rate,,,,,,,,11.0,
-employee-101,2009-01-25 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-102,,,Production Supervisor - WC10,S,M,0,66,53,1,,
-employee-102,2008-12-03 00:00:00.000,pay_rate,,,,,,,,25.0,
-employee-102,2008-12-03 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-103,,,Production Technician - WC10,S,M,0,93,66,1,,
-employee-103,2009-12-06 00:00:00.000,pay_rate,,,,,,,,13.45,
-employee-103,2009-12-06 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-104,,,Production Technician - WC10,M,F,0,94,67,1,,
-employee-104,2009-12-25 00:00:00.000,pay_rate,,,,,,,,13.45,
-employee-104,2009-12-25 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-105,,,Production Technician - WC10,S,M,0,90,65,1,,
-employee-105,2009-12-25 00:00:00.000,pay_rate,,,,,,,,13.45,
-employee-105,2009-12-25 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-106,,,Production Technician - WC10,S,M,0,92,66,1,,
-employee-106,2010-02-27 00:00:00.000,pay_rate,,,,,,,,13.45,
-employee-106,2010-02-27 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-107,,,Production Technician - WC10,M,M,0,91,65,1,,
-employee-107,2010-02-08 00:00:00.000,pay_rate,,,,,,,,13.45,
-employee-107,2010-02-08 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-108,,,Production Supervisor - WC50,S,M,0,77,58,1,,
-employee-108,2008-12-08 00:00:00.000,pay_rate,,,,,,,,25.0,
-employee-108,2008-12-08 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-109,,,Production Technician - WC50,M,F,0,95,67,1,,
-employee-109,2008-12-07 00:00:00.000,pay_rate,,,,,,,,11.0,
-employee-109,2008-12-07 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-110,,,Production Technician - WC50,S,M,0,90,65,1,,
-employee-110,2008-12-14 00:00:00.000,pay_rate,,,,,,,,11.0,
-employee-110,2008-12-14 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-111,,,Production Technician - WC50,S,M,0,93,66,1,,
-employee-111,2008-12-17 00:00:00.000,pay_rate,,,,,,,,11.0,
-employee-111,2008-12-17 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-112,,,Production Technician - WC50,S,M,0,91,65,1,,
-employee-112,2009-01-01 00:00:00.000,pay_rate,,,,,,,,11.0,
-employee-112,2009-01-01 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-113,,,Production Technician - WC50,M,F,0,96,68,1,,
-employee-113,2008-12-25 00:00:00.000,pay_rate,,,,,,,,11.0,
-employee-113,2008-12-25 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-114,,,Production Technician - WC50,M,M,0,97,68,1,,
-employee-114,2009-01-13 00:00:00.000,pay_rate,,,,,,,,11.0,
-employee-114,2009-01-13 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-115,,,Production Technician - WC50,S,F,0,92,66,1,,
-employee-115,2009-01-20 00:00:00.000,pay_rate,,,,,,,,11.0,
-employee-115,2009-01-20 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-116,,,Production Technician - WC50,S,M,0,98,69,1,,
-employee-116,2009-01-31 00:00:00.000,pay_rate,,,,,,,,11.0,
-employee-116,2009-01-31 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-117,,,Production Technician - WC50,M,M,0,99,69,1,,
-employee-117,2009-02-18 00:00:00.000,pay_rate,,,,,,,,11.0,
-employee-117,2009-02-18 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-118,,,Production Technician - WC50,M,M,0,88,64,1,,
-employee-118,2009-02-13 00:00:00.000,pay_rate,,,,,,,,11.0,
-employee-118,2009-02-13 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-119,,,Production Technician - WC50,S,M,0,94,67,1,,
-employee-119,2009-02-25 00:00:00.000,pay_rate,,,,,,,,11.0,
-employee-119,2009-02-25 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-120,,,Production Technician - WC50,S,F,0,89,64,1,,
-employee-120,2009-03-04 00:00:00.000,pay_rate,,,,,,,,11.0,
-employee-120,2009-03-04 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-121,,,Shipping and Receiving Supervisor,S,M,1,93,66,1,,
-employee-121,2009-01-02 00:00:00.000,pay_rate,,,,,,,,19.2308,
-employee-121,2009-01-02 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-122,,,Stocker,S,F,0,97,68,1,,
-employee-122,2008-12-07 00:00:00.000,pay_rate,,,,,,,,9.0,
-employee-122,2008-12-07 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-123,,,Shipping and Receiving Clerk,M,M,0,95,67,1,,
-employee-123,2008-12-07 00:00:00.000,pay_rate,,,,,,,,9.5,
-employee-123,2008-12-07 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-124,,,Stocker,S,F,0,98,69,1,,
-employee-124,2008-12-26 00:00:00.000,pay_rate,,,,,,,,9.0,
-employee-124,2008-12-26 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-125,,,Shipping and Receiving Clerk,M,M,0,94,67,1,,
-employee-125,2009-01-20 00:00:00.000,pay_rate,,,,,,,,9.5,
-employee-125,2009-01-20 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-126,,,Stocker,M,M,0,96,68,1,,
-employee-126,2009-02-26 00:00:00.000,pay_rate,,,,,,,,9.0,
-employee-126,2009-02-26 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-127,,,Production Supervisor - WC40,S,M,0,73,56,1,,
-employee-127,2009-01-03 00:00:00.000,pay_rate,,,,,,,,25.0,
-employee-127,2009-01-03 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-128,,,Production Technician - WC40,S,M,0,68,54,1,,
-employee-128,2008-12-04 00:00:00.000,pay_rate,,,,,,,,15.0,
-employee-128,2008-12-04 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-129,,,Production Technician - WC40,S,M,0,69,54,1,,
-employee-129,2008-12-22 00:00:00.000,pay_rate,,,,,,,,15.0,
-employee-129,2008-12-22 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-130,,,Production Technician - WC40,S,M,0,71,55,1,,
-employee-130,2009-02-13 00:00:00.000,pay_rate,,,,,,,,15.0,
-employee-130,2009-02-13 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-131,,,Production Technician - WC40,S,M,0,72,56,1,,
-employee-131,2009-02-15 00:00:00.000,pay_rate,,,,,,,,15.0,
-employee-131,2009-02-15 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-132,,,Production Technician - WC40,M,F,0,67,53,1,,
-employee-132,2009-02-22 00:00:00.000,pay_rate,,,,,,,,15.0,
-employee-132,2009-02-22 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-133,,,Production Technician - WC40,S,M,0,70,55,1,,
-employee-133,2009-01-10 00:00:00.000,pay_rate,,,,,,,,15.0,
-employee-133,2009-01-10 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-134,,,Production Supervisor - WC20,M,M,0,40,40,1,,
-employee-134,2009-01-14 00:00:00.000,pay_rate,,,,,,,,25.0,
-employee-134,2009-01-14 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-135,,,Production Technician - WC20,M,M,0,9,24,1,,
-employee-135,2008-12-04 00:00:00.000,pay_rate,,,,,,,,14.0,
-employee-135,2008-12-04 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-136,,,Production Technician - WC20,M,M,0,4,22,1,,
-employee-136,2009-12-11 00:00:00.000,pay_rate,,,,,,,,14.0,
-employee-136,2009-12-11 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-137,,,Production Technician - WC20,S,F,0,8,24,1,,
-employee-137,2009-02-23 00:00:00.000,pay_rate,,,,,,,,14.0,
-employee-137,2009-02-23 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-138,,,Production Technician - WC20,M,F,0,7,23,1,,
-employee-138,2009-02-04 00:00:00.000,pay_rate,,,,,,,,14.0,
-employee-138,2009-02-04 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-139,,,Production Technician - WC20,S,M,0,0,20,1,,
-employee-139,2010-01-06 00:00:00.000,pay_rate,,,,,,,,14.0,
-employee-139,2010-01-06 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-140,,,Production Technician - WC20,M,M,0,5,22,1,,
-employee-140,2010-01-22 00:00:00.000,pay_rate,,,,,,,,14.0,
-employee-140,2010-01-22 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-141,,,Production Technician - WC20,M,M,0,1,20,1,,
-employee-141,2010-01-24 00:00:00.000,pay_rate,,,,,,,,14.0,
-employee-141,2010-01-24 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-142,,,Production Technician - WC20,S,F,0,3,21,1,,
-employee-142,2010-03-04 00:00:00.000,pay_rate,,,,,,,,14.0,
-employee-142,2010-03-04 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-143,,,Production Technician - WC20,S,M,0,2,21,1,,
-employee-143,2010-02-13 00:00:00.000,pay_rate,,,,,,,,14.0,
-employee-143,2010-02-13 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-144,,,Production Technician - WC20,M,M,0,6,23,1,,
-employee-144,2009-01-17 00:00:00.000,pay_rate,,,,,,,,14.0,
-employee-144,2009-01-17 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-145,,,Production Supervisor - WC30,S,F,0,69,54,1,,
-employee-145,2009-01-27 00:00:00.000,pay_rate,,,,,,,,25.0,
-employee-145,2009-01-27 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-146,,,Production Technician - WC30,S,M,0,36,38,1,,
-employee-146,2008-12-07 00:00:00.000,pay_rate,,,,,,,,9.5,
-employee-146,2008-12-07 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-147,,,Production Technician - WC30,M,F,0,37,38,1,,
-employee-147,2008-12-26 00:00:00.000,pay_rate,,,,,,,,9.5,
-employee-147,2008-12-26 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-148,,,Production Technician - WC30,S,M,0,38,39,1,,
-employee-148,2009-01-14 00:00:00.000,pay_rate,,,,,,,,9.5,
-employee-148,2009-01-14 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-149,,,Production Technician - WC30,M,M,0,39,39,1,,
-employee-149,2009-01-31 00:00:00.000,pay_rate,,,,,,,,9.5,
-employee-149,2009-01-31 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-150,,,Production Technician - WC30,M,M,0,35,37,1,,
-employee-150,2009-02-26 00:00:00.000,pay_rate,,,,,,,,9.5,
-employee-150,2009-02-26 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-151,,,Production Technician - WC30,M,M,0,40,40,1,,
-employee-151,2009-02-19 00:00:00.000,pay_rate,,,,,,,,9.5,
-employee-151,2009-02-19 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-152,,,Production Supervisor - WC20,M,M,0,41,40,1,,
-employee-152,2009-02-01 00:00:00.000,pay_rate,,,,,,,,25.0,
-employee-152,2009-02-01 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-153,,,Production Technician - WC20,S,M,0,15,27,1,,
-employee-153,2008-12-16 00:00:00.000,pay_rate,,,,,,,,14.0,
-employee-153,2008-12-16 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-154,,,Production Technician - WC20,M,M,0,10,25,1,,
-employee-154,2008-12-23 00:00:00.000,pay_rate,,,,,,,,14.0,
-employee-154,2008-12-23 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-155,,,Production Technician - WC20,S,M,0,16,28,1,,
-employee-155,2009-01-04 00:00:00.000,pay_rate,,,,,,,,14.0,
-employee-155,2009-01-04 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-156,,,Production Technician - WC20,M,M,0,11,25,1,,
-employee-156,2009-01-11 00:00:00.000,pay_rate,,,,,,,,14.0,
-employee-156,2009-01-11 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-157,,,Production Technician - WC20,S,F,0,12,26,1,,
-employee-157,2009-02-03 00:00:00.000,pay_rate,,,,,,,,14.0,
-employee-157,2009-02-03 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-158,,,Production Technician - WC20,S,F,0,14,27,1,,
-employee-158,2009-03-07 00:00:00.000,pay_rate,,,,,,,,14.0,
-employee-158,2009-03-07 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-159,,,Production Technician - WC20,S,M,0,13,26,1,,
-employee-159,2009-02-16 00:00:00.000,pay_rate,,,,,,,,14.0,
-employee-159,2009-02-16 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-160,,,Production Supervisor - WC45,M,M,0,74,57,1,,
-employee-160,2009-01-21 00:00:00.000,pay_rate,,,,,,,,25.0,
-employee-160,2009-01-21 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-161,,,Production Technician - WC45,S,M,0,74,57,1,,
-employee-161,2008-12-15 00:00:00.000,pay_rate,,,,,,,,10.0,
-employee-161,2008-12-15 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-162,,,Production Technician - WC45,S,F,0,75,57,1,,
-employee-162,2009-01-03 00:00:00.000,pay_rate,,,,,,,,10.0,
-employee-162,2009-01-03 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-163,,,Production Technician - WC45,M,M,0,77,58,1,,
-employee-163,2009-02-08 00:00:00.000,pay_rate,,,,,,,,10.0,
-employee-163,2009-02-08 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-164,,,Production Technician - WC45,S,M,0,73,56,1,,
-employee-164,2009-03-06 00:00:00.000,pay_rate,,,,,,,,10.0,
-employee-164,2009-03-06 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-165,,,Production Technician - WC45,M,M,0,76,58,1,,
-employee-165,2009-01-22 00:00:00.000,pay_rate,,,,,,,,10.0,
-employee-165,2009-01-22 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-166,,,Production Supervisor - WC30,S,M,0,68,54,1,,
-employee-166,2009-02-21 00:00:00.000,pay_rate,,,,,,,,25.0,
-employee-166,2009-02-21 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-167,,,Production Technician - WC30,S,M,0,25,32,1,,
-employee-167,2008-12-02 00:00:00.000,pay_rate,,,,,,,,6.5,
-employee-167,2011-12-01 00:00:00.000,pay_rate,,,,,,,,7.25,
-employee-167,2013-07-14 00:00:00.000,pay_rate,,,,,,,,9.5,
-employee-167,2008-12-02 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-167,2011-12-01 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-167,2013-07-14 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-168,,,Production Technician - WC30,S,M,0,34,37,1,,
-employee-168,2008-12-07 00:00:00.000,pay_rate,,,,,,,,9.5,
-employee-168,2008-12-07 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-169,,,Production Technician - WC30,S,F,0,31,35,1,,
-employee-169,2008-12-14 00:00:00.000,pay_rate,,,,,,,,9.5,
-employee-169,2008-12-14 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-170,,,Production Technician - WC30,M,M,0,26,33,1,,
-employee-170,2008-12-21 00:00:00.000,pay_rate,,,,,,,,6.5,
-employee-170,2011-12-01 00:00:00.000,pay_rate,,,,,,,,7.25,
-employee-170,2013-07-14 00:00:00.000,pay_rate,,,,,,,,9.5,
-employee-170,2008-12-21 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-170,2011-12-01 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-170,2013-07-14 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-171,,,Production Technician - WC30,S,M,0,32,36,1,,
-employee-171,2009-01-02 00:00:00.000,pay_rate,,,,,,,,9.5,
-employee-171,2009-01-02 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-172,,,Production Technician - WC30,M,M,0,22,31,1,,
-employee-172,2009-01-16 00:00:00.000,pay_rate,,,,,,,,6.5,
-employee-172,2011-12-01 00:00:00.000,pay_rate,,,,,,,,7.25,
-employee-172,2013-07-14 00:00:00.000,pay_rate,,,,,,,,9.5,
-employee-172,2009-01-16 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-172,2011-12-01 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-172,2013-07-14 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-173,,,Production Technician - WC30,S,M,0,33,36,1,,
-employee-173,2009-01-21 00:00:00.000,pay_rate,,,,,,,,9.5,
-employee-173,2009-01-21 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-174,,,Production Technician - WC30,S,M,0,28,34,1,,
-employee-174,2009-01-27 00:00:00.000,pay_rate,,,,,,,,6.75,
-employee-174,2011-12-01 00:00:00.000,pay_rate,,,,,,,,7.25,
-employee-174,2013-07-14 00:00:00.000,pay_rate,,,,,,,,9.5,
-employee-174,2009-01-27 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-174,2011-12-01 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-174,2013-07-14 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-175,,,Production Technician - WC30,M,M,0,23,31,1,,
-employee-175,2009-02-02 00:00:00.000,pay_rate,,,,,,,,6.5,
-employee-175,2011-12-01 00:00:00.000,pay_rate,,,,,,,,7.25,
-employee-175,2013-07-14 00:00:00.000,pay_rate,,,,,,,,9.5,
-employee-175,2009-02-02 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-175,2011-12-01 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-175,2013-07-14 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-176,,,Production Technician - WC30,M,M,0,29,34,1,,
-employee-176,2009-02-14 00:00:00.000,pay_rate,,,,,,,,6.5,
-employee-176,2011-12-01 00:00:00.000,pay_rate,,,,,,,,7.25,
-employee-176,2013-07-14 00:00:00.000,pay_rate,,,,,,,,9.5,
-employee-176,2009-02-14 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-176,2011-12-01 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-176,2013-07-14 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-177,,,Production Technician - WC30,M,M,0,24,32,1,,
-employee-177,2009-02-21 00:00:00.000,pay_rate,,,,,,,,6.5,
-employee-177,2011-12-01 00:00:00.000,pay_rate,,,,,,,,7.25,
-employee-177,2013-07-14 00:00:00.000,pay_rate,,,,,,,,9.5,
-employee-177,2009-02-21 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-177,2011-12-01 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-177,2013-07-14 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-178,,,Production Technician - WC30,S,M,0,27,33,1,,
-employee-178,2009-03-03 00:00:00.000,pay_rate,,,,,,,,6.5,
-employee-178,2011-12-01 00:00:00.000,pay_rate,,,,,,,,7.0,
-employee-178,2013-07-14 00:00:00.000,pay_rate,,,,,,,,9.5,
-employee-178,2009-03-03 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-178,2011-12-01 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-178,2013-07-14 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-179,,,Production Technician - WC30,S,M,0,30,35,1,,
-employee-179,2009-03-05 00:00:00.000,pay_rate,,,,,,,,9.5,
-employee-179,2009-03-05 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-180,,,Production Supervisor - WC20,S,F,0,42,41,1,,
-employee-180,2009-02-20 00:00:00.000,pay_rate,,,,,,,,25.0,
-employee-180,2009-02-20 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-181,,,Production Technician - WC20,S,M,0,20,30,1,,
-employee-181,2008-12-09 00:00:00.000,pay_rate,,,,,,,,14.0,
-employee-181,2008-12-09 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-182,,,Production Technician - WC20,S,M,0,21,30,1,,
-employee-182,2008-12-28 00:00:00.000,pay_rate,,,,,,,,14.0,
-employee-182,2008-12-28 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-183,,,Production Technician - WC20,M,F,0,17,28,1,,
-employee-183,2009-01-22 00:00:00.000,pay_rate,,,,,,,,14.0,
-employee-183,2009-01-22 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-184,,,Production Technician - WC20,M,M,0,18,29,1,,
-employee-184,2009-02-09 00:00:00.000,pay_rate,,,,,,,,14.0,
-employee-184,2009-02-09 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-185,,,Production Technician - WC20,S,M,0,19,29,1,,
-employee-185,2009-02-28 00:00:00.000,pay_rate,,,,,,,,14.0,
-employee-185,2009-02-28 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-186,,,Production Supervisor - WC45,S,M,0,75,57,1,,
-employee-186,2009-02-08 00:00:00.000,pay_rate,,,,,,,,25.0,
-employee-186,2009-02-08 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-187,,,Production Technician - WC45,M,F,0,79,59,1,,
-employee-187,2008-12-09 00:00:00.000,pay_rate,,,,,,,,10.0,
-employee-187,2008-12-09 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-188,,,Production Technician - WC45,M,M,0,80,60,1,,
-employee-188,2008-12-27 00:00:00.000,pay_rate,,,,,,,,10.0,
-employee-188,2008-12-27 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-189,,,Production Technician - WC45,S,F,0,81,60,1,,
-employee-189,2009-01-15 00:00:00.000,pay_rate,,,,,,,,10.0,
-employee-189,2009-01-15 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-190,,,Production Technician - WC45,S,M,0,82,61,1,,
-employee-190,2009-02-02 00:00:00.000,pay_rate,,,,,,,,10.0,
-employee-190,2009-02-02 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-191,,,Production Technician - WC45,S,M,0,78,59,1,,
-employee-191,2009-02-26 00:00:00.000,pay_rate,,,,,,,,10.0,
-employee-191,2009-02-26 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-192,,,Production Supervisor - WC40,M,F,0,71,55,1,,
-employee-192,2009-03-05 00:00:00.000,pay_rate,,,,,,,,25.0,
-employee-192,2009-03-05 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-193,,,Production Technician - WC40,S,M,0,52,46,1,,
-employee-193,2008-12-06 00:00:00.000,pay_rate,,,,,,,,15.0,
-employee-193,2008-12-06 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-194,,,Production Technician - WC40,S,M,0,47,43,1,,
-employee-194,2008-12-12 00:00:00.000,pay_rate,,,,,,,,15.0,
-employee-194,2008-12-12 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-195,,,Production Technician - WC40,S,M,0,58,49,1,,
-employee-195,2008-12-17 00:00:00.000,pay_rate,,,,,,,,15.0,
-employee-195,2008-12-17 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-196,,,Production Technician - WC40,M,M,0,53,46,1,,
-employee-196,2008-12-24 00:00:00.000,pay_rate,,,,,,,,15.0,
-employee-196,2008-12-24 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-197,,,Production Technician - WC40,M,M,0,48,44,1,,
-employee-197,2008-12-31 00:00:00.000,pay_rate,,,,,,,,15.0,
-employee-197,2008-12-31 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-198,,,Production Technician - WC40,M,F,0,49,44,1,,
-employee-198,2009-01-04 00:00:00.000,pay_rate,,,,,,,,15.0,
-employee-198,2009-01-04 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-199,,,Production Technician - WC40,M,F,0,54,47,1,,
-employee-199,2009-01-12 00:00:00.000,pay_rate,,,,,,,,15.0,
-employee-199,2009-01-12 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-200,,,Production Technician - WC40,M,M,0,56,48,1,,
-employee-200,2009-01-17 00:00:00.000,pay_rate,,,,,,,,15.0,
-employee-200,2009-01-17 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-201,,,Production Technician - WC40,S,M,0,55,47,1,,
-employee-201,2009-01-29 00:00:00.000,pay_rate,,,,,,,,15.0,
-employee-201,2009-01-29 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-202,,,Production Technician - WC40,S,M,0,50,45,1,,
-employee-202,2009-02-05 00:00:00.000,pay_rate,,,,,,,,15.0,
-employee-202,2009-02-05 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-203,,,Production Technician - WC40,M,M,0,51,45,1,,
-employee-203,2009-02-24 00:00:00.000,pay_rate,,,,,,,,15.0,
-employee-203,2009-02-24 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-204,,,Production Technician - WC40,M,M,0,57,48,1,,
-employee-204,2009-03-08 00:00:00.000,pay_rate,,,,,,,,15.0,
-employee-204,2009-03-08 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-205,,,Production Supervisor - WC45,S,F,0,76,58,1,,
-employee-205,2009-02-26 00:00:00.000,pay_rate,,,,,,,,25.0,
-employee-205,2009-02-26 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-206,,,Production Technician - WC45,S,M,0,84,62,1,,
-employee-206,2008-12-02 00:00:00.000,pay_rate,,,,,,,,10.0,
-employee-206,2008-12-02 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-207,,,Production Technician - WC45,S,M,0,85,62,1,,
-employee-207,2008-12-02 00:00:00.000,pay_rate,,,,,,,,10.0,
-employee-207,2008-12-02 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-208,,,Production Technician - WC45,M,M,0,86,63,1,,
-employee-208,2009-01-08 00:00:00.000,pay_rate,,,,,,,,10.0,
-employee-208,2009-01-08 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-209,,,Production Technician - WC45,M,F,0,87,63,1,,
-employee-209,2009-01-27 00:00:00.000,pay_rate,,,,,,,,10.0,
-employee-209,2009-01-27 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-210,,,Production Technician - WC45,S,F,0,83,61,1,,
-employee-210,2009-02-20 00:00:00.000,pay_rate,,,,,,,,10.0,
-employee-210,2009-02-20 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-211,,,Quality Assurance Manager,S,M,1,80,60,1,,
-employee-211,2009-02-28 00:00:00.000,pay_rate,,,,,,,,28.8462,
-employee-211,2009-02-28 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-212,,,Quality Assurance Supervisor,M,M,1,81,60,1,,
-employee-212,2008-12-09 00:00:00.000,pay_rate,,,,,,,,21.6346,
-employee-212,2008-12-09 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-213,,,Quality Assurance Technician,M,M,0,85,62,1,,
-employee-213,2010-02-23 00:00:00.000,pay_rate,,,,,,,,10.5769,
-employee-213,2010-02-23 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-214,,,Quality Assurance Technician,M,M,0,84,62,1,,
-employee-214,2009-02-02 00:00:00.000,pay_rate,,,,,,,,10.5769,
-employee-214,2009-02-02 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-215,,,Quality Assurance Technician,S,M,0,83,61,1,,
-employee-215,2009-01-15 00:00:00.000,pay_rate,,,,,,,,10.5769,
-employee-215,2009-01-15 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-216,,,Quality Assurance Technician,S,M,0,82,61,1,,
-employee-216,2008-12-28 00:00:00.000,pay_rate,,,,,,,,10.5769,
-employee-216,2008-12-28 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-217,,,Document Control Manager,M,M,0,77,58,1,,
-employee-217,2009-01-04 00:00:00.000,pay_rate,,,,,,,,17.7885,
-employee-217,2009-01-04 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-218,,,Control Specialist,S,M,0,76,58,1,,
-employee-218,2008-12-16 00:00:00.000,pay_rate,,,,,,,,16.8269,
-employee-218,2008-12-16 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-219,,,Document Control Assistant,S,M,0,78,59,1,,
-employee-219,2009-01-22 00:00:00.000,pay_rate,,,,,,,,10.25,
-employee-219,2009-01-22 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-220,,,Document Control Assistant,M,F,0,79,59,1,,
-employee-220,2009-02-09 00:00:00.000,pay_rate,,,,,,,,10.25,
-employee-220,2009-02-09 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-221,,,Control Specialist,M,M,0,75,57,1,,
-employee-221,2009-03-06 00:00:00.000,pay_rate,,,,,,,,16.8269,
-employee-221,2009-03-06 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-222,,,Master Scheduler,S,M,0,44,42,1,,
-employee-222,2008-12-12 00:00:00.000,pay_rate,,,,,,,,23.5577,
-employee-222,2008-12-12 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-223,,,Scheduling Assistant,M,M,0,46,43,1,,
-employee-223,2009-01-26 00:00:00.000,pay_rate,,,,,,,,16.0,
-employee-223,2009-01-26 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-224,,,Scheduling Assistant,M,M,0,45,42,1,,
-employee-224,2008-01-08 00:00:00.000,pay_rate,,,,,,,,8.62,
-employee-224,2011-08-31 00:00:00.000,pay_rate,,,,,,,,13.5,
-employee-224,2012-01-01 00:00:00.000,pay_rate,,,,,,,,16.0,
-employee-224,2008-01-08 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-224,2011-08-31 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-224,2012-01-01 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-225,,,Scheduling Assistant,M,M,0,47,43,1,,
-employee-225,2009-02-13 00:00:00.000,pay_rate,,,,,,,,16.0,
-employee-225,2009-02-13 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-226,,,Scheduling Assistant,M,M,0,48,44,1,,
-employee-226,2009-03-03 00:00:00.000,pay_rate,,,,,,,,16.0,
-employee-226,2009-03-03 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-227,,,Facilities Manager,M,M,1,86,63,1,,
-employee-227,2009-12-02 00:00:00.000,pay_rate,,,,,,,,24.0385,
-employee-227,2009-12-02 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-228,,,Maintenance Supervisor,M,M,1,92,66,1,,
-employee-228,2008-12-14 00:00:00.000,pay_rate,,,,,,,,20.4327,
-employee-228,2008-12-14 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-229,,,Janitor,M,F,0,90,65,1,,
-employee-229,2010-02-16 00:00:00.000,pay_rate,,,,,,,,9.25,
-employee-229,2010-02-16 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-230,,,Janitor,M,M,0,88,64,1,,
-employee-230,2010-03-05 00:00:00.000,pay_rate,,,,,,,,9.25,
-employee-230,2010-03-05 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-231,,,Janitor,M,F,0,91,65,1,,
-employee-231,2010-03-07 00:00:00.000,pay_rate,,,,,,,,9.25,
-employee-231,2010-03-07 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-232,,,Janitor,S,M,0,89,64,1,,
-employee-232,2010-01-27 00:00:00.000,pay_rate,,,,,,,,9.25,
-employee-232,2010-01-27 00:00:00.000,pay_frequency,,,,,,,,,1
-employee-233,,,Facilities Administrative Assistant,M,M,0,87,63,1,,
-employee-233,2009-12-21 00:00:00.000,pay_rate,,,,,,,,9.75,
-employee-233,2009-12-21 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-234,,,Chief Financial Officer,M,F,1,0,20,1,,
-employee-234,2009-01-31 00:00:00.000,pay_rate,,,,,,,,39.06,
-employee-234,2011-11-14 00:00:00.000,pay_rate,,,,,,,,48.5577,
-employee-234,2012-01-29 00:00:00.000,pay_rate,,,,,,,,60.0962,
-employee-234,2009-01-31 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-234,2011-11-14 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-234,2012-01-29 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-235,,,Human Resources Manager,M,F,1,54,47,1,,
-employee-235,2008-12-06 00:00:00.000,pay_rate,,,,,,,,27.1394,
-employee-235,2008-12-06 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-236,,,Human Resources Administrative Assistant,S,M,0,53,46,1,,
-employee-236,2009-02-25 00:00:00.000,pay_rate,,,,,,,,13.9423,
-employee-236,2009-02-25 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-237,,,Human Resources Administrative Assistant,S,M,0,52,46,1,,
-employee-237,2009-02-06 00:00:00.000,pay_rate,,,,,,,,13.9423,
-employee-237,2009-02-06 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-238,,,Recruiter,S,M,0,50,45,1,,
-employee-238,2009-01-01 00:00:00.000,pay_rate,,,,,,,,18.2692,
-employee-238,2009-01-01 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-239,,,Benefits Specialist,M,F,0,51,45,1,,
-employee-239,2008-12-25 00:00:00.000,pay_rate,,,,,,,,16.5865,
-employee-239,2008-12-25 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-240,,,Recruiter,S,M,0,49,44,1,,
-employee-240,2008-12-13 00:00:00.000,pay_rate,,,,,,,,18.2692,
-employee-240,2008-12-13 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-241,,,Accounts Manager,M,M,1,57,48,1,,
-employee-241,2009-01-30 00:00:00.000,pay_rate,,,,,,,,34.7356,
-employee-241,2009-01-30 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-242,,,Accounts Receivable Specialist,M,F,0,60,50,1,,
-employee-242,2008-12-18 00:00:00.000,pay_rate,,,,,,,,19.0,
-employee-242,2008-12-18 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-243,,,Accounts Receivable Specialist,S,F,0,61,50,1,,
-employee-243,2009-01-06 00:00:00.000,pay_rate,,,,,,,,19.0,
-employee-243,2009-01-06 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-244,,,Accounts Receivable Specialist,S,M,0,62,51,1,,
-employee-244,2009-01-24 00:00:00.000,pay_rate,,,,,,,,19.0,
-employee-244,2009-01-24 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-245,,,Accountant,M,F,1,58,49,1,,
-employee-245,2009-02-18 00:00:00.000,pay_rate,,,,,,,,26.4423,
-employee-245,2009-02-18 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-246,,,Accounts Payable Specialist,M,M,0,63,51,1,,
-employee-246,2009-02-11 00:00:00.000,pay_rate,,,,,,,,19.0,
-employee-246,2009-02-11 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-247,,,Accounts Payable Specialist,M,F,0,64,52,1,,
-employee-247,2009-03-01 00:00:00.000,pay_rate,,,,,,,,19.0,
-employee-247,2009-03-01 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-248,,,Accountant,S,M,1,59,49,1,,
-employee-248,2009-03-08 00:00:00.000,pay_rate,,,,,,,,26.4423,
-employee-248,2009-03-08 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-249,,,Finance Manager,S,F,1,55,47,1,,
-employee-249,2008-12-25 00:00:00.000,pay_rate,,,,,,,,43.2692,
-employee-249,2008-12-25 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-250,,,Purchasing Manager,S,F,1,49,44,1,,
-employee-250,2011-02-21 00:00:00.000,pay_rate,,,,,,,,9.86,
-employee-250,2011-07-30 00:00:00.000,pay_rate,,,,,,,,22.5,
-employee-250,2012-07-14 00:00:00.000,pay_rate,,,,,,,,30.0,
-employee-250,2011-02-21 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-250,2011-07-30 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-250,2012-07-14 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-251,,,Buyer,S,M,0,59,49,1,,
-employee-251,2009-02-10 00:00:00.000,pay_rate,,,,,,,,18.2692,
-employee-251,2009-02-10 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-252,,,Buyer,M,M,0,60,50,1,,
-employee-252,2009-02-28 00:00:00.000,pay_rate,,,,,,,,18.2692,
-employee-252,2009-02-28 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-253,,,Buyer,M,F,0,56,48,1,,
-employee-253,2009-12-17 00:00:00.000,pay_rate,,,,,,,,18.2692,
-employee-253,2009-12-17 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-254,,,Buyer,M,M,0,57,48,1,,
-employee-254,2010-01-04 00:00:00.000,pay_rate,,,,,,,,18.2692,
-employee-254,2010-01-04 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-255,,,Buyer,M,M,0,52,46,1,,
-employee-255,2010-01-11 00:00:00.000,pay_rate,,,,,,,,18.2692,
-employee-255,2010-01-11 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-256,,,Buyer,M,M,0,58,49,1,,
-employee-256,2010-01-23 00:00:00.000,pay_rate,,,,,,,,18.2692,
-employee-256,2010-01-23 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-257,,,Buyer,S,M,0,54,47,1,,
-employee-257,2010-01-27 00:00:00.000,pay_rate,,,,,,,,18.2692,
-employee-257,2010-01-27 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-258,,,Buyer,S,F,0,53,46,1,,
-employee-258,2010-01-31 00:00:00.000,pay_rate,,,,,,,,18.2692,
-employee-258,2010-01-31 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-259,,,Buyer,M,M,0,55,47,1,,
-employee-259,2010-03-09 00:00:00.000,pay_rate,,,,,,,,18.2692,
-employee-259,2010-03-09 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-260,,,Purchasing Assistant,M,F,0,50,45,1,,
-employee-260,2010-12-06 00:00:00.000,pay_rate,,,,,,,,12.75,
-employee-260,2010-12-06 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-261,,,Purchasing Assistant,M,M,0,51,45,1,,
-employee-261,2010-12-25 00:00:00.000,pay_rate,,,,,,,,12.75,
-employee-261,2010-12-25 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-262,,,Assistant to the Chief Financial Officer,S,M,0,56,48,1,,
-employee-262,2009-01-12 00:00:00.000,pay_rate,,,,,,,,13.4615,
-employee-262,2009-01-12 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-263,,,Information Services Manager,S,F,1,65,52,1,,
-employee-263,2008-12-11 00:00:00.000,pay_rate,,,,,,,,50.4808,
-employee-263,2008-12-11 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-264,,,Network Manager,S,F,1,68,54,1,,
-employee-264,2009-02-04 00:00:00.000,pay_rate,,,,,,,,39.6635,
-employee-264,2009-02-04 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-265,,,Network Administrator,S,M,0,70,55,1,,
-employee-265,2008-12-04 00:00:00.000,pay_rate,,,,,,,,32.4519,
-employee-265,2008-12-04 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-266,,,Network Administrator,S,M,0,69,54,1,,
-employee-266,2009-02-23 00:00:00.000,pay_rate,,,,,,,,32.4519,
-employee-266,2009-02-23 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-267,,,Application Specialist,S,F,1,74,57,1,,
-employee-267,2009-02-16 00:00:00.000,pay_rate,,,,,,,,27.4038,
-employee-267,2009-02-16 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-268,,,Application Specialist,S,M,1,73,56,1,,
-employee-268,2009-02-03 00:00:00.000,pay_rate,,,,,,,,27.4038,
-employee-268,2009-02-03 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-269,,,Application Specialist,M,M,1,72,56,1,,
-employee-269,2009-01-11 00:00:00.000,pay_rate,,,,,,,,27.4038,
-employee-269,2009-01-11 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-270,,,Database Administrator,S,M,1,67,53,1,,
-employee-270,2009-01-17 00:00:00.000,pay_rate,,,,,,,,38.4615,
-employee-270,2009-01-17 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-271,,,Database Administrator,M,M,1,66,53,1,,
-employee-271,2009-01-22 00:00:00.000,pay_rate,,,,,,,,38.4615,
-employee-271,2009-01-22 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-272,,,Application Specialist,M,F,1,71,55,1,,
-employee-272,2008-12-23 00:00:00.000,pay_rate,,,,,,,,27.4038,
-employee-272,2008-12-23 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-273,,,Vice President of Sales,S,M,1,10,25,1,,
-employee-273,2011-02-15 00:00:00.000,pay_rate,,,,,,,,72.1154,
-employee-273,2011-02-15 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-274,,,North American Sales Manager,M,M,1,14,27,1,,
-employee-274,2011-01-04 00:00:00.000,pay_rate,,,,,,,,48.101,
-employee-274,2011-01-04 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-275,,,Sales Representative,S,M,1,38,39,1,,
-employee-275,2011-05-31 00:00:00.000,pay_rate,,,,,,,,23.0769,
-employee-275,2011-05-31 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-276,,,Sales Representative,M,F,1,27,33,1,,
-employee-276,2011-05-31 00:00:00.000,pay_rate,,,,,,,,23.0769,
-employee-276,2011-05-31 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-277,,,Sales Representative,S,F,1,24,32,1,,
-employee-277,2011-05-31 00:00:00.000,pay_rate,,,,,,,,23.0769,
-employee-277,2011-05-31 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-278,,,Sales Representative,M,M,1,33,36,1,,
-employee-278,2011-05-31 00:00:00.000,pay_rate,,,,,,,,23.0769,
-employee-278,2011-05-31 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-279,,,Sales Representative,M,M,1,29,34,1,,
-employee-279,2011-05-31 00:00:00.000,pay_rate,,,,,,,,23.0769,
-employee-279,2011-05-31 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-280,,,Sales Representative,S,F,1,22,31,1,,
-employee-280,2011-05-31 00:00:00.000,pay_rate,,,,,,,,23.0769,
-employee-280,2011-05-31 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-281,,,Sales Representative,M,M,1,26,33,1,,
-employee-281,2011-05-31 00:00:00.000,pay_rate,,,,,,,,23.0769,
-employee-281,2011-05-31 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-282,,,Sales Representative,M,M,1,31,35,1,,
-employee-282,2011-05-31 00:00:00.000,pay_rate,,,,,,,,23.0769,
-employee-282,2011-05-31 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-283,,,Sales Representative,S,M,1,23,31,1,,
-employee-283,2011-05-31 00:00:00.000,pay_rate,,,,,,,,23.0769,
-employee-283,2011-05-31 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-284,,,Sales Representative,M,M,1,39,39,1,,
-employee-284,2012-09-30 00:00:00.000,pay_rate,,,,,,,,23.0769,
-employee-284,2012-09-30 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-285,,,Pacific Sales Manager,M,M,1,20,30,1,,
-employee-285,2013-03-14 00:00:00.000,pay_rate,,,,,,,,48.101,
-employee-285,2013-03-14 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-286,,,Sales Representative,S,F,1,36,38,1,,
-employee-286,2013-05-30 00:00:00.000,pay_rate,,,,,,,,23.0769,
-employee-286,2013-05-30 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-287,,,European Sales Manager,M,F,1,21,30,1,,
-employee-287,2012-04-16 00:00:00.000,pay_rate,,,,,,,,48.101,
-employee-287,2012-04-16 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-288,,,Sales Representative,S,F,1,35,37,1,,
-employee-288,2013-05-30 00:00:00.000,pay_rate,,,,,,,,23.0769,
-employee-288,2013-05-30 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-289,,,Sales Representative,M,F,1,37,38,1,,
-employee-289,2012-05-30 00:00:00.000,pay_rate,,,,,,,,23.0769,
-employee-289,2012-05-30 00:00:00.000,pay_frequency,,,,,,,,,2
-employee-290,,,Sales Representative,S,M,1,34,37,1,,
-employee-290,2012-05-30 00:00:00.000,pay_rate,,,,,,,,23.0769,
-employee-290,2012-05-30 00:00:00.000,pay_frequency,,,,,,,,,2
+﻿Object_id,Timestamp,Ocel_changed_field,job_title,marital_status,gender,hire_date,salaried_flag,vacation_hours,sick_leave_hours,pay_rate
+employee-1,,,Chief Executive Officer,S,M,2009-01-14,1,99,69,
+employee-1,2009-01-14 00:00:00.000,pay_rate,,,,,,,,125.5
+employee-2,,,Vice President of Engineering,S,F,2008-01-31,1,1,20,
+employee-2,2008-01-31 00:00:00.000,pay_rate,,,,,,,,63.4615
+employee-3,,,Engineering Manager,M,M,2007-11-11,1,2,21,
+employee-3,2007-11-11 00:00:00.000,pay_rate,,,,,,,,43.2692
+employee-4,,,Senior Tool Designer,S,M,2007-12-05,0,48,80,
+employee-4,2007-12-05 00:00:00.000,pay_rate,,,,,,,,8.62
+employee-4,2010-05-31 00:00:00.000,pay_rate,,,,,,,,23.72
+employee-4,2011-12-15 00:00:00.000,pay_rate,,,,,,,,29.8462
+employee-5,,,Design Engineer,M,F,2008-01-06,1,5,22,
+employee-5,2008-01-06 00:00:00.000,pay_rate,,,,,,,,32.6923
+employee-6,,,Design Engineer,M,M,2008-01-24,1,6,23,
+employee-6,2008-01-24 00:00:00.000,pay_rate,,,,,,,,32.6923
+employee-7,,,Research and Development Manager,M,M,2009-02-08,1,61,50,
+employee-7,2009-02-08 00:00:00.000,pay_rate,,,,,,,,50.4808
+employee-8,,,Research and Development Engineer,S,F,2008-12-29,1,62,51,
+employee-8,2008-12-29 00:00:00.000,pay_rate,,,,,,,,40.8654
+employee-9,,,Research and Development Engineer,M,F,2009-01-16,1,63,51,
+employee-9,2009-01-16 00:00:00.000,pay_rate,,,,,,,,40.8654
+employee-10,,,Research and Development Manager,M,M,2009-05-03,1,16,64,
+employee-10,2009-05-03 00:00:00.000,pay_rate,,,,,,,,42.4808
+employee-11,,,Senior Tool Designer,S,M,2010-12-05,0,7,23,
+employee-11,2010-12-05 00:00:00.000,pay_rate,,,,,,,,28.8462
+employee-12,,,Tool Designer,M,M,2007-12-11,0,9,24,
+employee-12,2007-12-11 00:00:00.000,pay_rate,,,,,,,,25.0
+employee-13,,,Tool Designer,M,F,2010-12-23,0,8,24,
+employee-13,2010-12-23 00:00:00.000,pay_rate,,,,,,,,25.0
+employee-14,,,Senior Design Engineer,S,M,2010-12-30,1,3,21,
+employee-14,2010-12-30 00:00:00.000,pay_rate,,,,,,,,36.0577
+employee-15,,,Design Engineer,M,F,2011-01-18,1,4,22,
+employee-15,2011-01-18 00:00:00.000,pay_rate,,,,,,,,32.6923
+employee-16,,,Marketing Manager,S,M,2007-12-20,1,40,40,
+employee-16,2007-12-20 00:00:00.000,pay_rate,,,,,,,,24.0
+employee-16,2009-07-15 00:00:00.000,pay_rate,,,,,,,,28.75
+employee-16,2012-04-30 00:00:00.000,pay_rate,,,,,,,,37.5
+employee-17,,,Marketing Assistant,S,M,2007-01-26,0,42,41,
+employee-17,2007-01-26 00:00:00.000,pay_rate,,,,,,,,13.4615
+employee-18,,,Marketing Specialist,S,M,2011-02-07,0,48,44,
+employee-18,2011-02-07 00:00:00.000,pay_rate,,,,,,,,14.4231
+employee-19,,,Marketing Assistant,S,F,2011-02-14,0,43,41,
+employee-19,2011-02-14 00:00:00.000,pay_rate,,,,,,,,13.4615
+employee-20,,,Marketing Assistant,M,F,2011-01-07,0,41,40,
+employee-20,2011-01-07 00:00:00.000,pay_rate,,,,,,,,13.4615
+employee-21,,,Marketing Specialist,M,M,2009-03-02,0,44,42,
+employee-21,2009-03-02 00:00:00.000,pay_rate,,,,,,,,14.4231
+employee-22,,,Marketing Specialist,S,M,2008-12-12,0,45,42,
+employee-22,2008-12-12 00:00:00.000,pay_rate,,,,,,,,14.4231
+employee-23,,,Marketing Specialist,M,F,2009-01-12,0,46,43,
+employee-23,2009-01-12 00:00:00.000,pay_rate,,,,,,,,14.4231
+employee-24,,,Marketing Specialist,M,F,2009-01-18,0,47,43,
+employee-24,2009-01-18 00:00:00.000,pay_rate,,,,,,,,14.4231
+employee-25,,,Vice President of Production,S,M,2009-02-03,1,64,52,
+employee-25,2009-02-03 00:00:00.000,pay_rate,,,,,,,,84.1346
+employee-26,,,Production Control Manager,M,M,2008-12-01,1,43,41,
+employee-26,2008-12-01 00:00:00.000,pay_rate,,,,,,,,24.5192
+employee-27,,,Production Supervisor - WC60,S,F,2008-02-27,0,80,60,
+employee-27,2008-02-27 00:00:00.000,pay_rate,,,,,,,,25.0
+employee-28,,,Production Technician - WC60,M,M,2006-06-30,0,21,30,
+employee-28,2006-06-30 00:00:00.000,pay_rate,,,,,,,,12.45
+employee-29,,,Production Technician - WC60,S,M,2009-01-23,0,19,29,
+employee-29,2009-01-23 00:00:00.000,pay_rate,,,,,,,,12.45
+employee-30,,,Production Technician - WC60,M,F,2009-01-29,0,14,27,
+employee-30,2009-01-29 00:00:00.000,pay_rate,,,,,,,,12.45
+employee-31,,,Production Technician - WC60,M,F,2009-01-04,0,18,29,
+employee-31,2009-01-04 00:00:00.000,pay_rate,,,,,,,,12.45
+employee-32,,,Production Technician - WC60,M,F,2008-12-29,0,23,31,
+employee-32,2008-12-29 00:00:00.000,pay_rate,,,,,,,,12.45
+employee-33,,,Production Technician - WC60,M,M,2008-12-17,0,17,28,
+employee-33,2008-12-17 00:00:00.000,pay_rate,,,,,,,,12.45
+employee-34,,,Production Technician - WC60,M,F,2009-02-16,0,15,27,
+employee-34,2009-02-16 00:00:00.000,pay_rate,,,,,,,,12.45
+employee-35,,,Production Technician - WC60,M,M,2009-02-08,0,22,31,
+employee-35,2009-02-08 00:00:00.000,pay_rate,,,,,,,,12.45
+employee-36,,,Production Technician - WC60,M,M,2009-02-10,0,20,30,
+employee-36,2009-02-10 00:00:00.000,pay_rate,,,,,,,,12.45
+employee-37,,,Production Technician - WC60,S,M,2009-03-07,0,16,28,
+employee-37,2009-03-07 00:00:00.000,pay_rate,,,,,,,,12.45
+employee-38,,,Production Technician - WC60,M,F,2010-01-16,0,24,32,
+employee-38,2010-01-16 00:00:00.000,pay_rate,,,,,,,,12.45
+employee-39,,,Production Technician - WC60,S,M,2010-02-05,0,25,32,
+employee-39,2010-02-05 00:00:00.000,pay_rate,,,,,,,,12.45
+employee-40,,,Production Supervisor - WC60,S,F,2007-12-26,0,82,61,
+employee-40,2007-12-26 00:00:00.000,pay_rate,,,,,,,,25.0
+employee-41,,,Production Technician - WC60,S,M,2009-01-21,0,35,37,
+employee-41,2009-01-21 00:00:00.000,pay_rate,,,,,,,,12.45
+employee-42,,,Production Technician - WC60,M,M,2008-12-27,0,39,39,
+employee-42,2008-12-27 00:00:00.000,pay_rate,,,,,,,,12.45
+employee-43,,,Production Technician - WC60,M,F,2009-01-02,0,34,37,
+employee-43,2009-01-02 00:00:00.000,pay_rate,,,,,,,,12.45
+employee-44,,,Production Technician - WC60,S,M,2008-12-08,0,38,39,
+employee-44,2008-12-08 00:00:00.000,pay_rate,,,,,,,,12.45
+employee-45,,,Production Technician - WC60,M,M,2009-02-26,0,37,38,
+employee-45,2009-02-26 00:00:00.000,pay_rate,,,,,,,,12.45
+employee-46,,,Production Technician - WC60,S,M,2009-02-08,0,36,38,
+employee-46,2009-02-08 00:00:00.000,pay_rate,,,,,,,,12.45
+employee-47,,,Production Supervisor - WC10,S,M,2009-02-22,0,65,52,
+employee-47,2009-02-22 00:00:00.000,pay_rate,,,,,,,,25.0
+employee-48,,,Production Technician - WC10,M,F,2008-01-06,0,83,61,
+employee-48,2008-01-06 00:00:00.000,pay_rate,,,,,,,,13.45
+employee-49,,,Production Technician - WC10,S,M,2008-01-07,0,88,64,
+employee-49,2008-01-07 00:00:00.000,pay_rate,,,,,,,,13.45
+employee-50,,,Production Technician - WC10,M,M,2008-02-02,0,84,62,
+employee-50,2008-02-02 00:00:00.000,pay_rate,,,,,,,,13.45
+employee-51,,,Production Technician - WC10,S,M,2008-02-20,0,85,62,
+employee-51,2008-02-20 00:00:00.000,pay_rate,,,,,,,,13.45
+employee-52,,,Production Technician - WC10,M,F,2008-03-10,0,86,63,
+employee-52,2008-03-10 00:00:00.000,pay_rate,,,,,,,,13.45
+employee-53,,,Production Technician - WC10,M,F,2008-03-28,0,87,63,
+employee-53,2008-03-28 00:00:00.000,pay_rate,,,,,,,,13.45
+employee-54,,,Production Technician - WC10,M,F,2010-01-01,0,89,64,
+employee-54,2010-01-01 00:00:00.000,pay_rate,,,,,,,,13.45
+employee-55,,,Production Supervisor - WC50,M,M,2008-02-08,0,79,59,
+employee-55,2008-02-08 00:00:00.000,pay_rate,,,,,,,,25.0
+employee-56,,,Production Technician - WC50,M,F,2009-02-05,0,9,24,
+employee-56,2009-02-05 00:00:00.000,pay_rate,,,,,,,,11.0
+employee-57,,,Production Technician - WC50,S,M,2009-02-23,0,10,25,
+employee-57,2009-02-23 00:00:00.000,pay_rate,,,,,,,,11.0
+employee-58,,,Production Technician - WC50,M,M,2008-12-05,0,11,25,
+employee-58,2008-12-05 00:00:00.000,pay_rate,,,,,,,,11.0
+employee-59,,,Production Technician - WC50,S,M,2008-12-24,0,12,26,
+employee-59,2008-12-24 00:00:00.000,pay_rate,,,,,,,,11.0
+employee-60,,,Production Technician - WC50,S,M,2009-01-11,0,13,26,
+employee-60,2009-01-11 00:00:00.000,pay_rate,,,,,,,,11.0
+employee-61,,,Production Technician - WC50,S,F,2009-01-18,0,8,24,
+employee-61,2009-01-18 00:00:00.000,pay_rate,,,,,,,,11.0
+employee-62,,,Production Supervisor - WC60,M,M,2008-03-17,0,81,60,
+employee-62,2008-03-17 00:00:00.000,pay_rate,,,,,,,,25.0
+employee-63,,,Production Technician - WC60,S,M,2010-01-29,0,30,35,
+employee-63,2010-01-29 00:00:00.000,pay_rate,,,,,,,,12.45
+employee-64,,,Production Technician - WC60,S,M,2010-02-23,0,26,33,
+employee-64,2010-02-23 00:00:00.000,pay_rate,,,,,,,,12.45
+employee-65,,,Production Technician - WC60,M,M,2010-02-23,0,29,34,
+employee-65,2010-02-23 00:00:00.000,pay_rate,,,,,,,,12.45
+employee-66,,,Production Technician - WC60,S,M,2009-12-22,0,28,34,
+employee-66,2009-12-22 00:00:00.000,pay_rate,,,,,,,,12.45
+employee-67,,,Production Technician - WC60,S,M,2009-03-05,0,32,36,
+employee-67,2009-03-05 00:00:00.000,pay_rate,,,,,,,,12.45
+employee-68,,,Production Technician - WC60,S,M,2009-12-03,0,27,33,
+employee-68,2009-12-03 00:00:00.000,pay_rate,,,,,,,,12.45
+employee-69,,,Production Technician - WC60,S,M,2009-02-15,0,31,35,
+employee-69,2009-02-15 00:00:00.000,pay_rate,,,,,,,,12.45
+employee-70,,,Production Technician - WC60,M,M,2008-12-15,0,33,36,
+employee-70,2008-12-15 00:00:00.000,pay_rate,,,,,,,,12.45
+employee-71,,,Production Supervisor - WC30,S,M,2009-02-15,0,70,55,
+employee-71,2009-02-15 00:00:00.000,pay_rate,,,,,,,,25.0
+employee-72,,,Production Technician - WC30,M,M,2008-12-01,0,41,40,
+employee-72,2008-12-01 00:00:00.000,pay_rate,,,,,,,,9.5
+employee-73,,,Production Technician - WC30,M,F,2008-12-19,0,42,41,
+employee-73,2008-12-19 00:00:00.000,pay_rate,,,,,,,,9.5
+employee-74,,,Production Technician - WC30,S,M,2009-01-07,0,43,41,
+employee-74,2009-01-07 00:00:00.000,pay_rate,,,,,,,,9.5
+employee-75,,,Production Technician - WC30,S,M,2009-01-26,0,44,42,
+employee-75,2009-01-26 00:00:00.000,pay_rate,,,,,,,,9.5
+employee-76,,,Production Technician - WC30,M,F,2009-02-12,0,45,42,
+employee-76,2009-02-12 00:00:00.000,pay_rate,,,,,,,,9.5
+employee-77,,,Production Technician - WC30,M,F,2009-03-03,0,46,43,
+employee-77,2009-03-03 00:00:00.000,pay_rate,,,,,,,,9.5
+employee-78,,,Production Supervisor - WC40,M,M,2008-12-15,0,72,56,
+employee-78,2008-12-15 00:00:00.000,pay_rate,,,,,,,,25.0
+employee-79,,,Production Technician - WC40,M,M,2010-01-24,0,60,50,
+employee-79,2010-01-24 00:00:00.000,pay_rate,,,,,,,,15.0
+employee-80,,,Production Technician - WC40,S,M,2010-01-17,0,65,52,
+employee-80,2010-01-17 00:00:00.000,pay_rate,,,,,,,,15.0
+employee-81,,,Production Technician - WC40,S,M,2009-12-29,0,64,52,
+employee-81,2009-12-29 00:00:00.000,pay_rate,,,,,,,,15.0
+employee-82,,,Production Technician - WC40,S,M,2010-03-03,0,62,51,
+employee-82,2010-03-03 00:00:00.000,pay_rate,,,,,,,,15.0
+employee-83,,,Production Technician - WC40,M,M,2010-02-12,0,61,50,
+employee-83,2010-02-12 00:00:00.000,pay_rate,,,,,,,,15.0
+employee-84,,,Production Technician - WC40,M,M,2010-02-05,0,66,53,
+employee-84,2010-02-05 00:00:00.000,pay_rate,,,,,,,,15.0
+employee-85,,,Production Technician - WC40,S,M,2009-12-11,0,63,51,
+employee-85,2009-12-11 00:00:00.000,pay_rate,,,,,,,,15.0
+employee-86,,,Production Technician - WC40,M,M,2009-01-05,0,59,49,
+employee-86,2009-01-05 00:00:00.000,pay_rate,,,,,,,,15.0
+employee-87,,,Production Supervisor - WC10,M,M,2008-12-22,0,67,53,
+employee-87,2008-12-22 00:00:00.000,pay_rate,,,,,,,,25.0
+employee-88,,,Production Technician - WC10,S,F,2009-12-18,0,99,69,
+employee-88,2009-12-18 00:00:00.000,pay_rate,,,,,,,,13.45
+employee-89,,,Production Technician - WC10,S,M,2010-02-01,0,96,68,
+employee-89,2010-02-01 00:00:00.000,pay_rate,,,,,,,,13.45
+employee-90,,,Production Technician - WC10,S,F,2010-02-20,0,97,68,
+employee-90,2010-02-20 00:00:00.000,pay_rate,,,,,,,,13.45
+employee-91,,,Production Technician - WC10,S,F,2010-01-12,0,95,67,
+employee-91,2010-01-12 00:00:00.000,pay_rate,,,,,,,,13.45
+employee-92,,,Production Technician - WC10,M,M,2010-03-10,0,98,69,
+employee-92,2010-03-10 00:00:00.000,pay_rate,,,,,,,,13.45
+employee-93,,,Production Supervisor - WC50,S,M,2008-12-27,0,78,59,
+employee-93,2008-12-27 00:00:00.000,pay_rate,,,,,,,,25.0
+employee-94,,,Production Technician - WC50,M,M,2008-12-12,0,6,23,
+employee-94,2008-12-12 00:00:00.000,pay_rate,,,,,,,,11.0
+employee-95,,,Production Technician - WC50,M,M,2008-12-19,0,1,20,
+employee-95,2008-12-19 00:00:00.000,pay_rate,,,,,,,,11.0
+employee-96,,,Production Technician - WC50,M,F,2009-03-02,0,5,22,
+employee-96,2009-03-02 00:00:00.000,pay_rate,,,,,,,,11.0
+employee-97,,,Production Technician - WC50,S,M,2009-02-10,0,0,20,
+employee-97,2009-02-10 00:00:00.000,pay_rate,,,,,,,,11.0
+employee-98,,,Production Technician - WC50,M,M,2009-02-11,0,4,22,
+employee-98,2009-02-11 00:00:00.000,pay_rate,,,,,,,,11.0
+employee-99,,,Production Technician - WC50,S,M,2009-01-06,0,2,21,
+employee-99,2009-01-06 00:00:00.000,pay_rate,,,,,,,,11.0
+employee-100,,,Production Technician - WC50,M,M,2009-01-12,0,7,23,
+employee-100,2009-01-12 00:00:00.000,pay_rate,,,,,,,,11.0
+employee-101,,,Production Technician - WC50,M,M,2009-01-25,0,3,21,
+employee-101,2009-01-25 00:00:00.000,pay_rate,,,,,,,,11.0
+employee-102,,,Production Supervisor - WC10,S,M,2008-12-03,0,66,53,
+employee-102,2008-12-03 00:00:00.000,pay_rate,,,,,,,,25.0
+employee-103,,,Production Technician - WC10,S,M,2009-12-06,0,93,66,
+employee-103,2009-12-06 00:00:00.000,pay_rate,,,,,,,,13.45
+employee-104,,,Production Technician - WC10,M,F,2009-12-25,0,94,67,
+employee-104,2009-12-25 00:00:00.000,pay_rate,,,,,,,,13.45
+employee-105,,,Production Technician - WC10,S,M,2009-12-25,0,90,65,
+employee-105,2009-12-25 00:00:00.000,pay_rate,,,,,,,,13.45
+employee-106,,,Production Technician - WC10,S,M,2010-02-27,0,92,66,
+employee-106,2010-02-27 00:00:00.000,pay_rate,,,,,,,,13.45
+employee-107,,,Production Technician - WC10,M,M,2010-02-08,0,91,65,
+employee-107,2010-02-08 00:00:00.000,pay_rate,,,,,,,,13.45
+employee-108,,,Production Supervisor - WC50,S,M,2008-12-08,0,77,58,
+employee-108,2008-12-08 00:00:00.000,pay_rate,,,,,,,,25.0
+employee-109,,,Production Technician - WC50,M,F,2008-12-07,0,95,67,
+employee-109,2008-12-07 00:00:00.000,pay_rate,,,,,,,,11.0
+employee-110,,,Production Technician - WC50,S,M,2008-12-14,0,90,65,
+employee-110,2008-12-14 00:00:00.000,pay_rate,,,,,,,,11.0
+employee-111,,,Production Technician - WC50,S,M,2008-12-17,0,93,66,
+employee-111,2008-12-17 00:00:00.000,pay_rate,,,,,,,,11.0
+employee-112,,,Production Technician - WC50,S,M,2009-01-01,0,91,65,
+employee-112,2009-01-01 00:00:00.000,pay_rate,,,,,,,,11.0
+employee-113,,,Production Technician - WC50,M,F,2008-12-25,0,96,68,
+employee-113,2008-12-25 00:00:00.000,pay_rate,,,,,,,,11.0
+employee-114,,,Production Technician - WC50,M,M,2009-01-13,0,97,68,
+employee-114,2009-01-13 00:00:00.000,pay_rate,,,,,,,,11.0
+employee-115,,,Production Technician - WC50,S,F,2009-01-20,0,92,66,
+employee-115,2009-01-20 00:00:00.000,pay_rate,,,,,,,,11.0
+employee-116,,,Production Technician - WC50,S,M,2009-01-31,0,98,69,
+employee-116,2009-01-31 00:00:00.000,pay_rate,,,,,,,,11.0
+employee-117,,,Production Technician - WC50,M,M,2009-02-18,0,99,69,
+employee-117,2009-02-18 00:00:00.000,pay_rate,,,,,,,,11.0
+employee-118,,,Production Technician - WC50,M,M,2009-02-13,0,88,64,
+employee-118,2009-02-13 00:00:00.000,pay_rate,,,,,,,,11.0
+employee-119,,,Production Technician - WC50,S,M,2009-02-25,0,94,67,
+employee-119,2009-02-25 00:00:00.000,pay_rate,,,,,,,,11.0
+employee-120,,,Production Technician - WC50,S,F,2009-03-04,0,89,64,
+employee-120,2009-03-04 00:00:00.000,pay_rate,,,,,,,,11.0
+employee-121,,,Shipping and Receiving Supervisor,S,M,2009-01-02,1,93,66,
+employee-121,2009-01-02 00:00:00.000,pay_rate,,,,,,,,19.2308
+employee-122,,,Stocker,S,F,2008-12-07,0,97,68,
+employee-122,2008-12-07 00:00:00.000,pay_rate,,,,,,,,9.0
+employee-123,,,Shipping and Receiving Clerk,M,M,2008-12-07,0,95,67,
+employee-123,2008-12-07 00:00:00.000,pay_rate,,,,,,,,9.5
+employee-124,,,Stocker,S,F,2008-12-26,0,98,69,
+employee-124,2008-12-26 00:00:00.000,pay_rate,,,,,,,,9.0
+employee-125,,,Shipping and Receiving Clerk,M,M,2009-01-20,0,94,67,
+employee-125,2009-01-20 00:00:00.000,pay_rate,,,,,,,,9.5
+employee-126,,,Stocker,M,M,2009-02-26,0,96,68,
+employee-126,2009-02-26 00:00:00.000,pay_rate,,,,,,,,9.0
+employee-127,,,Production Supervisor - WC40,S,M,2009-01-03,0,73,56,
+employee-127,2009-01-03 00:00:00.000,pay_rate,,,,,,,,25.0
+employee-128,,,Production Technician - WC40,S,M,2008-12-04,0,68,54,
+employee-128,2008-12-04 00:00:00.000,pay_rate,,,,,,,,15.0
+employee-129,,,Production Technician - WC40,S,M,2008-12-22,0,69,54,
+employee-129,2008-12-22 00:00:00.000,pay_rate,,,,,,,,15.0
+employee-130,,,Production Technician - WC40,S,M,2009-02-13,0,71,55,
+employee-130,2009-02-13 00:00:00.000,pay_rate,,,,,,,,15.0
+employee-131,,,Production Technician - WC40,S,M,2009-02-15,0,72,56,
+employee-131,2009-02-15 00:00:00.000,pay_rate,,,,,,,,15.0
+employee-132,,,Production Technician - WC40,M,F,2009-02-22,0,67,53,
+employee-132,2009-02-22 00:00:00.000,pay_rate,,,,,,,,15.0
+employee-133,,,Production Technician - WC40,S,M,2009-01-10,0,70,55,
+employee-133,2009-01-10 00:00:00.000,pay_rate,,,,,,,,15.0
+employee-134,,,Production Supervisor - WC20,M,M,2009-01-14,0,40,40,
+employee-134,2009-01-14 00:00:00.000,pay_rate,,,,,,,,25.0
+employee-135,,,Production Technician - WC20,M,M,2008-12-04,0,9,24,
+employee-135,2008-12-04 00:00:00.000,pay_rate,,,,,,,,14.0
+employee-136,,,Production Technician - WC20,M,M,2009-12-11,0,4,22,
+employee-136,2009-12-11 00:00:00.000,pay_rate,,,,,,,,14.0
+employee-137,,,Production Technician - WC20,S,F,2009-02-23,0,8,24,
+employee-137,2009-02-23 00:00:00.000,pay_rate,,,,,,,,14.0
+employee-138,,,Production Technician - WC20,M,F,2009-02-04,0,7,23,
+employee-138,2009-02-04 00:00:00.000,pay_rate,,,,,,,,14.0
+employee-139,,,Production Technician - WC20,S,M,2010-01-06,0,0,20,
+employee-139,2010-01-06 00:00:00.000,pay_rate,,,,,,,,14.0
+employee-140,,,Production Technician - WC20,M,M,2010-01-22,0,5,22,
+employee-140,2010-01-22 00:00:00.000,pay_rate,,,,,,,,14.0
+employee-141,,,Production Technician - WC20,M,M,2010-01-24,0,1,20,
+employee-141,2010-01-24 00:00:00.000,pay_rate,,,,,,,,14.0
+employee-142,,,Production Technician - WC20,S,F,2010-03-04,0,3,21,
+employee-142,2010-03-04 00:00:00.000,pay_rate,,,,,,,,14.0
+employee-143,,,Production Technician - WC20,S,M,2010-02-13,0,2,21,
+employee-143,2010-02-13 00:00:00.000,pay_rate,,,,,,,,14.0
+employee-144,,,Production Technician - WC20,M,M,2009-01-17,0,6,23,
+employee-144,2009-01-17 00:00:00.000,pay_rate,,,,,,,,14.0
+employee-145,,,Production Supervisor - WC30,S,F,2009-01-27,0,69,54,
+employee-145,2009-01-27 00:00:00.000,pay_rate,,,,,,,,25.0
+employee-146,,,Production Technician - WC30,S,M,2008-12-07,0,36,38,
+employee-146,2008-12-07 00:00:00.000,pay_rate,,,,,,,,9.5
+employee-147,,,Production Technician - WC30,M,F,2008-12-26,0,37,38,
+employee-147,2008-12-26 00:00:00.000,pay_rate,,,,,,,,9.5
+employee-148,,,Production Technician - WC30,S,M,2009-01-14,0,38,39,
+employee-148,2009-01-14 00:00:00.000,pay_rate,,,,,,,,9.5
+employee-149,,,Production Technician - WC30,M,M,2009-01-31,0,39,39,
+employee-149,2009-01-31 00:00:00.000,pay_rate,,,,,,,,9.5
+employee-150,,,Production Technician - WC30,M,M,2009-02-26,0,35,37,
+employee-150,2009-02-26 00:00:00.000,pay_rate,,,,,,,,9.5
+employee-151,,,Production Technician - WC30,M,M,2009-02-19,0,40,40,
+employee-151,2009-02-19 00:00:00.000,pay_rate,,,,,,,,9.5
+employee-152,,,Production Supervisor - WC20,M,M,2009-02-01,0,41,40,
+employee-152,2009-02-01 00:00:00.000,pay_rate,,,,,,,,25.0
+employee-153,,,Production Technician - WC20,S,M,2008-12-16,0,15,27,
+employee-153,2008-12-16 00:00:00.000,pay_rate,,,,,,,,14.0
+employee-154,,,Production Technician - WC20,M,M,2008-12-23,0,10,25,
+employee-154,2008-12-23 00:00:00.000,pay_rate,,,,,,,,14.0
+employee-155,,,Production Technician - WC20,S,M,2009-01-04,0,16,28,
+employee-155,2009-01-04 00:00:00.000,pay_rate,,,,,,,,14.0
+employee-156,,,Production Technician - WC20,M,M,2009-01-11,0,11,25,
+employee-156,2009-01-11 00:00:00.000,pay_rate,,,,,,,,14.0
+employee-157,,,Production Technician - WC20,S,F,2009-02-03,0,12,26,
+employee-157,2009-02-03 00:00:00.000,pay_rate,,,,,,,,14.0
+employee-158,,,Production Technician - WC20,S,F,2009-03-07,0,14,27,
+employee-158,2009-03-07 00:00:00.000,pay_rate,,,,,,,,14.0
+employee-159,,,Production Technician - WC20,S,M,2009-02-16,0,13,26,
+employee-159,2009-02-16 00:00:00.000,pay_rate,,,,,,,,14.0
+employee-160,,,Production Supervisor - WC45,M,M,2009-01-21,0,74,57,
+employee-160,2009-01-21 00:00:00.000,pay_rate,,,,,,,,25.0
+employee-161,,,Production Technician - WC45,S,M,2008-12-15,0,74,57,
+employee-161,2008-12-15 00:00:00.000,pay_rate,,,,,,,,10.0
+employee-162,,,Production Technician - WC45,S,F,2009-01-03,0,75,57,
+employee-162,2009-01-03 00:00:00.000,pay_rate,,,,,,,,10.0
+employee-163,,,Production Technician - WC45,M,M,2009-02-08,0,77,58,
+employee-163,2009-02-08 00:00:00.000,pay_rate,,,,,,,,10.0
+employee-164,,,Production Technician - WC45,S,M,2009-03-06,0,73,56,
+employee-164,2009-03-06 00:00:00.000,pay_rate,,,,,,,,10.0
+employee-165,,,Production Technician - WC45,M,M,2009-01-22,0,76,58,
+employee-165,2009-01-22 00:00:00.000,pay_rate,,,,,,,,10.0
+employee-166,,,Production Supervisor - WC30,S,M,2009-02-21,0,68,54,
+employee-166,2009-02-21 00:00:00.000,pay_rate,,,,,,,,25.0
+employee-167,,,Production Technician - WC30,S,M,2008-12-02,0,25,32,
+employee-167,2008-12-02 00:00:00.000,pay_rate,,,,,,,,6.5
+employee-167,2011-12-01 00:00:00.000,pay_rate,,,,,,,,7.25
+employee-167,2013-07-14 00:00:00.000,pay_rate,,,,,,,,9.5
+employee-168,,,Production Technician - WC30,S,M,2008-12-07,0,34,37,
+employee-168,2008-12-07 00:00:00.000,pay_rate,,,,,,,,9.5
+employee-169,,,Production Technician - WC30,S,F,2008-12-14,0,31,35,
+employee-169,2008-12-14 00:00:00.000,pay_rate,,,,,,,,9.5
+employee-170,,,Production Technician - WC30,M,M,2008-12-21,0,26,33,
+employee-170,2008-12-21 00:00:00.000,pay_rate,,,,,,,,6.5
+employee-170,2011-12-01 00:00:00.000,pay_rate,,,,,,,,7.25
+employee-170,2013-07-14 00:00:00.000,pay_rate,,,,,,,,9.5
+employee-171,,,Production Technician - WC30,S,M,2009-01-02,0,32,36,
+employee-171,2009-01-02 00:00:00.000,pay_rate,,,,,,,,9.5
+employee-172,,,Production Technician - WC30,M,M,2009-01-16,0,22,31,
+employee-172,2009-01-16 00:00:00.000,pay_rate,,,,,,,,6.5
+employee-172,2011-12-01 00:00:00.000,pay_rate,,,,,,,,7.25
+employee-172,2013-07-14 00:00:00.000,pay_rate,,,,,,,,9.5
+employee-173,,,Production Technician - WC30,S,M,2009-01-21,0,33,36,
+employee-173,2009-01-21 00:00:00.000,pay_rate,,,,,,,,9.5
+employee-174,,,Production Technician - WC30,S,M,2009-01-27,0,28,34,
+employee-174,2009-01-27 00:00:00.000,pay_rate,,,,,,,,6.75
+employee-174,2011-12-01 00:00:00.000,pay_rate,,,,,,,,7.25
+employee-174,2013-07-14 00:00:00.000,pay_rate,,,,,,,,9.5
+employee-175,,,Production Technician - WC30,M,M,2009-02-02,0,23,31,
+employee-175,2009-02-02 00:00:00.000,pay_rate,,,,,,,,6.5
+employee-175,2011-12-01 00:00:00.000,pay_rate,,,,,,,,7.25
+employee-175,2013-07-14 00:00:00.000,pay_rate,,,,,,,,9.5
+employee-176,,,Production Technician - WC30,M,M,2009-02-14,0,29,34,
+employee-176,2009-02-14 00:00:00.000,pay_rate,,,,,,,,6.5
+employee-176,2011-12-01 00:00:00.000,pay_rate,,,,,,,,7.25
+employee-176,2013-07-14 00:00:00.000,pay_rate,,,,,,,,9.5
+employee-177,,,Production Technician - WC30,M,M,2009-02-21,0,24,32,
+employee-177,2009-02-21 00:00:00.000,pay_rate,,,,,,,,6.5
+employee-177,2011-12-01 00:00:00.000,pay_rate,,,,,,,,7.25
+employee-177,2013-07-14 00:00:00.000,pay_rate,,,,,,,,9.5
+employee-178,,,Production Technician - WC30,S,M,2009-03-03,0,27,33,
+employee-178,2009-03-03 00:00:00.000,pay_rate,,,,,,,,6.5
+employee-178,2011-12-01 00:00:00.000,pay_rate,,,,,,,,7.0
+employee-178,2013-07-14 00:00:00.000,pay_rate,,,,,,,,9.5
+employee-179,,,Production Technician - WC30,S,M,2009-03-05,0,30,35,
+employee-179,2009-03-05 00:00:00.000,pay_rate,,,,,,,,9.5
+employee-180,,,Production Supervisor - WC20,S,F,2009-02-20,0,42,41,
+employee-180,2009-02-20 00:00:00.000,pay_rate,,,,,,,,25.0
+employee-181,,,Production Technician - WC20,S,M,2008-12-09,0,20,30,
+employee-181,2008-12-09 00:00:00.000,pay_rate,,,,,,,,14.0
+employee-182,,,Production Technician - WC20,S,M,2008-12-28,0,21,30,
+employee-182,2008-12-28 00:00:00.000,pay_rate,,,,,,,,14.0
+employee-183,,,Production Technician - WC20,M,F,2009-01-22,0,17,28,
+employee-183,2009-01-22 00:00:00.000,pay_rate,,,,,,,,14.0
+employee-184,,,Production Technician - WC20,M,M,2009-02-09,0,18,29,
+employee-184,2009-02-09 00:00:00.000,pay_rate,,,,,,,,14.0
+employee-185,,,Production Technician - WC20,S,M,2009-02-28,0,19,29,
+employee-185,2009-02-28 00:00:00.000,pay_rate,,,,,,,,14.0
+employee-186,,,Production Supervisor - WC45,S,M,2009-02-08,0,75,57,
+employee-186,2009-02-08 00:00:00.000,pay_rate,,,,,,,,25.0
+employee-187,,,Production Technician - WC45,M,F,2008-12-09,0,79,59,
+employee-187,2008-12-09 00:00:00.000,pay_rate,,,,,,,,10.0
+employee-188,,,Production Technician - WC45,M,M,2008-12-27,0,80,60,
+employee-188,2008-12-27 00:00:00.000,pay_rate,,,,,,,,10.0
+employee-189,,,Production Technician - WC45,S,F,2009-01-15,0,81,60,
+employee-189,2009-01-15 00:00:00.000,pay_rate,,,,,,,,10.0
+employee-190,,,Production Technician - WC45,S,M,2009-02-02,0,82,61,
+employee-190,2009-02-02 00:00:00.000,pay_rate,,,,,,,,10.0
+employee-191,,,Production Technician - WC45,S,M,2009-02-26,0,78,59,
+employee-191,2009-02-26 00:00:00.000,pay_rate,,,,,,,,10.0
+employee-192,,,Production Supervisor - WC40,M,F,2009-03-05,0,71,55,
+employee-192,2009-03-05 00:00:00.000,pay_rate,,,,,,,,25.0
+employee-193,,,Production Technician - WC40,S,M,2008-12-06,0,52,46,
+employee-193,2008-12-06 00:00:00.000,pay_rate,,,,,,,,15.0
+employee-194,,,Production Technician - WC40,S,M,2008-12-12,0,47,43,
+employee-194,2008-12-12 00:00:00.000,pay_rate,,,,,,,,15.0
+employee-195,,,Production Technician - WC40,S,M,2008-12-17,0,58,49,
+employee-195,2008-12-17 00:00:00.000,pay_rate,,,,,,,,15.0
+employee-196,,,Production Technician - WC40,M,M,2008-12-24,0,53,46,
+employee-196,2008-12-24 00:00:00.000,pay_rate,,,,,,,,15.0
+employee-197,,,Production Technician - WC40,M,M,2008-12-31,0,48,44,
+employee-197,2008-12-31 00:00:00.000,pay_rate,,,,,,,,15.0
+employee-198,,,Production Technician - WC40,M,F,2009-01-04,0,49,44,
+employee-198,2009-01-04 00:00:00.000,pay_rate,,,,,,,,15.0
+employee-199,,,Production Technician - WC40,M,F,2009-01-12,0,54,47,
+employee-199,2009-01-12 00:00:00.000,pay_rate,,,,,,,,15.0
+employee-200,,,Production Technician - WC40,M,M,2009-01-17,0,56,48,
+employee-200,2009-01-17 00:00:00.000,pay_rate,,,,,,,,15.0
+employee-201,,,Production Technician - WC40,S,M,2009-01-29,0,55,47,
+employee-201,2009-01-29 00:00:00.000,pay_rate,,,,,,,,15.0
+employee-202,,,Production Technician - WC40,S,M,2009-02-05,0,50,45,
+employee-202,2009-02-05 00:00:00.000,pay_rate,,,,,,,,15.0
+employee-203,,,Production Technician - WC40,M,M,2009-02-24,0,51,45,
+employee-203,2009-02-24 00:00:00.000,pay_rate,,,,,,,,15.0
+employee-204,,,Production Technician - WC40,M,M,2009-03-08,0,57,48,
+employee-204,2009-03-08 00:00:00.000,pay_rate,,,,,,,,15.0
+employee-205,,,Production Supervisor - WC45,S,F,2009-02-26,0,76,58,
+employee-205,2009-02-26 00:00:00.000,pay_rate,,,,,,,,25.0
+employee-206,,,Production Technician - WC45,S,M,2008-12-02,0,84,62,
+employee-206,2008-12-02 00:00:00.000,pay_rate,,,,,,,,10.0
+employee-207,,,Production Technician - WC45,S,M,2008-12-02,0,85,62,
+employee-207,2008-12-02 00:00:00.000,pay_rate,,,,,,,,10.0
+employee-208,,,Production Technician - WC45,M,M,2009-01-08,0,86,63,
+employee-208,2009-01-08 00:00:00.000,pay_rate,,,,,,,,10.0
+employee-209,,,Production Technician - WC45,M,F,2009-01-27,0,87,63,
+employee-209,2009-01-27 00:00:00.000,pay_rate,,,,,,,,10.0
+employee-210,,,Production Technician - WC45,S,F,2009-02-20,0,83,61,
+employee-210,2009-02-20 00:00:00.000,pay_rate,,,,,,,,10.0
+employee-211,,,Quality Assurance Manager,S,M,2009-02-28,1,80,60,
+employee-211,2009-02-28 00:00:00.000,pay_rate,,,,,,,,28.8462
+employee-212,,,Quality Assurance Supervisor,M,M,2008-12-09,1,81,60,
+employee-212,2008-12-09 00:00:00.000,pay_rate,,,,,,,,21.6346
+employee-213,,,Quality Assurance Technician,M,M,2010-02-23,0,85,62,
+employee-213,2010-02-23 00:00:00.000,pay_rate,,,,,,,,10.5769
+employee-214,,,Quality Assurance Technician,M,M,2009-02-02,0,84,62,
+employee-214,2009-02-02 00:00:00.000,pay_rate,,,,,,,,10.5769
+employee-215,,,Quality Assurance Technician,S,M,2009-01-15,0,83,61,
+employee-215,2009-01-15 00:00:00.000,pay_rate,,,,,,,,10.5769
+employee-216,,,Quality Assurance Technician,S,M,2008-12-28,0,82,61,
+employee-216,2008-12-28 00:00:00.000,pay_rate,,,,,,,,10.5769
+employee-217,,,Document Control Manager,M,M,2009-01-04,0,77,58,
+employee-217,2009-01-04 00:00:00.000,pay_rate,,,,,,,,17.7885
+employee-218,,,Control Specialist,S,M,2008-12-16,0,76,58,
+employee-218,2008-12-16 00:00:00.000,pay_rate,,,,,,,,16.8269
+employee-219,,,Document Control Assistant,S,M,2009-01-22,0,78,59,
+employee-219,2009-01-22 00:00:00.000,pay_rate,,,,,,,,10.25
+employee-220,,,Document Control Assistant,M,F,2009-02-09,0,79,59,
+employee-220,2009-02-09 00:00:00.000,pay_rate,,,,,,,,10.25
+employee-221,,,Control Specialist,M,M,2009-03-06,0,75,57,
+employee-221,2009-03-06 00:00:00.000,pay_rate,,,,,,,,16.8269
+employee-222,,,Master Scheduler,S,M,2008-12-12,0,44,42,
+employee-222,2008-12-12 00:00:00.000,pay_rate,,,,,,,,23.5577
+employee-223,,,Scheduling Assistant,M,M,2009-01-26,0,46,43,
+employee-223,2009-01-26 00:00:00.000,pay_rate,,,,,,,,16.0
+employee-224,,,Scheduling Assistant,M,M,2009-01-07,0,45,42,
+employee-224,2008-01-08 00:00:00.000,pay_rate,,,,,,,,8.62
+employee-224,2011-08-31 00:00:00.000,pay_rate,,,,,,,,13.5
+employee-224,2012-01-01 00:00:00.000,pay_rate,,,,,,,,16.0
+employee-225,,,Scheduling Assistant,M,M,2009-02-13,0,47,43,
+employee-225,2009-02-13 00:00:00.000,pay_rate,,,,,,,,16.0
+employee-226,,,Scheduling Assistant,M,M,2009-03-03,0,48,44,
+employee-226,2009-03-03 00:00:00.000,pay_rate,,,,,,,,16.0
+employee-227,,,Facilities Manager,M,M,2009-12-02,1,86,63,
+employee-227,2009-12-02 00:00:00.000,pay_rate,,,,,,,,24.0385
+employee-228,,,Maintenance Supervisor,M,M,2008-12-14,1,92,66,
+employee-228,2008-12-14 00:00:00.000,pay_rate,,,,,,,,20.4327
+employee-229,,,Janitor,M,F,2010-02-16,0,90,65,
+employee-229,2010-02-16 00:00:00.000,pay_rate,,,,,,,,9.25
+employee-230,,,Janitor,M,M,2010-03-05,0,88,64,
+employee-230,2010-03-05 00:00:00.000,pay_rate,,,,,,,,9.25
+employee-231,,,Janitor,M,F,2010-03-07,0,91,65,
+employee-231,2010-03-07 00:00:00.000,pay_rate,,,,,,,,9.25
+employee-232,,,Janitor,S,M,2010-01-27,0,89,64,
+employee-232,2010-01-27 00:00:00.000,pay_rate,,,,,,,,9.25
+employee-233,,,Facilities Administrative Assistant,M,M,2009-12-21,0,87,63,
+employee-233,2009-12-21 00:00:00.000,pay_rate,,,,,,,,9.75
+employee-234,,,Chief Financial Officer,M,F,2009-01-31,1,0,20,
+employee-234,2009-01-31 00:00:00.000,pay_rate,,,,,,,,39.06
+employee-234,2011-11-14 00:00:00.000,pay_rate,,,,,,,,48.5577
+employee-234,2012-01-29 00:00:00.000,pay_rate,,,,,,,,60.0962
+employee-235,,,Human Resources Manager,M,F,2008-12-06,1,54,47,
+employee-235,2008-12-06 00:00:00.000,pay_rate,,,,,,,,27.1394
+employee-236,,,Human Resources Administrative Assistant,S,M,2009-02-25,0,53,46,
+employee-236,2009-02-25 00:00:00.000,pay_rate,,,,,,,,13.9423
+employee-237,,,Human Resources Administrative Assistant,S,M,2009-02-06,0,52,46,
+employee-237,2009-02-06 00:00:00.000,pay_rate,,,,,,,,13.9423
+employee-238,,,Recruiter,S,M,2009-01-01,0,50,45,
+employee-238,2009-01-01 00:00:00.000,pay_rate,,,,,,,,18.2692
+employee-239,,,Benefits Specialist,M,F,2008-12-25,0,51,45,
+employee-239,2008-12-25 00:00:00.000,pay_rate,,,,,,,,16.5865
+employee-240,,,Recruiter,S,M,2008-12-13,0,49,44,
+employee-240,2008-12-13 00:00:00.000,pay_rate,,,,,,,,18.2692
+employee-241,,,Accounts Manager,M,M,2009-01-30,1,57,48,
+employee-241,2009-01-30 00:00:00.000,pay_rate,,,,,,,,34.7356
+employee-242,,,Accounts Receivable Specialist,M,F,2008-12-18,0,60,50,
+employee-242,2008-12-18 00:00:00.000,pay_rate,,,,,,,,19.0
+employee-243,,,Accounts Receivable Specialist,S,F,2009-01-06,0,61,50,
+employee-243,2009-01-06 00:00:00.000,pay_rate,,,,,,,,19.0
+employee-244,,,Accounts Receivable Specialist,S,M,2009-01-24,0,62,51,
+employee-244,2009-01-24 00:00:00.000,pay_rate,,,,,,,,19.0
+employee-245,,,Accountant,M,F,2009-02-18,1,58,49,
+employee-245,2009-02-18 00:00:00.000,pay_rate,,,,,,,,26.4423
+employee-246,,,Accounts Payable Specialist,M,M,2009-02-11,0,63,51,
+employee-246,2009-02-11 00:00:00.000,pay_rate,,,,,,,,19.0
+employee-247,,,Accounts Payable Specialist,M,F,2009-03-01,0,64,52,
+employee-247,2009-03-01 00:00:00.000,pay_rate,,,,,,,,19.0
+employee-248,,,Accountant,S,M,2009-03-08,1,59,49,
+employee-248,2009-03-08 00:00:00.000,pay_rate,,,,,,,,26.4423
+employee-249,,,Finance Manager,S,F,2008-12-25,1,55,47,
+employee-249,2008-12-25 00:00:00.000,pay_rate,,,,,,,,43.2692
+employee-250,,,Purchasing Manager,S,F,2011-02-25,1,49,44,
+employee-250,2011-02-21 00:00:00.000,pay_rate,,,,,,,,9.86
+employee-250,2011-07-30 00:00:00.000,pay_rate,,,,,,,,22.5
+employee-250,2012-07-14 00:00:00.000,pay_rate,,,,,,,,30.0
+employee-251,,,Buyer,S,M,2009-02-10,0,59,49,
+employee-251,2009-02-10 00:00:00.000,pay_rate,,,,,,,,18.2692
+employee-252,,,Buyer,M,M,2009-02-28,0,60,50,
+employee-252,2009-02-28 00:00:00.000,pay_rate,,,,,,,,18.2692
+employee-253,,,Buyer,M,F,2009-12-17,0,56,48,
+employee-253,2009-12-17 00:00:00.000,pay_rate,,,,,,,,18.2692
+employee-254,,,Buyer,M,M,2010-01-04,0,57,48,
+employee-254,2010-01-04 00:00:00.000,pay_rate,,,,,,,,18.2692
+employee-255,,,Buyer,M,M,2010-01-11,0,52,46,
+employee-255,2010-01-11 00:00:00.000,pay_rate,,,,,,,,18.2692
+employee-256,,,Buyer,M,M,2010-01-23,0,58,49,
+employee-256,2010-01-23 00:00:00.000,pay_rate,,,,,,,,18.2692
+employee-257,,,Buyer,S,M,2010-01-27,0,54,47,
+employee-257,2010-01-27 00:00:00.000,pay_rate,,,,,,,,18.2692
+employee-258,,,Buyer,S,F,2010-01-31,0,53,46,
+employee-258,2010-01-31 00:00:00.000,pay_rate,,,,,,,,18.2692
+employee-259,,,Buyer,M,M,2010-03-09,0,55,47,
+employee-259,2010-03-09 00:00:00.000,pay_rate,,,,,,,,18.2692
+employee-260,,,Purchasing Assistant,M,F,2010-12-06,0,50,45,
+employee-260,2010-12-06 00:00:00.000,pay_rate,,,,,,,,12.75
+employee-261,,,Purchasing Assistant,M,M,2010-12-25,0,51,45,
+employee-261,2010-12-25 00:00:00.000,pay_rate,,,,,,,,12.75
+employee-262,,,Assistant to the Chief Financial Officer,S,M,2009-01-12,0,56,48,
+employee-262,2009-01-12 00:00:00.000,pay_rate,,,,,,,,13.4615
+employee-263,,,Information Services Manager,S,F,2008-12-11,1,65,52,
+employee-263,2008-12-11 00:00:00.000,pay_rate,,,,,,,,50.4808
+employee-264,,,Network Manager,S,F,2009-02-04,1,68,54,
+employee-264,2009-02-04 00:00:00.000,pay_rate,,,,,,,,39.6635
+employee-265,,,Network Administrator,S,M,2008-12-04,0,70,55,
+employee-265,2008-12-04 00:00:00.000,pay_rate,,,,,,,,32.4519
+employee-266,,,Network Administrator,S,M,2009-02-23,0,69,54,
+employee-266,2009-02-23 00:00:00.000,pay_rate,,,,,,,,32.4519
+employee-267,,,Application Specialist,S,F,2009-02-16,1,74,57,
+employee-267,2009-02-16 00:00:00.000,pay_rate,,,,,,,,27.4038
+employee-268,,,Application Specialist,S,M,2009-02-03,1,73,56,
+employee-268,2009-02-03 00:00:00.000,pay_rate,,,,,,,,27.4038
+employee-269,,,Application Specialist,M,M,2009-01-11,1,72,56,
+employee-269,2009-01-11 00:00:00.000,pay_rate,,,,,,,,27.4038
+employee-270,,,Database Administrator,S,M,2009-01-17,1,67,53,
+employee-270,2009-01-17 00:00:00.000,pay_rate,,,,,,,,38.4615
+employee-271,,,Database Administrator,M,M,2009-01-22,1,66,53,
+employee-271,2009-01-22 00:00:00.000,pay_rate,,,,,,,,38.4615
+employee-272,,,Application Specialist,M,F,2008-12-23,1,71,55,
+employee-272,2008-12-23 00:00:00.000,pay_rate,,,,,,,,27.4038
+employee-273,,,Vice President of Sales,S,M,2011-02-15,1,10,25,
+employee-273,2011-02-15 00:00:00.000,pay_rate,,,,,,,,72.1154
+employee-274,,,North American Sales Manager,M,M,2011-01-04,1,14,27,
+employee-274,2011-01-04 00:00:00.000,pay_rate,,,,,,,,48.101
+employee-275,,,Sales Representative,S,M,2011-05-31,1,38,39,
+employee-275,2011-05-31 00:00:00.000,pay_rate,,,,,,,,23.0769
+employee-276,,,Sales Representative,M,F,2011-05-31,1,27,33,
+employee-276,2011-05-31 00:00:00.000,pay_rate,,,,,,,,23.0769
+employee-277,,,Sales Representative,S,F,2011-05-31,1,24,32,
+employee-277,2011-05-31 00:00:00.000,pay_rate,,,,,,,,23.0769
+employee-278,,,Sales Representative,M,M,2011-05-31,1,33,36,
+employee-278,2011-05-31 00:00:00.000,pay_rate,,,,,,,,23.0769
+employee-279,,,Sales Representative,M,M,2011-05-31,1,29,34,
+employee-279,2011-05-31 00:00:00.000,pay_rate,,,,,,,,23.0769
+employee-280,,,Sales Representative,S,F,2011-05-31,1,22,31,
+employee-280,2011-05-31 00:00:00.000,pay_rate,,,,,,,,23.0769
+employee-281,,,Sales Representative,M,M,2011-05-31,1,26,33,
+employee-281,2011-05-31 00:00:00.000,pay_rate,,,,,,,,23.0769
+employee-282,,,Sales Representative,M,M,2011-05-31,1,31,35,
+employee-282,2011-05-31 00:00:00.000,pay_rate,,,,,,,,23.0769
+employee-283,,,Sales Representative,S,M,2011-05-31,1,23,31,
+employee-283,2011-05-31 00:00:00.000,pay_rate,,,,,,,,23.0769
+employee-284,,,Sales Representative,M,M,2012-09-30,1,39,39,
+employee-284,2012-09-30 00:00:00.000,pay_rate,,,,,,,,23.0769
+employee-285,,,Pacific Sales Manager,M,M,2013-03-14,1,20,30,
+employee-285,2013-03-14 00:00:00.000,pay_rate,,,,,,,,48.101
+employee-286,,,Sales Representative,S,F,2013-05-30,1,36,38,
+employee-286,2013-05-30 00:00:00.000,pay_rate,,,,,,,,23.0769
+employee-287,,,European Sales Manager,M,F,2012-04-16,1,21,30,
+employee-287,2012-04-16 00:00:00.000,pay_rate,,,,,,,,48.101
+employee-288,,,Sales Representative,S,F,2013-05-30,1,35,37,
+employee-288,2013-05-30 00:00:00.000,pay_rate,,,,,,,,23.0769
+employee-289,,,Sales Representative,M,F,2012-05-30,1,37,38,
+employee-289,2012-05-30 00:00:00.000,pay_rate,,,,,,,,23.0769
+employee-290,,,Sales Representative,S,M,2012-05-30,1,34,37,
+employee-290,2012-05-30 00:00:00.000,pay_rate,,,,,,,,23.0769

@@ -1,4 +1,4 @@
-﻿Object_id,Timestamp,Ocel_changed_field,department_name,group_name
+﻿Object_id,Timestamp,Ocel_changed_field,name,group_name
 department-1,,,Engineering,Research and Development
 department-2,,,Tool Design,Research and Development
 department-3,,,Sales,Sales and Marketing

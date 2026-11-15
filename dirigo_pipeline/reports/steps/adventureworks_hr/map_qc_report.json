@@ -1,13 +1,13 @@
 {
   "status": "PASS",
-  "checks_run": 117,
+  "checks_run": 111,
   "error_count": 0,
   "warning_count": 2,
   "issues": [
     {
       "code": "MAP-ID-NOT-CANDIDATE-KEY",
       "severity": "WARNING",
-      "path": "mapping.events[1].id",
+      "path": "mapping.events[2].id",
       "message": "ID columns ['BusinessEntityID', 'DepartmentID', 'ShiftID', 'StartDate'] are not listed as a candidate key for 'EmployeeDepartmentHistory'",
       "repair_strategy": "human",
       "evidence": {
@@ -30,7 +30,7 @@
     {
       "code": "MAP-ID-NOT-CANDIDATE-KEY",
       "severity": "WARNING",
-      "path": "mapping.events[2].id",
+      "path": "mapping.events[3].id",
       "message": "ID columns ['BusinessEntityID', 'DepartmentID', 'ShiftID', 'StartDate'] are not listed as a candidate key for 'EmployeeDepartmentHistory'",
       "repair_strategy": "human",
       "evidence": {
