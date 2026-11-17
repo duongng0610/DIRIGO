@@ -3,6 +3,98 @@
     "dataset_name": "adventureworks_hr",
     "objects": [
       {
+        "type": "employee",
+        "source_table": "Employee",
+        "id": {
+          "mode": "option",
+          "columns": [
+            "BusinessEntityID"
+          ],
+          "prefix": "employee",
+          "separator": "-"
+        },
+        "attributes": {
+          "static": [
+            {
+              "name": "job_title",
+              "value": {
+                "column": "JobTitle",
+                "value_type": "string"
+              }
+            },
+            {
+              "name": "gender",
+              "value": {
+                "column": "Gender",
+                "value_type": "string"
+              }
+            },
+            {
+              "name": "marital_status",
+              "value": {
+                "column": "MaritalStatus",
+                "value_type": "string"
+              }
+            },
+            {
+              "name": "salaried_flag",
+              "value": {
+                "column": "SalariedFlag",
+                "value_type": "integer"
+              }
+            }
+          ],
+          "dynamic": [
+            {
+              "name": "vacation_hours",
+              "source_table": "Employee",
+              "value": {
+                "column": "VacationHours",
+                "value_type": "integer"
+              },
+              "timestamp": {
+                "column": "ModifiedDate"
+              },
+              "object_reference": {
+                "object_type": "employee",
+                "mode": "direct",
+                "key_mapping": [
+                  {
+                    "object_id_column": "BusinessEntityID",
+                    "row_column": "BusinessEntityID"
+                  }
+                ],
+                "resolver": null
+              },
+              "where": []
+            },
+            {
+              "name": "sick_leave_hours",
+              "source_table": "Employee",
+              "value": {
+                "column": "SickLeaveHours",
+                "value_type": "integer"
+              },
+              "timestamp": {
+                "column": "ModifiedDate"
+              },
+              "object_reference": {
+                "object_type": "employee",
+                "mode": "direct",
+                "key_mapping": [
+                  {
+                    "object_id_column": "BusinessEntityID",
+                    "row_column": "BusinessEntityID"
+                  }
+                ],
+                "resolver": null
+              },
+              "where": []
+            }
+          ]
+        }
+      },
+      {
         "type": "department",
         "source_table": "Department",
         "id": {
@@ -34,96 +126,6 @@
         }
       },
       {
-        "type": "employee",
-        "source_table": "Employee",
-        "id": {
-          "mode": "option",
-          "columns": [
-            "BusinessEntityID"
-          ],
-          "prefix": "employee",
-          "separator": "-"
-        },
-        "attributes": {
-          "static": [
-            {
-              "name": "job_title",
-              "value": {
-                "column": "JobTitle",
-                "value_type": "string"
-              }
-            },
-            {
-              "name": "marital_status",
-              "value": {
-                "column": "MaritalStatus",
-                "value_type": "string"
-              }
-            },
-            {
-              "name": "gender",
-              "value": {
-                "column": "Gender",
-                "value_type": "string"
-              }
-            },
-            {
-              "name": "hire_date",
-              "value": {
-                "column": "HireDate",
-                "value_type": "datetime"
-              }
-            },
-            {
-              "name": "salaried_flag",
-              "value": {
-                "column": "SalariedFlag",
-                "value_type": "integer"
-              }
-            },
-            {
-              "name": "vacation_hours",
-              "value": {
-                "column": "VacationHours",
-                "value_type": "integer"
-              }
-            },
-            {
-              "name": "sick_leave_hours",
-              "value": {
-                "column": "SickLeaveHours",
-                "value_type": "integer"
-              }
-            }
-          ],
-          "dynamic": [
-            {
-              "name": "pay_rate",
-              "source_table": "EmployeePayHistory",
-              "value": {
-                "column": "Rate",
-                "value_type": "decimal"
-              },
-              "timestamp": {
-                "column": "RateChangeDate"
-              },
-              "object_reference": {
-                "object_type": "employee",
-                "mode": "direct",
-                "key_mapping": [
-                  {
-                    "object_id_column": "BusinessEntityID",
-                    "row_column": "BusinessEntityID"
-                  }
-                ],
-                "resolver": null
-              },
-              "where": []
-            }
-          ]
-        }
-      },
-      {
         "type": "shift",
         "source_table": "Shift",
         "id": {
@@ -142,20 +144,6 @@
                 "column": "Name",
                 "value_type": "string"
               }
-            },
-            {
-              "name": "start_time",
-              "value": {
-                "column": "StartTime",
-                "value_type": "string"
-              }
-            },
-            {
-              "name": "end_time",
-              "value": {
-                "column": "EndTime",
-                "value_type": "string"
-              }
             }
           ],
           "dynamic": []
@@ -169,7 +157,8 @@
         "id": {
           "mode": "option",
           "columns": [
-            "BusinessEntityID"
+            "BusinessEntityID",
+            "HireDate"
           ],
           "prefix": "employee_hired",
           "separator": "-"
@@ -197,41 +186,7 @@
         ]
       },
       {
-        "type": "employee_pay_rate_changed",
-        "source_table": "EmployeePayHistory",
-        "id": {
-          "mode": "option",
-          "columns": [
-            "BusinessEntityID",
-            "RateChangeDate"
-          ],
-          "prefix": "employee_pay_rate_changed",
-          "separator": "-"
-        },
-        "timestamp": {
-          "column": "RateChangeDate"
-        },
-        "where": [],
-        "attributes": [],
-        "objects": [
-          {
-            "reference": {
-              "object_type": "employee",
-              "mode": "direct",
-              "key_mapping": [
-                {
-                  "object_id_column": "BusinessEntityID",
-                  "row_column": "BusinessEntityID"
-                }
-              ],
-              "resolver": null
-            },
-            "qualifier": "paid_employee"
-          }
-        ]
-      },
-      {
-        "type": "employee_department_assigned",
+        "type": "department_assigned",
         "source_table": "EmployeeDepartmentHistory",
         "id": {
           "mode": "option",
@@ -241,7 +196,7 @@
             "ShiftID",
             "StartDate"
           ],
-          "prefix": "employee_department_assigned",
+          "prefix": "department_assigned",
           "separator": "-"
         },
         "timestamp": {
@@ -276,7 +231,7 @@
               ],
               "resolver": null
             },
-            "qualifier": "assigned_department"
+            "qualifier": "target_department"
           },
           {
             "reference": {
@@ -295,7 +250,7 @@
         ]
       },
       {
-        "type": "employee_department_unassigned",
+        "type": "department_unassigned",
         "source_table": "EmployeeDepartmentHistory",
         "id": {
           "mode": "option",
@@ -303,9 +258,9 @@
             "BusinessEntityID",
             "DepartmentID",
             "ShiftID",
-            "StartDate"
+            "EndDate"
           ],
-          "prefix": "employee_department_unassigned",
+          "prefix": "department_unassigned",
           "separator": "-"
         },
         "timestamp": {
@@ -347,7 +302,7 @@
               ],
               "resolver": null
             },
-            "qualifier": "unassigned_department"
+            "qualifier": "former_department"
           },
           {
             "reference": {
@@ -361,7 +316,41 @@
               ],
               "resolver": null
             },
-            "qualifier": "unassigned_shift"
+            "qualifier": "former_shift"
+          }
+        ]
+      },
+      {
+        "type": "pay_rate_changed",
+        "source_table": "EmployeePayHistory",
+        "id": {
+          "mode": "option",
+          "columns": [
+            "BusinessEntityID",
+            "RateChangeDate"
+          ],
+          "prefix": "pay_rate_changed",
+          "separator": "-"
+        },
+        "timestamp": {
+          "column": "RateChangeDate"
+        },
+        "where": [],
+        "attributes": [],
+        "objects": [
+          {
+            "reference": {
+              "object_type": "employee",
+              "mode": "direct",
+              "key_mapping": [
+                {
+                  "object_id_column": "BusinessEntityID",
+                  "row_column": "BusinessEntityID"
+                }
+              ],
+              "resolver": null
+            },
+            "qualifier": "paid_employee"
           }
         ]
       }
@@ -437,104 +426,31 @@
             "values": []
           }
         ]
-      },
-      {
-        "name": "employee_shift_assignment",
-        "source_table": "EmployeeDepartmentHistory",
-        "source": {
-          "object_type": "employee",
-          "mode": "direct",
-          "key_mapping": [
-            {
-              "object_id_column": "BusinessEntityID",
-              "row_column": "BusinessEntityID"
-            }
-          ],
-          "resolver": null
-        },
-        "target": {
-          "object_type": "shift",
-          "mode": "direct",
-          "key_mapping": [
-            {
-              "object_id_column": "ShiftID",
-              "row_column": "ShiftID"
-            }
-          ],
-          "resolver": null
-        },
-        "qualifier": "assigned_to_shift",
-        "relation_mode": "dynamic",
-        "timestamp": {
-          "column": "StartDate"
-        },
-        "where": []
-      },
-      {
-        "name": "employee_shift_assignment",
-        "source_table": "EmployeeDepartmentHistory",
-        "source": {
-          "object_type": "employee",
-          "mode": "direct",
-          "key_mapping": [
-            {
-              "object_id_column": "BusinessEntityID",
-              "row_column": "BusinessEntityID"
-            }
-          ],
-          "resolver": null
-        },
-        "target": {
-          "object_type": "shift",
-          "mode": "direct",
-          "key_mapping": [
-            {
-              "object_id_column": "ShiftID",
-              "row_column": "ShiftID"
-            }
-          ],
-          "resolver": null
-        },
-        "qualifier": "unassigned_from_shift",
-        "relation_mode": "dynamic",
-        "timestamp": {
-          "column": "EndDate"
-        },
-        "where": [
-          {
-            "column": "EndDate",
-            "operator": "is_not_null",
-            "value": null,
-            "values": []
-          }
-        ]
       }
     ]
   },
   "decisions": [
     {
-      "mapping_path": "objects[employee].id",
-      "confidence": 0.85,
+      "mapping_path": "objects[employee]",
+      "confidence": 0.95,
       "evidence": [
-        "BusinessEntityID has distinct ratio 1.0 and is inferred snapshot unique."
-      ],
-      "assumptions": [
-        "BusinessEntityID serves as the primary business key for Employee."
-      ]
-    },
-    {
-      "mapping_path": "events[employee_department_assigned].timestamp",
-      "confidence": 0.85,
-      "evidence": [
-        "StartDate in EmployeeDepartmentHistory represents assignment start timestamp."
+        "Table Employee contains distinct BusinessEntityID representing employees with rich attributes."
       ],
       "assumptions": []
     },
     {
-      "mapping_path": "relationships[employee_department_assignment].relation_mode",
-      "confidence": 0.85,
+      "mapping_path": "events[employee_hired]",
+      "confidence": 0.9,
       "evidence": [
-        "EmployeeDepartmentHistory provides StartDate and optional EndDate for tracking employee department changes over time."
+        "HireDate column in Employee table provides exact timestamp for hiring occurrence."
+      ],
+      "assumptions": []
+    },
+    {
+      "mapping_path": "events[department_unassigned]",
+      "confidence": 0.9,
+      "evidence": [
+        "EmployeeDepartmentHistory has EndDate which indicates termination of department assignment when not null."
       ],
       "assumptions": []
     }

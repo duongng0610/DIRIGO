@@ -1,14 +1,14 @@
 {
-  "created_at": "2026-11-15T04:13:08.381229+00:00",
+  "created_at": "2026-11-17T15:17:08.166172+00:00",
   "provider": "google",
-  "model": "gemini-3.6-flash",
-  "response_id": "NDH5auPNNKGN1e8PyM3rmQk",
+  "model": "gemini-3.5-flash-lite",
+  "response_id": "4W_8atS3BZKS9tMPr4GhgQk",
   "source_profile_hash": "4ef371fa06b19fd44c90d65144abb75b262321593059edb7018f71f62a45964f",
   "prompt_hash": "0f56062492d05c62142fb7a2ef8d9ea8ac60df27e185dce95a06d3c884a3d99a",
   "usage": {
     "cache_tokens_details": null,
     "cached_content_token_count": null,
-    "candidates_token_count": 1673,
+    "candidates_token_count": 2815,
     "candidates_tokens_details": null,
     "prompt_token_count": 5993,
     "prompt_tokens_details": [
@@ -17,10 +17,10 @@
         "token_count": 5993
       }
     ],
-    "thoughts_token_count": 5407,
+    "thoughts_token_count": null,
     "tool_use_prompt_token_count": null,
     "tool_use_prompt_tokens_details": null,
-    "total_token_count": 13073,
+    "total_token_count": 8808,
     "traffic_type": null
   }
 }

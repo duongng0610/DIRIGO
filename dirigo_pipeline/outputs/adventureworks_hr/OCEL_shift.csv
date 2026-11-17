@@ -1,4 +1,4 @@
-﻿Object_id,Timestamp,Ocel_changed_field,name,start_time,end_time
-shift-1,,,Day,07:00:00.0000000,15:00:00.0000000
-shift-2,,,Evening,15:00:00.0000000,23:00:00.0000000
-shift-3,,,Night,23:00:00.0000000,07:00:00.0000000
+﻿Object_id,Timestamp,Ocel_changed_field,name
+shift-1,,,Day
+shift-2,,,Evening
+shift-3,,,Night

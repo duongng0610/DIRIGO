@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "checks_run": 52,
+  "error_count": 0,
+  "warning_count": 2,
+  "issues": [
+    {
+      "code": "MAP-ID-NOT-CANDIDATE-KEY",
+      "severity": "WARNING",
+      "path": "mapping.events[0].id",
+      "message": "ID columns ['document_number', 'purchase_document_number', 'sequential_number_of_account_assignment'] are not listed as a candidate key for 'GoodsReceiptsAndIssues'",
+      "repair_strategy": "human",
+      "evidence": {
+        "candidate_keys": [
+          [
+            "document_number"
+          ],
+          [
+            "reference_document_number"
+          ],
+          [
+            "sequential_number_of_account_assignment",
+            "purchase_document_number"
+          ],
+          [
+            "sequential_number_of_account_assignment",
+            "material_number"
+          ],
+          [
+            "sequential_number_of_account_assignment",
+            "date_of_the_posting_in_the_document"
+          ],
+          [
+            "sequential_number_of_account_assignment",
+            "document_date_in_document"
+          ],
+          [
+            "sequential_number_of_account_assignment",
+            "posting_date_in_the_document"
+          ],
+          [
+            "purchase_document_number",
+            "date_of_the_posting_in_the_document"
+          ],
+          [
+            "purchase_document_number",
+            "document_date_in_document"
+          ],
+          [
+            "purchase_document_number",
+            "posting_date_in_the_document"
+          ]
+        ]
+      }
+    },
+    {
+      "code": "MAP-UNRESOLVED-NONBLOCKING",
+      "severity": "WARNING",
+      "path": "unresolved_questions[0]",
+      "message": "MISSING_VENDOR_OBJECT: Should vendors be modeled as a distinct object type from vendors_account_number?",
+      "repair_strategy": "human",
+      "evidence": {
+        "affected_path": "mapping.objects"
+      }
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+﻿Object_id,Timestamp,Ocel_changed_field,sales_document_type,order_reason
+sales_order-1,,,TypeA,Special Order
+sales_order-2,,,TypeB,Stock Replenishment
+sales_order-3,,,TypeB,Promotion
+sales_order-4,,,TypeA,Stock Replenishment
+sales_order-5,,,TypeA,Stock Replenishment
+sales_order-6,,,TypeA,Special Order
+sales_order-7,,,TypeB,Special Order
+sales_order-8,,,TypeC,Stock Replenishment
+sales_order-9,,,TypeB,Promotion
+sales_order-10,,,TypeC,Promotion
+sales_order-11,,,TypeA,Special Order
+sales_order-12,,,TypeB,Special Order
+sales_order-13,,,TypeB,Stock Replenishment
+sales_order-14,,,TypeB,Special Order
+sales_order-15,,,TypeC,Special Order
+sales_order-16,,,TypeC,Stock Replenishment
+sales_order-17,,,TypeA,Promotion
+sales_order-18,,,TypeC,Special Order
+sales_order-19,,,TypeA,Promotion
+sales_order-20,,,TypeC,Stock Replenishment
+sales_order-21,,,TypeC,Stock Replenishment
+sales_order-22,,,TypeC,Promotion
+sales_order-23,,,TypeB,Stock Replenishment
+sales_order-24,,,TypeB,Special Order
+sales_order-25,,,TypeA,Special Order
+sales_order-26,,,TypeA,Promotion
+sales_order-27,,,TypeC,Promotion
+sales_order-28,,,TypeB,Special Order
+sales_order-29,,,TypeC,Stock Replenishment
+sales_order-30,,,TypeC,Special Order
+sales_order-31,,,TypeC,Special Order
+sales_order-32,,,TypeB,Promotion
+sales_order-33,,,TypeC,Special Order
+sales_order-34,,,TypeA,Stock Replenishment
+sales_order-35,,,TypeC,Stock Replenishment
+sales_order-36,,,TypeB,Promotion
+sales_order-37,,,TypeA,Special Order
+sales_order-38,,,TypeB,Promotion
+sales_order-39,,,TypeA,Special Order
+sales_order-40,,,TypeA,Special Order
+sales_order-41,,,TypeC,Special Order
+sales_order-42,,,TypeC,Special Order
+sales_order-43,,,TypeA,Special Order
+sales_order-44,,,TypeB,Promotion
+sales_order-45,,,TypeB,Promotion
+sales_order-46,,,TypeC,Promotion
+sales_order-47,,,TypeA,Stock Replenishment
+sales_order-48,,,TypeA,Stock Replenishment
+sales_order-49,,,TypeC,Stock Replenishment
+sales_order-50,,,TypeB,Stock Replenishment
+sales_order-51,,,TypeA,Special Order
+sales_order-52,,,TypeA,Promotion
+sales_order-53,,,TypeA,Special Order
+sales_order-54,,,TypeC,Promotion
+sales_order-55,,,TypeA,Special Order
+sales_order-56,,,TypeA,Promotion
+sales_order-57,,,TypeB,Promotion
+sales_order-58,,,TypeB,Promotion
+sales_order-59,,,TypeB,Special Order
+sales_order-60,,,TypeC,Stock Replenishment
+sales_order-61,,,TypeA,Promotion
+sales_order-62,,,TypeB,Promotion
+sales_order-63,,,TypeC,Special Order
+sales_order-64,,,TypeA,Special Order
+sales_order-65,,,TypeC,Promotion
+sales_order-66,,,TypeC,Promotion
+sales_order-67,,,TypeB,Stock Replenishment
+sales_order-68,,,TypeC,Promotion
+sales_order-69,,,TypeC,Promotion
+sales_order-70,,,TypeC,Promotion
+sales_order-71,,,TypeA,Stock Replenishment
+sales_order-72,,,TypeB,Promotion
+sales_order-73,,,TypeB,Promotion
+sales_order-74,,,TypeB,Stock Replenishment
+sales_order-75,,,TypeA,Special Order
+sales_order-76,,,TypeB,Stock Replenishment
+sales_order-77,,,TypeB,Special Order
+sales_order-78,,,TypeA,Promotion
+sales_order-79,,,TypeC,Special Order
+sales_order-80,,,TypeA,Special Order
+sales_order-81,,,TypeC,Special Order
+sales_order-82,,,TypeA,Promotion
+sales_order-83,,,TypeA,Special Order
+sales_order-84,,,TypeC,Special Order
+sales_order-85,,,TypeB,Special Order
+sales_order-86,,,TypeC,Promotion
+sales_order-87,,,TypeA,Promotion
+sales_order-88,,,TypeC,Stock Replenishment
+sales_order-89,,,TypeA,Promotion
+sales_order-90,,,TypeB,Stock Replenishment
+sales_order-91,,,TypeA,Promotion
+sales_order-92,,,TypeB,Promotion
+sales_order-93,,,TypeA,Promotion
+sales_order-94,,,TypeA,Stock Replenishment
+sales_order-95,,,TypeB,Promotion
+sales_order-96,,,TypeC,Stock Replenishment
+sales_order-97,,,TypeB,Special Order
+sales_order-98,,,TypeB,Promotion
+sales_order-99,,,TypeB,Stock Replenishment
+sales_order-100,,,TypeA,Stock Replenishment
+sales_order-101,,,TypeB,Promotion
+sales_order-102,,,TypeB,Stock Replenishment
+sales_order-103,,,TypeB,Special Order
+sales_order-104,,,TypeC,Special Order
+sales_order-105,,,TypeA,Stock Replenishment
+sales_order-106,,,TypeB,Stock Replenishment
+sales_order-107,,,TypeB,Special Order
+sales_order-108,,,TypeC,Special Order
+sales_order-109,,,TypeA,Promotion
+sales_order-110,,,TypeC,Stock Replenishment
+sales_order-111,,,TypeA,Promotion
+sales_order-112,,,TypeC,Special Order
+sales_order-113,,,TypeC,Promotion
+sales_order-114,,,TypeB,Special Order
+sales_order-115,,,TypeB,Special Order
+sales_order-116,,,TypeB,Stock Replenishment
+sales_order-117,,,TypeB,Stock Replenishment
+sales_order-118,,,TypeA,Promotion
+sales_order-119,,,TypeB,Promotion
+sales_order-120,,,TypeA,Stock Replenishment
+sales_order-121,,,TypeB,Special Order
+sales_order-122,,,TypeB,Special Order
+sales_order-123,,,TypeA,Special Order
+sales_order-124,,,TypeC,Promotion
+sales_order-125,,,TypeA,Stock Replenishment
+sales_order-126,,,TypeB,Special Order
+sales_order-127,,,TypeA,Stock Replenishment
+sales_order-128,,,TypeC,Promotion
+sales_order-129,,,TypeC,Stock Replenishment
+sales_order-130,,,TypeC,Stock Replenishment
+sales_order-131,,,TypeA,Special Order
+sales_order-132,,,TypeB,Special Order
+sales_order-133,,,TypeB,Stock Replenishment
+sales_order-134,,,TypeC,Stock Replenishment
+sales_order-135,,,TypeB,Special Order
+sales_order-136,,,TypeC,Stock Replenishment
+sales_order-137,,,TypeC,Stock Replenishment
+sales_order-138,,,TypeA,Special Order
+sales_order-139,,,TypeC,Stock Replenishment
+sales_order-140,,,TypeB,Stock Replenishment
+sales_order-141,,,TypeB,Special Order
+sales_order-142,,,TypeC,Special Order
+sales_order-143,,,TypeA,Stock Replenishment
+sales_order-144,,,TypeB,Stock Replenishment
+sales_order-145,,,TypeC,Promotion
+sales_order-146,,,TypeA,Special Order
+sales_order-147,,,TypeB,Promotion
+sales_order-148,,,TypeC,Promotion
+sales_order-149,,,TypeC,Stock Replenishment
+sales_order-150,,,TypeB,Promotion
+sales_order-151,,,TypeB,Special Order
+sales_order-152,,,TypeB,Stock Replenishment
+sales_order-153,,,TypeA,Promotion
+sales_order-154,,,TypeA,Promotion
+sales_order-155,,,TypeB,Stock Replenishment
+sales_order-156,,,TypeA,Promotion
+sales_order-157,,,TypeA,Promotion
+sales_order-158,,,TypeB,Stock Replenishment
+sales_order-159,,,TypeC,Special Order
+sales_order-160,,,TypeC,Promotion
+sales_order-161,,,TypeA,Special Order
+sales_order-162,,,TypeC,Promotion
+sales_order-163,,,TypeC,Promotion
+sales_order-164,,,TypeB,Special Order
+sales_order-165,,,TypeA,Stock Replenishment
+sales_order-166,,,TypeC,Promotion
+sales_order-167,,,TypeA,Stock Replenishment
+sales_order-168,,,TypeA,Promotion
+sales_order-169,,,TypeC,Special Order
+sales_order-170,,,TypeC,Special Order
+sales_order-171,,,TypeA,Special Order
+sales_order-172,,,TypeC,Promotion
+sales_order-173,,,TypeB,Promotion
+sales_order-174,,,TypeA,Promotion
+sales_order-175,,,TypeC,Stock Replenishment
+sales_order-176,,,TypeA,Stock Replenishment
+sales_order-177,,,TypeC,Promotion
+sales_order-178,,,TypeB,Stock Replenishment
+sales_order-179,,,TypeA,Stock Replenishment
+sales_order-180,,,TypeC,Stock Replenishment
+sales_order-181,,,TypeB,Special Order
+sales_order-182,,,TypeB,Promotion
+sales_order-183,,,TypeC,Promotion
+sales_order-184,,,TypeB,Stock Replenishment
+sales_order-185,,,TypeB,Promotion
+sales_order-186,,,TypeB,Promotion
+sales_order-187,,,TypeC,Special Order
+sales_order-188,,,TypeC,Promotion
+sales_order-189,,,TypeB,Promotion
+sales_order-190,,,TypeA,Special Order
+sales_order-191,,,TypeA,Promotion
+sales_order-192,,,TypeB,Stock Replenishment
+sales_order-193,,,TypeC,Promotion
+sales_order-194,,,TypeB,Special Order
+sales_order-195,,,TypeB,Promotion
+sales_order-196,,,TypeA,Promotion
+sales_order-197,,,TypeA,Promotion
+sales_order-198,,,TypeB,Special Order
+sales_order-199,,,TypeC,Stock Replenishment
+sales_order-200,,,TypeA,Special Order

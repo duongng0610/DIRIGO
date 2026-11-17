@@ -1,0 +1,97 @@
+{
+  "status": "FAIL",
+  "checks_run": 53,
+  "error_count": 3,
+  "warning_count": 2,
+  "issues": [
+    {
+      "code": "MAP-OBJECT-ID-SEPARATOR-INVALID",
+      "severity": "ERROR",
+      "path": "mapping.objects[0].id.separator",
+      "message": "Object ID separator must be '-'",
+      "repair_strategy": "llm",
+      "evidence": {
+        "actual_separator": "--"
+      }
+    },
+    {
+      "code": "MAP-OBJECT-ID-SEPARATOR-INVALID",
+      "severity": "ERROR",
+      "path": "mapping.objects[1].id.separator",
+      "message": "Object ID separator must be '-'",
+      "repair_strategy": "llm",
+      "evidence": {
+        "actual_separator": "--"
+      }
+    },
+    {
+      "code": "MAP-OBJECT-ID-SEPARATOR-INVALID",
+      "severity": "ERROR",
+      "path": "mapping.objects[2].id.separator",
+      "message": "Object ID separator must be '-'",
+      "repair_strategy": "llm",
+      "evidence": {
+        "actual_separator": "--"
+      }
+    },
+    {
+      "code": "MAP-ID-NOT-CANDIDATE-KEY",
+      "severity": "WARNING",
+      "path": "mapping.events[0].id",
+      "message": "ID columns ['document_number', 'accounting_document_line'] are not listed as a candidate key for 'GoodsReceiptsAndIssues'",
+      "repair_strategy": "human",
+      "evidence": {
+        "candidate_keys": [
+          [
+            "document_number"
+          ],
+          [
+            "reference_document_number"
+          ],
+          [
+            "sequential_number_of_account_assignment",
+            "purchase_document_number"
+          ],
+          [
+            "sequential_number_of_account_assignment",
+            "material_number"
+          ],
+          [
+            "sequential_number_of_account_assignment",
+            "date_of_the_posting_in_the_document"
+          ],
+          [
+            "sequential_number_of_account_assignment",
+            "document_date_in_document"
+          ],
+          [
+            "sequential_number_of_account_assignment",
+            "posting_date_in_the_document"
+          ],
+          [
+            "purchase_document_number",
+            "date_of_the_posting_in_the_document"
+          ],
+          [
+            "purchase_document_number",
+            "document_date_in_document"
+          ],
+          [
+            "purchase_document_number",
+            "posting_date_in_the_document"
+          ]
+        ]
+      }
+    },
+    {
+      "code": "MAP-UNRESOLVED-NONBLOCKING",
+      "severity": "WARNING",
+      "path": "unresolved_questions[0]",
+      "message": "STOCK_HISTORY_UNCERTAIN: MaterialStocks is a snapshot table without timestamp history. Should it be treated as dynamic or static inventory state?",
+      "repair_strategy": "human",
+      "evidence": {
+        "affected_path": "objects[material].dynamic"
+      }
+    }
+  ]
+}

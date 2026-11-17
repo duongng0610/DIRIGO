@@ -1,0 +1,124 @@
+contract_version: 2
+name: inventory_management
+sources:
+  type: sqlite
+  path: data/raw/inventory_management.db
+  read_only: true
+tables:
+  GoodsReceiptsAndIssues:
+    table: GoodsReceiptsAndIssues
+  Materials:
+    table: Materials
+  PurchaseOrderDocuments:
+    table: PurchaseOrderDocuments
+  SalesOrderDocuments:
+    table: SalesOrderDocuments
+objects:
+- type: material
+  source_table: Materials
+  id:
+    mode: option
+    columns:
+    - material_number
+    prefix: material
+  attributes:
+    static:
+    - name: material_type
+      source_column: material_type
+      type: string
+    - name: industry_sector
+      source_column: industry_sector
+      type: string
+    - name: material_group
+      source_column: material_group
+      type: string
+    - name: gross_weight
+      source_column: gross_weight
+      type: decimal
+    dynamic: []
+- type: purchase_order
+  source_table: PurchaseOrderDocuments
+  id:
+    mode: option
+    columns:
+    - purchase_document_number
+    prefix: purchase_order
+  attributes:
+    static:
+    - name: purchasing_document_category
+      source_column: purchasing_document_category
+      type: string
+    - name: purchasing_document_type
+      source_column: purchasing_document_type
+      type: string
+    dynamic: []
+- type: sales_order
+  source_table: SalesOrderDocuments
+  id:
+    mode: option
+    columns:
+    - sales_document_number
+    prefix: sales_order
+  attributes:
+    static:
+    - name: sales_document_type
+      source_column: sales_document_type
+      type: string
+    - name: order_reason
+      source_column: order_reason
+      type: string
+    dynamic: []
+events:
+- type: goods_movement_recorded
+  source_table: GoodsReceiptsAndIssues
+  id:
+    mode: option
+    columns:
+    - document_number
+    - purchase_document_number
+    - sequential_number_of_account_assignment
+    prefix: goods_movement
+  timestamp:
+    source_column: date_of_the_posting_in_the_document
+  attributes: []
+  objects:
+  - object_type: material
+    key_mapping:
+      material_number: material_number
+    qualifier: moved_material
+  - object_type: purchase_order
+    key_mapping:
+      purchase_document_number: purchase_document_number
+    qualifier: related_purchase_order
+- type: purchase_order_created
+  source_table: PurchaseOrderDocuments
+  id:
+    mode: option
+    columns:
+    - purchase_document_number
+    prefix: po_created
+  timestamp:
+    source_column: purchase_order_date
+  attributes: []
+  objects:
+  - object_type: purchase_order
+    key_mapping:
+      purchase_document_number: purchase_document_number
+    qualifier: created_purchase_order
+- type: sales_order_created
+  source_table: SalesOrderDocuments
+  id:
+    mode: option
+    columns:
+    - sales_document_number
+    prefix: so_created
+  timestamp:
+    source_column: document_creation_date
+  attributes: []
+  objects:
+  - object_type: sales_order
+    key_mapping:
+      sales_document_number: sales_document_number
+    qualifier: created_sales_order
+relationships:
+  o2o: []

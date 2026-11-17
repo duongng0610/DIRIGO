@@ -16,6 +16,50 @@ tables:
   Shift:
     table: Shift
 objects:
+- type: employee
+  source_table: Employee
+  id:
+    mode: option
+    columns:
+    - BusinessEntityID
+    prefix: employee
+  attributes:
+    static:
+    - name: job_title
+      source_column: JobTitle
+      type: string
+    - name: gender
+      source_column: Gender
+      type: string
+    - name: marital_status
+      source_column: MaritalStatus
+      type: string
+    - name: salaried_flag
+      source_column: SalariedFlag
+      type: integer
+    dynamic:
+    - name: vacation_hours
+      source_table: Employee
+      value:
+        column: VacationHours
+        type: integer
+      timestamp:
+        column: ModifiedDate
+      object_reference:
+        object_type: employee
+        key_mapping:
+          BusinessEntityID: BusinessEntityID
+    - name: sick_leave_hours
+      source_table: Employee
+      value:
+        column: SickLeaveHours
+        type: integer
+      timestamp:
+        column: ModifiedDate
+      object_reference:
+        object_type: employee
+        key_mapping:
+          BusinessEntityID: BusinessEntityID
 - type: department
   source_table: Department
   id:
@@ -32,48 +76,6 @@ objects:
       source_column: GroupName
       type: string
     dynamic: []
-- type: employee
-  source_table: Employee
-  id:
-    mode: option
-    columns:
-    - BusinessEntityID
-    prefix: employee
-  attributes:
-    static:
-    - name: job_title
-      source_column: JobTitle
-      type: string
-    - name: marital_status
-      source_column: MaritalStatus
-      type: string
-    - name: gender
-      source_column: Gender
-      type: string
-    - name: hire_date
-      source_column: HireDate
-      type: datetime
-    - name: salaried_flag
-      source_column: SalariedFlag
-      type: integer
-    - name: vacation_hours
-      source_column: VacationHours
-      type: integer
-    - name: sick_leave_hours
-      source_column: SickLeaveHours
-      type: integer
-    dynamic:
-    - name: pay_rate
-      source_table: EmployeePayHistory
-      value:
-        column: Rate
-        type: decimal
-      timestamp:
-        column: RateChangeDate
-      object_reference:
-        object_type: employee
-        key_mapping:
-          BusinessEntityID: BusinessEntityID
 - type: shift
   source_table: Shift
   id:
@@ -86,12 +88,6 @@ objects:
     - name: name
       source_column: Name
       type: string
-    - name: start_time
-      source_column: StartTime
-      type: string
-    - name: end_time
-      source_column: EndTime
-      type: string
     dynamic: []
 events:
 - type: employee_hired
@@ -100,6 +96,7 @@ events:
     mode: option
     columns:
     - BusinessEntityID
+    - HireDate
     prefix: employee_hired
   timestamp:
     source_column: HireDate
@@ -109,23 +106,7 @@ events:
     key_mapping:
       BusinessEntityID: BusinessEntityID
     qualifier: hired_employee
-- type: employee_pay_rate_changed
-  source_table: EmployeePayHistory
-  id:
-    mode: option
-    columns:
-    - BusinessEntityID
-    - RateChangeDate
-    prefix: employee_pay_rate_changed
-  timestamp:
-    source_column: RateChangeDate
-  attributes: []
-  objects:
-  - object_type: employee
-    key_mapping:
-      BusinessEntityID: BusinessEntityID
-    qualifier: paid_employee
-- type: employee_department_assigned
+- type: department_assigned
   source_table: EmployeeDepartmentHistory
   id:
     mode: option
@@ -134,7 +115,7 @@ events:
     - DepartmentID
     - ShiftID
     - StartDate
-    prefix: employee_department_assigned
+    prefix: department_assigned
   timestamp:
     source_column: StartDate
   attributes: []
@@ -146,12 +127,12 @@ events:
   - object_type: department
     key_mapping:
       DepartmentID: DepartmentID
-    qualifier: assigned_department
+    qualifier: target_department
   - object_type: shift
     key_mapping:
       ShiftID: ShiftID
     qualifier: assigned_shift
-- type: employee_department_unassigned
+- type: department_unassigned
   source_table: EmployeeDepartmentHistory
   id:
     mode: option
@@ -160,7 +141,7 @@ events:
     - DepartmentID
     - ShiftID
     - StartDate
-    prefix: employee_department_unassigned
+    prefix: department_unassigned
   timestamp:
     source_column: EndDate
   attributes: []
@@ -172,14 +153,30 @@ events:
   - object_type: department
     key_mapping:
       DepartmentID: DepartmentID
-    qualifier: unassigned_department
+    qualifier: former_department
   - object_type: shift
     key_mapping:
       ShiftID: ShiftID
-    qualifier: unassigned_shift
+    qualifier: former_shift
   where:
   - column: EndDate
     condition: is_not_null
+- type: pay_rate_changed
+  source_table: EmployeePayHistory
+  id:
+    mode: option
+    columns:
+    - BusinessEntityID
+    - RateChangeDate
+    prefix: pay_rate_changed
+  timestamp:
+    source_column: RateChangeDate
+  attributes: []
+  objects:
+  - object_type: employee
+    key_mapping:
+      BusinessEntityID: BusinessEntityID
+    qualifier: paid_employee
 relationships:
   o2o:
   - name: employee_department_assignment
@@ -198,28 +195,6 @@ relationships:
       timestamp:
         column: StartDate
     - qualifier: unassigned_from_department
-      source_table: EmployeeDepartmentHistory
-      timestamp:
-        column: EndDate
-      where:
-      - column: EndDate
-        condition: is_not_null
-  - name: employee_shift_assignment
-    mode: dynamic
-    source:
-      object_type: employee
-      key_mapping:
-        BusinessEntityID: BusinessEntityID
-    target:
-      object_type: shift
-      key_mapping:
-        ShiftID: ShiftID
-    qualifiers:
-    - qualifier: assigned_to_shift
-      source_table: EmployeeDepartmentHistory
-      timestamp:
-        column: StartDate
-    - qualifier: unassigned_from_shift
       source_table: EmployeeDepartmentHistory
       timestamp:
         column: EndDate

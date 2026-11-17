@@ -1,13 +1,44 @@
 {
-  "status": "PASS",
-  "checks_run": 111,
-  "error_count": 0,
-  "warning_count": 2,
+  "status": "FAIL",
+  "checks_run": 98,
+  "error_count": 1,
+  "warning_count": 3,
   "issues": [
     {
       "code": "MAP-ID-NOT-CANDIDATE-KEY",
       "severity": "WARNING",
-      "path": "mapping.events[2].id",
+      "path": "mapping.events[0].id",
+      "message": "ID columns ['BusinessEntityID', 'HireDate'] are not listed as a candidate key for 'Employee'",
+      "repair_strategy": "human",
+      "evidence": {
+        "candidate_keys": [
+          [
+            "BusinessEntityID"
+          ],
+          [
+            "LoginID"
+          ],
+          [
+            "rowguid"
+          ],
+          [
+            "NationalIDNumber"
+          ],
+          [
+            "BirthDate",
+            "VacationHours"
+          ],
+          [
+            "VacationHours",
+            "JobTitle"
+          ]
+        ]
+      }
+    },
+    {
+      "code": "MAP-ID-NOT-CANDIDATE-KEY",
+      "severity": "WARNING",
+      "path": "mapping.events[1].id",
       "message": "ID columns ['BusinessEntityID', 'DepartmentID', 'ShiftID', 'StartDate'] are not listed as a candidate key for 'EmployeeDepartmentHistory'",
       "repair_strategy": "human",
       "evidence": {
@@ -28,10 +59,20 @@
       }
     },
     {
+      "code": "MAP-ID-COLUMN-NULLABLE",
+      "severity": "ERROR",
+      "path": "mapping.events[2].id.columns[3]",
+      "message": "ID column 'EmployeeDepartmentHistory.EndDate' contains null values",
+      "repair_strategy": "llm",
+      "evidence": {
+        "null_count": 290
+      }
+    },
+    {
       "code": "MAP-ID-NOT-CANDIDATE-KEY",
       "severity": "WARNING",
-      "path": "mapping.events[3].id",
-      "message": "ID columns ['BusinessEntityID', 'DepartmentID', 'ShiftID', 'StartDate'] are not listed as a candidate key for 'EmployeeDepartmentHistory'",
+      "path": "mapping.events[2].id",
+      "message": "ID columns ['BusinessEntityID', 'DepartmentID', 'ShiftID', 'EndDate'] are not listed as a candidate key for 'EmployeeDepartmentHistory'",
       "repair_strategy": "human",
       "evidence": {
         "candidate_keys": [

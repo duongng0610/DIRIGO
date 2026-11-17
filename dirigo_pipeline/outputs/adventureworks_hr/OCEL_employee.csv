@@ -1,607 +1,871 @@
-﻿Object_id,Timestamp,Ocel_changed_field,job_title,marital_status,gender,hire_date,salaried_flag,vacation_hours,sick_leave_hours,pay_rate
-employee-1,,,Chief Executive Officer,S,M,2009-01-14,1,99,69,
-employee-1,2009-01-14 00:00:00.000,pay_rate,,,,,,,,125.5
-employee-2,,,Vice President of Engineering,S,F,2008-01-31,1,1,20,
-employee-2,2008-01-31 00:00:00.000,pay_rate,,,,,,,,63.4615
-employee-3,,,Engineering Manager,M,M,2007-11-11,1,2,21,
-employee-3,2007-11-11 00:00:00.000,pay_rate,,,,,,,,43.2692
-employee-4,,,Senior Tool Designer,S,M,2007-12-05,0,48,80,
-employee-4,2007-12-05 00:00:00.000,pay_rate,,,,,,,,8.62
-employee-4,2010-05-31 00:00:00.000,pay_rate,,,,,,,,23.72
-employee-4,2011-12-15 00:00:00.000,pay_rate,,,,,,,,29.8462
-employee-5,,,Design Engineer,M,F,2008-01-06,1,5,22,
-employee-5,2008-01-06 00:00:00.000,pay_rate,,,,,,,,32.6923
-employee-6,,,Design Engineer,M,M,2008-01-24,1,6,23,
-employee-6,2008-01-24 00:00:00.000,pay_rate,,,,,,,,32.6923
-employee-7,,,Research and Development Manager,M,M,2009-02-08,1,61,50,
-employee-7,2009-02-08 00:00:00.000,pay_rate,,,,,,,,50.4808
-employee-8,,,Research and Development Engineer,S,F,2008-12-29,1,62,51,
-employee-8,2008-12-29 00:00:00.000,pay_rate,,,,,,,,40.8654
-employee-9,,,Research and Development Engineer,M,F,2009-01-16,1,63,51,
-employee-9,2009-01-16 00:00:00.000,pay_rate,,,,,,,,40.8654
-employee-10,,,Research and Development Manager,M,M,2009-05-03,1,16,64,
-employee-10,2009-05-03 00:00:00.000,pay_rate,,,,,,,,42.4808
-employee-11,,,Senior Tool Designer,S,M,2010-12-05,0,7,23,
-employee-11,2010-12-05 00:00:00.000,pay_rate,,,,,,,,28.8462
-employee-12,,,Tool Designer,M,M,2007-12-11,0,9,24,
-employee-12,2007-12-11 00:00:00.000,pay_rate,,,,,,,,25.0
-employee-13,,,Tool Designer,M,F,2010-12-23,0,8,24,
-employee-13,2010-12-23 00:00:00.000,pay_rate,,,,,,,,25.0
-employee-14,,,Senior Design Engineer,S,M,2010-12-30,1,3,21,
-employee-14,2010-12-30 00:00:00.000,pay_rate,,,,,,,,36.0577
-employee-15,,,Design Engineer,M,F,2011-01-18,1,4,22,
-employee-15,2011-01-18 00:00:00.000,pay_rate,,,,,,,,32.6923
-employee-16,,,Marketing Manager,S,M,2007-12-20,1,40,40,
-employee-16,2007-12-20 00:00:00.000,pay_rate,,,,,,,,24.0
-employee-16,2009-07-15 00:00:00.000,pay_rate,,,,,,,,28.75
-employee-16,2012-04-30 00:00:00.000,pay_rate,,,,,,,,37.5
-employee-17,,,Marketing Assistant,S,M,2007-01-26,0,42,41,
-employee-17,2007-01-26 00:00:00.000,pay_rate,,,,,,,,13.4615
-employee-18,,,Marketing Specialist,S,M,2011-02-07,0,48,44,
-employee-18,2011-02-07 00:00:00.000,pay_rate,,,,,,,,14.4231
-employee-19,,,Marketing Assistant,S,F,2011-02-14,0,43,41,
-employee-19,2011-02-14 00:00:00.000,pay_rate,,,,,,,,13.4615
-employee-20,,,Marketing Assistant,M,F,2011-01-07,0,41,40,
-employee-20,2011-01-07 00:00:00.000,pay_rate,,,,,,,,13.4615
-employee-21,,,Marketing Specialist,M,M,2009-03-02,0,44,42,
-employee-21,2009-03-02 00:00:00.000,pay_rate,,,,,,,,14.4231
-employee-22,,,Marketing Specialist,S,M,2008-12-12,0,45,42,
-employee-22,2008-12-12 00:00:00.000,pay_rate,,,,,,,,14.4231
-employee-23,,,Marketing Specialist,M,F,2009-01-12,0,46,43,
-employee-23,2009-01-12 00:00:00.000,pay_rate,,,,,,,,14.4231
-employee-24,,,Marketing Specialist,M,F,2009-01-18,0,47,43,
-employee-24,2009-01-18 00:00:00.000,pay_rate,,,,,,,,14.4231
-employee-25,,,Vice President of Production,S,M,2009-02-03,1,64,52,
-employee-25,2009-02-03 00:00:00.000,pay_rate,,,,,,,,84.1346
-employee-26,,,Production Control Manager,M,M,2008-12-01,1,43,41,
-employee-26,2008-12-01 00:00:00.000,pay_rate,,,,,,,,24.5192
-employee-27,,,Production Supervisor - WC60,S,F,2008-02-27,0,80,60,
-employee-27,2008-02-27 00:00:00.000,pay_rate,,,,,,,,25.0
-employee-28,,,Production Technician - WC60,M,M,2006-06-30,0,21,30,
-employee-28,2006-06-30 00:00:00.000,pay_rate,,,,,,,,12.45
-employee-29,,,Production Technician - WC60,S,M,2009-01-23,0,19,29,
-employee-29,2009-01-23 00:00:00.000,pay_rate,,,,,,,,12.45
-employee-30,,,Production Technician - WC60,M,F,2009-01-29,0,14,27,
-employee-30,2009-01-29 00:00:00.000,pay_rate,,,,,,,,12.45
-employee-31,,,Production Technician - WC60,M,F,2009-01-04,0,18,29,
-employee-31,2009-01-04 00:00:00.000,pay_rate,,,,,,,,12.45
-employee-32,,,Production Technician - WC60,M,F,2008-12-29,0,23,31,
-employee-32,2008-12-29 00:00:00.000,pay_rate,,,,,,,,12.45
-employee-33,,,Production Technician - WC60,M,M,2008-12-17,0,17,28,
-employee-33,2008-12-17 00:00:00.000,pay_rate,,,,,,,,12.45
-employee-34,,,Production Technician - WC60,M,F,2009-02-16,0,15,27,
-employee-34,2009-02-16 00:00:00.000,pay_rate,,,,,,,,12.45
-employee-35,,,Production Technician - WC60,M,M,2009-02-08,0,22,31,
-employee-35,2009-02-08 00:00:00.000,pay_rate,,,,,,,,12.45
-employee-36,,,Production Technician - WC60,M,M,2009-02-10,0,20,30,
-employee-36,2009-02-10 00:00:00.000,pay_rate,,,,,,,,12.45
-employee-37,,,Production Technician - WC60,S,M,2009-03-07,0,16,28,
-employee-37,2009-03-07 00:00:00.000,pay_rate,,,,,,,,12.45
-employee-38,,,Production Technician - WC60,M,F,2010-01-16,0,24,32,
-employee-38,2010-01-16 00:00:00.000,pay_rate,,,,,,,,12.45
-employee-39,,,Production Technician - WC60,S,M,2010-02-05,0,25,32,
-employee-39,2010-02-05 00:00:00.000,pay_rate,,,,,,,,12.45
-employee-40,,,Production Supervisor - WC60,S,F,2007-12-26,0,82,61,
-employee-40,2007-12-26 00:00:00.000,pay_rate,,,,,,,,25.0
-employee-41,,,Production Technician - WC60,S,M,2009-01-21,0,35,37,
-employee-41,2009-01-21 00:00:00.000,pay_rate,,,,,,,,12.45
-employee-42,,,Production Technician - WC60,M,M,2008-12-27,0,39,39,
-employee-42,2008-12-27 00:00:00.000,pay_rate,,,,,,,,12.45
-employee-43,,,Production Technician - WC60,M,F,2009-01-02,0,34,37,
-employee-43,2009-01-02 00:00:00.000,pay_rate,,,,,,,,12.45
-employee-44,,,Production Technician - WC60,S,M,2008-12-08,0,38,39,
-employee-44,2008-12-08 00:00:00.000,pay_rate,,,,,,,,12.45
-employee-45,,,Production Technician - WC60,M,M,2009-02-26,0,37,38,
-employee-45,2009-02-26 00:00:00.000,pay_rate,,,,,,,,12.45
-employee-46,,,Production Technician - WC60,S,M,2009-02-08,0,36,38,
-employee-46,2009-02-08 00:00:00.000,pay_rate,,,,,,,,12.45
-employee-47,,,Production Supervisor - WC10,S,M,2009-02-22,0,65,52,
-employee-47,2009-02-22 00:00:00.000,pay_rate,,,,,,,,25.0
-employee-48,,,Production Technician - WC10,M,F,2008-01-06,0,83,61,
-employee-48,2008-01-06 00:00:00.000,pay_rate,,,,,,,,13.45
-employee-49,,,Production Technician - WC10,S,M,2008-01-07,0,88,64,
-employee-49,2008-01-07 00:00:00.000,pay_rate,,,,,,,,13.45
-employee-50,,,Production Technician - WC10,M,M,2008-02-02,0,84,62,
-employee-50,2008-02-02 00:00:00.000,pay_rate,,,,,,,,13.45
-employee-51,,,Production Technician - WC10,S,M,2008-02-20,0,85,62,
-employee-51,2008-02-20 00:00:00.000,pay_rate,,,,,,,,13.45
-employee-52,,,Production Technician - WC10,M,F,2008-03-10,0,86,63,
-employee-52,2008-03-10 00:00:00.000,pay_rate,,,,,,,,13.45
-employee-53,,,Production Technician - WC10,M,F,2008-03-28,0,87,63,
-employee-53,2008-03-28 00:00:00.000,pay_rate,,,,,,,,13.45
-employee-54,,,Production Technician - WC10,M,F,2010-01-01,0,89,64,
-employee-54,2010-01-01 00:00:00.000,pay_rate,,,,,,,,13.45
-employee-55,,,Production Supervisor - WC50,M,M,2008-02-08,0,79,59,
-employee-55,2008-02-08 00:00:00.000,pay_rate,,,,,,,,25.0
-employee-56,,,Production Technician - WC50,M,F,2009-02-05,0,9,24,
-employee-56,2009-02-05 00:00:00.000,pay_rate,,,,,,,,11.0
-employee-57,,,Production Technician - WC50,S,M,2009-02-23,0,10,25,
-employee-57,2009-02-23 00:00:00.000,pay_rate,,,,,,,,11.0
-employee-58,,,Production Technician - WC50,M,M,2008-12-05,0,11,25,
-employee-58,2008-12-05 00:00:00.000,pay_rate,,,,,,,,11.0
-employee-59,,,Production Technician - WC50,S,M,2008-12-24,0,12,26,
-employee-59,2008-12-24 00:00:00.000,pay_rate,,,,,,,,11.0
-employee-60,,,Production Technician - WC50,S,M,2009-01-11,0,13,26,
-employee-60,2009-01-11 00:00:00.000,pay_rate,,,,,,,,11.0
-employee-61,,,Production Technician - WC50,S,F,2009-01-18,0,8,24,
-employee-61,2009-01-18 00:00:00.000,pay_rate,,,,,,,,11.0
-employee-62,,,Production Supervisor - WC60,M,M,2008-03-17,0,81,60,
-employee-62,2008-03-17 00:00:00.000,pay_rate,,,,,,,,25.0
-employee-63,,,Production Technician - WC60,S,M,2010-01-29,0,30,35,
-employee-63,2010-01-29 00:00:00.000,pay_rate,,,,,,,,12.45
-employee-64,,,Production Technician - WC60,S,M,2010-02-23,0,26,33,
-employee-64,2010-02-23 00:00:00.000,pay_rate,,,,,,,,12.45
-employee-65,,,Production Technician - WC60,M,M,2010-02-23,0,29,34,
-employee-65,2010-02-23 00:00:00.000,pay_rate,,,,,,,,12.45
-employee-66,,,Production Technician - WC60,S,M,2009-12-22,0,28,34,
-employee-66,2009-12-22 00:00:00.000,pay_rate,,,,,,,,12.45
-employee-67,,,Production Technician - WC60,S,M,2009-03-05,0,32,36,
-employee-67,2009-03-05 00:00:00.000,pay_rate,,,,,,,,12.45
-employee-68,,,Production Technician - WC60,S,M,2009-12-03,0,27,33,
-employee-68,2009-12-03 00:00:00.000,pay_rate,,,,,,,,12.45
-employee-69,,,Production Technician - WC60,S,M,2009-02-15,0,31,35,
-employee-69,2009-02-15 00:00:00.000,pay_rate,,,,,,,,12.45
-employee-70,,,Production Technician - WC60,M,M,2008-12-15,0,33,36,
-employee-70,2008-12-15 00:00:00.000,pay_rate,,,,,,,,12.45
-employee-71,,,Production Supervisor - WC30,S,M,2009-02-15,0,70,55,
-employee-71,2009-02-15 00:00:00.000,pay_rate,,,,,,,,25.0
-employee-72,,,Production Technician - WC30,M,M,2008-12-01,0,41,40,
-employee-72,2008-12-01 00:00:00.000,pay_rate,,,,,,,,9.5
-employee-73,,,Production Technician - WC30,M,F,2008-12-19,0,42,41,
-employee-73,2008-12-19 00:00:00.000,pay_rate,,,,,,,,9.5
-employee-74,,,Production Technician - WC30,S,M,2009-01-07,0,43,41,
-employee-74,2009-01-07 00:00:00.000,pay_rate,,,,,,,,9.5
-employee-75,,,Production Technician - WC30,S,M,2009-01-26,0,44,42,
-employee-75,2009-01-26 00:00:00.000,pay_rate,,,,,,,,9.5
-employee-76,,,Production Technician - WC30,M,F,2009-02-12,0,45,42,
-employee-76,2009-02-12 00:00:00.000,pay_rate,,,,,,,,9.5
-employee-77,,,Production Technician - WC30,M,F,2009-03-03,0,46,43,
-employee-77,2009-03-03 00:00:00.000,pay_rate,,,,,,,,9.5
-employee-78,,,Production Supervisor - WC40,M,M,2008-12-15,0,72,56,
-employee-78,2008-12-15 00:00:00.000,pay_rate,,,,,,,,25.0
-employee-79,,,Production Technician - WC40,M,M,2010-01-24,0,60,50,
-employee-79,2010-01-24 00:00:00.000,pay_rate,,,,,,,,15.0
-employee-80,,,Production Technician - WC40,S,M,2010-01-17,0,65,52,
-employee-80,2010-01-17 00:00:00.000,pay_rate,,,,,,,,15.0
-employee-81,,,Production Technician - WC40,S,M,2009-12-29,0,64,52,
-employee-81,2009-12-29 00:00:00.000,pay_rate,,,,,,,,15.0
-employee-82,,,Production Technician - WC40,S,M,2010-03-03,0,62,51,
-employee-82,2010-03-03 00:00:00.000,pay_rate,,,,,,,,15.0
-employee-83,,,Production Technician - WC40,M,M,2010-02-12,0,61,50,
-employee-83,2010-02-12 00:00:00.000,pay_rate,,,,,,,,15.0
-employee-84,,,Production Technician - WC40,M,M,2010-02-05,0,66,53,
-employee-84,2010-02-05 00:00:00.000,pay_rate,,,,,,,,15.0
-employee-85,,,Production Technician - WC40,S,M,2009-12-11,0,63,51,
-employee-85,2009-12-11 00:00:00.000,pay_rate,,,,,,,,15.0
-employee-86,,,Production Technician - WC40,M,M,2009-01-05,0,59,49,
-employee-86,2009-01-05 00:00:00.000,pay_rate,,,,,,,,15.0
-employee-87,,,Production Supervisor - WC10,M,M,2008-12-22,0,67,53,
-employee-87,2008-12-22 00:00:00.000,pay_rate,,,,,,,,25.0
-employee-88,,,Production Technician - WC10,S,F,2009-12-18,0,99,69,
-employee-88,2009-12-18 00:00:00.000,pay_rate,,,,,,,,13.45
-employee-89,,,Production Technician - WC10,S,M,2010-02-01,0,96,68,
-employee-89,2010-02-01 00:00:00.000,pay_rate,,,,,,,,13.45
-employee-90,,,Production Technician - WC10,S,F,2010-02-20,0,97,68,
-employee-90,2010-02-20 00:00:00.000,pay_rate,,,,,,,,13.45
-employee-91,,,Production Technician - WC10,S,F,2010-01-12,0,95,67,
-employee-91,2010-01-12 00:00:00.000,pay_rate,,,,,,,,13.45
-employee-92,,,Production Technician - WC10,M,M,2010-03-10,0,98,69,
-employee-92,2010-03-10 00:00:00.000,pay_rate,,,,,,,,13.45
-employee-93,,,Production Supervisor - WC50,S,M,2008-12-27,0,78,59,
-employee-93,2008-12-27 00:00:00.000,pay_rate,,,,,,,,25.0
-employee-94,,,Production Technician - WC50,M,M,2008-12-12,0,6,23,
-employee-94,2008-12-12 00:00:00.000,pay_rate,,,,,,,,11.0
-employee-95,,,Production Technician - WC50,M,M,2008-12-19,0,1,20,
-employee-95,2008-12-19 00:00:00.000,pay_rate,,,,,,,,11.0
-employee-96,,,Production Technician - WC50,M,F,2009-03-02,0,5,22,
-employee-96,2009-03-02 00:00:00.000,pay_rate,,,,,,,,11.0
-employee-97,,,Production Technician - WC50,S,M,2009-02-10,0,0,20,
-employee-97,2009-02-10 00:00:00.000,pay_rate,,,,,,,,11.0
-employee-98,,,Production Technician - WC50,M,M,2009-02-11,0,4,22,
-employee-98,2009-02-11 00:00:00.000,pay_rate,,,,,,,,11.0
-employee-99,,,Production Technician - WC50,S,M,2009-01-06,0,2,21,
-employee-99,2009-01-06 00:00:00.000,pay_rate,,,,,,,,11.0
-employee-100,,,Production Technician - WC50,M,M,2009-01-12,0,7,23,
-employee-100,2009-01-12 00:00:00.000,pay_rate,,,,,,,,11.0
-employee-101,,,Production Technician - WC50,M,M,2009-01-25,0,3,21,
-employee-101,2009-01-25 00:00:00.000,pay_rate,,,,,,,,11.0
-employee-102,,,Production Supervisor - WC10,S,M,2008-12-03,0,66,53,
-employee-102,2008-12-03 00:00:00.000,pay_rate,,,,,,,,25.0
-employee-103,,,Production Technician - WC10,S,M,2009-12-06,0,93,66,
-employee-103,2009-12-06 00:00:00.000,pay_rate,,,,,,,,13.45
-employee-104,,,Production Technician - WC10,M,F,2009-12-25,0,94,67,
-employee-104,2009-12-25 00:00:00.000,pay_rate,,,,,,,,13.45
-employee-105,,,Production Technician - WC10,S,M,2009-12-25,0,90,65,
-employee-105,2009-12-25 00:00:00.000,pay_rate,,,,,,,,13.45
-employee-106,,,Production Technician - WC10,S,M,2010-02-27,0,92,66,
-employee-106,2010-02-27 00:00:00.000,pay_rate,,,,,,,,13.45
-employee-107,,,Production Technician - WC10,M,M,2010-02-08,0,91,65,
-employee-107,2010-02-08 00:00:00.000,pay_rate,,,,,,,,13.45
-employee-108,,,Production Supervisor - WC50,S,M,2008-12-08,0,77,58,
-employee-108,2008-12-08 00:00:00.000,pay_rate,,,,,,,,25.0
-employee-109,,,Production Technician - WC50,M,F,2008-12-07,0,95,67,
-employee-109,2008-12-07 00:00:00.000,pay_rate,,,,,,,,11.0
-employee-110,,,Production Technician - WC50,S,M,2008-12-14,0,90,65,
-employee-110,2008-12-14 00:00:00.000,pay_rate,,,,,,,,11.0
-employee-111,,,Production Technician - WC50,S,M,2008-12-17,0,93,66,
-employee-111,2008-12-17 00:00:00.000,pay_rate,,,,,,,,11.0
-employee-112,,,Production Technician - WC50,S,M,2009-01-01,0,91,65,
-employee-112,2009-01-01 00:00:00.000,pay_rate,,,,,,,,11.0
-employee-113,,,Production Technician - WC50,M,F,2008-12-25,0,96,68,
-employee-113,2008-12-25 00:00:00.000,pay_rate,,,,,,,,11.0
-employee-114,,,Production Technician - WC50,M,M,2009-01-13,0,97,68,
-employee-114,2009-01-13 00:00:00.000,pay_rate,,,,,,,,11.0
-employee-115,,,Production Technician - WC50,S,F,2009-01-20,0,92,66,
-employee-115,2009-01-20 00:00:00.000,pay_rate,,,,,,,,11.0
-employee-116,,,Production Technician - WC50,S,M,2009-01-31,0,98,69,
-employee-116,2009-01-31 00:00:00.000,pay_rate,,,,,,,,11.0
-employee-117,,,Production Technician - WC50,M,M,2009-02-18,0,99,69,
-employee-117,2009-02-18 00:00:00.000,pay_rate,,,,,,,,11.0
-employee-118,,,Production Technician - WC50,M,M,2009-02-13,0,88,64,
-employee-118,2009-02-13 00:00:00.000,pay_rate,,,,,,,,11.0
-employee-119,,,Production Technician - WC50,S,M,2009-02-25,0,94,67,
-employee-119,2009-02-25 00:00:00.000,pay_rate,,,,,,,,11.0
-employee-120,,,Production Technician - WC50,S,F,2009-03-04,0,89,64,
-employee-120,2009-03-04 00:00:00.000,pay_rate,,,,,,,,11.0
-employee-121,,,Shipping and Receiving Supervisor,S,M,2009-01-02,1,93,66,
-employee-121,2009-01-02 00:00:00.000,pay_rate,,,,,,,,19.2308
-employee-122,,,Stocker,S,F,2008-12-07,0,97,68,
-employee-122,2008-12-07 00:00:00.000,pay_rate,,,,,,,,9.0
-employee-123,,,Shipping and Receiving Clerk,M,M,2008-12-07,0,95,67,
-employee-123,2008-12-07 00:00:00.000,pay_rate,,,,,,,,9.5
-employee-124,,,Stocker,S,F,2008-12-26,0,98,69,
-employee-124,2008-12-26 00:00:00.000,pay_rate,,,,,,,,9.0
-employee-125,,,Shipping and Receiving Clerk,M,M,2009-01-20,0,94,67,
-employee-125,2009-01-20 00:00:00.000,pay_rate,,,,,,,,9.5
-employee-126,,,Stocker,M,M,2009-02-26,0,96,68,
-employee-126,2009-02-26 00:00:00.000,pay_rate,,,,,,,,9.0
-employee-127,,,Production Supervisor - WC40,S,M,2009-01-03,0,73,56,
-employee-127,2009-01-03 00:00:00.000,pay_rate,,,,,,,,25.0
-employee-128,,,Production Technician - WC40,S,M,2008-12-04,0,68,54,
-employee-128,2008-12-04 00:00:00.000,pay_rate,,,,,,,,15.0
-employee-129,,,Production Technician - WC40,S,M,2008-12-22,0,69,54,
-employee-129,2008-12-22 00:00:00.000,pay_rate,,,,,,,,15.0
-employee-130,,,Production Technician - WC40,S,M,2009-02-13,0,71,55,
-employee-130,2009-02-13 00:00:00.000,pay_rate,,,,,,,,15.0
-employee-131,,,Production Technician - WC40,S,M,2009-02-15,0,72,56,
-employee-131,2009-02-15 00:00:00.000,pay_rate,,,,,,,,15.0
-employee-132,,,Production Technician - WC40,M,F,2009-02-22,0,67,53,
-employee-132,2009-02-22 00:00:00.000,pay_rate,,,,,,,,15.0
-employee-133,,,Production Technician - WC40,S,M,2009-01-10,0,70,55,
-employee-133,2009-01-10 00:00:00.000,pay_rate,,,,,,,,15.0
-employee-134,,,Production Supervisor - WC20,M,M,2009-01-14,0,40,40,
-employee-134,2009-01-14 00:00:00.000,pay_rate,,,,,,,,25.0
-employee-135,,,Production Technician - WC20,M,M,2008-12-04,0,9,24,
-employee-135,2008-12-04 00:00:00.000,pay_rate,,,,,,,,14.0
-employee-136,,,Production Technician - WC20,M,M,2009-12-11,0,4,22,
-employee-136,2009-12-11 00:00:00.000,pay_rate,,,,,,,,14.0
-employee-137,,,Production Technician - WC20,S,F,2009-02-23,0,8,24,
-employee-137,2009-02-23 00:00:00.000,pay_rate,,,,,,,,14.0
-employee-138,,,Production Technician - WC20,M,F,2009-02-04,0,7,23,
-employee-138,2009-02-04 00:00:00.000,pay_rate,,,,,,,,14.0
-employee-139,,,Production Technician - WC20,S,M,2010-01-06,0,0,20,
-employee-139,2010-01-06 00:00:00.000,pay_rate,,,,,,,,14.0
-employee-140,,,Production Technician - WC20,M,M,2010-01-22,0,5,22,
-employee-140,2010-01-22 00:00:00.000,pay_rate,,,,,,,,14.0
-employee-141,,,Production Technician - WC20,M,M,2010-01-24,0,1,20,
-employee-141,2010-01-24 00:00:00.000,pay_rate,,,,,,,,14.0
-employee-142,,,Production Technician - WC20,S,F,2010-03-04,0,3,21,
-employee-142,2010-03-04 00:00:00.000,pay_rate,,,,,,,,14.0
-employee-143,,,Production Technician - WC20,S,M,2010-02-13,0,2,21,
-employee-143,2010-02-13 00:00:00.000,pay_rate,,,,,,,,14.0
-employee-144,,,Production Technician - WC20,M,M,2009-01-17,0,6,23,
-employee-144,2009-01-17 00:00:00.000,pay_rate,,,,,,,,14.0
-employee-145,,,Production Supervisor - WC30,S,F,2009-01-27,0,69,54,
-employee-145,2009-01-27 00:00:00.000,pay_rate,,,,,,,,25.0
-employee-146,,,Production Technician - WC30,S,M,2008-12-07,0,36,38,
-employee-146,2008-12-07 00:00:00.000,pay_rate,,,,,,,,9.5
-employee-147,,,Production Technician - WC30,M,F,2008-12-26,0,37,38,
-employee-147,2008-12-26 00:00:00.000,pay_rate,,,,,,,,9.5
-employee-148,,,Production Technician - WC30,S,M,2009-01-14,0,38,39,
-employee-148,2009-01-14 00:00:00.000,pay_rate,,,,,,,,9.5
-employee-149,,,Production Technician - WC30,M,M,2009-01-31,0,39,39,
-employee-149,2009-01-31 00:00:00.000,pay_rate,,,,,,,,9.5
-employee-150,,,Production Technician - WC30,M,M,2009-02-26,0,35,37,
-employee-150,2009-02-26 00:00:00.000,pay_rate,,,,,,,,9.5
-employee-151,,,Production Technician - WC30,M,M,2009-02-19,0,40,40,
-employee-151,2009-02-19 00:00:00.000,pay_rate,,,,,,,,9.5
-employee-152,,,Production Supervisor - WC20,M,M,2009-02-01,0,41,40,
-employee-152,2009-02-01 00:00:00.000,pay_rate,,,,,,,,25.0
-employee-153,,,Production Technician - WC20,S,M,2008-12-16,0,15,27,
-employee-153,2008-12-16 00:00:00.000,pay_rate,,,,,,,,14.0
-employee-154,,,Production Technician - WC20,M,M,2008-12-23,0,10,25,
-employee-154,2008-12-23 00:00:00.000,pay_rate,,,,,,,,14.0
-employee-155,,,Production Technician - WC20,S,M,2009-01-04,0,16,28,
-employee-155,2009-01-04 00:00:00.000,pay_rate,,,,,,,,14.0
-employee-156,,,Production Technician - WC20,M,M,2009-01-11,0,11,25,
-employee-156,2009-01-11 00:00:00.000,pay_rate,,,,,,,,14.0
-employee-157,,,Production Technician - WC20,S,F,2009-02-03,0,12,26,
-employee-157,2009-02-03 00:00:00.000,pay_rate,,,,,,,,14.0
-employee-158,,,Production Technician - WC20,S,F,2009-03-07,0,14,27,
-employee-158,2009-03-07 00:00:00.000,pay_rate,,,,,,,,14.0
-employee-159,,,Production Technician - WC20,S,M,2009-02-16,0,13,26,
-employee-159,2009-02-16 00:00:00.000,pay_rate,,,,,,,,14.0
-employee-160,,,Production Supervisor - WC45,M,M,2009-01-21,0,74,57,
-employee-160,2009-01-21 00:00:00.000,pay_rate,,,,,,,,25.0
-employee-161,,,Production Technician - WC45,S,M,2008-12-15,0,74,57,
-employee-161,2008-12-15 00:00:00.000,pay_rate,,,,,,,,10.0
-employee-162,,,Production Technician - WC45,S,F,2009-01-03,0,75,57,
-employee-162,2009-01-03 00:00:00.000,pay_rate,,,,,,,,10.0
-employee-163,,,Production Technician - WC45,M,M,2009-02-08,0,77,58,
-employee-163,2009-02-08 00:00:00.000,pay_rate,,,,,,,,10.0
-employee-164,,,Production Technician - WC45,S,M,2009-03-06,0,73,56,
-employee-164,2009-03-06 00:00:00.000,pay_rate,,,,,,,,10.0
-employee-165,,,Production Technician - WC45,M,M,2009-01-22,0,76,58,
-employee-165,2009-01-22 00:00:00.000,pay_rate,,,,,,,,10.0
-employee-166,,,Production Supervisor - WC30,S,M,2009-02-21,0,68,54,
-employee-166,2009-02-21 00:00:00.000,pay_rate,,,,,,,,25.0
-employee-167,,,Production Technician - WC30,S,M,2008-12-02,0,25,32,
-employee-167,2008-12-02 00:00:00.000,pay_rate,,,,,,,,6.5
-employee-167,2011-12-01 00:00:00.000,pay_rate,,,,,,,,7.25
-employee-167,2013-07-14 00:00:00.000,pay_rate,,,,,,,,9.5
-employee-168,,,Production Technician - WC30,S,M,2008-12-07,0,34,37,
-employee-168,2008-12-07 00:00:00.000,pay_rate,,,,,,,,9.5
-employee-169,,,Production Technician - WC30,S,F,2008-12-14,0,31,35,
-employee-169,2008-12-14 00:00:00.000,pay_rate,,,,,,,,9.5
-employee-170,,,Production Technician - WC30,M,M,2008-12-21,0,26,33,
-employee-170,2008-12-21 00:00:00.000,pay_rate,,,,,,,,6.5
-employee-170,2011-12-01 00:00:00.000,pay_rate,,,,,,,,7.25
-employee-170,2013-07-14 00:00:00.000,pay_rate,,,,,,,,9.5
-employee-171,,,Production Technician - WC30,S,M,2009-01-02,0,32,36,
-employee-171,2009-01-02 00:00:00.000,pay_rate,,,,,,,,9.5
-employee-172,,,Production Technician - WC30,M,M,2009-01-16,0,22,31,
-employee-172,2009-01-16 00:00:00.000,pay_rate,,,,,,,,6.5
-employee-172,2011-12-01 00:00:00.000,pay_rate,,,,,,,,7.25
-employee-172,2013-07-14 00:00:00.000,pay_rate,,,,,,,,9.5
-employee-173,,,Production Technician - WC30,S,M,2009-01-21,0,33,36,
-employee-173,2009-01-21 00:00:00.000,pay_rate,,,,,,,,9.5
-employee-174,,,Production Technician - WC30,S,M,2009-01-27,0,28,34,
-employee-174,2009-01-27 00:00:00.000,pay_rate,,,,,,,,6.75
-employee-174,2011-12-01 00:00:00.000,pay_rate,,,,,,,,7.25
-employee-174,2013-07-14 00:00:00.000,pay_rate,,,,,,,,9.5
-employee-175,,,Production Technician - WC30,M,M,2009-02-02,0,23,31,
-employee-175,2009-02-02 00:00:00.000,pay_rate,,,,,,,,6.5
-employee-175,2011-12-01 00:00:00.000,pay_rate,,,,,,,,7.25
-employee-175,2013-07-14 00:00:00.000,pay_rate,,,,,,,,9.5
-employee-176,,,Production Technician - WC30,M,M,2009-02-14,0,29,34,
-employee-176,2009-02-14 00:00:00.000,pay_rate,,,,,,,,6.5
-employee-176,2011-12-01 00:00:00.000,pay_rate,,,,,,,,7.25
-employee-176,2013-07-14 00:00:00.000,pay_rate,,,,,,,,9.5
-employee-177,,,Production Technician - WC30,M,M,2009-02-21,0,24,32,
-employee-177,2009-02-21 00:00:00.000,pay_rate,,,,,,,,6.5
-employee-177,2011-12-01 00:00:00.000,pay_rate,,,,,,,,7.25
-employee-177,2013-07-14 00:00:00.000,pay_rate,,,,,,,,9.5
-employee-178,,,Production Technician - WC30,S,M,2009-03-03,0,27,33,
-employee-178,2009-03-03 00:00:00.000,pay_rate,,,,,,,,6.5
-employee-178,2011-12-01 00:00:00.000,pay_rate,,,,,,,,7.0
-employee-178,2013-07-14 00:00:00.000,pay_rate,,,,,,,,9.5
-employee-179,,,Production Technician - WC30,S,M,2009-03-05,0,30,35,
-employee-179,2009-03-05 00:00:00.000,pay_rate,,,,,,,,9.5
-employee-180,,,Production Supervisor - WC20,S,F,2009-02-20,0,42,41,
-employee-180,2009-02-20 00:00:00.000,pay_rate,,,,,,,,25.0
-employee-181,,,Production Technician - WC20,S,M,2008-12-09,0,20,30,
-employee-181,2008-12-09 00:00:00.000,pay_rate,,,,,,,,14.0
-employee-182,,,Production Technician - WC20,S,M,2008-12-28,0,21,30,
-employee-182,2008-12-28 00:00:00.000,pay_rate,,,,,,,,14.0
-employee-183,,,Production Technician - WC20,M,F,2009-01-22,0,17,28,
-employee-183,2009-01-22 00:00:00.000,pay_rate,,,,,,,,14.0
-employee-184,,,Production Technician - WC20,M,M,2009-02-09,0,18,29,
-employee-184,2009-02-09 00:00:00.000,pay_rate,,,,,,,,14.0
-employee-185,,,Production Technician - WC20,S,M,2009-02-28,0,19,29,
-employee-185,2009-02-28 00:00:00.000,pay_rate,,,,,,,,14.0
-employee-186,,,Production Supervisor - WC45,S,M,2009-02-08,0,75,57,
-employee-186,2009-02-08 00:00:00.000,pay_rate,,,,,,,,25.0
-employee-187,,,Production Technician - WC45,M,F,2008-12-09,0,79,59,
-employee-187,2008-12-09 00:00:00.000,pay_rate,,,,,,,,10.0
-employee-188,,,Production Technician - WC45,M,M,2008-12-27,0,80,60,
-employee-188,2008-12-27 00:00:00.000,pay_rate,,,,,,,,10.0
-employee-189,,,Production Technician - WC45,S,F,2009-01-15,0,81,60,
-employee-189,2009-01-15 00:00:00.000,pay_rate,,,,,,,,10.0
-employee-190,,,Production Technician - WC45,S,M,2009-02-02,0,82,61,
-employee-190,2009-02-02 00:00:00.000,pay_rate,,,,,,,,10.0
-employee-191,,,Production Technician - WC45,S,M,2009-02-26,0,78,59,
-employee-191,2009-02-26 00:00:00.000,pay_rate,,,,,,,,10.0
-employee-192,,,Production Supervisor - WC40,M,F,2009-03-05,0,71,55,
-employee-192,2009-03-05 00:00:00.000,pay_rate,,,,,,,,25.0
-employee-193,,,Production Technician - WC40,S,M,2008-12-06,0,52,46,
-employee-193,2008-12-06 00:00:00.000,pay_rate,,,,,,,,15.0
-employee-194,,,Production Technician - WC40,S,M,2008-12-12,0,47,43,
-employee-194,2008-12-12 00:00:00.000,pay_rate,,,,,,,,15.0
-employee-195,,,Production Technician - WC40,S,M,2008-12-17,0,58,49,
-employee-195,2008-12-17 00:00:00.000,pay_rate,,,,,,,,15.0
-employee-196,,,Production Technician - WC40,M,M,2008-12-24,0,53,46,
-employee-196,2008-12-24 00:00:00.000,pay_rate,,,,,,,,15.0
-employee-197,,,Production Technician - WC40,M,M,2008-12-31,0,48,44,
-employee-197,2008-12-31 00:00:00.000,pay_rate,,,,,,,,15.0
-employee-198,,,Production Technician - WC40,M,F,2009-01-04,0,49,44,
-employee-198,2009-01-04 00:00:00.000,pay_rate,,,,,,,,15.0
-employee-199,,,Production Technician - WC40,M,F,2009-01-12,0,54,47,
-employee-199,2009-01-12 00:00:00.000,pay_rate,,,,,,,,15.0
-employee-200,,,Production Technician - WC40,M,M,2009-01-17,0,56,48,
-employee-200,2009-01-17 00:00:00.000,pay_rate,,,,,,,,15.0
-employee-201,,,Production Technician - WC40,S,M,2009-01-29,0,55,47,
-employee-201,2009-01-29 00:00:00.000,pay_rate,,,,,,,,15.0
-employee-202,,,Production Technician - WC40,S,M,2009-02-05,0,50,45,
-employee-202,2009-02-05 00:00:00.000,pay_rate,,,,,,,,15.0
-employee-203,,,Production Technician - WC40,M,M,2009-02-24,0,51,45,
-employee-203,2009-02-24 00:00:00.000,pay_rate,,,,,,,,15.0
-employee-204,,,Production Technician - WC40,M,M,2009-03-08,0,57,48,
-employee-204,2009-03-08 00:00:00.000,pay_rate,,,,,,,,15.0
-employee-205,,,Production Supervisor - WC45,S,F,2009-02-26,0,76,58,
-employee-205,2009-02-26 00:00:00.000,pay_rate,,,,,,,,25.0
-employee-206,,,Production Technician - WC45,S,M,2008-12-02,0,84,62,
-employee-206,2008-12-02 00:00:00.000,pay_rate,,,,,,,,10.0
-employee-207,,,Production Technician - WC45,S,M,2008-12-02,0,85,62,
-employee-207,2008-12-02 00:00:00.000,pay_rate,,,,,,,,10.0
-employee-208,,,Production Technician - WC45,M,M,2009-01-08,0,86,63,
-employee-208,2009-01-08 00:00:00.000,pay_rate,,,,,,,,10.0
-employee-209,,,Production Technician - WC45,M,F,2009-01-27,0,87,63,
-employee-209,2009-01-27 00:00:00.000,pay_rate,,,,,,,,10.0
-employee-210,,,Production Technician - WC45,S,F,2009-02-20,0,83,61,
-employee-210,2009-02-20 00:00:00.000,pay_rate,,,,,,,,10.0
-employee-211,,,Quality Assurance Manager,S,M,2009-02-28,1,80,60,
-employee-211,2009-02-28 00:00:00.000,pay_rate,,,,,,,,28.8462
-employee-212,,,Quality Assurance Supervisor,M,M,2008-12-09,1,81,60,
-employee-212,2008-12-09 00:00:00.000,pay_rate,,,,,,,,21.6346
-employee-213,,,Quality Assurance Technician,M,M,2010-02-23,0,85,62,
-employee-213,2010-02-23 00:00:00.000,pay_rate,,,,,,,,10.5769
-employee-214,,,Quality Assurance Technician,M,M,2009-02-02,0,84,62,
-employee-214,2009-02-02 00:00:00.000,pay_rate,,,,,,,,10.5769
-employee-215,,,Quality Assurance Technician,S,M,2009-01-15,0,83,61,
-employee-215,2009-01-15 00:00:00.000,pay_rate,,,,,,,,10.5769
-employee-216,,,Quality Assurance Technician,S,M,2008-12-28,0,82,61,
-employee-216,2008-12-28 00:00:00.000,pay_rate,,,,,,,,10.5769
-employee-217,,,Document Control Manager,M,M,2009-01-04,0,77,58,
-employee-217,2009-01-04 00:00:00.000,pay_rate,,,,,,,,17.7885
-employee-218,,,Control Specialist,S,M,2008-12-16,0,76,58,
-employee-218,2008-12-16 00:00:00.000,pay_rate,,,,,,,,16.8269
-employee-219,,,Document Control Assistant,S,M,2009-01-22,0,78,59,
-employee-219,2009-01-22 00:00:00.000,pay_rate,,,,,,,,10.25
-employee-220,,,Document Control Assistant,M,F,2009-02-09,0,79,59,
-employee-220,2009-02-09 00:00:00.000,pay_rate,,,,,,,,10.25
-employee-221,,,Control Specialist,M,M,2009-03-06,0,75,57,
-employee-221,2009-03-06 00:00:00.000,pay_rate,,,,,,,,16.8269
-employee-222,,,Master Scheduler,S,M,2008-12-12,0,44,42,
-employee-222,2008-12-12 00:00:00.000,pay_rate,,,,,,,,23.5577
-employee-223,,,Scheduling Assistant,M,M,2009-01-26,0,46,43,
-employee-223,2009-01-26 00:00:00.000,pay_rate,,,,,,,,16.0
-employee-224,,,Scheduling Assistant,M,M,2009-01-07,0,45,42,
-employee-224,2008-01-08 00:00:00.000,pay_rate,,,,,,,,8.62
-employee-224,2011-08-31 00:00:00.000,pay_rate,,,,,,,,13.5
-employee-224,2012-01-01 00:00:00.000,pay_rate,,,,,,,,16.0
-employee-225,,,Scheduling Assistant,M,M,2009-02-13,0,47,43,
-employee-225,2009-02-13 00:00:00.000,pay_rate,,,,,,,,16.0
-employee-226,,,Scheduling Assistant,M,M,2009-03-03,0,48,44,
-employee-226,2009-03-03 00:00:00.000,pay_rate,,,,,,,,16.0
-employee-227,,,Facilities Manager,M,M,2009-12-02,1,86,63,
-employee-227,2009-12-02 00:00:00.000,pay_rate,,,,,,,,24.0385
-employee-228,,,Maintenance Supervisor,M,M,2008-12-14,1,92,66,
-employee-228,2008-12-14 00:00:00.000,pay_rate,,,,,,,,20.4327
-employee-229,,,Janitor,M,F,2010-02-16,0,90,65,
-employee-229,2010-02-16 00:00:00.000,pay_rate,,,,,,,,9.25
-employee-230,,,Janitor,M,M,2010-03-05,0,88,64,
-employee-230,2010-03-05 00:00:00.000,pay_rate,,,,,,,,9.25
-employee-231,,,Janitor,M,F,2010-03-07,0,91,65,
-employee-231,2010-03-07 00:00:00.000,pay_rate,,,,,,,,9.25
-employee-232,,,Janitor,S,M,2010-01-27,0,89,64,
-employee-232,2010-01-27 00:00:00.000,pay_rate,,,,,,,,9.25
-employee-233,,,Facilities Administrative Assistant,M,M,2009-12-21,0,87,63,
-employee-233,2009-12-21 00:00:00.000,pay_rate,,,,,,,,9.75
-employee-234,,,Chief Financial Officer,M,F,2009-01-31,1,0,20,
-employee-234,2009-01-31 00:00:00.000,pay_rate,,,,,,,,39.06
-employee-234,2011-11-14 00:00:00.000,pay_rate,,,,,,,,48.5577
-employee-234,2012-01-29 00:00:00.000,pay_rate,,,,,,,,60.0962
-employee-235,,,Human Resources Manager,M,F,2008-12-06,1,54,47,
-employee-235,2008-12-06 00:00:00.000,pay_rate,,,,,,,,27.1394
-employee-236,,,Human Resources Administrative Assistant,S,M,2009-02-25,0,53,46,
-employee-236,2009-02-25 00:00:00.000,pay_rate,,,,,,,,13.9423
-employee-237,,,Human Resources Administrative Assistant,S,M,2009-02-06,0,52,46,
-employee-237,2009-02-06 00:00:00.000,pay_rate,,,,,,,,13.9423
-employee-238,,,Recruiter,S,M,2009-01-01,0,50,45,
-employee-238,2009-01-01 00:00:00.000,pay_rate,,,,,,,,18.2692
-employee-239,,,Benefits Specialist,M,F,2008-12-25,0,51,45,
-employee-239,2008-12-25 00:00:00.000,pay_rate,,,,,,,,16.5865
-employee-240,,,Recruiter,S,M,2008-12-13,0,49,44,
-employee-240,2008-12-13 00:00:00.000,pay_rate,,,,,,,,18.2692
-employee-241,,,Accounts Manager,M,M,2009-01-30,1,57,48,
-employee-241,2009-01-30 00:00:00.000,pay_rate,,,,,,,,34.7356
-employee-242,,,Accounts Receivable Specialist,M,F,2008-12-18,0,60,50,
-employee-242,2008-12-18 00:00:00.000,pay_rate,,,,,,,,19.0
-employee-243,,,Accounts Receivable Specialist,S,F,2009-01-06,0,61,50,
-employee-243,2009-01-06 00:00:00.000,pay_rate,,,,,,,,19.0
-employee-244,,,Accounts Receivable Specialist,S,M,2009-01-24,0,62,51,
-employee-244,2009-01-24 00:00:00.000,pay_rate,,,,,,,,19.0
-employee-245,,,Accountant,M,F,2009-02-18,1,58,49,
-employee-245,2009-02-18 00:00:00.000,pay_rate,,,,,,,,26.4423
-employee-246,,,Accounts Payable Specialist,M,M,2009-02-11,0,63,51,
-employee-246,2009-02-11 00:00:00.000,pay_rate,,,,,,,,19.0
-employee-247,,,Accounts Payable Specialist,M,F,2009-03-01,0,64,52,
-employee-247,2009-03-01 00:00:00.000,pay_rate,,,,,,,,19.0
-employee-248,,,Accountant,S,M,2009-03-08,1,59,49,
-employee-248,2009-03-08 00:00:00.000,pay_rate,,,,,,,,26.4423
-employee-249,,,Finance Manager,S,F,2008-12-25,1,55,47,
-employee-249,2008-12-25 00:00:00.000,pay_rate,,,,,,,,43.2692
-employee-250,,,Purchasing Manager,S,F,2011-02-25,1,49,44,
-employee-250,2011-02-21 00:00:00.000,pay_rate,,,,,,,,9.86
-employee-250,2011-07-30 00:00:00.000,pay_rate,,,,,,,,22.5
-employee-250,2012-07-14 00:00:00.000,pay_rate,,,,,,,,30.0
-employee-251,,,Buyer,S,M,2009-02-10,0,59,49,
-employee-251,2009-02-10 00:00:00.000,pay_rate,,,,,,,,18.2692
-employee-252,,,Buyer,M,M,2009-02-28,0,60,50,
-employee-252,2009-02-28 00:00:00.000,pay_rate,,,,,,,,18.2692
-employee-253,,,Buyer,M,F,2009-12-17,0,56,48,
-employee-253,2009-12-17 00:00:00.000,pay_rate,,,,,,,,18.2692
-employee-254,,,Buyer,M,M,2010-01-04,0,57,48,
-employee-254,2010-01-04 00:00:00.000,pay_rate,,,,,,,,18.2692
-employee-255,,,Buyer,M,M,2010-01-11,0,52,46,
-employee-255,2010-01-11 00:00:00.000,pay_rate,,,,,,,,18.2692
-employee-256,,,Buyer,M,M,2010-01-23,0,58,49,
-employee-256,2010-01-23 00:00:00.000,pay_rate,,,,,,,,18.2692
-employee-257,,,Buyer,S,M,2010-01-27,0,54,47,
-employee-257,2010-01-27 00:00:00.000,pay_rate,,,,,,,,18.2692
-employee-258,,,Buyer,S,F,2010-01-31,0,53,46,
-employee-258,2010-01-31 00:00:00.000,pay_rate,,,,,,,,18.2692
-employee-259,,,Buyer,M,M,2010-03-09,0,55,47,
-employee-259,2010-03-09 00:00:00.000,pay_rate,,,,,,,,18.2692
-employee-260,,,Purchasing Assistant,M,F,2010-12-06,0,50,45,
-employee-260,2010-12-06 00:00:00.000,pay_rate,,,,,,,,12.75
-employee-261,,,Purchasing Assistant,M,M,2010-12-25,0,51,45,
-employee-261,2010-12-25 00:00:00.000,pay_rate,,,,,,,,12.75
-employee-262,,,Assistant to the Chief Financial Officer,S,M,2009-01-12,0,56,48,
-employee-262,2009-01-12 00:00:00.000,pay_rate,,,,,,,,13.4615
-employee-263,,,Information Services Manager,S,F,2008-12-11,1,65,52,
-employee-263,2008-12-11 00:00:00.000,pay_rate,,,,,,,,50.4808
-employee-264,,,Network Manager,S,F,2009-02-04,1,68,54,
-employee-264,2009-02-04 00:00:00.000,pay_rate,,,,,,,,39.6635
-employee-265,,,Network Administrator,S,M,2008-12-04,0,70,55,
-employee-265,2008-12-04 00:00:00.000,pay_rate,,,,,,,,32.4519
-employee-266,,,Network Administrator,S,M,2009-02-23,0,69,54,
-employee-266,2009-02-23 00:00:00.000,pay_rate,,,,,,,,32.4519
-employee-267,,,Application Specialist,S,F,2009-02-16,1,74,57,
-employee-267,2009-02-16 00:00:00.000,pay_rate,,,,,,,,27.4038
-employee-268,,,Application Specialist,S,M,2009-02-03,1,73,56,
-employee-268,2009-02-03 00:00:00.000,pay_rate,,,,,,,,27.4038
-employee-269,,,Application Specialist,M,M,2009-01-11,1,72,56,
-employee-269,2009-01-11 00:00:00.000,pay_rate,,,,,,,,27.4038
-employee-270,,,Database Administrator,S,M,2009-01-17,1,67,53,
-employee-270,2009-01-17 00:00:00.000,pay_rate,,,,,,,,38.4615
-employee-271,,,Database Administrator,M,M,2009-01-22,1,66,53,
-employee-271,2009-01-22 00:00:00.000,pay_rate,,,,,,,,38.4615
-employee-272,,,Application Specialist,M,F,2008-12-23,1,71,55,
-employee-272,2008-12-23 00:00:00.000,pay_rate,,,,,,,,27.4038
-employee-273,,,Vice President of Sales,S,M,2011-02-15,1,10,25,
-employee-273,2011-02-15 00:00:00.000,pay_rate,,,,,,,,72.1154
-employee-274,,,North American Sales Manager,M,M,2011-01-04,1,14,27,
-employee-274,2011-01-04 00:00:00.000,pay_rate,,,,,,,,48.101
-employee-275,,,Sales Representative,S,M,2011-05-31,1,38,39,
-employee-275,2011-05-31 00:00:00.000,pay_rate,,,,,,,,23.0769
-employee-276,,,Sales Representative,M,F,2011-05-31,1,27,33,
-employee-276,2011-05-31 00:00:00.000,pay_rate,,,,,,,,23.0769
-employee-277,,,Sales Representative,S,F,2011-05-31,1,24,32,
-employee-277,2011-05-31 00:00:00.000,pay_rate,,,,,,,,23.0769
-employee-278,,,Sales Representative,M,M,2011-05-31,1,33,36,
-employee-278,2011-05-31 00:00:00.000,pay_rate,,,,,,,,23.0769
-employee-279,,,Sales Representative,M,M,2011-05-31,1,29,34,
-employee-279,2011-05-31 00:00:00.000,pay_rate,,,,,,,,23.0769
-employee-280,,,Sales Representative,S,F,2011-05-31,1,22,31,
-employee-280,2011-05-31 00:00:00.000,pay_rate,,,,,,,,23.0769
-employee-281,,,Sales Representative,M,M,2011-05-31,1,26,33,
-employee-281,2011-05-31 00:00:00.000,pay_rate,,,,,,,,23.0769
-employee-282,,,Sales Representative,M,M,2011-05-31,1,31,35,
-employee-282,2011-05-31 00:00:00.000,pay_rate,,,,,,,,23.0769
-employee-283,,,Sales Representative,S,M,2011-05-31,1,23,31,
-employee-283,2011-05-31 00:00:00.000,pay_rate,,,,,,,,23.0769
-employee-284,,,Sales Representative,M,M,2012-09-30,1,39,39,
-employee-284,2012-09-30 00:00:00.000,pay_rate,,,,,,,,23.0769
-employee-285,,,Pacific Sales Manager,M,M,2013-03-14,1,20,30,
-employee-285,2013-03-14 00:00:00.000,pay_rate,,,,,,,,48.101
-employee-286,,,Sales Representative,S,F,2013-05-30,1,36,38,
-employee-286,2013-05-30 00:00:00.000,pay_rate,,,,,,,,23.0769
-employee-287,,,European Sales Manager,M,F,2012-04-16,1,21,30,
-employee-287,2012-04-16 00:00:00.000,pay_rate,,,,,,,,48.101
-employee-288,,,Sales Representative,S,F,2013-05-30,1,35,37,
-employee-288,2013-05-30 00:00:00.000,pay_rate,,,,,,,,23.0769
-employee-289,,,Sales Representative,M,F,2012-05-30,1,37,38,
-employee-289,2012-05-30 00:00:00.000,pay_rate,,,,,,,,23.0769
-employee-290,,,Sales Representative,S,M,2012-05-30,1,34,37,
-employee-290,2012-05-30 00:00:00.000,pay_rate,,,,,,,,23.0769
+﻿Object_id,Timestamp,Ocel_changed_field,job_title,gender,marital_status,salaried_flag,vacation_hours,sick_leave_hours
+employee-1,,,Chief Executive Officer,M,S,1,,
+employee-1,2014-06-30 00:00:00.000,vacation_hours,,,,,99,
+employee-1,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,69
+employee-2,,,Vice President of Engineering,F,S,1,,
+employee-2,2014-06-30 00:00:00.000,vacation_hours,,,,,1,
+employee-2,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,20
+employee-3,,,Engineering Manager,M,M,1,,
+employee-3,2014-06-30 00:00:00.000,vacation_hours,,,,,2,
+employee-3,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,21
+employee-4,,,Senior Tool Designer,M,S,0,,
+employee-4,2014-06-30 00:00:00.000,vacation_hours,,,,,48,
+employee-4,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,80
+employee-5,,,Design Engineer,F,M,1,,
+employee-5,2014-06-30 00:00:00.000,vacation_hours,,,,,5,
+employee-5,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,22
+employee-6,,,Design Engineer,M,M,1,,
+employee-6,2014-06-30 00:00:00.000,vacation_hours,,,,,6,
+employee-6,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,23
+employee-7,,,Research and Development Manager,M,M,1,,
+employee-7,2014-06-30 00:00:00.000,vacation_hours,,,,,61,
+employee-7,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,50
+employee-8,,,Research and Development Engineer,F,S,1,,
+employee-8,2014-06-30 00:00:00.000,vacation_hours,,,,,62,
+employee-8,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,51
+employee-9,,,Research and Development Engineer,F,M,1,,
+employee-9,2014-06-30 00:00:00.000,vacation_hours,,,,,63,
+employee-9,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,51
+employee-10,,,Research and Development Manager,M,M,1,,
+employee-10,2014-06-30 00:00:00.000,vacation_hours,,,,,16,
+employee-10,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,64
+employee-11,,,Senior Tool Designer,M,S,0,,
+employee-11,2014-06-30 00:00:00.000,vacation_hours,,,,,7,
+employee-11,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,23
+employee-12,,,Tool Designer,M,M,0,,
+employee-12,2014-06-30 00:00:00.000,vacation_hours,,,,,9,
+employee-12,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,24
+employee-13,,,Tool Designer,F,M,0,,
+employee-13,2014-06-30 00:00:00.000,vacation_hours,,,,,8,
+employee-13,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,24
+employee-14,,,Senior Design Engineer,M,S,1,,
+employee-14,2014-06-30 00:00:00.000,vacation_hours,,,,,3,
+employee-14,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,21
+employee-15,,,Design Engineer,F,M,1,,
+employee-15,2014-06-30 00:00:00.000,vacation_hours,,,,,4,
+employee-15,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,22
+employee-16,,,Marketing Manager,M,S,1,,
+employee-16,2014-06-30 00:00:00.000,vacation_hours,,,,,40,
+employee-16,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,40
+employee-17,,,Marketing Assistant,M,S,0,,
+employee-17,2014-06-30 00:00:00.000,vacation_hours,,,,,42,
+employee-17,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,41
+employee-18,,,Marketing Specialist,M,S,0,,
+employee-18,2014-06-30 00:00:00.000,vacation_hours,,,,,48,
+employee-18,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,44
+employee-19,,,Marketing Assistant,F,S,0,,
+employee-19,2014-06-30 00:00:00.000,vacation_hours,,,,,43,
+employee-19,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,41
+employee-20,,,Marketing Assistant,F,M,0,,
+employee-20,2014-06-30 00:00:00.000,vacation_hours,,,,,41,
+employee-20,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,40
+employee-21,,,Marketing Specialist,M,M,0,,
+employee-21,2014-06-30 00:00:00.000,vacation_hours,,,,,44,
+employee-21,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,42
+employee-22,,,Marketing Specialist,M,S,0,,
+employee-22,2014-06-30 00:00:00.000,vacation_hours,,,,,45,
+employee-22,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,42
+employee-23,,,Marketing Specialist,F,M,0,,
+employee-23,2014-06-30 00:00:00.000,vacation_hours,,,,,46,
+employee-23,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,43
+employee-24,,,Marketing Specialist,F,M,0,,
+employee-24,2014-06-30 00:00:00.000,vacation_hours,,,,,47,
+employee-24,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,43
+employee-25,,,Vice President of Production,M,S,1,,
+employee-25,2014-06-30 00:00:00.000,vacation_hours,,,,,64,
+employee-25,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,52
+employee-26,,,Production Control Manager,M,M,1,,
+employee-26,2014-12-26 09:17:08.637,vacation_hours,,,,,43,
+employee-26,2014-12-26 09:17:08.637,sick_leave_hours,,,,,,41
+employee-27,,,Production Supervisor - WC60,F,S,0,,
+employee-27,2014-06-30 00:00:00.000,vacation_hours,,,,,80,
+employee-27,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,60
+employee-28,,,Production Technician - WC60,M,M,0,,
+employee-28,2014-06-30 00:00:00.000,vacation_hours,,,,,21,
+employee-28,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,30
+employee-29,,,Production Technician - WC60,M,S,0,,
+employee-29,2014-06-30 00:00:00.000,vacation_hours,,,,,19,
+employee-29,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,29
+employee-30,,,Production Technician - WC60,F,M,0,,
+employee-30,2014-06-30 00:00:00.000,vacation_hours,,,,,14,
+employee-30,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,27
+employee-31,,,Production Technician - WC60,F,M,0,,
+employee-31,2014-06-30 00:00:00.000,vacation_hours,,,,,18,
+employee-31,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,29
+employee-32,,,Production Technician - WC60,F,M,0,,
+employee-32,2014-06-30 00:00:00.000,vacation_hours,,,,,23,
+employee-32,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,31
+employee-33,,,Production Technician - WC60,M,M,0,,
+employee-33,2014-06-30 00:00:00.000,vacation_hours,,,,,17,
+employee-33,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,28
+employee-34,,,Production Technician - WC60,F,M,0,,
+employee-34,2014-06-30 00:00:00.000,vacation_hours,,,,,15,
+employee-34,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,27
+employee-35,,,Production Technician - WC60,M,M,0,,
+employee-35,2014-06-30 00:00:00.000,vacation_hours,,,,,22,
+employee-35,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,31
+employee-36,,,Production Technician - WC60,M,M,0,,
+employee-36,2014-06-30 00:00:00.000,vacation_hours,,,,,20,
+employee-36,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,30
+employee-37,,,Production Technician - WC60,M,S,0,,
+employee-37,2014-06-30 00:00:00.000,vacation_hours,,,,,16,
+employee-37,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,28
+employee-38,,,Production Technician - WC60,F,M,0,,
+employee-38,2014-06-30 00:00:00.000,vacation_hours,,,,,24,
+employee-38,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,32
+employee-39,,,Production Technician - WC60,M,S,0,,
+employee-39,2014-06-30 00:00:00.000,vacation_hours,,,,,25,
+employee-39,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,32
+employee-40,,,Production Supervisor - WC60,F,S,0,,
+employee-40,2014-06-30 00:00:00.000,vacation_hours,,,,,82,
+employee-40,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,61
+employee-41,,,Production Technician - WC60,M,S,0,,
+employee-41,2014-06-30 00:00:00.000,vacation_hours,,,,,35,
+employee-41,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,37
+employee-42,,,Production Technician - WC60,M,M,0,,
+employee-42,2014-06-30 00:00:00.000,vacation_hours,,,,,39,
+employee-42,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,39
+employee-43,,,Production Technician - WC60,F,M,0,,
+employee-43,2014-06-30 00:00:00.000,vacation_hours,,,,,34,
+employee-43,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,37
+employee-44,,,Production Technician - WC60,M,S,0,,
+employee-44,2014-06-30 00:00:00.000,vacation_hours,,,,,38,
+employee-44,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,39
+employee-45,,,Production Technician - WC60,M,M,0,,
+employee-45,2014-06-30 00:00:00.000,vacation_hours,,,,,37,
+employee-45,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,38
+employee-46,,,Production Technician - WC60,M,S,0,,
+employee-46,2014-06-30 00:00:00.000,vacation_hours,,,,,36,
+employee-46,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,38
+employee-47,,,Production Supervisor - WC10,M,S,0,,
+employee-47,2014-06-30 00:00:00.000,vacation_hours,,,,,65,
+employee-47,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,52
+employee-48,,,Production Technician - WC10,F,M,0,,
+employee-48,2014-06-30 00:00:00.000,vacation_hours,,,,,83,
+employee-48,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,61
+employee-49,,,Production Technician - WC10,M,S,0,,
+employee-49,2014-06-30 00:00:00.000,vacation_hours,,,,,88,
+employee-49,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,64
+employee-50,,,Production Technician - WC10,M,M,0,,
+employee-50,2014-06-30 00:00:00.000,vacation_hours,,,,,84,
+employee-50,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,62
+employee-51,,,Production Technician - WC10,M,S,0,,
+employee-51,2014-06-30 00:00:00.000,vacation_hours,,,,,85,
+employee-51,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,62
+employee-52,,,Production Technician - WC10,F,M,0,,
+employee-52,2014-06-30 00:00:00.000,vacation_hours,,,,,86,
+employee-52,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,63
+employee-53,,,Production Technician - WC10,F,M,0,,
+employee-53,2014-06-30 00:00:00.000,vacation_hours,,,,,87,
+employee-53,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,63
+employee-54,,,Production Technician - WC10,F,M,0,,
+employee-54,2014-06-30 00:00:00.000,vacation_hours,,,,,89,
+employee-54,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,64
+employee-55,,,Production Supervisor - WC50,M,M,0,,
+employee-55,2014-06-30 00:00:00.000,vacation_hours,,,,,79,
+employee-55,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,59
+employee-56,,,Production Technician - WC50,F,M,0,,
+employee-56,2014-06-30 00:00:00.000,vacation_hours,,,,,9,
+employee-56,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,24
+employee-57,,,Production Technician - WC50,M,S,0,,
+employee-57,2014-06-30 00:00:00.000,vacation_hours,,,,,10,
+employee-57,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,25
+employee-58,,,Production Technician - WC50,M,M,0,,
+employee-58,2014-06-30 00:00:00.000,vacation_hours,,,,,11,
+employee-58,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,25
+employee-59,,,Production Technician - WC50,M,S,0,,
+employee-59,2014-06-30 00:00:00.000,vacation_hours,,,,,12,
+employee-59,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,26
+employee-60,,,Production Technician - WC50,M,S,0,,
+employee-60,2014-06-30 00:00:00.000,vacation_hours,,,,,13,
+employee-60,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,26
+employee-61,,,Production Technician - WC50,F,S,0,,
+employee-61,2014-06-30 00:00:00.000,vacation_hours,,,,,8,
+employee-61,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,24
+employee-62,,,Production Supervisor - WC60,M,M,0,,
+employee-62,2014-06-30 00:00:00.000,vacation_hours,,,,,81,
+employee-62,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,60
+employee-63,,,Production Technician - WC60,M,S,0,,
+employee-63,2014-06-30 00:00:00.000,vacation_hours,,,,,30,
+employee-63,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,35
+employee-64,,,Production Technician - WC60,M,S,0,,
+employee-64,2014-06-30 00:00:00.000,vacation_hours,,,,,26,
+employee-64,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,33
+employee-65,,,Production Technician - WC60,M,M,0,,
+employee-65,2014-06-30 00:00:00.000,vacation_hours,,,,,29,
+employee-65,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,34
+employee-66,,,Production Technician - WC60,M,S,0,,
+employee-66,2014-06-30 00:00:00.000,vacation_hours,,,,,28,
+employee-66,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,34
+employee-67,,,Production Technician - WC60,M,S,0,,
+employee-67,2014-06-30 00:00:00.000,vacation_hours,,,,,32,
+employee-67,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,36
+employee-68,,,Production Technician - WC60,M,S,0,,
+employee-68,2014-06-30 00:00:00.000,vacation_hours,,,,,27,
+employee-68,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,33
+employee-69,,,Production Technician - WC60,M,S,0,,
+employee-69,2014-06-30 00:00:00.000,vacation_hours,,,,,31,
+employee-69,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,35
+employee-70,,,Production Technician - WC60,M,M,0,,
+employee-70,2014-06-30 00:00:00.000,vacation_hours,,,,,33,
+employee-70,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,36
+employee-71,,,Production Supervisor - WC30,M,S,0,,
+employee-71,2014-06-30 00:00:00.000,vacation_hours,,,,,70,
+employee-71,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,55
+employee-72,,,Production Technician - WC30,M,M,0,,
+employee-72,2014-06-30 00:00:00.000,vacation_hours,,,,,41,
+employee-72,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,40
+employee-73,,,Production Technician - WC30,F,M,0,,
+employee-73,2014-06-30 00:00:00.000,vacation_hours,,,,,42,
+employee-73,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,41
+employee-74,,,Production Technician - WC30,M,S,0,,
+employee-74,2014-06-30 00:00:00.000,vacation_hours,,,,,43,
+employee-74,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,41
+employee-75,,,Production Technician - WC30,M,S,0,,
+employee-75,2014-06-30 00:00:00.000,vacation_hours,,,,,44,
+employee-75,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,42
+employee-76,,,Production Technician - WC30,F,M,0,,
+employee-76,2014-06-30 00:00:00.000,vacation_hours,,,,,45,
+employee-76,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,42
+employee-77,,,Production Technician - WC30,F,M,0,,
+employee-77,2014-06-30 00:00:00.000,vacation_hours,,,,,46,
+employee-77,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,43
+employee-78,,,Production Supervisor - WC40,M,M,0,,
+employee-78,2014-06-30 00:00:00.000,vacation_hours,,,,,72,
+employee-78,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,56
+employee-79,,,Production Technician - WC40,M,M,0,,
+employee-79,2014-06-30 00:00:00.000,vacation_hours,,,,,60,
+employee-79,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,50
+employee-80,,,Production Technician - WC40,M,S,0,,
+employee-80,2014-06-30 00:00:00.000,vacation_hours,,,,,65,
+employee-80,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,52
+employee-81,,,Production Technician - WC40,M,S,0,,
+employee-81,2014-06-30 00:00:00.000,vacation_hours,,,,,64,
+employee-81,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,52
+employee-82,,,Production Technician - WC40,M,S,0,,
+employee-82,2014-06-30 00:00:00.000,vacation_hours,,,,,62,
+employee-82,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,51
+employee-83,,,Production Technician - WC40,M,M,0,,
+employee-83,2014-06-30 00:00:00.000,vacation_hours,,,,,61,
+employee-83,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,50
+employee-84,,,Production Technician - WC40,M,M,0,,
+employee-84,2014-06-30 00:00:00.000,vacation_hours,,,,,66,
+employee-84,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,53
+employee-85,,,Production Technician - WC40,M,S,0,,
+employee-85,2014-06-30 00:00:00.000,vacation_hours,,,,,63,
+employee-85,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,51
+employee-86,,,Production Technician - WC40,M,M,0,,
+employee-86,2014-06-30 00:00:00.000,vacation_hours,,,,,59,
+employee-86,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,49
+employee-87,,,Production Supervisor - WC10,M,M,0,,
+employee-87,2014-06-30 00:00:00.000,vacation_hours,,,,,67,
+employee-87,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,53
+employee-88,,,Production Technician - WC10,F,S,0,,
+employee-88,2014-06-30 00:00:00.000,vacation_hours,,,,,99,
+employee-88,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,69
+employee-89,,,Production Technician - WC10,M,S,0,,
+employee-89,2014-06-30 00:00:00.000,vacation_hours,,,,,96,
+employee-89,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,68
+employee-90,,,Production Technician - WC10,F,S,0,,
+employee-90,2014-06-30 00:00:00.000,vacation_hours,,,,,97,
+employee-90,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,68
+employee-91,,,Production Technician - WC10,F,S,0,,
+employee-91,2014-06-30 00:00:00.000,vacation_hours,,,,,95,
+employee-91,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,67
+employee-92,,,Production Technician - WC10,M,M,0,,
+employee-92,2014-06-30 00:00:00.000,vacation_hours,,,,,98,
+employee-92,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,69
+employee-93,,,Production Supervisor - WC50,M,S,0,,
+employee-93,2014-06-30 00:00:00.000,vacation_hours,,,,,78,
+employee-93,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,59
+employee-94,,,Production Technician - WC50,M,M,0,,
+employee-94,2014-06-30 00:00:00.000,vacation_hours,,,,,6,
+employee-94,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,23
+employee-95,,,Production Technician - WC50,M,M,0,,
+employee-95,2014-06-30 00:00:00.000,vacation_hours,,,,,1,
+employee-95,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,20
+employee-96,,,Production Technician - WC50,F,M,0,,
+employee-96,2014-06-30 00:00:00.000,vacation_hours,,,,,5,
+employee-96,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,22
+employee-97,,,Production Technician - WC50,M,S,0,,
+employee-97,2014-06-30 00:00:00.000,vacation_hours,,,,,0,
+employee-97,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,20
+employee-98,,,Production Technician - WC50,M,M,0,,
+employee-98,2014-06-30 00:00:00.000,vacation_hours,,,,,4,
+employee-98,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,22
+employee-99,,,Production Technician - WC50,M,S,0,,
+employee-99,2014-06-30 00:00:00.000,vacation_hours,,,,,2,
+employee-99,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,21
+employee-100,,,Production Technician - WC50,M,M,0,,
+employee-100,2014-06-30 00:00:00.000,vacation_hours,,,,,7,
+employee-100,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,23
+employee-101,,,Production Technician - WC50,M,M,0,,
+employee-101,2014-06-30 00:00:00.000,vacation_hours,,,,,3,
+employee-101,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,21
+employee-102,,,Production Supervisor - WC10,M,S,0,,
+employee-102,2014-06-30 00:00:00.000,vacation_hours,,,,,66,
+employee-102,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,53
+employee-103,,,Production Technician - WC10,M,S,0,,
+employee-103,2014-06-30 00:00:00.000,vacation_hours,,,,,93,
+employee-103,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,66
+employee-104,,,Production Technician - WC10,F,M,0,,
+employee-104,2014-06-30 00:00:00.000,vacation_hours,,,,,94,
+employee-104,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,67
+employee-105,,,Production Technician - WC10,M,S,0,,
+employee-105,2014-06-30 00:00:00.000,vacation_hours,,,,,90,
+employee-105,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,65
+employee-106,,,Production Technician - WC10,M,S,0,,
+employee-106,2014-06-30 00:00:00.000,vacation_hours,,,,,92,
+employee-106,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,66
+employee-107,,,Production Technician - WC10,M,M,0,,
+employee-107,2014-06-30 00:00:00.000,vacation_hours,,,,,91,
+employee-107,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,65
+employee-108,,,Production Supervisor - WC50,M,S,0,,
+employee-108,2014-06-30 00:00:00.000,vacation_hours,,,,,77,
+employee-108,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,58
+employee-109,,,Production Technician - WC50,F,M,0,,
+employee-109,2014-06-30 00:00:00.000,vacation_hours,,,,,95,
+employee-109,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,67
+employee-110,,,Production Technician - WC50,M,S,0,,
+employee-110,2014-06-30 00:00:00.000,vacation_hours,,,,,90,
+employee-110,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,65
+employee-111,,,Production Technician - WC50,M,S,0,,
+employee-111,2014-06-30 00:00:00.000,vacation_hours,,,,,93,
+employee-111,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,66
+employee-112,,,Production Technician - WC50,M,S,0,,
+employee-112,2014-06-30 00:00:00.000,vacation_hours,,,,,91,
+employee-112,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,65
+employee-113,,,Production Technician - WC50,F,M,0,,
+employee-113,2014-06-30 00:00:00.000,vacation_hours,,,,,96,
+employee-113,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,68
+employee-114,,,Production Technician - WC50,M,M,0,,
+employee-114,2014-06-30 00:00:00.000,vacation_hours,,,,,97,
+employee-114,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,68
+employee-115,,,Production Technician - WC50,F,S,0,,
+employee-115,2014-06-30 00:00:00.000,vacation_hours,,,,,92,
+employee-115,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,66
+employee-116,,,Production Technician - WC50,M,S,0,,
+employee-116,2014-06-30 00:00:00.000,vacation_hours,,,,,98,
+employee-116,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,69
+employee-117,,,Production Technician - WC50,M,M,0,,
+employee-117,2014-06-30 00:00:00.000,vacation_hours,,,,,99,
+employee-117,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,69
+employee-118,,,Production Technician - WC50,M,M,0,,
+employee-118,2014-06-30 00:00:00.000,vacation_hours,,,,,88,
+employee-118,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,64
+employee-119,,,Production Technician - WC50,M,S,0,,
+employee-119,2014-06-30 00:00:00.000,vacation_hours,,,,,94,
+employee-119,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,67
+employee-120,,,Production Technician - WC50,F,S,0,,
+employee-120,2014-06-30 00:00:00.000,vacation_hours,,,,,89,
+employee-120,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,64
+employee-121,,,Shipping and Receiving Supervisor,M,S,1,,
+employee-121,2014-06-30 00:00:00.000,vacation_hours,,,,,93,
+employee-121,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,66
+employee-122,,,Stocker,F,S,0,,
+employee-122,2014-06-30 00:00:00.000,vacation_hours,,,,,97,
+employee-122,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,68
+employee-123,,,Shipping and Receiving Clerk,M,M,0,,
+employee-123,2014-06-30 00:00:00.000,vacation_hours,,,,,95,
+employee-123,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,67
+employee-124,,,Stocker,F,S,0,,
+employee-124,2014-06-30 00:00:00.000,vacation_hours,,,,,98,
+employee-124,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,69
+employee-125,,,Shipping and Receiving Clerk,M,M,0,,
+employee-125,2014-06-30 00:00:00.000,vacation_hours,,,,,94,
+employee-125,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,67
+employee-126,,,Stocker,M,M,0,,
+employee-126,2014-06-30 00:00:00.000,vacation_hours,,,,,96,
+employee-126,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,68
+employee-127,,,Production Supervisor - WC40,M,S,0,,
+employee-127,2014-06-30 00:00:00.000,vacation_hours,,,,,73,
+employee-127,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,56
+employee-128,,,Production Technician - WC40,M,S,0,,
+employee-128,2014-06-30 00:00:00.000,vacation_hours,,,,,68,
+employee-128,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,54
+employee-129,,,Production Technician - WC40,M,S,0,,
+employee-129,2014-06-30 00:00:00.000,vacation_hours,,,,,69,
+employee-129,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,54
+employee-130,,,Production Technician - WC40,M,S,0,,
+employee-130,2014-06-30 00:00:00.000,vacation_hours,,,,,71,
+employee-130,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,55
+employee-131,,,Production Technician - WC40,M,S,0,,
+employee-131,2014-06-30 00:00:00.000,vacation_hours,,,,,72,
+employee-131,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,56
+employee-132,,,Production Technician - WC40,F,M,0,,
+employee-132,2014-06-30 00:00:00.000,vacation_hours,,,,,67,
+employee-132,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,53
+employee-133,,,Production Technician - WC40,M,S,0,,
+employee-133,2014-06-30 00:00:00.000,vacation_hours,,,,,70,
+employee-133,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,55
+employee-134,,,Production Supervisor - WC20,M,M,0,,
+employee-134,2014-06-30 00:00:00.000,vacation_hours,,,,,40,
+employee-134,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,40
+employee-135,,,Production Technician - WC20,M,M,0,,
+employee-135,2014-06-30 00:00:00.000,vacation_hours,,,,,9,
+employee-135,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,24
+employee-136,,,Production Technician - WC20,M,M,0,,
+employee-136,2014-06-30 00:00:00.000,vacation_hours,,,,,4,
+employee-136,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,22
+employee-137,,,Production Technician - WC20,F,S,0,,
+employee-137,2014-06-30 00:00:00.000,vacation_hours,,,,,8,
+employee-137,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,24
+employee-138,,,Production Technician - WC20,F,M,0,,
+employee-138,2014-06-30 00:00:00.000,vacation_hours,,,,,7,
+employee-138,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,23
+employee-139,,,Production Technician - WC20,M,S,0,,
+employee-139,2014-06-30 00:00:00.000,vacation_hours,,,,,0,
+employee-139,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,20
+employee-140,,,Production Technician - WC20,M,M,0,,
+employee-140,2014-06-30 00:00:00.000,vacation_hours,,,,,5,
+employee-140,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,22
+employee-141,,,Production Technician - WC20,M,M,0,,
+employee-141,2014-06-30 00:00:00.000,vacation_hours,,,,,1,
+employee-141,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,20
+employee-142,,,Production Technician - WC20,F,S,0,,
+employee-142,2014-06-30 00:00:00.000,vacation_hours,,,,,3,
+employee-142,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,21
+employee-143,,,Production Technician - WC20,M,S,0,,
+employee-143,2014-06-30 00:00:00.000,vacation_hours,,,,,2,
+employee-143,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,21
+employee-144,,,Production Technician - WC20,M,M,0,,
+employee-144,2014-06-30 00:00:00.000,vacation_hours,,,,,6,
+employee-144,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,23
+employee-145,,,Production Supervisor - WC30,F,S,0,,
+employee-145,2014-06-30 00:00:00.000,vacation_hours,,,,,69,
+employee-145,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,54
+employee-146,,,Production Technician - WC30,M,S,0,,
+employee-146,2014-06-30 00:00:00.000,vacation_hours,,,,,36,
+employee-146,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,38
+employee-147,,,Production Technician - WC30,F,M,0,,
+employee-147,2014-06-30 00:00:00.000,vacation_hours,,,,,37,
+employee-147,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,38
+employee-148,,,Production Technician - WC30,M,S,0,,
+employee-148,2014-06-30 00:00:00.000,vacation_hours,,,,,38,
+employee-148,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,39
+employee-149,,,Production Technician - WC30,M,M,0,,
+employee-149,2014-06-30 00:00:00.000,vacation_hours,,,,,39,
+employee-149,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,39
+employee-150,,,Production Technician - WC30,M,M,0,,
+employee-150,2014-06-30 00:00:00.000,vacation_hours,,,,,35,
+employee-150,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,37
+employee-151,,,Production Technician - WC30,M,M,0,,
+employee-151,2014-06-30 00:00:00.000,vacation_hours,,,,,40,
+employee-151,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,40
+employee-152,,,Production Supervisor - WC20,M,M,0,,
+employee-152,2014-06-30 00:00:00.000,vacation_hours,,,,,41,
+employee-152,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,40
+employee-153,,,Production Technician - WC20,M,S,0,,
+employee-153,2014-06-30 00:00:00.000,vacation_hours,,,,,15,
+employee-153,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,27
+employee-154,,,Production Technician - WC20,M,M,0,,
+employee-154,2014-06-30 00:00:00.000,vacation_hours,,,,,10,
+employee-154,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,25
+employee-155,,,Production Technician - WC20,M,S,0,,
+employee-155,2014-06-30 00:00:00.000,vacation_hours,,,,,16,
+employee-155,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,28
+employee-156,,,Production Technician - WC20,M,M,0,,
+employee-156,2014-06-30 00:00:00.000,vacation_hours,,,,,11,
+employee-156,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,25
+employee-157,,,Production Technician - WC20,F,S,0,,
+employee-157,2014-06-30 00:00:00.000,vacation_hours,,,,,12,
+employee-157,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,26
+employee-158,,,Production Technician - WC20,F,S,0,,
+employee-158,2014-06-30 00:00:00.000,vacation_hours,,,,,14,
+employee-158,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,27
+employee-159,,,Production Technician - WC20,M,S,0,,
+employee-159,2014-06-30 00:00:00.000,vacation_hours,,,,,13,
+employee-159,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,26
+employee-160,,,Production Supervisor - WC45,M,M,0,,
+employee-160,2014-06-30 00:00:00.000,vacation_hours,,,,,74,
+employee-160,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,57
+employee-161,,,Production Technician - WC45,M,S,0,,
+employee-161,2014-06-30 00:00:00.000,vacation_hours,,,,,74,
+employee-161,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,57
+employee-162,,,Production Technician - WC45,F,S,0,,
+employee-162,2014-06-30 00:00:00.000,vacation_hours,,,,,75,
+employee-162,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,57
+employee-163,,,Production Technician - WC45,M,M,0,,
+employee-163,2014-06-30 00:00:00.000,vacation_hours,,,,,77,
+employee-163,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,58
+employee-164,,,Production Technician - WC45,M,S,0,,
+employee-164,2014-06-30 00:00:00.000,vacation_hours,,,,,73,
+employee-164,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,56
+employee-165,,,Production Technician - WC45,M,M,0,,
+employee-165,2014-06-30 00:00:00.000,vacation_hours,,,,,76,
+employee-165,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,58
+employee-166,,,Production Supervisor - WC30,M,S,0,,
+employee-166,2014-06-30 00:00:00.000,vacation_hours,,,,,68,
+employee-166,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,54
+employee-167,,,Production Technician - WC30,M,S,0,,
+employee-167,2014-06-30 00:00:00.000,vacation_hours,,,,,25,
+employee-167,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,32
+employee-168,,,Production Technician - WC30,M,S,0,,
+employee-168,2014-06-30 00:00:00.000,vacation_hours,,,,,34,
+employee-168,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,37
+employee-169,,,Production Technician - WC30,F,S,0,,
+employee-169,2014-06-30 00:00:00.000,vacation_hours,,,,,31,
+employee-169,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,35
+employee-170,,,Production Technician - WC30,M,M,0,,
+employee-170,2014-06-30 00:00:00.000,vacation_hours,,,,,26,
+employee-170,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,33
+employee-171,,,Production Technician - WC30,M,S,0,,
+employee-171,2014-06-30 00:00:00.000,vacation_hours,,,,,32,
+employee-171,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,36
+employee-172,,,Production Technician - WC30,M,M,0,,
+employee-172,2014-06-30 00:00:00.000,vacation_hours,,,,,22,
+employee-172,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,31
+employee-173,,,Production Technician - WC30,M,S,0,,
+employee-173,2014-06-30 00:00:00.000,vacation_hours,,,,,33,
+employee-173,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,36
+employee-174,,,Production Technician - WC30,M,S,0,,
+employee-174,2014-06-30 00:00:00.000,vacation_hours,,,,,28,
+employee-174,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,34
+employee-175,,,Production Technician - WC30,M,M,0,,
+employee-175,2014-06-30 00:00:00.000,vacation_hours,,,,,23,
+employee-175,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,31
+employee-176,,,Production Technician - WC30,M,M,0,,
+employee-176,2014-06-30 00:00:00.000,vacation_hours,,,,,29,
+employee-176,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,34
+employee-177,,,Production Technician - WC30,M,M,0,,
+employee-177,2014-06-30 00:00:00.000,vacation_hours,,,,,24,
+employee-177,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,32
+employee-178,,,Production Technician - WC30,M,S,0,,
+employee-178,2014-06-30 00:00:00.000,vacation_hours,,,,,27,
+employee-178,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,33
+employee-179,,,Production Technician - WC30,M,S,0,,
+employee-179,2014-06-30 00:00:00.000,vacation_hours,,,,,30,
+employee-179,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,35
+employee-180,,,Production Supervisor - WC20,F,S,0,,
+employee-180,2014-06-30 00:00:00.000,vacation_hours,,,,,42,
+employee-180,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,41
+employee-181,,,Production Technician - WC20,M,S,0,,
+employee-181,2014-06-30 00:00:00.000,vacation_hours,,,,,20,
+employee-181,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,30
+employee-182,,,Production Technician - WC20,M,S,0,,
+employee-182,2014-06-30 00:00:00.000,vacation_hours,,,,,21,
+employee-182,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,30
+employee-183,,,Production Technician - WC20,F,M,0,,
+employee-183,2014-06-30 00:00:00.000,vacation_hours,,,,,17,
+employee-183,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,28
+employee-184,,,Production Technician - WC20,M,M,0,,
+employee-184,2014-06-30 00:00:00.000,vacation_hours,,,,,18,
+employee-184,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,29
+employee-185,,,Production Technician - WC20,M,S,0,,
+employee-185,2014-06-30 00:00:00.000,vacation_hours,,,,,19,
+employee-185,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,29
+employee-186,,,Production Supervisor - WC45,M,S,0,,
+employee-186,2014-06-30 00:00:00.000,vacation_hours,,,,,75,
+employee-186,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,57
+employee-187,,,Production Technician - WC45,F,M,0,,
+employee-187,2014-06-30 00:00:00.000,vacation_hours,,,,,79,
+employee-187,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,59
+employee-188,,,Production Technician - WC45,M,M,0,,
+employee-188,2014-06-30 00:00:00.000,vacation_hours,,,,,80,
+employee-188,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,60
+employee-189,,,Production Technician - WC45,F,S,0,,
+employee-189,2014-06-30 00:00:00.000,vacation_hours,,,,,81,
+employee-189,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,60
+employee-190,,,Production Technician - WC45,M,S,0,,
+employee-190,2014-06-30 00:00:00.000,vacation_hours,,,,,82,
+employee-190,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,61
+employee-191,,,Production Technician - WC45,M,S,0,,
+employee-191,2014-06-30 00:00:00.000,vacation_hours,,,,,78,
+employee-191,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,59
+employee-192,,,Production Supervisor - WC40,F,M,0,,
+employee-192,2014-06-30 00:00:00.000,vacation_hours,,,,,71,
+employee-192,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,55
+employee-193,,,Production Technician - WC40,M,S,0,,
+employee-193,2014-06-30 00:00:00.000,vacation_hours,,,,,52,
+employee-193,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,46
+employee-194,,,Production Technician - WC40,M,S,0,,
+employee-194,2014-06-30 00:00:00.000,vacation_hours,,,,,47,
+employee-194,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,43
+employee-195,,,Production Technician - WC40,M,S,0,,
+employee-195,2014-06-30 00:00:00.000,vacation_hours,,,,,58,
+employee-195,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,49
+employee-196,,,Production Technician - WC40,M,M,0,,
+employee-196,2014-06-30 00:00:00.000,vacation_hours,,,,,53,
+employee-196,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,46
+employee-197,,,Production Technician - WC40,M,M,0,,
+employee-197,2014-06-30 00:00:00.000,vacation_hours,,,,,48,
+employee-197,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,44
+employee-198,,,Production Technician - WC40,F,M,0,,
+employee-198,2014-06-30 00:00:00.000,vacation_hours,,,,,49,
+employee-198,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,44
+employee-199,,,Production Technician - WC40,F,M,0,,
+employee-199,2014-06-30 00:00:00.000,vacation_hours,,,,,54,
+employee-199,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,47
+employee-200,,,Production Technician - WC40,M,M,0,,
+employee-200,2014-06-30 00:00:00.000,vacation_hours,,,,,56,
+employee-200,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,48
+employee-201,,,Production Technician - WC40,M,S,0,,
+employee-201,2014-06-30 00:00:00.000,vacation_hours,,,,,55,
+employee-201,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,47
+employee-202,,,Production Technician - WC40,M,S,0,,
+employee-202,2014-06-30 00:00:00.000,vacation_hours,,,,,50,
+employee-202,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,45
+employee-203,,,Production Technician - WC40,M,M,0,,
+employee-203,2014-06-30 00:00:00.000,vacation_hours,,,,,51,
+employee-203,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,45
+employee-204,,,Production Technician - WC40,M,M,0,,
+employee-204,2014-06-30 00:00:00.000,vacation_hours,,,,,57,
+employee-204,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,48
+employee-205,,,Production Supervisor - WC45,F,S,0,,
+employee-205,2014-06-30 00:00:00.000,vacation_hours,,,,,76,
+employee-205,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,58
+employee-206,,,Production Technician - WC45,M,S,0,,
+employee-206,2014-06-30 00:00:00.000,vacation_hours,,,,,84,
+employee-206,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,62
+employee-207,,,Production Technician - WC45,M,S,0,,
+employee-207,2014-06-30 00:00:00.000,vacation_hours,,,,,85,
+employee-207,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,62
+employee-208,,,Production Technician - WC45,M,M,0,,
+employee-208,2014-06-30 00:00:00.000,vacation_hours,,,,,86,
+employee-208,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,63
+employee-209,,,Production Technician - WC45,F,M,0,,
+employee-209,2014-06-30 00:00:00.000,vacation_hours,,,,,87,
+employee-209,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,63
+employee-210,,,Production Technician - WC45,F,S,0,,
+employee-210,2014-06-30 00:00:00.000,vacation_hours,,,,,83,
+employee-210,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,61
+employee-211,,,Quality Assurance Manager,M,S,1,,
+employee-211,2014-12-26 09:17:08.637,vacation_hours,,,,,80,
+employee-211,2014-12-26 09:17:08.637,sick_leave_hours,,,,,,60
+employee-212,,,Quality Assurance Supervisor,M,M,1,,
+employee-212,2014-06-30 00:00:00.000,vacation_hours,,,,,81,
+employee-212,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,60
+employee-213,,,Quality Assurance Technician,M,M,0,,
+employee-213,2014-06-30 00:00:00.000,vacation_hours,,,,,85,
+employee-213,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,62
+employee-214,,,Quality Assurance Technician,M,M,0,,
+employee-214,2014-06-30 00:00:00.000,vacation_hours,,,,,84,
+employee-214,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,62
+employee-215,,,Quality Assurance Technician,M,S,0,,
+employee-215,2014-06-30 00:00:00.000,vacation_hours,,,,,83,
+employee-215,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,61
+employee-216,,,Quality Assurance Technician,M,S,0,,
+employee-216,2014-06-30 00:00:00.000,vacation_hours,,,,,82,
+employee-216,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,61
+employee-217,,,Document Control Manager,M,M,0,,
+employee-217,2014-06-30 00:00:00.000,vacation_hours,,,,,77,
+employee-217,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,58
+employee-218,,,Control Specialist,M,S,0,,
+employee-218,2014-06-30 00:00:00.000,vacation_hours,,,,,76,
+employee-218,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,58
+employee-219,,,Document Control Assistant,M,S,0,,
+employee-219,2014-06-30 00:00:00.000,vacation_hours,,,,,78,
+employee-219,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,59
+employee-220,,,Document Control Assistant,F,M,0,,
+employee-220,2014-06-30 00:00:00.000,vacation_hours,,,,,79,
+employee-220,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,59
+employee-221,,,Control Specialist,M,M,0,,
+employee-221,2014-06-30 00:00:00.000,vacation_hours,,,,,75,
+employee-221,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,57
+employee-222,,,Master Scheduler,M,S,0,,
+employee-222,2014-12-26 09:17:08.637,vacation_hours,,,,,44,
+employee-222,2014-12-26 09:17:08.637,sick_leave_hours,,,,,,42
+employee-223,,,Scheduling Assistant,M,M,0,,
+employee-223,2014-06-30 00:00:00.000,vacation_hours,,,,,46,
+employee-223,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,43
+employee-224,,,Scheduling Assistant,M,M,0,,
+employee-224,2014-06-30 00:00:00.000,vacation_hours,,,,,45,
+employee-224,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,42
+employee-225,,,Scheduling Assistant,M,M,0,,
+employee-225,2014-06-30 00:00:00.000,vacation_hours,,,,,47,
+employee-225,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,43
+employee-226,,,Scheduling Assistant,M,M,0,,
+employee-226,2014-06-30 00:00:00.000,vacation_hours,,,,,48,
+employee-226,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,44
+employee-227,,,Facilities Manager,M,M,1,,
+employee-227,2014-06-30 00:00:00.000,vacation_hours,,,,,86,
+employee-227,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,63
+employee-228,,,Maintenance Supervisor,M,M,1,,
+employee-228,2014-06-30 00:00:00.000,vacation_hours,,,,,92,
+employee-228,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,66
+employee-229,,,Janitor,F,M,0,,
+employee-229,2014-06-30 00:00:00.000,vacation_hours,,,,,90,
+employee-229,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,65
+employee-230,,,Janitor,M,M,0,,
+employee-230,2014-06-30 00:00:00.000,vacation_hours,,,,,88,
+employee-230,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,64
+employee-231,,,Janitor,F,M,0,,
+employee-231,2014-06-30 00:00:00.000,vacation_hours,,,,,91,
+employee-231,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,65
+employee-232,,,Janitor,M,S,0,,
+employee-232,2014-06-30 00:00:00.000,vacation_hours,,,,,89,
+employee-232,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,64
+employee-233,,,Facilities Administrative Assistant,M,M,0,,
+employee-233,2014-06-30 00:00:00.000,vacation_hours,,,,,87,
+employee-233,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,63
+employee-234,,,Chief Financial Officer,F,M,1,,
+employee-234,2014-06-30 00:00:00.000,vacation_hours,,,,,0,
+employee-234,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,20
+employee-235,,,Human Resources Manager,F,M,1,,
+employee-235,2014-06-30 00:00:00.000,vacation_hours,,,,,54,
+employee-235,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,47
+employee-236,,,Human Resources Administrative Assistant,M,S,0,,
+employee-236,2014-06-30 00:00:00.000,vacation_hours,,,,,53,
+employee-236,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,46
+employee-237,,,Human Resources Administrative Assistant,M,S,0,,
+employee-237,2014-06-30 00:00:00.000,vacation_hours,,,,,52,
+employee-237,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,46
+employee-238,,,Recruiter,M,S,0,,
+employee-238,2014-06-30 00:00:00.000,vacation_hours,,,,,50,
+employee-238,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,45
+employee-239,,,Benefits Specialist,F,M,0,,
+employee-239,2014-06-30 00:00:00.000,vacation_hours,,,,,51,
+employee-239,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,45
+employee-240,,,Recruiter,M,S,0,,
+employee-240,2014-06-30 00:00:00.000,vacation_hours,,,,,49,
+employee-240,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,44
+employee-241,,,Accounts Manager,M,M,1,,
+employee-241,2014-06-30 00:00:00.000,vacation_hours,,,,,57,
+employee-241,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,48
+employee-242,,,Accounts Receivable Specialist,F,M,0,,
+employee-242,2014-06-30 00:00:00.000,vacation_hours,,,,,60,
+employee-242,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,50
+employee-243,,,Accounts Receivable Specialist,F,S,0,,
+employee-243,2014-06-30 00:00:00.000,vacation_hours,,,,,61,
+employee-243,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,50
+employee-244,,,Accounts Receivable Specialist,M,S,0,,
+employee-244,2014-06-30 00:00:00.000,vacation_hours,,,,,62,
+employee-244,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,51
+employee-245,,,Accountant,F,M,1,,
+employee-245,2014-06-30 00:00:00.000,vacation_hours,,,,,58,
+employee-245,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,49
+employee-246,,,Accounts Payable Specialist,M,M,0,,
+employee-246,2014-06-30 00:00:00.000,vacation_hours,,,,,63,
+employee-246,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,51
+employee-247,,,Accounts Payable Specialist,F,M,0,,
+employee-247,2014-06-30 00:00:00.000,vacation_hours,,,,,64,
+employee-247,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,52
+employee-248,,,Accountant,M,S,1,,
+employee-248,2014-06-30 00:00:00.000,vacation_hours,,,,,59,
+employee-248,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,49
+employee-249,,,Finance Manager,F,S,1,,
+employee-249,2014-06-30 00:00:00.000,vacation_hours,,,,,55,
+employee-249,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,47
+employee-250,,,Purchasing Manager,F,S,1,,
+employee-250,2014-06-30 00:00:00.000,vacation_hours,,,,,49,
+employee-250,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,44
+employee-251,,,Buyer,M,S,0,,
+employee-251,2014-06-30 00:00:00.000,vacation_hours,,,,,59,
+employee-251,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,49
+employee-252,,,Buyer,M,M,0,,
+employee-252,2014-06-30 00:00:00.000,vacation_hours,,,,,60,
+employee-252,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,50
+employee-253,,,Buyer,F,M,0,,
+employee-253,2014-06-30 00:00:00.000,vacation_hours,,,,,56,
+employee-253,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,48
+employee-254,,,Buyer,M,M,0,,
+employee-254,2014-06-30 00:00:00.000,vacation_hours,,,,,57,
+employee-254,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,48
+employee-255,,,Buyer,M,M,0,,
+employee-255,2014-06-30 00:00:00.000,vacation_hours,,,,,52,
+employee-255,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,46
+employee-256,,,Buyer,M,M,0,,
+employee-256,2014-06-30 00:00:00.000,vacation_hours,,,,,58,
+employee-256,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,49
+employee-257,,,Buyer,M,S,0,,
+employee-257,2014-06-30 00:00:00.000,vacation_hours,,,,,54,
+employee-257,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,47
+employee-258,,,Buyer,F,S,0,,
+employee-258,2014-06-30 00:00:00.000,vacation_hours,,,,,53,
+employee-258,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,46
+employee-259,,,Buyer,M,M,0,,
+employee-259,2014-06-30 00:00:00.000,vacation_hours,,,,,55,
+employee-259,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,47
+employee-260,,,Purchasing Assistant,F,M,0,,
+employee-260,2014-06-30 00:00:00.000,vacation_hours,,,,,50,
+employee-260,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,45
+employee-261,,,Purchasing Assistant,M,M,0,,
+employee-261,2014-06-30 00:00:00.000,vacation_hours,,,,,51,
+employee-261,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,45
+employee-262,,,Assistant to the Chief Financial Officer,M,S,0,,
+employee-262,2014-06-30 00:00:00.000,vacation_hours,,,,,56,
+employee-262,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,48
+employee-263,,,Information Services Manager,F,S,1,,
+employee-263,2014-06-30 00:00:00.000,vacation_hours,,,,,65,
+employee-263,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,52
+employee-264,,,Network Manager,F,S,1,,
+employee-264,2014-06-30 00:00:00.000,vacation_hours,,,,,68,
+employee-264,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,54
+employee-265,,,Network Administrator,M,S,0,,
+employee-265,2014-06-30 00:00:00.000,vacation_hours,,,,,70,
+employee-265,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,55
+employee-266,,,Network Administrator,M,S,0,,
+employee-266,2014-06-30 00:00:00.000,vacation_hours,,,,,69,
+employee-266,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,54
+employee-267,,,Application Specialist,F,S,1,,
+employee-267,2014-06-30 00:00:00.000,vacation_hours,,,,,74,
+employee-267,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,57
+employee-268,,,Application Specialist,M,S,1,,
+employee-268,2014-06-30 00:00:00.000,vacation_hours,,,,,73,
+employee-268,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,56
+employee-269,,,Application Specialist,M,M,1,,
+employee-269,2014-06-30 00:00:00.000,vacation_hours,,,,,72,
+employee-269,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,56
+employee-270,,,Database Administrator,M,S,1,,
+employee-270,2014-06-30 00:00:00.000,vacation_hours,,,,,67,
+employee-270,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,53
+employee-271,,,Database Administrator,M,M,1,,
+employee-271,2014-06-30 00:00:00.000,vacation_hours,,,,,66,
+employee-271,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,53
+employee-272,,,Application Specialist,F,M,1,,
+employee-272,2014-06-30 00:00:00.000,vacation_hours,,,,,71,
+employee-272,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,55
+employee-273,,,Vice President of Sales,M,S,1,,
+employee-273,2014-06-30 00:00:00.000,vacation_hours,,,,,10,
+employee-273,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,25
+employee-274,,,North American Sales Manager,M,M,1,,
+employee-274,2014-06-30 00:00:00.000,vacation_hours,,,,,14,
+employee-274,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,27
+employee-275,,,Sales Representative,M,S,1,,
+employee-275,2014-06-30 00:00:00.000,vacation_hours,,,,,38,
+employee-275,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,39
+employee-276,,,Sales Representative,F,M,1,,
+employee-276,2014-06-30 00:00:00.000,vacation_hours,,,,,27,
+employee-276,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,33
+employee-277,,,Sales Representative,F,S,1,,
+employee-277,2014-06-30 00:00:00.000,vacation_hours,,,,,24,
+employee-277,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,32
+employee-278,,,Sales Representative,M,M,1,,
+employee-278,2014-06-30 00:00:00.000,vacation_hours,,,,,33,
+employee-278,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,36
+employee-279,,,Sales Representative,M,M,1,,
+employee-279,2014-06-30 00:00:00.000,vacation_hours,,,,,29,
+employee-279,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,34
+employee-280,,,Sales Representative,F,S,1,,
+employee-280,2014-06-30 00:00:00.000,vacation_hours,,,,,22,
+employee-280,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,31
+employee-281,,,Sales Representative,M,M,1,,
+employee-281,2014-06-30 00:00:00.000,vacation_hours,,,,,26,
+employee-281,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,33
+employee-282,,,Sales Representative,M,M,1,,
+employee-282,2014-06-30 00:00:00.000,vacation_hours,,,,,31,
+employee-282,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,35
+employee-283,,,Sales Representative,M,S,1,,
+employee-283,2014-06-30 00:00:00.000,vacation_hours,,,,,23,
+employee-283,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,31
+employee-284,,,Sales Representative,M,M,1,,
+employee-284,2014-06-30 00:00:00.000,vacation_hours,,,,,39,
+employee-284,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,39
+employee-285,,,Pacific Sales Manager,M,M,1,,
+employee-285,2014-06-30 00:00:00.000,vacation_hours,,,,,20,
+employee-285,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,30
+employee-286,,,Sales Representative,F,S,1,,
+employee-286,2014-06-30 00:00:00.000,vacation_hours,,,,,36,
+employee-286,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,38
+employee-287,,,European Sales Manager,F,M,1,,
+employee-287,2014-06-30 00:00:00.000,vacation_hours,,,,,21,
+employee-287,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,30
+employee-288,,,Sales Representative,F,S,1,,
+employee-288,2014-06-30 00:00:00.000,vacation_hours,,,,,35,
+employee-288,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,37
+employee-289,,,Sales Representative,F,M,1,,
+employee-289,2014-06-30 00:00:00.000,vacation_hours,,,,,37,
+employee-289,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,38
+employee-290,,,Sales Representative,M,S,1,,
+employee-290,2014-06-30 00:00:00.000,vacation_hours,,,,,34,
+employee-290,2014-06-30 00:00:00.000,sick_leave_hours,,,,,,37

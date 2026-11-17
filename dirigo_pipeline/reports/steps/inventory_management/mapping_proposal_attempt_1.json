@@ -1,0 +1,271 @@
+{
+  "mapping": {
+    "dataset_name": "inventory_management",
+    "objects": [
+      {
+        "type": "material",
+        "source_table": "Materials",
+        "id": {
+          "mode": "option",
+          "columns": [
+            "material_number"
+          ],
+          "prefix": "material",
+          "separator": "--"
+        },
+        "attributes": {
+          "static": [
+            {
+              "name": "material_type",
+              "value": {
+                "column": "material_type",
+                "value_type": "string"
+              }
+            },
+            {
+              "name": "industry_sector",
+              "value": {
+                "column": "industry_sector",
+                "value_type": "string"
+              }
+            },
+            {
+              "name": "material_group",
+              "value": {
+                "column": "material_group",
+                "value_type": "string"
+              }
+            },
+            {
+              "name": "valuation_class",
+              "value": {
+                "column": "valuation_class",
+                "value_type": "string"
+              }
+            }
+          ],
+          "dynamic": []
+        }
+      },
+      {
+        "type": "sales_order",
+        "source_table": "SalesOrderDocuments",
+        "id": {
+          "mode": "option",
+          "columns": [
+            "sales_document_number"
+          ],
+          "prefix": "sales_order",
+          "separator": "--"
+        },
+        "attributes": {
+          "static": [
+            {
+              "name": "sales_document_type",
+              "value": {
+                "column": "sales_document_type",
+                "value_type": "string"
+              }
+            },
+            {
+              "name": "order_type",
+              "value": {
+                "column": "order_type",
+                "value_type": "string"
+              }
+            },
+            {
+              "name": "order_reason",
+              "value": {
+                "column": "order_reason",
+                "value_type": "string"
+              }
+            }
+          ],
+          "dynamic": []
+        }
+      },
+      {
+        "type": "purchase_order",
+        "source_table": "PurchaseOrderDocuments",
+        "id": {
+          "mode": "option",
+          "columns": [
+            "purchase_document_number"
+          ],
+          "prefix": "purchase_order",
+          "separator": "--"
+        },
+        "attributes": {
+          "static": [
+            {
+              "name": "purchasing_document_category",
+              "value": {
+                "column": "purchasing_document_category",
+                "value_type": "string"
+              }
+            },
+            {
+              "name": "purchasing_document_type",
+              "value": {
+                "column": "purchasing_document_type",
+                "value_type": "string"
+              }
+            },
+            {
+              "name": "blocking_indicator",
+              "value": {
+                "column": "blocking_indicator",
+                "value_type": "boolean"
+              }
+            }
+          ],
+          "dynamic": []
+        }
+      }
+    ],
+    "events": [
+      {
+        "type": "goods_movement_recorded",
+        "source_table": "GoodsReceiptsAndIssues",
+        "id": {
+          "mode": "option",
+          "columns": [
+            "document_number",
+            "accounting_document_line"
+          ],
+          "prefix": "goods_movement",
+          "separator": "--"
+        },
+        "timestamp": {
+          "column": "posting_date_in_the_document"
+        },
+        "where": [],
+        "attributes": [],
+        "objects": [
+          {
+            "reference": {
+              "object_type": "material",
+              "mode": "direct",
+              "key_mapping": [
+                {
+                  "object_id_column": "material_number",
+                  "row_column": "material_number"
+                }
+              ],
+              "resolver": null
+            },
+            "qualifier": "moved_material"
+          },
+          {
+            "reference": {
+              "object_type": "purchase_order",
+              "mode": "direct",
+              "key_mapping": [
+                {
+                  "object_id_column": "purchase_document_number",
+                  "row_column": "purchase_document_number"
+                }
+              ],
+              "resolver": null
+            },
+            "qualifier": "related_purchase_order"
+          }
+        ]
+      },
+      {
+        "type": "sales_order_created",
+        "source_table": "SalesOrderDocuments",
+        "id": {
+          "mode": "option",
+          "columns": [
+            "sales_document_number"
+          ],
+          "prefix": "sales_order_created",
+          "separator": "--"
+        },
+        "timestamp": {
+          "column": "document_creation_date"
+        },
+        "where": [],
+        "attributes": [],
+        "objects": [
+          {
+            "reference": {
+              "object_type": "sales_order",
+              "mode": "direct",
+              "key_mapping": [
+                {
+                  "object_id_column": "sales_document_number",
+                  "row_column": "sales_document_number"
+                }
+              ],
+              "resolver": null
+            },
+            "qualifier": "created_sales_order"
+          }
+        ]
+      },
+      {
+        "type": "purchase_order_created",
+        "source_table": "PurchaseOrderDocuments",
+        "id": {
+          "mode": "option",
+          "columns": [
+            "purchase_document_number"
+          ],
+          "prefix": "purchase_order_created",
+          "separator": "--"
+        },
+        "timestamp": {
+          "column": "record_creation_date"
+        },
+        "where": [],
+        "attributes": [],
+        "objects": [
+          {
+            "reference": {
+              "object_type": "purchase_order",
+              "mode": "direct",
+              "key_mapping": [
+                {
+                  "object_id_column": "purchase_document_number",
+                  "row_column": "purchase_document_number"
+                }
+              ],
+              "resolver": null
+            },
+            "qualifier": "created_purchase_order"
+          }
+        ]
+      }
+    ],
+    "relationships": []
+  },
+  "decisions": [
+    {
+      "mapping_path": "objects[material]",
+      "confidence": 0.95,
+      "evidence": [
+        "Materials table has primary key material_number with distinct_ratio 1.0."
+      ],
+      "assumptions": []
+    },
+    {
+      "mapping_path": "events[goods_movement_recorded]",
+      "confidence": 0.85,
+      "evidence": [
+        "GoodsReceiptsAndIssues table contains movement records with posting dates and material references."
+      ],
+      "assumptions": []
+    }
+  ],
+  "unresolved_questions": [
+    {
+      "code": "STOCK_HISTORY_UNCERTAIN",
+      "affected_path": "objects[material].dynamic",
+      "question": "MaterialStocks is a snapshot table without timestamp history. Should it be treated as dynamic or static inventory state?",
+      "blocking": false
+    }
+  ]
+}
