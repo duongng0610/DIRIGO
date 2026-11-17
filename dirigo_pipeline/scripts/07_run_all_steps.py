@@ -1,3 +1,5 @@
+"""Entry point chạy tuần tự sáu bước của Dirigo extraction pipeline."""
+
 import subprocess
 import sys
 
@@ -23,6 +25,11 @@ def run_script(
     sqlite_file: str,
     extra_arguments: list[str] | None = None,
 ) -> None:
+    """Chạy một step bằng đúng Python interpreter của process hiện tại.
+
+    Dùng ``sys.executable`` bảo đảm subprocess tiếp tục chạy trong cùng
+    virtual environment. ``check=True`` dừng pipeline ngay khi một bước fail.
+    """
     script_path = (
         SCRIPTS_DIRECTORY / script_name
     )
@@ -45,6 +52,7 @@ def run_script(
     )
 
 def parse_arguments():
+    """Đọc SQLite filename và domain hint tùy chọn cho mapping proposer."""
     parser = argparse.ArgumentParser()
 
     parser.add_argument("sqlite_file")
@@ -58,6 +66,7 @@ def parse_arguments():
     return parser.parse_args()
 
 def main() -> None:
+    """Chạy profile -> propose -> validate/repair -> build -> OUT-QC -> QC."""
     args = parse_arguments()
 
     run_script(

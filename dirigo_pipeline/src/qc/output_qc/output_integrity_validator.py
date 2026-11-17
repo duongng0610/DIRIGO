@@ -1,3 +1,10 @@
+"""Kiểm tra tính toàn vẹn nội tại của các Dirigo CSV đã xuất.
+
+OUT-QC không so sánh với source. Nó kiểm tra output có tự nhất quán hay không:
+schema cột, ID bắt buộc, uniqueness, timestamp, qualifier và tham chiếu giữa
+object/event với E2O/O2O. So sánh source-to-output thuộc Paper/REC projection.
+"""
+
 from __future__ import annotations
 
 from pathlib import Path
@@ -22,7 +29,11 @@ def validate_dirigo_output(
     """
     Kiểm tra toàn vẹn CSV Dirigo sau khi writer hoàn tất.
 
-    Không so sánh source ở đây; việc đó thuộc REC-QC.
+    Thứ tự kiểm tra có chủ ý: object IDs được thu thập trước, sau đó event IDs,
+    rồi mới kiểm tra foreign-key logic trong E2O/O2O. Hàm trả report thuần
+    dictionary để script có thể ghi JSON mà không phụ thuộc dataclass/Pydantic.
+
+    Không so sánh source ở đây; việc đó thuộc expected/actual projection QC.
     """
 
     output_directory = Path(output_directory)
@@ -41,9 +52,10 @@ def validate_dirigo_output(
             }
         )
 
+    # Tập ID dùng để kiểm tra tham chiếu của E2O/O2O ở các pha phía sau.
     object_ids: set[str] = set()
 
-    # Kiểm tra từng object CSV.
+    # Pha 1: kiểm tra schema và identity của từng object type.
     for object_mapping in mapping["objects"]:
         object_type = object_mapping["type"]
         object_path = (
@@ -88,6 +100,8 @@ def validate_dirigo_output(
                 missing_ids,
             )
 
+        # Quy ước Dirigo: change field rỗng là initial row; có giá trị là
+        # dynamic change row.
         change_field = (
             object_df["Ocel_changed_field"]
             .fillna("")
@@ -118,6 +132,7 @@ def validate_dirigo_output(
             .tolist()
         )
 
+    # Pha 2: kiểm tra event file và tạo tập Event_id hợp lệ.
     events_path = output_directory / "OCEL_Events.csv"
     e2o_path = output_directory / "OCEL_E2O.csv"
     o2o_path = output_directory / "OCEL_O2O.csv"
@@ -180,6 +195,7 @@ def validate_dirigo_output(
                 .astype(str)
             )
 
+    # Pha 3: mọi E2O phải tham chiếu event/object đã biết và có qualifier.
     if not e2o_path.exists():
         add_issue(
             "OUT-E2O-FILE-MISSING",
@@ -243,6 +259,7 @@ def validate_dirigo_output(
                     blank_qualifiers,
                 )
 
+    # Pha 4: kiểm tra hai đầu O2O, qualifier và timestamp của quan hệ động.
     if not o2o_path.exists():
         add_issue(
             "OUT-O2O-FILE-MISSING",
@@ -305,6 +322,8 @@ def validate_dirigo_output(
                     blank_qualifiers,
                 )
 
+            # Mapping quyết định qualifier nào biểu diễn relation động; chỉ
+            # các row đó bắt buộc phải có timestamp parse được.
             dynamic_qualifiers = {
                 qualifier["qualifier"]
                 for relationship in (

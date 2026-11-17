@@ -1,3 +1,10 @@
+"""Chuẩn hóa mọi đường dẫn artifact theo tên file SQLite đầu vào.
+
+Mỗi dataset có namespace riêng cho mapping, output và report. Script chỉ nhận
+tên file nằm trực tiếp trong ``data/raw`` để không cho đường dẫn tùy ý thoát
+khỏi project root.
+"""
+
 import json
 import sys
 
@@ -23,6 +30,8 @@ RAW_DATA_DIRECTORY = (
 #Dựa tên file sqlite trong data/raw => mỗi output sẽ ghép với mục tên tương ứng với tên sqlite 
 @dataclass(frozen=True)
 class PipelinePaths:
+    """Toàn bộ input/output path của một lần chạy pipeline cho một dataset."""
+
     sqlite_file_name: str
     dataset_name: str
 
@@ -149,6 +158,7 @@ def save_json(
     value: Any,
     output_path: Path,
 ) -> None:
+    """Ghi report JSON UTF-8, tự tạo parent directory khi cần."""
     output_path.parent.mkdir(
         parents=True,
         exist_ok=True,

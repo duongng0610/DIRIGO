@@ -1,3 +1,5 @@
+"""Build Dirigo IR từ mapping đã publish và xuất các CSV runtime."""
+
 import argparse
 
 
@@ -21,6 +23,7 @@ from src.readers.sqlite_reader import (
 
 
 def parse_arguments():
+    """Đọc tên SQLite trong data/raw cho dataset cần build."""
     parser = argparse.ArgumentParser()
 
     parser.add_argument("sqlite_file")
@@ -34,6 +37,12 @@ def parse_arguments():
     return parser.parse_args()
 
 def main() -> None:
+    """Chạy ba builders rồi chuyển IR thành object/event/E2O/O2O CSV.
+
+    Script chỉ đọc ``published_mapping_path`` — tức mapping đã vượt MAP-QC.
+    Object, event và relationship được build độc lập nhưng phải dùng chung
+    canonical ID helpers để E2O/O2O tham chiếu đúng object CSV.
+    """
     args = parse_arguments()
 
     paths = PipelinePaths.from_sqlite_file(

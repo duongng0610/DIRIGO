@@ -1,4 +1,6 @@
 
+"""Build lịch sử quan hệ object-to-object thành RelationshipRecord IR."""
+
 from typing import Any
 from pathlib import Path
 from src.ir.models import RelationshipRecord
@@ -8,6 +10,13 @@ from src.readers.sqlite_reader import SQLiteReader
 
 
 def build_o2o(sqlite_reader: SQLiteReader, mapping: dict[str, Any]) -> list[RelationshipRecord]:
+    """Tạo O2O records từ các relationship và qualifier mappings.
+
+    Một logical relationship có thể có nhiều qualifier, ví dụ
+    ``assigned`` và ``unassigned``. Mỗi qualifier có source table, filter và
+    timestamp riêng, nên builder xử lý từng qualifier như một luồng lịch sử
+    độc lập nhưng dùng chung source/target object reference.
+    """
     o2o_records = []
 
     object_configs = {
@@ -33,12 +42,15 @@ def build_o2o(sqlite_reader: SQLiteReader, mapping: dict[str, Any]) -> list[Rela
                 qualifier_mapping["source_table"],
                 mapping["tables"])
 
-            # Giữ những row là event trong bảng
+            # where thường phân biệt lifecycle row hợp lệ, ví dụ chỉ sinh
+            # unassigned khi EndDate không null.
             o2o_source_df = sqlite_reader.apply_where(
                 o2o_source_df,
                 qualifier_mapping.get("where", []),
             )
 
+            # Cả source lẫn target đều có thể là lookup reference. Index được
+            # chuẩn bị trước khi duyệt rows để giữ chi phí lookup tuyến tính.
             source_lookup_index = build_resolver_index(
                 sqlite_reader, source_object_mapping, mapping)
 

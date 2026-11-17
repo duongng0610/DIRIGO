@@ -1,4 +1,6 @@
 
+"""Build EventRecord và các quan hệ E2O từ event mapping."""
+
 from typing import Any
 from pathlib import Path
 from src.ir.models import EventRecord
@@ -8,6 +10,12 @@ import pandas as pd
 from src.readers.sqlite_reader import SQLiteReader
 
 def build_events(sqlite_reader: SQLiteReader, mapping: dict[str, Any]) -> list[EventRecord]:
+    """Tạo event IR và E2O references cho mọi event type trong mapping.
+
+    ``where`` quyết định source row nào thực sự biểu diễn event. Object ID
+    luôn được tạo qua object config canonical, kể cả khi event row cần lookup
+    sang bảng khác để lấy khóa object.
+    """
     event_records = []
 
     object_configs = {
@@ -22,7 +30,7 @@ def build_events(sqlite_reader: SQLiteReader, mapping: dict[str, Any]) -> list[E
             event_mapping["source_table"],
             mapping["tables"] )
 
-        #Giữ những row là event trong bảng 
+        # Chỉ các row vượt qua where mới sinh EventRecord.
         source_df = sqlite_reader.apply_where(
             source_df,
             event_mapping.get("where", []),
@@ -30,12 +38,10 @@ def build_events(sqlite_reader: SQLiteReader, mapping: dict[str, Any]) -> list[E
 
         object_mappings = event_mapping.get("objects",[])
 
-        # Vì object liên quan đến event có thể nằm ở bảng khác bảng event hiện tại  
-        # build lookup_index (key(giá trị khóa ngoại liên kết giữa bảng event - object),
-        # val-row trong bảng lookup) trước khi duyệt từng row trong event ,  
+        # Một event có thể tham chiếu object nằm ở bảng khác. Index từng
+        # reference trước vòng lặp để tránh đọc/scan lại lookup table cho mỗi row.
         lookup_indexes = {}
 
-        #Bọc [] trong enumerate để duyệt lấy được (index, value)
         for position, object_mapping in enumerate(object_mappings):
             lookup_indexes[position] = build_resolver_index(sqlite_reader, object_mapping, mapping)
         
@@ -49,15 +55,14 @@ def build_events(sqlite_reader: SQLiteReader, mapping: dict[str, Any]) -> list[E
 
             event_time = row[timestamp_column]
 
-            #list[EventToObjectRecord]
+            # Danh sách này được extractor trải thành các dòng OCEL_E2O.csv.
             object_relations = []
 
             for position,object_mapping in enumerate(event_mapping.get("objects",[])):
                 object_type = object_mapping["object_type"]
-                #Lấy config yaml của objects có sẵn 
+                # ID rule thuộc object config; event mapping chỉ mô tả cách
+                # tìm các giá trị khóa cần thiết trên row hiện tại.
                 object_config = object_configs[object_type]
-
-                #/....
                 object_id = build_object_reference_id(
                     row=row,
                     object_config=object_config,
@@ -65,8 +70,6 @@ def build_events(sqlite_reader: SQLiteReader, mapping: dict[str, Any]) -> list[E
                     lookup_index= lookup_indexes.get(position)
                 )
 
-                #..../
-               
                 object_relations.append(
                     EventToObjectRecord(
                         object_id=object_id,

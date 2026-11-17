@@ -1,13 +1,31 @@
+"""Các hàm dùng chung để builders đọc bảng, tạo ID và resolve object.
+
+Builders không tự viết logic join riêng. Mọi tham chiếu object đều đi qua
+``build_object_reference_id`` để bảo đảm ID được tạo nhất quán giữa object,
+event/E2O, O2O và các thuộc tính động.
+"""
+
 from typing import Any
 import pandas as pd
 from pandas import DataFrame
 from src.readers.sqlite_reader import SQLiteReader
-#Lấy tên thật của bảng trong data , source_table chỉ là alias
 def _source_table_name(source_table: str, table_mapping: dict[str, dict]) -> str:
+    """Đổi alias trong mapping thành tên bảng vật lý trong SQLite.
+
+    Nếu alias không được khai báo trong ``tables``, giá trị đầu vào được coi
+    là tên bảng thật. Cơ chế này giúp mapping có thể dùng alias ổn định ngay
+    cả khi tên bảng nguồn dài hoặc phụ thuộc dataset.
+    """
     return table_mapping.get(source_table, {}).get("table", source_table)
 
 
 def build_data_frame_by_table_name(sqlite_reader: SQLiteReader, table_name:str, table_mapping: dict[str, dict]) -> DataFrame:
+    """Đọc một bảng theo alias và trả về DataFrame bắt buộc tồn tại.
+
+    Reader cũ trả ``None`` khi không đọc được bảng. Builders không thể tiếp
+    tục an toàn trong trường hợp đó, vì vậy helper chuyển nó thành lỗi ngay
+    tại biên đọc dữ liệu thay vì để lỗi xuất hiện ở một vòng lặp phía sau.
+    """
     normalize_table = _source_table_name(
                  table_name,
                  table_mapping,
@@ -22,6 +40,12 @@ def build_data_frame_by_table_name(sqlite_reader: SQLiteReader, table_name:str, 
     return df
 
 def create_option_id(prefix: str, columns: list[str], separator) -> str:
+    """Ghép prefix và các thành phần khóa thành ID có namespace.
+
+    Ví dụ ``employee`` + ``["12"]`` tạo ``employee-12``. Prefix làm ID
+    object duy nhất trên toàn log, tránh va chạm khi hai object type dùng
+    cùng một giá trị khóa nguồn.
+    """
     if not prefix or not columns:
         raise ValueError(
             "columns, and separator must be provided to create an option ID."
@@ -32,8 +56,12 @@ def create_option_id(prefix: str, columns: list[str], separator) -> str:
 
     return f"{prefix}{separator}{separator.join(columns)}"
 
-#chuẩn hóa id => string
 def normalize_id_value(value: Any, column: str) -> str:
+    """Chuẩn hóa một thành phần ID sang chuỗi và từ chối giá trị null.
+
+    Pandas thường chuyển cột integer có null thành float. Nhánh ``1.0 -> 1``
+    giữ ID ổn định giữa dữ liệu SQLite, DataFrame và CSV.
+    """
     if pd.isna(value):
         raise ValueError(
             f"ID column '{column}' cannot be null"
@@ -45,12 +73,20 @@ def normalize_id_value(value: Any, column: str) -> str:
 
     return str(value)
 
-#Đọc bảng lookup 1 lần và tạo index theo giá trị key của row :row[key] 
 def build_resolver_index(
     sqlite_reader:SQLiteReader,
     object_mapping: dict[str, Any]|None,
     mapping: dict[str,Any]
 ) -> dict[tuple, Any]:
+    """Tạo index cho object reference cần lookup sang bảng khác.
+
+    Key của index là tuple các ``lookup_column`` theo đúng thứ tự khai báo
+    trong ``resolver.on``; value là row đầy đủ của bảng lookup. Index được
+    tạo trước vòng lặp source row để không phải scan bảng lookup cho từng
+    event, relation hoặc object change.
+
+    Trả ``None`` khi reference là direct và không có resolver.
+    """
     
     resolver_mapping = object_mapping.get("resolver")
     
@@ -61,19 +97,18 @@ def build_resolver_index(
                     sqlite_reader, 
                     resolver_mapping["table"], 
                     mapping["tables"])
-    
+
     if resolver_mapping is None :
         return None
+
     lookup_index = {}
 
-    # on:
-        #     - source_column
-        #       lookup_column
     join_mappings = resolver_mapping["on"] 
 
     for _, lookup_row in lookup_df.iterrows():
 
-        #lookup_key build bởi lookup_column (vì ở trong bảng lookup)
+        # Ở phía lookup phải dùng lookup_column; source_column chỉ tồn tại
+        # trong row đang được builder xử lý.
         lookup_key = tuple(
             normalize_id_value(
                 lookup_row[item["lookup_column"]],
@@ -86,15 +121,20 @@ def build_resolver_index(
 
     return lookup_index
 
-#Tra lookup row
 def resolve_lookup_row(
         row,
         resolver_mapping: dict[str, Any],
         lookup_index : dict[tuple, Any]
 ):
+    """Resolve một source row thành đúng một row trong resolver index.
+
+    Source key được tạo bằng ``source_column`` nhưng phải có cùng thứ tự và
+    cách chuẩn hóa với lookup key. Không tìm thấy row là lỗi vì callers hiện
+    cần một row cụ thể để tạo object ID.
+    """
     join_mappings = resolver_mapping["on"]
 
-    #source key build bởi giá trị source_column (vì trong bảng chứa events)
+    # Source key dùng source_column vì row thuộc bảng event/history/O2O.
     source_key = tuple(
         normalize_id_value(
             row[item["source_column"]], 
@@ -113,8 +153,13 @@ def resolve_lookup_row(
     return lookup_row
 
 
-#key_mapping: khi tên key trong bảng khác với tên cột key gốc được cấu hình ở object
 def build_id_from_row (row , id_mapping :dict[str,Any], key_mapping: dict[str,str] | None = None)->str:
+      """Tạo canonical ID từ row theo cấu hình ID của object/event.
+
+      ``id_mapping.columns`` dùng tên cột canonical. ``key_mapping`` ánh xạ
+      các tên canonical đó sang tên cột thực tế của row hiện tại, nhờ vậy
+      cùng một quy tắc ID có thể dùng cho bảng master, history hoặc lookup.
+      """
       key_mapping = key_mapping or {}
 
       mode = id_mapping["mode"]
@@ -123,7 +168,7 @@ def build_id_from_row (row , id_mapping :dict[str,Any], key_mapping: dict[str,st
       values : list[str] = []
 
       for object_id_column in id_columns:
-             # cột canonical của object -> cột trong row hiện tại
+            # Cột canonical của object -> cột trong row hiện tại.
             row_column = key_mapping.get(
                 object_id_column,
                 object_id_column,
@@ -135,7 +180,7 @@ def build_id_from_row (row , id_mapping :dict[str,Any], key_mapping: dict[str,st
                     "does not exist"
                 )
             value = row[row_column]
-            #value có thể là số nguyên => cần chuẩn hóa sang str
+            # Mọi thành phần phải được chuẩn hóa trước khi ghép ID.
             values.append(normalize_id_value(value, row_column))
 
      
@@ -154,14 +199,19 @@ def build_id_from_row (row , id_mapping :dict[str,Any], key_mapping: dict[str,st
         return values[0]
 
    
-#object_config : cấu hình yaml object ở phần objects 
-#object_mapping: cấu hình yaml object trong relationships / e2o .
-#Trường hợp cần tìm giá trị id của object ở bảng khác : lookup_index: map[key]value (key-tạo bởi row[cột khóa ngoại],  value- row ở bảng tìm kiếm  )
 def build_object_reference_id(
         row, 
         object_config: dict[str,any],
         object_mapping:dict[str, any],
         lookup_index: dict[tuple, Any] | None = None)->str:
+    """Tạo object ID cho một reference direct hoặc lookup.
+
+    ``object_config`` là định nghĩa canonical trong ``mapping.objects``.
+    ``object_mapping`` là cách event/E2O, O2O hoặc dynamic attribute tham
+    chiếu object đó. Với direct reference, ID được tạo từ row hiện tại. Với
+    lookup reference, row hiện tại được resolve sang bảng khác trước, sau đó
+    vẫn dùng chính ID config canonical của object.
+    """
 
     resolver_mapping = object_mapping.get("resolver")
 
@@ -169,7 +219,7 @@ def build_object_reference_id(
 
     id_mapping = object_config["id"]
 
-     # Trường hợp direct
+    # Direct reference: các cột khóa đã có ngay trên row hiện tại.
     if resolver_mapping is None:
         return build_id_from_row(
             row=row,
@@ -184,7 +234,7 @@ def build_object_reference_id(
             f"Unsupported resolver mode: {resolver_mode}"
         )
 
-    #lookup_index luôn được build trước khi duyệt từng row 
+    # Lookup index phải được chuẩn bị một lần trước vòng lặp source rows.
     if lookup_index is None:
         raise ValueError(
             "Lookup index is required for lookup resolver"
