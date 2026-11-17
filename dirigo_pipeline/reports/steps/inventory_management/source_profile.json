@@ -1,0 +1,2924 @@
+{
+  "profile_version": "1.0",
+  "database": {
+    "name": "inventory_management.db",
+    "table_count": 11
+  },
+  "tables": [
+    {
+      "name": "GoodsReceiptsAndIssues",
+      "row_count": 200,
+      "columns": [
+        {
+          "name": "client",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 5,
+          "distinct_ratio": 0.025
+        },
+        {
+          "name": "purchase_document_number",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 112,
+          "distinct_ratio": 0.56
+        },
+        {
+          "name": "line_item_in_purchase_document",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 5,
+          "distinct_ratio": 0.025
+        },
+        {
+          "name": "sequential_number_of_account_assignment",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 181,
+          "distinct_ratio": 0.905
+        },
+        {
+          "name": "movement_type",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 2,
+          "distinct_ratio": 0.01
+        },
+        {
+          "name": "fiscal_year",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 1,
+          "distinct_ratio": 0.005
+        },
+        {
+          "name": "document_number",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 200,
+          "distinct_ratio": 1.0
+        },
+        {
+          "name": "accounting_document_line",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 10,
+          "distinct_ratio": 0.05
+        },
+        {
+          "name": "material_number",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 87,
+          "distinct_ratio": 0.435
+        },
+        {
+          "name": "plant",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 5,
+          "distinct_ratio": 0.025
+        },
+        {
+          "name": "reference_document_number",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 200,
+          "distinct_ratio": 1.0
+        },
+        {
+          "name": "document_date_in_document",
+          "type": "DATE",
+          "affinity": "NUMERIC",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 157,
+          "distinct_ratio": 0.785
+        },
+        {
+          "name": "posting_date_in_the_document",
+          "type": "DATE",
+          "affinity": "NUMERIC",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 157,
+          "distinct_ratio": 0.785
+        },
+        {
+          "name": "date_of_the_posting_in_the_document",
+          "type": "DATE",
+          "affinity": "NUMERIC",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 157,
+          "distinct_ratio": 0.785
+        },
+        {
+          "name": "time_of_the_posting_in_the_document",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 1,
+          "distinct_ratio": 0.005
+        },
+        {
+          "name": "quantity",
+          "type": "REAL",
+          "affinity": "REAL",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 86,
+          "distinct_ratio": 0.43
+        }
+      ],
+      "declared_primary_key": [],
+      "primary_key_candidates": [
+        {
+          "columns": [
+            "document_number"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.75,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        },
+        {
+          "columns": [
+            "reference_document_number"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.75,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        },
+        {
+          "columns": [
+            "sequential_number_of_account_assignment",
+            "purchase_document_number"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        },
+        {
+          "columns": [
+            "sequential_number_of_account_assignment",
+            "material_number"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        },
+        {
+          "columns": [
+            "sequential_number_of_account_assignment",
+            "date_of_the_posting_in_the_document"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        },
+        {
+          "columns": [
+            "sequential_number_of_account_assignment",
+            "document_date_in_document"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        },
+        {
+          "columns": [
+            "sequential_number_of_account_assignment",
+            "posting_date_in_the_document"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        },
+        {
+          "columns": [
+            "purchase_document_number",
+            "date_of_the_posting_in_the_document"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        },
+        {
+          "columns": [
+            "purchase_document_number",
+            "document_date_in_document"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        },
+        {
+          "columns": [
+            "purchase_document_number",
+            "posting_date_in_the_document"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        }
+      ],
+      "foreign_keys": [
+        {
+          "columns": [
+            "material_number"
+          ],
+          "referenced_table": "Materials",
+          "referenced_columns": [
+            "material_number"
+          ],
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "origin": "declared_foreign_key"
+        }
+      ],
+      "foreign_key_candidates": [
+        {
+          "columns": [
+            "material_number"
+          ],
+          "referenced_table": "MaterialStocks",
+          "referenced_columns": [
+            "material_number"
+          ],
+          "origin": "inferred_by_name_and_containment",
+          "confidence": 0.85,
+          "orphan_count": 0
+        },
+        {
+          "columns": [
+            "material_number"
+          ],
+          "referenced_table": "Materials",
+          "referenced_columns": [
+            "material_number"
+          ],
+          "origin": "inferred_by_name_and_containment",
+          "confidence": 0.85,
+          "orphan_count": 0
+        },
+        {
+          "columns": [
+            "purchase_document_number"
+          ],
+          "referenced_table": "PurchaseOrderDocuments",
+          "referenced_columns": [
+            "purchase_document_number"
+          ],
+          "origin": "inferred_by_name_and_containment",
+          "confidence": 0.85,
+          "orphan_count": 0
+        }
+      ],
+      "sample_rows": [
+        {
+          "client": "Client3",
+          "purchase_document_number": 136,
+          "line_item_in_purchase_document": 4,
+          "sequential_number_of_account_assignment": 699,
+          "movement_type": "Goods Issue",
+          "fiscal_year": 2024,
+          "document_number": 102424,
+          "accounting_document_line": 10,
+          "material_number": 74,
+          "plant": "Plant2",
+          "reference_document_number": 231618,
+          "document_date_in_document": "2024-02-14",
+          "posting_date_in_the_document": "2024-02-14",
+          "date_of_the_posting_in_the_document": "2024-02-14",
+          "time_of_the_posting_in_the_document": "11:56:27",
+          "quantity": 83.0
+        },
+        {
+          "client": "Client3",
+          "purchase_document_number": 105,
+          "line_item_in_purchase_document": 4,
+          "sequential_number_of_account_assignment": 975,
+          "movement_type": "Goods Issue",
+          "fiscal_year": 2024,
+          "document_number": 102905,
+          "accounting_document_line": 1,
+          "material_number": 75,
+          "plant": "Plant2",
+          "reference_document_number": 925830,
+          "document_date_in_document": "2023-10-27",
+          "posting_date_in_the_document": "2023-10-27",
+          "date_of_the_posting_in_the_document": "2023-10-27",
+          "time_of_the_posting_in_the_document": "11:56:27",
+          "quantity": 45.0
+        },
+        {
+          "client": "Client1",
+          "purchase_document_number": 100,
+          "line_item_in_purchase_document": 5,
+          "sequential_number_of_account_assignment": 471,
+          "movement_type": "Goods Receipt",
+          "fiscal_year": 2024,
+          "document_number": 105863,
+          "accounting_document_line": 3,
+          "material_number": 11,
+          "plant": "Plant3",
+          "reference_document_number": 206172,
+          "document_date_in_document": "2024-01-07",
+          "posting_date_in_the_document": "2024-01-07",
+          "date_of_the_posting_in_the_document": "2024-01-07",
+          "time_of_the_posting_in_the_document": "11:56:27",
+          "quantity": 82.0
+        }
+      ]
+    },
+    {
+      "name": "MaterialDocuments",
+      "row_count": 200,
+      "columns": [
+        {
+          "name": "client",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 5,
+          "distinct_ratio": 0.025
+        },
+        {
+          "name": "material_document_number",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": false,
+          "default_value": null,
+          "pk_position": 1,
+          "null_count": 0,
+          "distinct_count": 200,
+          "distinct_ratio": 1.0
+        },
+        {
+          "name": "material_document_year",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": false,
+          "default_value": null,
+          "pk_position": 2,
+          "null_count": 0,
+          "distinct_count": 1,
+          "distinct_ratio": 0.005
+        },
+        {
+          "name": "line_item",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": false,
+          "default_value": null,
+          "pk_position": 3,
+          "null_count": 0,
+          "distinct_count": 10,
+          "distinct_ratio": 0.05
+        },
+        {
+          "name": "material_number",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 88,
+          "distinct_ratio": 0.44
+        },
+        {
+          "name": "plant",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 5,
+          "distinct_ratio": 0.025
+        },
+        {
+          "name": "storage_location",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 10,
+          "distinct_ratio": 0.05
+        },
+        {
+          "name": "vendors_account_number",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 30,
+          "distinct_ratio": 0.15
+        },
+        {
+          "name": "customer_number",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 50,
+          "distinct_ratio": 0.25
+        },
+        {
+          "name": "movement_type",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 2,
+          "distinct_ratio": 0.01
+        },
+        {
+          "name": "receiving_plant",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 5,
+          "distinct_ratio": 0.025
+        },
+        {
+          "name": "quantity",
+          "type": "REAL",
+          "affinity": "REAL",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 82,
+          "distinct_ratio": 0.41
+        },
+        {
+          "name": "posting_date_in_the_document",
+          "type": "DATE",
+          "affinity": "NUMERIC",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 152,
+          "distinct_ratio": 0.76
+        }
+      ],
+      "declared_primary_key": [
+        "material_document_number",
+        "material_document_year",
+        "line_item"
+      ],
+      "primary_key_candidates": [
+        {
+          "columns": [
+            "material_document_number",
+            "material_document_year",
+            "line_item"
+          ],
+          "origin": "declared_primary_key",
+          "confidence": 1.0,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        },
+        {
+          "columns": [
+            "material_document_number"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.75,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        },
+        {
+          "columns": [
+            "customer_number",
+            "posting_date_in_the_document"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        },
+        {
+          "columns": [
+            "posting_date_in_the_document",
+            "quantity"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        },
+        {
+          "columns": [
+            "line_item",
+            "material_number",
+            "posting_date_in_the_document"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        },
+        {
+          "columns": [
+            "line_item",
+            "material_number",
+            "storage_location"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        },
+        {
+          "columns": [
+            "line_item",
+            "customer_number",
+            "vendors_account_number"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        },
+        {
+          "columns": [
+            "line_item",
+            "vendors_account_number",
+            "posting_date_in_the_document"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        },
+        {
+          "columns": [
+            "line_item",
+            "posting_date_in_the_document",
+            "storage_location"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        },
+        {
+          "columns": [
+            "material_number",
+            "customer_number",
+            "vendors_account_number"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        }
+      ],
+      "foreign_keys": [
+        {
+          "columns": [
+            "material_number"
+          ],
+          "referenced_table": "Materials",
+          "referenced_columns": [
+            "material_number"
+          ],
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "origin": "declared_foreign_key"
+        }
+      ],
+      "foreign_key_candidates": [
+        {
+          "columns": [
+            "material_number"
+          ],
+          "referenced_table": "MaterialStocks",
+          "referenced_columns": [
+            "material_number"
+          ],
+          "origin": "inferred_by_name_and_containment",
+          "confidence": 0.85,
+          "orphan_count": 0
+        },
+        {
+          "columns": [
+            "material_number"
+          ],
+          "referenced_table": "Materials",
+          "referenced_columns": [
+            "material_number"
+          ],
+          "origin": "inferred_by_name_and_containment",
+          "confidence": 0.85,
+          "orphan_count": 0
+        }
+      ],
+      "sample_rows": [
+        {
+          "client": "Client2",
+          "material_document_number": 100536,
+          "material_document_year": 2024,
+          "line_item": 6,
+          "material_number": 30,
+          "plant": "Plant1",
+          "storage_location": "Storage2",
+          "vendors_account_number": 24,
+          "customer_number": 41,
+          "movement_type": "Goods Receipt",
+          "receiving_plant": "Plant1",
+          "quantity": 63.0,
+          "posting_date_in_the_document": "2024-03-11"
+        },
+        {
+          "client": "Client3",
+          "material_document_number": 111376,
+          "material_document_year": 2024,
+          "line_item": 8,
+          "material_number": 78,
+          "plant": "Plant1",
+          "storage_location": "Storage8",
+          "vendors_account_number": 8,
+          "customer_number": 18,
+          "movement_type": "Goods Receipt",
+          "receiving_plant": "Plant1",
+          "quantity": 9.0,
+          "posting_date_in_the_document": "2024-02-23"
+        },
+        {
+          "client": "Client1",
+          "material_document_number": 112526,
+          "material_document_year": 2024,
+          "line_item": 7,
+          "material_number": 19,
+          "plant": "Plant3",
+          "storage_location": "Storage10",
+          "vendors_account_number": 9,
+          "customer_number": 46,
+          "movement_type": "Goods Issue",
+          "receiving_plant": "Plant1",
+          "quantity": 30.0,
+          "posting_date_in_the_document": "2024-04-18"
+        }
+      ]
+    },
+    {
+      "name": "MaterialStocks",
+      "row_count": 100,
+      "columns": [
+        {
+          "name": "client",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 5,
+          "distinct_ratio": 0.05
+        },
+        {
+          "name": "material_number",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": false,
+          "default_value": null,
+          "pk_position": 1,
+          "null_count": 0,
+          "distinct_count": 100,
+          "distinct_ratio": 1.0
+        },
+        {
+          "name": "plant",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": false,
+          "default_value": null,
+          "pk_position": 2,
+          "null_count": 0,
+          "distinct_count": 5,
+          "distinct_ratio": 0.05
+        },
+        {
+          "name": "storage_location",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": false,
+          "default_value": null,
+          "pk_position": 3,
+          "null_count": 0,
+          "distinct_count": 10,
+          "distinct_ratio": 0.1
+        },
+        {
+          "name": "stock_in_quality_inspection",
+          "type": "REAL",
+          "affinity": "REAL",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 99,
+          "distinct_ratio": 0.99
+        },
+        {
+          "name": "stock_in_transfer",
+          "type": "REAL",
+          "affinity": "REAL",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 100,
+          "distinct_ratio": 1.0
+        },
+        {
+          "name": "stock_in_posting",
+          "type": "REAL",
+          "affinity": "REAL",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 99,
+          "distinct_ratio": 0.99
+        },
+        {
+          "name": "stock_of_material_provided_to_vendor",
+          "type": "REAL",
+          "affinity": "REAL",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 99,
+          "distinct_ratio": 0.99
+        },
+        {
+          "name": "blocked_stock",
+          "type": "REAL",
+          "affinity": "REAL",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 97,
+          "distinct_ratio": 0.97
+        },
+        {
+          "name": "returns_stock",
+          "type": "REAL",
+          "affinity": "REAL",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 100,
+          "distinct_ratio": 1.0
+        }
+      ],
+      "declared_primary_key": [
+        "material_number",
+        "plant",
+        "storage_location"
+      ],
+      "primary_key_candidates": [
+        {
+          "columns": [
+            "material_number",
+            "plant",
+            "storage_location"
+          ],
+          "origin": "declared_primary_key",
+          "confidence": 1.0,
+          "null_row_count": 0,
+          "distinct_key_count": 100
+        },
+        {
+          "columns": [
+            "material_number"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.75,
+          "null_row_count": 0,
+          "distinct_key_count": 100
+        },
+        {
+          "columns": [
+            "returns_stock"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.75,
+          "null_row_count": 0,
+          "distinct_key_count": 100
+        },
+        {
+          "columns": [
+            "stock_in_transfer"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.75,
+          "null_row_count": 0,
+          "distinct_key_count": 100
+        },
+        {
+          "columns": [
+            "storage_location",
+            "stock_in_posting"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 100
+        },
+        {
+          "columns": [
+            "storage_location",
+            "stock_of_material_provided_to_vendor"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 100
+        },
+        {
+          "columns": [
+            "plant",
+            "stock_in_posting"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 100
+        },
+        {
+          "columns": [
+            "plant",
+            "stock_in_quality_inspection"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 100
+        },
+        {
+          "columns": [
+            "plant",
+            "stock_of_material_provided_to_vendor"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 100
+        },
+        {
+          "columns": [
+            "stock_in_posting",
+            "stock_in_quality_inspection"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 100
+        }
+      ],
+      "foreign_keys": [
+        {
+          "columns": [
+            "material_number"
+          ],
+          "referenced_table": "Materials",
+          "referenced_columns": [
+            "material_number"
+          ],
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "origin": "declared_foreign_key"
+        }
+      ],
+      "foreign_key_candidates": [
+        {
+          "columns": [
+            "material_number"
+          ],
+          "referenced_table": "Materials",
+          "referenced_columns": [
+            "material_number"
+          ],
+          "origin": "inferred_by_name_and_containment",
+          "confidence": 0.85,
+          "orphan_count": 0
+        }
+      ],
+      "sample_rows": [
+        {
+          "client": "Client2",
+          "material_number": 1,
+          "plant": "Plant1",
+          "storage_location": "Storage7",
+          "stock_in_quality_inspection": 13.48,
+          "stock_in_transfer": 38.72,
+          "stock_in_posting": 61.2,
+          "stock_of_material_provided_to_vendor": 82.94,
+          "blocked_stock": 7.69,
+          "returns_stock": 30.87
+        },
+        {
+          "client": "Client4",
+          "material_number": 2,
+          "plant": "Plant1",
+          "storage_location": "Storage6",
+          "stock_in_quality_inspection": 30.41,
+          "stock_in_transfer": 56.72,
+          "stock_in_posting": 61.46,
+          "stock_of_material_provided_to_vendor": 79.68,
+          "blocked_stock": 45.69,
+          "returns_stock": 17.24
+        },
+        {
+          "client": "Client3",
+          "material_number": 3,
+          "plant": "Plant3",
+          "storage_location": "Storage6",
+          "stock_in_quality_inspection": 14.94,
+          "stock_in_transfer": 82.98,
+          "stock_in_posting": 8.16,
+          "stock_of_material_provided_to_vendor": 51.76,
+          "blocked_stock": 13.08,
+          "returns_stock": 2.8
+        }
+      ]
+    },
+    {
+      "name": "Materials",
+      "row_count": 100,
+      "columns": [
+        {
+          "name": "material_number",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": false,
+          "default_value": null,
+          "pk_position": 1,
+          "null_count": 0,
+          "distinct_count": 100,
+          "distinct_ratio": 1.0
+        },
+        {
+          "name": "material_type",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 3,
+          "distinct_ratio": 0.03
+        },
+        {
+          "name": "industry_sector",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 3,
+          "distinct_ratio": 0.03
+        },
+        {
+          "name": "material_group",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 3,
+          "distinct_ratio": 0.03
+        },
+        {
+          "name": "valuation_class",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 3,
+          "distinct_ratio": 0.03
+        },
+        {
+          "name": "gross_weight",
+          "type": "REAL",
+          "affinity": "REAL",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 100,
+          "distinct_ratio": 1.0
+        },
+        {
+          "name": "net_weight",
+          "type": "REAL",
+          "affinity": "REAL",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 99,
+          "distinct_ratio": 0.99
+        },
+        {
+          "name": "weight_unit",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 1,
+          "distinct_ratio": 0.01
+        },
+        {
+          "name": "volume",
+          "type": "REAL",
+          "affinity": "REAL",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 95,
+          "distinct_ratio": 0.95
+        },
+        {
+          "name": "volume_unit",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 1,
+          "distinct_ratio": 0.01
+        },
+        {
+          "name": "transport_group",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 3,
+          "distinct_ratio": 0.03
+        }
+      ],
+      "declared_primary_key": [
+        "material_number"
+      ],
+      "primary_key_candidates": [
+        {
+          "columns": [
+            "material_number"
+          ],
+          "origin": "declared_primary_key",
+          "confidence": 1.0,
+          "null_row_count": 0,
+          "distinct_key_count": 100
+        },
+        {
+          "columns": [
+            "gross_weight"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.75,
+          "null_row_count": 0,
+          "distinct_key_count": 100
+        },
+        {
+          "columns": [
+            "net_weight",
+            "volume"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 100
+        },
+        {
+          "columns": [
+            "net_weight",
+            "industry_sector"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 100
+        },
+        {
+          "columns": [
+            "net_weight",
+            "material_group"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 100
+        },
+        {
+          "columns": [
+            "volume",
+            "industry_sector",
+            "material_type"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 100
+        },
+        {
+          "columns": [
+            "volume",
+            "industry_sector",
+            "transport_group"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 100
+        },
+        {
+          "columns": [
+            "volume",
+            "material_group",
+            "material_type"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 100
+        }
+      ],
+      "foreign_keys": [],
+      "foreign_key_candidates": [
+        {
+          "columns": [
+            "material_number"
+          ],
+          "referenced_table": "MaterialStocks",
+          "referenced_columns": [
+            "material_number"
+          ],
+          "origin": "inferred_by_name_and_containment",
+          "confidence": 0.85,
+          "orphan_count": 0
+        }
+      ],
+      "sample_rows": [
+        {
+          "material_number": 1,
+          "material_type": "RAW",
+          "industry_sector": "Electronics",
+          "material_group": "GroupC",
+          "valuation_class": "ValClass3",
+          "gross_weight": 3.72,
+          "net_weight": 3.43,
+          "weight_unit": "kg",
+          "volume": 5.4,
+          "volume_unit": "m3",
+          "transport_group": "TG3"
+        },
+        {
+          "material_number": 2,
+          "material_type": "RAW",
+          "industry_sector": "Automotive",
+          "material_group": "GroupA",
+          "valuation_class": "ValClass1",
+          "gross_weight": 88.36,
+          "net_weight": 71.47,
+          "weight_unit": "kg",
+          "volume": 0.94,
+          "volume_unit": "m3",
+          "transport_group": "TG2"
+        },
+        {
+          "material_number": 3,
+          "material_type": "SEMIFINISHED",
+          "industry_sector": "Electronics",
+          "material_group": "GroupC",
+          "valuation_class": "ValClass1",
+          "gross_weight": 4.8,
+          "net_weight": 4.34,
+          "weight_unit": "kg",
+          "volume": 5.06,
+          "volume_unit": "m3",
+          "transport_group": "TG2"
+        }
+      ]
+    },
+    {
+      "name": "OrderSuggestions",
+      "row_count": 100,
+      "columns": [
+        {
+          "name": "order_number",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": false,
+          "default_value": null,
+          "pk_position": 1,
+          "null_count": 0,
+          "distinct_count": 100,
+          "distinct_ratio": 1.0
+        },
+        {
+          "name": "order_position",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": false,
+          "default_value": null,
+          "pk_position": 2,
+          "null_count": 0,
+          "distinct_count": 1,
+          "distinct_ratio": 0.01
+        },
+        {
+          "name": "article_number",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 60,
+          "distinct_ratio": 0.6
+        },
+        {
+          "name": "order_quantity",
+          "type": "REAL",
+          "affinity": "REAL",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 65,
+          "distinct_ratio": 0.65
+        },
+        {
+          "name": "date",
+          "type": "DATE",
+          "affinity": "NUMERIC",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 87,
+          "distinct_ratio": 0.87
+        },
+        {
+          "name": "order_date",
+          "type": "DATE",
+          "affinity": "NUMERIC",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 87,
+          "distinct_ratio": 0.87
+        },
+        {
+          "name": "delivery_date",
+          "type": "DATE",
+          "affinity": "NUMERIC",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 86,
+          "distinct_ratio": 0.86
+        },
+        {
+          "name": "plant",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 5,
+          "distinct_ratio": 0.05
+        }
+      ],
+      "declared_primary_key": [
+        "order_number",
+        "order_position"
+      ],
+      "primary_key_candidates": [
+        {
+          "columns": [
+            "order_number",
+            "order_position"
+          ],
+          "origin": "declared_primary_key",
+          "confidence": 1.0,
+          "null_row_count": 0,
+          "distinct_key_count": 100
+        },
+        {
+          "columns": [
+            "order_number"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.75,
+          "null_row_count": 0,
+          "distinct_key_count": 100
+        },
+        {
+          "columns": [
+            "article_number",
+            "delivery_date"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 100
+        },
+        {
+          "columns": [
+            "article_number",
+            "order_quantity"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 100
+        },
+        {
+          "columns": [
+            "date",
+            "delivery_date"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 100
+        },
+        {
+          "columns": [
+            "date",
+            "order_quantity"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 100
+        },
+        {
+          "columns": [
+            "order_date",
+            "delivery_date"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 100
+        },
+        {
+          "columns": [
+            "order_date",
+            "order_quantity"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 100
+        },
+        {
+          "columns": [
+            "delivery_date",
+            "order_quantity"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 100
+        },
+        {
+          "columns": [
+            "article_number",
+            "date",
+            "plant"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 100
+        }
+      ],
+      "foreign_keys": [
+        {
+          "columns": [
+            "article_number"
+          ],
+          "referenced_table": "Materials",
+          "referenced_columns": [
+            "material_number"
+          ],
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "origin": "declared_foreign_key"
+        }
+      ],
+      "foreign_key_candidates": [],
+      "sample_rows": [
+        {
+          "order_number": 1,
+          "order_position": 1,
+          "article_number": 98,
+          "order_quantity": 97.0,
+          "date": "2024-02-09",
+          "order_date": "2024-02-09",
+          "delivery_date": "2024-02-15",
+          "plant": "Plant2"
+        },
+        {
+          "order_number": 2,
+          "order_position": 1,
+          "article_number": 64,
+          "order_quantity": 26.0,
+          "date": "2024-03-22",
+          "order_date": "2024-03-22",
+          "delivery_date": "2024-04-18",
+          "plant": "Plant5"
+        },
+        {
+          "order_number": 3,
+          "order_position": 1,
+          "article_number": 69,
+          "order_quantity": 32.0,
+          "date": "2024-01-31",
+          "order_date": "2024-01-31",
+          "delivery_date": "2024-02-06",
+          "plant": "Plant1"
+        }
+      ]
+    },
+    {
+      "name": "PurchaseOrderDocuments",
+      "row_count": 150,
+      "columns": [
+        {
+          "name": "purchase_document_number",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": false,
+          "default_value": null,
+          "pk_position": 1,
+          "null_count": 0,
+          "distinct_count": 150,
+          "distinct_ratio": 1.0
+        },
+        {
+          "name": "record_creation_date",
+          "type": "DATE",
+          "affinity": "NUMERIC",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 121,
+          "distinct_ratio": 0.8066666666666666
+        },
+        {
+          "name": "account_number_of_vendor",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 29,
+          "distinct_ratio": 0.19333333333333333
+        },
+        {
+          "name": "purchase_order_date",
+          "type": "DATE",
+          "affinity": "NUMERIC",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 121,
+          "distinct_ratio": 0.8066666666666666
+        },
+        {
+          "name": "purchasing_document_category",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 3,
+          "distinct_ratio": 0.02
+        },
+        {
+          "name": "purchasing_document_type",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 3,
+          "distinct_ratio": 0.02
+        },
+        {
+          "name": "blocking_indicator",
+          "type": "BOOLEAN",
+          "affinity": "NUMERIC",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 2,
+          "distinct_ratio": 0.013333333333333334
+        }
+      ],
+      "declared_primary_key": [
+        "purchase_document_number"
+      ],
+      "primary_key_candidates": [
+        {
+          "columns": [
+            "purchase_document_number"
+          ],
+          "origin": "declared_primary_key",
+          "confidence": 1.0,
+          "null_row_count": 0,
+          "distinct_key_count": 150
+        },
+        {
+          "columns": [
+            "account_number_of_vendor",
+            "purchase_order_date"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 150
+        },
+        {
+          "columns": [
+            "account_number_of_vendor",
+            "record_creation_date"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 150
+        }
+      ],
+      "foreign_keys": [],
+      "foreign_key_candidates": [],
+      "sample_rows": [
+        {
+          "purchase_document_number": 1,
+          "record_creation_date": "2024-06-12",
+          "account_number_of_vendor": 9,
+          "purchase_order_date": "2024-06-12",
+          "purchasing_document_category": "Standard",
+          "purchasing_document_type": "POTypeA",
+          "blocking_indicator": 0
+        },
+        {
+          "purchase_document_number": 2,
+          "record_creation_date": "2024-03-11",
+          "account_number_of_vendor": 5,
+          "purchase_order_date": "2024-03-11",
+          "purchasing_document_category": "Subcontracting",
+          "purchasing_document_type": "POTypeA",
+          "blocking_indicator": 1
+        },
+        {
+          "purchase_document_number": 3,
+          "record_creation_date": "2024-02-26",
+          "account_number_of_vendor": 12,
+          "purchase_order_date": "2024-02-26",
+          "purchasing_document_category": "Consignment",
+          "purchasing_document_type": "POTypeC",
+          "blocking_indicator": 0
+        }
+      ]
+    },
+    {
+      "name": "PurchaseOrderItems",
+      "row_count": 438,
+      "columns": [
+        {
+          "name": "purchase_order_number",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": false,
+          "default_value": null,
+          "pk_position": 1,
+          "null_count": 0,
+          "distinct_count": 150,
+          "distinct_ratio": 0.3424657534246575
+        },
+        {
+          "name": "purchase_order_item_number",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": false,
+          "default_value": null,
+          "pk_position": 2,
+          "null_count": 0,
+          "distinct_count": 5,
+          "distinct_ratio": 0.01141552511415525
+        },
+        {
+          "name": "material_number",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 100,
+          "distinct_ratio": 0.228310502283105
+        },
+        {
+          "name": "plant",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 5,
+          "distinct_ratio": 0.01141552511415525
+        },
+        {
+          "name": "quantity",
+          "type": "REAL",
+          "affinity": "REAL",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 99,
+          "distinct_ratio": 0.22602739726027396
+        },
+        {
+          "name": "change_date",
+          "type": "DATE",
+          "affinity": "NUMERIC",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 258,
+          "distinct_ratio": 0.589041095890411
+        },
+        {
+          "name": "net_price",
+          "type": "REAL",
+          "affinity": "REAL",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 438,
+          "distinct_ratio": 1.0
+        }
+      ],
+      "declared_primary_key": [
+        "purchase_order_number",
+        "purchase_order_item_number"
+      ],
+      "primary_key_candidates": [
+        {
+          "columns": [
+            "purchase_order_number",
+            "purchase_order_item_number"
+          ],
+          "origin": "declared_primary_key",
+          "confidence": 1.0,
+          "null_row_count": 0,
+          "distinct_key_count": 438
+        },
+        {
+          "columns": [
+            "net_price"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.75,
+          "null_row_count": 0,
+          "distinct_key_count": 438
+        },
+        {
+          "columns": [
+            "purchase_order_number",
+            "purchase_order_item_number"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 438
+        },
+        {
+          "columns": [
+            "change_date",
+            "quantity"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 438
+        },
+        {
+          "columns": [
+            "purchase_order_number",
+            "material_number",
+            "change_date"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 438
+        },
+        {
+          "columns": [
+            "purchase_order_number",
+            "material_number",
+            "quantity"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 438
+        },
+        {
+          "columns": [
+            "purchase_order_number",
+            "change_date",
+            "plant"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 438
+        },
+        {
+          "columns": [
+            "material_number",
+            "quantity",
+            "plant"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 438
+        }
+      ],
+      "foreign_keys": [
+        {
+          "columns": [
+            "material_number"
+          ],
+          "referenced_table": "Materials",
+          "referenced_columns": [
+            "material_number"
+          ],
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "origin": "declared_foreign_key"
+        },
+        {
+          "columns": [
+            "purchase_order_number"
+          ],
+          "referenced_table": "PurchaseOrderDocuments",
+          "referenced_columns": [
+            "purchase_document_number"
+          ],
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "origin": "declared_foreign_key"
+        }
+      ],
+      "foreign_key_candidates": [
+        {
+          "columns": [
+            "material_number"
+          ],
+          "referenced_table": "MaterialStocks",
+          "referenced_columns": [
+            "material_number"
+          ],
+          "origin": "inferred_by_name_and_containment",
+          "confidence": 0.85,
+          "orphan_count": 0
+        },
+        {
+          "columns": [
+            "material_number"
+          ],
+          "referenced_table": "Materials",
+          "referenced_columns": [
+            "material_number"
+          ],
+          "origin": "inferred_by_name_and_containment",
+          "confidence": 0.85,
+          "orphan_count": 0
+        }
+      ],
+      "sample_rows": [
+        {
+          "purchase_order_number": 1,
+          "purchase_order_item_number": 1,
+          "material_number": 75,
+          "plant": "Plant5",
+          "quantity": 97.0,
+          "change_date": "2024-03-03",
+          "net_price": 155.42
+        },
+        {
+          "purchase_order_number": 2,
+          "purchase_order_item_number": 1,
+          "material_number": 5,
+          "plant": "Plant5",
+          "quantity": 73.0,
+          "change_date": "2023-12-13",
+          "net_price": 873.37
+        },
+        {
+          "purchase_order_number": 3,
+          "purchase_order_item_number": 1,
+          "material_number": 83,
+          "plant": "Plant3",
+          "quantity": 10.0,
+          "change_date": "2024-08-24",
+          "net_price": 283.42
+        }
+      ]
+    },
+    {
+      "name": "PurchaseRequisitions",
+      "row_count": 150,
+      "columns": [
+        {
+          "name": "client",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 5,
+          "distinct_ratio": 0.03333333333333333
+        },
+        {
+          "name": "purchase_document_number",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 93,
+          "distinct_ratio": 0.62
+        },
+        {
+          "name": "item_number_of_purchasing_document",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 5,
+          "distinct_ratio": 0.03333333333333333
+        },
+        {
+          "name": "purchase_requisition_number",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": false,
+          "default_value": null,
+          "pk_position": 1,
+          "null_count": 0,
+          "distinct_count": 150,
+          "distinct_ratio": 1.0
+        },
+        {
+          "name": "purchase_requisition_item",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 5,
+          "distinct_ratio": 0.03333333333333333
+        },
+        {
+          "name": "purchase_requisition_date",
+          "type": "DATE",
+          "affinity": "NUMERIC",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 130,
+          "distinct_ratio": 0.8666666666666667
+        },
+        {
+          "name": "document_type",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 3,
+          "distinct_ratio": 0.02
+        },
+        {
+          "name": "purchasing_document_category",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 3,
+          "distinct_ratio": 0.02
+        },
+        {
+          "name": "planned_delivery_time",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 30,
+          "distinct_ratio": 0.2
+        },
+        {
+          "name": "latest_possible_goods_receipt",
+          "type": "DATE",
+          "affinity": "NUMERIC",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 123,
+          "distinct_ratio": 0.82
+        },
+        {
+          "name": "quantity",
+          "type": "REAL",
+          "affinity": "REAL",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 81,
+          "distinct_ratio": 0.54
+        },
+        {
+          "name": "unit_of_measure",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 1,
+          "distinct_ratio": 0.006666666666666667
+        }
+      ],
+      "declared_primary_key": [
+        "purchase_requisition_number"
+      ],
+      "primary_key_candidates": [
+        {
+          "columns": [
+            "purchase_requisition_number"
+          ],
+          "origin": "declared_primary_key",
+          "confidence": 1.0,
+          "null_row_count": 0,
+          "distinct_key_count": 150
+        },
+        {
+          "columns": [
+            "purchase_document_number",
+            "purchase_requisition_date"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 150
+        },
+        {
+          "columns": [
+            "purchase_document_number",
+            "latest_possible_goods_receipt"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 150
+        },
+        {
+          "columns": [
+            "purchase_requisition_date",
+            "latest_possible_goods_receipt"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 150
+        },
+        {
+          "columns": [
+            "purchase_requisition_date",
+            "quantity"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 150
+        },
+        {
+          "columns": [
+            "purchase_requisition_date",
+            "planned_delivery_time"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 150
+        },
+        {
+          "columns": [
+            "latest_possible_goods_receipt",
+            "quantity"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 150
+        },
+        {
+          "columns": [
+            "latest_possible_goods_receipt",
+            "planned_delivery_time"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 150
+        },
+        {
+          "columns": [
+            "purchase_document_number",
+            "item_number_of_purchasing_document",
+            "planned_delivery_time"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 150
+        },
+        {
+          "columns": [
+            "purchase_document_number",
+            "quantity",
+            "planned_delivery_time"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 150
+        }
+      ],
+      "foreign_keys": [],
+      "foreign_key_candidates": [
+        {
+          "columns": [
+            "purchase_document_number"
+          ],
+          "referenced_table": "PurchaseOrderDocuments",
+          "referenced_columns": [
+            "purchase_document_number"
+          ],
+          "origin": "inferred_by_name_and_containment",
+          "confidence": 0.85,
+          "orphan_count": 0
+        }
+      ],
+      "sample_rows": [
+        {
+          "client": "Client2",
+          "purchase_document_number": 88,
+          "item_number_of_purchasing_document": 3,
+          "purchase_requisition_number": 1,
+          "purchase_requisition_item": 3,
+          "purchase_requisition_date": "2024-05-18",
+          "document_type": "TypeB",
+          "purchasing_document_category": "Standard",
+          "planned_delivery_time": 28,
+          "latest_possible_goods_receipt": "2024-06-15",
+          "quantity": 44.0,
+          "unit_of_measure": "PCS"
+        },
+        {
+          "client": "Client4",
+          "purchase_document_number": 34,
+          "item_number_of_purchasing_document": 1,
+          "purchase_requisition_number": 2,
+          "purchase_requisition_item": 1,
+          "purchase_requisition_date": "2023-11-18",
+          "document_type": "TypeC",
+          "purchasing_document_category": "Consignment",
+          "planned_delivery_time": 8,
+          "latest_possible_goods_receipt": "2023-11-26",
+          "quantity": 90.0,
+          "unit_of_measure": "PCS"
+        },
+        {
+          "client": "Client2",
+          "purchase_document_number": 6,
+          "item_number_of_purchasing_document": 3,
+          "purchase_requisition_number": 3,
+          "purchase_requisition_item": 4,
+          "purchase_requisition_date": "2023-10-09",
+          "document_type": "TypeA",
+          "purchasing_document_category": "Subcontracting",
+          "planned_delivery_time": 28,
+          "latest_possible_goods_receipt": "2023-11-06",
+          "quantity": 39.0,
+          "unit_of_measure": "PCS"
+        }
+      ]
+    },
+    {
+      "name": "SalesDocumentFlows",
+      "row_count": 200,
+      "columns": [
+        {
+          "name": "client",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 5,
+          "distinct_ratio": 0.025
+        },
+        {
+          "name": "sales_document",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": false,
+          "default_value": null,
+          "pk_position": 1,
+          "null_count": 0,
+          "distinct_count": 125,
+          "distinct_ratio": 0.625
+        },
+        {
+          "name": "sales_document_item",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": false,
+          "default_value": null,
+          "pk_position": 2,
+          "null_count": 0,
+          "distinct_count": 5,
+          "distinct_ratio": 0.025
+        },
+        {
+          "name": "subsequent_sales_document",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": false,
+          "default_value": null,
+          "pk_position": 3,
+          "null_count": 0,
+          "distinct_count": 131,
+          "distinct_ratio": 0.655
+        },
+        {
+          "name": "subsequent_sales_document_item",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": false,
+          "default_value": null,
+          "pk_position": 4,
+          "null_count": 0,
+          "distinct_count": 5,
+          "distinct_ratio": 0.025
+        },
+        {
+          "name": "document_category_of_subsequent_document",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 3,
+          "distinct_ratio": 0.015
+        },
+        {
+          "name": "document_category_of_preceding_document",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 3,
+          "distinct_ratio": 0.015
+        },
+        {
+          "name": "document_date",
+          "type": "DATE",
+          "affinity": "NUMERIC",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 149,
+          "distinct_ratio": 0.745
+        }
+      ],
+      "declared_primary_key": [
+        "sales_document",
+        "sales_document_item",
+        "subsequent_sales_document",
+        "subsequent_sales_document_item"
+      ],
+      "primary_key_candidates": [
+        {
+          "columns": [
+            "sales_document",
+            "sales_document_item",
+            "subsequent_sales_document",
+            "subsequent_sales_document_item"
+          ],
+          "origin": "declared_primary_key",
+          "confidence": 1.0,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        },
+        {
+          "columns": [
+            "subsequent_sales_document",
+            "document_date"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        },
+        {
+          "columns": [
+            "sales_document",
+            "document_date"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        },
+        {
+          "columns": [
+            "subsequent_sales_document",
+            "sales_document",
+            "sales_document_item"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        },
+        {
+          "columns": [
+            "subsequent_sales_document",
+            "sales_document",
+            "subsequent_sales_document_item"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        },
+        {
+          "columns": [
+            "subsequent_sales_document",
+            "sales_document",
+            "client"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        },
+        {
+          "columns": [
+            "subsequent_sales_document",
+            "sales_document",
+            "document_category_of_subsequent_document"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        },
+        {
+          "columns": [
+            "document_date",
+            "client",
+            "document_category_of_preceding_document"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        }
+      ],
+      "foreign_keys": [
+        {
+          "columns": [
+            "sales_document"
+          ],
+          "referenced_table": "SalesOrderDocuments",
+          "referenced_columns": [
+            "sales_document_number"
+          ],
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "origin": "declared_foreign_key"
+        }
+      ],
+      "foreign_key_candidates": [],
+      "sample_rows": [
+        {
+          "client": "Client5",
+          "sales_document": 4,
+          "sales_document_item": 3,
+          "subsequent_sales_document": 40,
+          "subsequent_sales_document_item": 4,
+          "document_category_of_subsequent_document": "Delivery",
+          "document_category_of_preceding_document": "Order",
+          "document_date": "2024-03-06"
+        },
+        {
+          "client": "Client3",
+          "sales_document": 4,
+          "sales_document_item": 4,
+          "subsequent_sales_document": 185,
+          "subsequent_sales_document_item": 2,
+          "document_category_of_subsequent_document": "Delivery",
+          "document_category_of_preceding_document": "Quotation",
+          "document_date": "2024-06-03"
+        },
+        {
+          "client": "Client5",
+          "sales_document": 5,
+          "sales_document_item": 2,
+          "subsequent_sales_document": 30,
+          "subsequent_sales_document_item": 1,
+          "document_category_of_subsequent_document": "Credit Memo",
+          "document_category_of_preceding_document": "Order",
+          "document_date": "2024-04-15"
+        }
+      ]
+    },
+    {
+      "name": "SalesOrderDocuments",
+      "row_count": 200,
+      "columns": [
+        {
+          "name": "sales_document_number",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": false,
+          "default_value": null,
+          "pk_position": 1,
+          "null_count": 0,
+          "distinct_count": 200,
+          "distinct_ratio": 1.0
+        },
+        {
+          "name": "document_creation_date",
+          "type": "DATE",
+          "affinity": "NUMERIC",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 157,
+          "distinct_ratio": 0.785
+        },
+        {
+          "name": "customer_number",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 50,
+          "distinct_ratio": 0.25
+        },
+        {
+          "name": "document_date_in_document",
+          "type": "DATE",
+          "affinity": "NUMERIC",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 157,
+          "distinct_ratio": 0.785
+        },
+        {
+          "name": "sales_document_type",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 3,
+          "distinct_ratio": 0.015
+        },
+        {
+          "name": "order_type",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 3,
+          "distinct_ratio": 0.015
+        },
+        {
+          "name": "order_reason",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 3,
+          "distinct_ratio": 0.015
+        }
+      ],
+      "declared_primary_key": [
+        "sales_document_number"
+      ],
+      "primary_key_candidates": [
+        {
+          "columns": [
+            "sales_document_number"
+          ],
+          "origin": "declared_primary_key",
+          "confidence": 1.0,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        },
+        {
+          "columns": [
+            "customer_number",
+            "document_creation_date",
+            "order_reason"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        },
+        {
+          "columns": [
+            "customer_number",
+            "document_creation_date",
+            "sales_document_type"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        },
+        {
+          "columns": [
+            "customer_number",
+            "document_date_in_document",
+            "order_reason"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        },
+        {
+          "columns": [
+            "customer_number",
+            "document_date_in_document",
+            "sales_document_type"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 200
+        }
+      ],
+      "foreign_keys": [],
+      "foreign_key_candidates": [],
+      "sample_rows": [
+        {
+          "sales_document_number": 1,
+          "document_creation_date": "2024-08-10",
+          "customer_number": 10,
+          "document_date_in_document": "2024-08-10",
+          "sales_document_type": "TypeA",
+          "order_type": "Backorder",
+          "order_reason": "Special Order"
+        },
+        {
+          "sales_document_number": 2,
+          "document_creation_date": "2023-10-27",
+          "customer_number": 49,
+          "document_date_in_document": "2023-10-27",
+          "sales_document_type": "TypeB",
+          "order_type": "Backorder",
+          "order_reason": "Stock Replenishment"
+        },
+        {
+          "sales_document_number": 3,
+          "document_creation_date": "2023-10-09",
+          "customer_number": 9,
+          "document_date_in_document": "2023-10-09",
+          "sales_document_type": "TypeB",
+          "order_type": "Backorder",
+          "order_reason": "Promotion"
+        }
+      ]
+    },
+    {
+      "name": "SalesOrderItems",
+      "row_count": 572,
+      "columns": [
+        {
+          "name": "sales_document_number",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": false,
+          "default_value": null,
+          "pk_position": 1,
+          "null_count": 0,
+          "distinct_count": 200,
+          "distinct_ratio": 0.34965034965034963
+        },
+        {
+          "name": "item_number",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": false,
+          "default_value": null,
+          "pk_position": 2,
+          "null_count": 0,
+          "distinct_count": 5,
+          "distinct_ratio": 0.008741258741258742
+        },
+        {
+          "name": "material_number",
+          "type": "INTEGER",
+          "affinity": "INTEGER",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 100,
+          "distinct_ratio": 0.17482517482517482
+        },
+        {
+          "name": "plant",
+          "type": "TEXT",
+          "affinity": "TEXT",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 5,
+          "distinct_ratio": 0.008741258741258742
+        },
+        {
+          "name": "order_quantity",
+          "type": "REAL",
+          "affinity": "REAL",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 99,
+          "distinct_ratio": 0.17307692307692307
+        },
+        {
+          "name": "net_price",
+          "type": "REAL",
+          "affinity": "REAL",
+          "is_nullable": true,
+          "default_value": null,
+          "pk_position": 0,
+          "null_count": 0,
+          "distinct_count": 570,
+          "distinct_ratio": 0.9965034965034965
+        }
+      ],
+      "declared_primary_key": [
+        "sales_document_number",
+        "item_number"
+      ],
+      "primary_key_candidates": [
+        {
+          "columns": [
+            "sales_document_number",
+            "item_number"
+          ],
+          "origin": "declared_primary_key",
+          "confidence": 1.0,
+          "null_row_count": 0,
+          "distinct_key_count": 572
+        },
+        {
+          "columns": [
+            "sales_document_number",
+            "item_number"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 572
+        },
+        {
+          "columns": [
+            "sales_document_number",
+            "net_price"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 572
+        },
+        {
+          "columns": [
+            "item_number",
+            "net_price"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 572
+        },
+        {
+          "columns": [
+            "material_number",
+            "net_price"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 572
+        },
+        {
+          "columns": [
+            "net_price",
+            "plant"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 572
+        },
+        {
+          "columns": [
+            "net_price",
+            "order_quantity"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 572
+        },
+        {
+          "columns": [
+            "sales_document_number",
+            "material_number",
+            "plant"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 572
+        },
+        {
+          "columns": [
+            "sales_document_number",
+            "material_number",
+            "order_quantity"
+          ],
+          "origin": "inferred_snapshot_unique",
+          "confidence": 0.7,
+          "null_row_count": 0,
+          "distinct_key_count": 572
+        }
+      ],
+      "foreign_keys": [
+        {
+          "columns": [
+            "material_number"
+          ],
+          "referenced_table": "Materials",
+          "referenced_columns": [
+            "material_number"
+          ],
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "origin": "declared_foreign_key"
+        },
+        {
+          "columns": [
+            "sales_document_number"
+          ],
+          "referenced_table": "SalesOrderDocuments",
+          "referenced_columns": [
+            "sales_document_number"
+          ],
+          "on_update": "NO ACTION",
+          "on_delete": "NO ACTION",
+          "origin": "declared_foreign_key"
+        }
+      ],
+      "foreign_key_candidates": [
+        {
+          "columns": [
+            "material_number"
+          ],
+          "referenced_table": "MaterialStocks",
+          "referenced_columns": [
+            "material_number"
+          ],
+          "origin": "inferred_by_name_and_containment",
+          "confidence": 0.85,
+          "orphan_count": 0
+        },
+        {
+          "columns": [
+            "material_number"
+          ],
+          "referenced_table": "Materials",
+          "referenced_columns": [
+            "material_number"
+          ],
+          "origin": "inferred_by_name_and_containment",
+          "confidence": 0.85,
+          "orphan_count": 0
+        },
+        {
+          "columns": [
+            "sales_document_number"
+          ],
+          "referenced_table": "SalesOrderDocuments",
+          "referenced_columns": [
+            "sales_document_number"
+          ],
+          "origin": "inferred_by_name_and_containment",
+          "confidence": 0.85,
+          "orphan_count": 0
+        }
+      ],
+      "sample_rows": [
+        {
+          "sales_document_number": 1,
+          "item_number": 1,
+          "material_number": 55,
+          "plant": "Plant3",
+          "order_quantity": 82.0,
+          "net_price": 429.38
+        },
+        {
+          "sales_document_number": 1,
+          "item_number": 2,
+          "material_number": 51,
+          "plant": "Plant4",
+          "order_quantity": 96.0,
+          "net_price": 43.09
+        },
+        {
+          "sales_document_number": 2,
+          "item_number": 1,
+          "material_number": 15,
+          "plant": "Plant2",
+          "order_quantity": 36.0,
+          "net_price": 765.84
+        }
+      ]
+    }
+  ]
+}
