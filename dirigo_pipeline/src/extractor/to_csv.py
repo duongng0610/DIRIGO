@@ -1,3 +1,5 @@
+"""Chuyển IR records thành bộ CSV theo schema runtime của Dirigo."""
+
 import csv
 import math
 from datetime import date, datetime
@@ -133,6 +135,11 @@ def convert_events(events: Iterable[EventRecord], output_dir: Path) -> List[Path
 
 
 def convert_relationships(relationships: Iterable[RelationshipRecord], output_dir: Path) -> Path:
+    """Ghi mọi RelationshipRecord thành ``OCEL_O2O.csv``.
+
+    Source/target object type chỉ phục vụ IR/QC và không phải cột của Dirigo
+    O2O CSV hiện tại; type có thể được suy ra lại từ object ID toàn cục.
+    """
     relationship_records = list(relationships)
     output_dir.mkdir(parents=True, exist_ok=True)
 

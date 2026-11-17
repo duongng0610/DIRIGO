@@ -1,3 +1,10 @@
+"""Chuẩn hóa ID, timestamp và value trước khi so sánh QC.
+
+CSV và SQLite có thể biểu diễn cùng giá trị theo kiểu khác nhau, ví dụ ``1``
+và ``1.0`` hoặc date-only và ISO datetime. Normalization loại khác biệt biểu
+diễn nhưng vẫn giữ khác biệt nghiệp vụ thực sự.
+"""
+
 from decimal import Decimal, InvalidOperation
 from typing import Any
 
@@ -5,6 +12,7 @@ import pandas as pd
 
 
 def is_null(value: Any) -> bool:
+    """Nhận diện None, pandas NA/NaN và chuỗi rỗng như giá trị null."""
     if value is None:
         return True
 
@@ -18,6 +26,7 @@ def is_null(value: Any) -> bool:
 
 
 def normalize_id(value: Any) -> str:
+    """Đưa ID về chuỗi ổn định; ID null trở thành chuỗi rỗng để QC fail."""
     if is_null(value):
         return ""
 
@@ -28,6 +37,11 @@ def normalize_id(value: Any) -> str:
 
 
 def normalize_timestamp(value: Any) -> str | None:
+    """Đưa timestamp parse được về ISO-8601, timezone về UTC.
+
+    Giá trị không parse được được giữ dưới dạng chuỗi thay vì đổi thành None,
+    nhờ vậy hai timestamp lỗi khác nhau không bị xem là cùng một giá trị.
+    """
     if is_null(value):
         return None
 
@@ -51,6 +65,7 @@ def normalize_value(
     value: Any,
     value_type: str = "string",
 ):
+    """Chuẩn hóa value theo logical type đã khai báo trong mapping."""
     if is_null(value):
         return None
 
@@ -102,6 +117,7 @@ def values_equal(
     value_type: str = "string",
     tolerance: float = 1e-6,
 ) -> bool:
+    """So sánh hai value đã chuẩn hóa, hỗ trợ tolerance cho số thực."""
     expected_value = normalize_value(
         expected,
         value_type,

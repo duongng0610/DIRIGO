@@ -1,3 +1,10 @@
+"""Đọc Dirigo CSV output thành projection chuẩn hóa cho QC.
+
+Module này chỉ diễn giải output đã sinh; nó không truy cập source database.
+Expected và actual cùng dùng một mô hình record để các QC có thể so sánh
+multiset thay vì chỉ so sánh tổng số dòng.
+"""
+
 from pathlib import Path
 from typing import Any
 
@@ -13,6 +20,11 @@ def _read_csv(
     path: Path,
     required_columns: set[str],
 ) -> pd.DataFrame:
+    """Đọc CSV với ID/value ở dạng object và xác nhận cột bắt buộc.
+
+    ``keep_default_na=False`` phân biệt chuỗi rỗng theo đúng nội dung CSV,
+    tránh pandas tự biến các giá trị text như ``NA`` thành null.
+    """
     if not path.exists():
         return pd.DataFrame(
             columns=sorted(required_columns)
@@ -42,6 +54,7 @@ def read_actual_projection(
     output_dir: Path | str,
     mapping: dict[str, Any],
 ) -> ActualProjection:
+    """Đọc toàn bộ object, event, E2O và O2O output vào một projection."""
     output_dir = Path(output_dir)
     projection = ActualProjection()
 
@@ -74,6 +87,12 @@ def read_actual_objects_and_attributes(
     mapping: dict[str, Any],
     projection: ActualProjection,
 ) -> None:
+    """Tách initial object rows và dynamic change rows của từng object CSV.
+
+    Dòng có ``Ocel_changed_field`` rỗng là initial row; dòng có giá trị là
+    một lần thay đổi đúng thuộc tính mang tên đó. Quy tắc này phải đồng nhất
+    với ``extractor.to_csv.convert_objects``.
+    """
     for object_mapping in mapping.get("objects", []):
         object_type = object_mapping["type"]
 
@@ -179,6 +198,7 @@ def read_actual_events(
     output_dir: Path,
     projection: ActualProjection,
 ) -> None:
+    """Đọc event core fields từ ``OCEL_Events.csv``."""
     event_df = _read_csv(
         output_dir / "OCEL_Events.csv",
         {
@@ -204,6 +224,11 @@ def read_actual_e2o(
     output_dir: Path,
     projection: ActualProjection,
 ) -> None:
+    """Đọc E2O và bổ sung activity/object type từ projection hiện có.
+
+    CSV E2O không lưu activity hoặc object type. Hai trường này được suy ra
+    bằng ID để QC có thể nhóm kết quả theo activity và object type.
+    """
     e2o_df = _read_csv(
         output_dir / "OCEL_E2O.csv",
         {
@@ -248,6 +273,7 @@ def read_actual_o2o(
     output_dir: Path,
     projection: ActualProjection,
 ) -> None:
+    """Đọc O2O và suy ra source/target object type bằng object ID."""
     o2o_df = _read_csv(
         output_dir / "OCEL_O2O.csv",
         {

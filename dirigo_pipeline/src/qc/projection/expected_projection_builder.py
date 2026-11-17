@@ -1,3 +1,11 @@
+"""Chiếu source + mapping thành tập record kỳ vọng cho QC.
+
+Expected projection không phải ground truth nghiệp vụ độc lập: nó mô tả kết
+quả mà builders phải sinh nếu thực thi đúng mapping đã được duyệt. Vì vậy lớp
+này phát hiện lỗi transformation nhưng không tự phát hiện một event hoặc O2O
+bị LLM bỏ hoàn toàn khỏi mapping.
+"""
+
 from typing import Any
 
 from src.builders.helper import (
@@ -17,6 +25,7 @@ def build_expected_projection(
     sqlite_reader,
     mapping: dict[str, Any],
 ) -> ExpectedProjection:
+    """Build toàn bộ expected objects, attributes, events, E2O và O2O."""
     projection = ExpectedProjection()
 
     project_expected_objects_and_attributes(
@@ -45,6 +54,12 @@ def project_expected_objects_and_attributes(
     mapping: dict[str, Any],
     projection: ExpectedProjection,
 ) -> None:
+    """Chiếu object master rows và static attributes vào projection.
+
+    Object ID được khử trùng theo tập vì completeness của object xét theo
+    canonical identity. Attribute records vẫn giữ multiplicity để Paper QC
+    có thể phát hiện output sinh thiếu hoặc thừa giá trị.
+    """
     for object_mapping in mapping.get("objects", []):
         object_type = object_mapping["type"]
 
@@ -119,6 +134,12 @@ def project_expected_dynamic_attributes(
     object_mapping: dict[str, Any],
     projection: ExpectedProjection,
 ) -> None:
+    """Chiếu history rows thành các dynamic ObjectAttributeProjection.
+
+    Mỗi history row hợp lệ hiện tương ứng một change record. Reference phải
+    resolve về object master đã được chiếu trước; orphan được ghi vào
+    ``filter_audits`` và không được biến thành object mới.
+    """
     object_type = object_mapping["type"]
 
     expected_object_ids = set(
@@ -216,6 +237,12 @@ def project_expected_events_and_e2o(
     mapping: dict[str, Any],
     projection: ExpectedProjection,
 ) -> None:
+    """Chiếu source event rows đồng thời thành event và E2O kỳ vọng.
+
+    Filter audit lưu số row trước/sau ``where`` để mọi row bị loại đều có thể
+    giải thích. Resolver index được tạo theo từng object reference trước khi
+    duyệt source rows, giống đúng chiến lược của event builder.
+    """
     object_configs = {
         config["type"]: config
         for config in mapping.get("objects", [])
@@ -311,6 +338,11 @@ def project_expected_o2o(
     mapping: dict[str, Any],
     projection: ExpectedProjection,
 ) -> None:
+    """Chiếu relationship mappings thành lịch sử O2O kỳ vọng.
+
+    Mỗi qualifier được xử lý riêng vì start/end hoặc assign/unassign có thể
+    dùng timestamp và filter khác nhau dù cùng một cặp object type.
+    """
     object_configs = {
         config["type"]: config
         for config in mapping.get("objects", [])

@@ -1,9 +1,13 @@
+"""Các record trung gian dùng chung cho expected/actual reconciliation."""
+
 from dataclasses import dataclass, field
 from typing import Any, Literal
 
 
 @dataclass
 class ReconciliationResult:
+    """Kết quả một phép đối soát theo check ID và phạm vi cụ thể."""
+
     check_id: str
     scope: str
     status: str
@@ -24,6 +28,8 @@ class ReconciliationResult:
 
 @dataclass
 class ObjectAttributeProjection:
+    """Một giá trị static hoặc một lần thay đổi dynamic của object."""
+
     object_type: str
     object_id: str
     attribute_name: str
@@ -35,6 +41,8 @@ class ObjectAttributeProjection:
 
 @dataclass
 class ExpectedProjection:
+    """Các record phải xuất hiện nếu builders thực thi đúng mapping."""
+
     objects: dict[str, list[str]] = field(
         default_factory=dict
     )
@@ -62,6 +70,8 @@ class ExpectedProjection:
 
 @dataclass
 class ActualProjection:
+    """Các record thực tế được đọc lại từ Dirigo CSV output."""
+
     objects: dict[str, list[str]] = field(
         default_factory=dict
     )

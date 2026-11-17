@@ -1,3 +1,5 @@
+"""Các primitive so sánh và tra mode quan hệ dùng chung cho Paper QC."""
+
 from collections import Counter
 from typing import Any
 
@@ -84,7 +86,8 @@ def build_o2o_mode_index(
     mapping: dict[str, Any],
 ) -> dict[tuple, str]:
     """
-    Ví dụ key:
+    Index giúp QC3a/QC3b phân loại actual O2O vì CSV không lưu trực tiếp
+    relation mode. Ví dụ key:
         employee, department, assignment_started
 
     Value:
@@ -129,6 +132,7 @@ def get_o2o_mode(
     relation: dict[str, Any],
     mode_index: dict[tuple, str],
 ) -> str | None:
+    """Tra static/dynamic mode bằng source type, target type và qualifier."""
     key = (
         relation.get("source_object_type"),
         relation.get("target_object_type"),

@@ -1,3 +1,5 @@
+"""Adapter đọc SQLite và áp dụng các filter đã compile từ mapping YAML."""
+
 import sqlite3
 from typing import Optional
 
@@ -19,10 +21,23 @@ CONDITIONS = {
 
 
 class SQLiteReader:
+    """Cung cấp các thao tác DataFrame tối thiểu mà builders cần.
+
+    Mapping validator chịu trách nhiệm kiểm tra bảng/cột trước khi build;
+    reader tập trung vào đọc dữ liệu, lọc row và join. Các method đọc hiện
+    trả ``None``/danh sách rỗng sau khi in lỗi để tương thích code cũ.
+    """
+
     def __init__(self, db_path):
+        """Lưu đường dẫn database; connection chỉ mở khi có thao tác đọc."""
         self.db_path = db_path
 
     def read_table(self, table_name):
+        """Đọc toàn bộ bảng thành DataFrame.
+
+        Tên bảng đến từ mapping đã qua MAP-QC, không phải input trực tiếp từ
+        người dùng cuối. Khi đọc lỗi, method hiện in thông báo và trả ``None``.
+        """
         try:
             conn = sqlite3.connect(self.db_path)
 
@@ -35,6 +50,12 @@ class SQLiteReader:
             conn.close()
 
     def apply_where(self, df: pd.DataFrame, where: list[dict]) -> pd.DataFrame:
+        """Áp dụng danh sách điều kiện mapping theo phép AND.
+
+        Mỗi rule đã được compiler đổi về ``column``, ``condition`` và
+        ``value``. Mask khởi tạo True để danh sách rule rỗng giữ nguyên mọi
+        row; từng rule tiếp theo thu hẹp tập source row hợp lệ.
+        """
         if not where:
             return df
 
@@ -54,6 +75,7 @@ class SQLiteReader:
         return df[mask]
 
     def get_all_tables(self):
+        """Liệt kê toàn bộ table name trong SQLite schema."""
         try:
             conn = sqlite3.connect(self.db_path)
             cursor = conn.cursor()
@@ -76,6 +98,12 @@ class SQLiteReader:
         filter_column: list[str] = None,
         filter_value=None,
     ):
+        """Inner join hai bảng theo một hay nhiều cặp cột.
+
+        Hàm thuộc flow builder cũ; resolver flow mới ưu tiên tạo lookup index
+        một lần bằng ``build_resolver_index``. Nó được giữ để tương thích cho
+        tới khi legacy code được loại bỏ.
+        """
 
         try:
             conn = sqlite3.connect(self.db_path)
@@ -100,7 +128,8 @@ class SQLiteReader:
             """
 
             df = pd.read_sql_query(query, conn, params=params)
-            # remove duplicated column (keep the first one)
+            # SELECT * tạo hai cột trùng tên cho join key; giữ cột bên trái để
+            # DataFrame downstream không trả Series khi truy cập theo tên.
             return df.loc[:, ~df.columns.duplicated()]
 
         except Exception as e:

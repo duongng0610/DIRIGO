@@ -1,3 +1,10 @@
+"""Chạy MAP-QC, repair có giới hạn và publish runtime mapping YAML.
+
+Proposal JSON không được builders sử dụng trực tiếp. Script chỉ compile và
+publish YAML sau khi deterministic validator trả PASS; mỗi attempt được lưu
+riêng để audit quá trình sửa của LLM.
+"""
+
 import argparse
 import json
 import os
@@ -31,6 +38,7 @@ from src.llm.mapping_validator import (
     save_validation_report,
 )
 def parse_arguments():
+    """Đọc SQLite dataset name và giới hạn số lần LLM repair."""
     parser = argparse.ArgumentParser(
         description=(
             "Validate, repair and publish a mapping proposal"
@@ -54,6 +62,7 @@ def parse_arguments():
 def get_required_environment_variable(
     name: str,
 ) -> str:
+    """Đọc biến môi trường bắt buộc và báo đúng vị trí file .env."""
     value = os.getenv(name)
 
     if not value:
@@ -68,6 +77,7 @@ def save_proposal(
     proposal: MappingProposal,
     output_path: Path,
 ) -> None:
+    """Lưu proposal của một attempt dưới dạng JSON có thể audit."""
     output_path.parent.mkdir(
         parents=True,
         exist_ok=True,
@@ -82,6 +92,7 @@ def print_report(
     attempt: int,
     report,
 ) -> None:
+    """In tóm tắt MAP-QC và repair strategy của từng issue."""
     print()
     print("=" * 72)
     print(f"MAP-QC ATTEMPT {attempt}")
@@ -100,6 +111,11 @@ def print_report(
             f"(repair={issue.repair_strategy})"
         )
 def main() -> None:
+    """Điều phối vòng validate -> repair -> validate -> publish.
+
+    Attempt 0 luôn là proposal ban đầu. Một repaired proposal không được tin
+    ngay mà phải chạy lại toàn bộ deterministic checks ở attempt tiếp theo.
+    """
     args = parse_arguments()
 
     if args.max_repairs < 0:
@@ -166,8 +182,9 @@ def main() -> None:
         / "mapping_proposal_approved.json"
     )
 
-    # attempt=0 là proposal ban đầu.
-    # Các attempt sau là proposal đã được LLM repair.
+    # attempt=0 là proposal ban đầu; các attempt sau là proposal đã repair.
+    # Mỗi vòng đều lưu cả input proposal lẫn validation report để có thể tái
+    # hiện vì sao mapping cuối cùng được chấp nhận hoặc bị từ chối.
     for attempt in range(
         args.max_repairs + 1
     ):
@@ -199,7 +216,8 @@ def main() -> None:
             attempt_report_path,
         )
 
-        # Ghi report mới nhất vào tên cố định.
+        # Tên cố định luôn trỏ tới trạng thái mới nhất cho scripts/reporting;
+        # file có số attempt giữ lịch sử đầy đủ.
         save_validation_report(
             report,
             paths.map_qc_report_path,
@@ -239,7 +257,7 @@ def main() -> None:
 
             return
 
-        # Không còn lượt repair.
+        # Không publish YAML khi đã hết lượt mà vẫn còn ERROR.
         if attempt >= args.max_repairs:
             print()
             print(
